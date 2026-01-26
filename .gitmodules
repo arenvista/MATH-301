@@ -1,3 +1,4 @@
 [submodule "MATH-301-Prior"]
 	path = MATH-301-Prior
 	url = git@github.com:arenvista/MATH-301-Prior.git
+	branch = main
