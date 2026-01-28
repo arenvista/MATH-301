@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2026.1.8)  28 JAN 2026 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2026.1.8)  28 JAN 2026 14:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -801,6 +801,11 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 [2]
 
 [3]
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
+
+ []
+
+
 
 [4] (./01.aux)
  ***********
@@ -828,7 +833,7 @@ st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 01.pdf (4 pages, 140458 bytes).
+Output written on 01.pdf (4 pages, 141926 bytes).
 PDF statistics:
  114 PDF objects out of 1000 (max. 8388607)
  83 compressed objects within 1 object stream
