@@ -65,7 +65,6 @@
 		\]
 		As every element $y \in S \cup T ~\exists ~n \in C \ni h(n) = y \implies h: C \rightarrow S \cup T$ is surjective.
 	\end{proof}
-	\pagebreak
 	\subsection*{Injectivity}
 	\begin{proof} \textbf{Goal:} We want to show that for arbitrary elments $n_1,n_2 \in C$, $h(n1)=h(n_2) \implies n_1 = n_2$. Suppose $h(n_1) = h(n_2) = y$.
 		\subsubsection*{Case 1 (Same Parity):}
@@ -93,7 +92,7 @@
 		Since $h$ is both surjective and injective, it is bijective. \\
 		As there exists a bijective function $h: C \rightarrow S \cup T \implies  S \cup T$ is countable.
 	\end{center}
-\end{proof} \pagebreak
+\end{proof} 
 % END
 \section*{Question 2: Sec 1.3 (q1)}
 \textbf{Question:} Prove that a nonempty set $T_1$ is finite iff $\exists$ a bijection from $T_1$ onto a finite set $T_2$.
@@ -278,6 +277,72 @@ As $f$ is both injective and surjective we have shown there exists a bijection b
 % END
 \section*{Question 5: Sec 1.3 (q7)}
 \textbf{Question:} Prove that a set $T_1$ is denumerable iff there is a bijection from $T_1$ onto a denumerable set $T_2$
+\subsubsection*{Case 1 $\rightarrow$  :}
+\textbf{Prove:} Given a denumerable set $T_1$ we can construct a bijection onto a denumerable set $T_2$.
+\begin{proof}
+	Suppose $T_1$ is denumerable. This implies a bijective function $f$ exists:
+	\[
+		f: \mathbb{N} \rightarrow T_1
+	\]
+	Consider the existance of another denumerable set $T_2$. Likewise a bijective fuction $g$ must also exist:
+	\[
+		g: \mathbb{N} \rightarrow T_2
+	\]
+	As these functions are bijective, this implies the existance of an inverse function for each.
+	\[
+		f^{-1}: T_1 \rightarrow \mathbb{N} \text{ and } g^{-1}: T_2 \rightarrow \mathbb{N}
+	\]
+	\textbf{Goal:} we want to show there exists a function $h: T_1 \rightarrow T_2$ that is bijective. \\
+	\textit{Approach: consider the change in space}
+	\[
+		T_1 \rightarrow \mathbb{N} \rightarrow T_2
+	\]
+	Consider the composition function:
+	\[
+		g \circ f^{-1}: T_1 \rightarrow T_2
+	\]
+	From definition above we know $Img(f^{-1}) = \mathbb{N}$, via the implication of bijection. \\
+	We also know that $g: \mathbb{N} \rightarrow T_2$ is bijective. \\
+	Thus we can say the following is a valid bijective function:
+	\[
+		g: Img(f^{-1}) \rightarrow T_2 \equiv g: \mathbb{N} \rightarrow T_2
+	\]
+	\textbf{Conclusion:} Thus we have shown given a denumerable set $T_1$ we can construct a bijection towards another denumerable set $T_2$. \\
+\end{proof}
+\subsubsection*{Case 2 $\leftarrow$ :}
+\textbf{Prove:} Given a denumerable set $T_2$, if a bijection exists from $T_1$ onto $T_2$ then $T_1$ must be denumerable.
+\begin{proof}
+	Suppose $T_2$ is a denumerable set. Thus, there must exist a bijection from $T_2$ and $\mathbb{N}$. Thus there must exist some functions:
+	\[
+		f: \mathbb{N} \rightarrow T_2 \text{ and } f^{-1}: T_2 \rightarrow \mathbb{N}
+	\]
+	Suppose there exists a bijection from $T_1$ onto $T_2$. We can define the following functions:
+	\[
+		g: T_1 \rightarrow T_2 \text{ and } g^{-1}: T_2 \rightarrow T_1
+	\]
+	\textit{Approach: consider the change in space}
+	\[
+		T_1 \rightarrow T_2 \rightarrow \mathbb{N}
+	\]
+	We can construct the composition:
+	\[
+		f^{-1} \circ g: T_1 \rightarrow \mathbb{N}
+	\]
+	Consider the image set:
+	\[
+		Img(g) = T_2
+	\]
+	By subsitution:
+	\[
+		f^{-1}(Img(g)) = \mathbb{N}
+	\]
+	As these functions are bijective, we can consider their inverses.
+	\[
+		f(\mathbb{N}) = T_2 \implies g(T_2) = T_1 \implies g(f(\mathbb{N})) = T_1
+	\]
+	This means there exists a bijective function from $\mathbb{N} \rightarrow T_1$. Therefore, $T_1$ must be denumerable.\\
+	\textbf{Conclusion:} We have shown given a denumerable set $T_2$, if a bijection exists from $T_1$ onto $T_2$ then $T_1$ must be denumerable.
+\end{proof}
 \section*{Question 6: Sec 1.3 (q8)}
 \textbf{Question:} Give an example of a countable collection of finite sets whose union is not finite. \\
 Consider the sets defined to be:
