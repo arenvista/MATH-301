@@ -11,14 +11,10 @@
             "id": "7f4f3b7abe1b8118",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Main.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Main"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -185,8 +181,21 @@
   },
   "active": "7f4f3b7abe1b8118",
   "lastOpenFiles": [
+    "1769809007-OGDZ.md~",
     "1769789104-QRVN.md",
+    "1769809007-OGDZ.md",
     "1769789104-QRVN.md~",
+    "1769807964-EKVE.md",
+    "1769807947-AZTA.md",
+    "1769807964-EKVE.md~",
+    "1769807924-LDGZ.md",
+    "1769807947-AZTA.md~",
+    "1769807871-FKBW.md",
+    "1769807924-LDGZ.md~",
+    "1769807871-FKBW.md~",
+    "1769807822-DOEP.md",
+    "1769807822-DOEP.md~",
+    "Diagonalization Proof.md",
     "1768247161-HOSZ.md",
     "Main.md",
     "Untitled 1.base",
@@ -195,16 +204,11 @@
     "1766975367-NRVZ.md",
     "1766975367-NRVZ.md~",
     "assets/imgs/fig_1-3-1.png",
-    "Main.md~",
     "1769795527-WXDI.md",
-    "1769795527-WXDI.md~",
     "1766962818-EODE.md",
-    "1769795497-JXKS.md~",
     "1769795497-JXKS.md",
     "assets/imgs/fig_(1-3-1).png",
-    "1768247161-HOSZ.md~",
     "1766973264-EXXS.md",
-    "1766973264-EXXS.md~",
     "1766959914-XULY.md"
   ]
 }
