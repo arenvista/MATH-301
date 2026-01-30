@@ -11,10 +11,14 @@
             "id": "7f4f3b7abe1b8118",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "1769789104-QRVN.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1769789104-QRVN"
             }
           }
         ]
@@ -181,13 +185,14 @@
   },
   "active": "7f4f3b7abe1b8118",
   "lastOpenFiles": [
-    "1769809007-OGDZ.md~",
+    "1769789104-QRVN.md~",
+    "1769807964-EKVE.md~",
+    "1766969917-MJUI.md",
     "1769789104-QRVN.md",
     "1769809007-OGDZ.md",
-    "1769789104-QRVN.md~",
+    "1769809007-OGDZ.md~",
     "1769807964-EKVE.md",
     "1769807947-AZTA.md",
-    "1769807964-EKVE.md~",
     "1769807924-LDGZ.md",
     "1769807947-AZTA.md~",
     "1769807871-FKBW.md",
