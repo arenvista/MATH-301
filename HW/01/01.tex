@@ -92,7 +92,7 @@
 		Since $h$ is both surjective and injective, it is bijective. \\
 		As there exists a bijective function $h: C \rightarrow S \cup T \implies  S \cup T$ is countable.
 	\end{center}
-\end{proof} 
+\end{proof}
 % END
 \section*{Question 2: Sec 1.3 (q1)}
 \textbf{Question:} Prove that a nonempty set $T_1$ is finite iff $\exists$ a bijection from $T_1$ onto a finite set $T_2$.
@@ -150,18 +150,10 @@
 \section*{Question 3: Sec 1.3 (q4)}
 \begin{proof} \textbf{Question:} Exhibit a bijection between $\mathbb{N}$ and the set of all odd integers greater than 13.
 	\subsection*{Setup}
-	Let $A$ be a set defined as:
+	We want to find a set of \textit{all odd integers greater than 13}. Let's define this as $S$ (where $i \in \mathbb{N}$):
 	\[
-		S := \{ z | z \in \mathbb{Z}, z > 13 \}
+		S = \{ 15,17,18,...i \}= \{ 2z+13 | z \in \mathbb{Z}\}
 	\]
-	Observe the elements of $S$, where $i \in \mathbb{N}$:
-	\begin{align*}
-		S_1 = 14 \\
-		S_2 = 15 \\
-		S_3 = 16 \\
-		...      \\
-		S_i = i
-	\end{align*}
 	\begin{center} (\textit{Note: all elements defined are distict}) \end{center}
 	Also let's define elements of $\mathbb{N}$ as follows, $j \in \mathbb{N}$:
 	\begin{align*}
@@ -176,49 +168,72 @@
 	\[
 		f: \mathbb{N} \rightarrow S = \{ (s_i,n_j) | s_i \in S \land n_j \in \mathbb{N}  \}
 	\]
-	We can also say this is the same as:
+	Observe this is modeling the function as:
 	\[
-		f(n) = 13 + n
+		f(n) = 13 + 2n
 	\]
 	% prove via php; i.e. compare cardinalites; => if |A| = |B| imp exi a func f: A -> B s.t. f is bijective; question asks to exhibit (thus must construct a func. )
 	\subsection*{Surjectivity}
 	\begin{proof} \textbf{Goal:} Show that $\forall ~s \in S, \exists ~n \in \mathbb{N} \ni f(n) = s$ \\
 		Let $s \in S, n \in \mathbb{N}$:
 		\[
-			s = 13 + n = f(n)
+			s_n = 13 + 2n = f(n)
 		\]
 		By algebra:
 		\begin{align*}
-			s = 13 + n \\
-			n = s - 13
+			s_n & = 13 + 2n  \\
+			2n  & = s_n - 13
 		\end{align*}
-		Clearly $s$ has a infima of 14 as defined by the proposition and must be an integer.
-		\begin{center} Therefore $s - 13 \in \mathbb{N}$ \end{center}
-		Back solving:
+		Recall $\forall ~s \in S$, $s$ must be an odd integer greater than 13. Thus there must be some $k \in \mathbb{N}$ s.t.
+		\[
+			s = 2k+1
+		\]
+		By subsitution:
 		\begin{align*}
-			f(s-13) & = (s-13) + 13 \\
-			        & = s -13 + 13  \\
-			        & = s + 13
+			2n & = s_n - 13     \\
+			2n & = (2k+1) - 13  \\
+			2n & = 2k +(1 - 13) \\
+			2n & = 2k - 12      \\
+			n  & = k - 6
 		\end{align*}
-		Observe $f(n) = s + 13$ which we obtained and is the expected result as the input to the prior solution and no terms escape the defined sets; thus the statments holds
+		Now we must ask if $n$ as defined to be as $n=k-6$ escapes the set $\mathbb{N}$ as $n$ is defined to be $n \in \mathbb{N}$. \\
+		As $s$ is defined to be \textit{greater than 13}. We know there exists a greatest lower bound 15 that satisfies the criterion. By subsitution:
+		\begin{align*}
+			s      & > 13   \\
+			s      & = 2k+1 \\
+			2k+1   & > 13   \\
+			2k+1-1 & > 13-1 \\
+			2k     & > 12   \\
+			k      & > 6    \\
+		\end{align*}
+		As $k > 6$ then this means the $n = k-6$ must always be greater than zero. As all operations retain closure properties of integers, we can expect the value to be an interger. By def all integers greater than zero must belong to $\mathbb{N}$. Thus we can say $n \in \mathbb{N}$. Thus the properties of surjectivity hold.
+		\textbf{Backsolve:}
+		\begin{align*}
+			f(k-6) & = 13 + 2(k-6) \\
+			f(k-6) & = 13 + 2k-12  \\
+			f(k-6) & = 13-12 +2k   \\
+			f(k-6) & = 1 + 2k = s
+		\end{align*}
 		\begin{center}
-			We have show that $\forall ~s \in S, \exists ~n \in \mathbb{N} \ni f(n) = s$. \\
-			Therefore $f$ is surjective.
+			We have shown that $\forall ~s \in S, \exists ~n \in \mathbb{N} \ni f(n) = s$
 		\end{center}
 	\end{proof}
 	\subsection*{Injectivity}
-	\begin{proof} \textbf{Goal:} Show that given $a,b \in \mathbb{N}$ and $f(a) = f(b) \implies a = b$
-		Let $a,b \in \mathbb{N}$ and $f(a) = f(b)$. Observe:
+	\begin{proof} \textbf{Goal:} Show that given $a,b \in \mathbb{N}$ and $f(a) = f(b) \implies a = b$ \\
+		Let $a,b \in \mathbb{N}$. Suppose:
+		\[
+			f(a) = f(b)
+		\]
+		By subsitution:
 		\begin{align*}
-			f(a)        & = f(b)        \\
-			a + 13      & = b + 13      \\
-			a + 13 - 13 & = b + 13 - 13 \\
-			a           & = b
+			2a+1   & = 2b+1   \\
+			2a+1-1 & = 2b+1-1 \\
+			2a     & = 2b     \\
+			a      & = b
 		\end{align*}
-		\begin{center}
-			Thus we have shown that given $a,b \in \mathbb{N}$ and $f(a) = f(b) \implies a = b$ \\
-			Therefore $f$ is injective.
-		\end{center}
+        \begin{center}
+            Thus we have shown that given $a,b \in \mathbb{N}$ and $f(a) = f(b) \implies a = b$ 
+        \end{center}
 	\end{proof}
 	\subsection*{Conclusion}
 	As $f$ is both injective and surjective we have shown there exists a bijection between $\mathbb{N}$ and the set of all odd integers greater than 13.
