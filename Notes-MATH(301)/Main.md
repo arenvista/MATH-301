@@ -5,6 +5,7 @@ tags: []
 ---
 [Chapter 1.3 - Finite and Infinite Sets](1769789104-QRVN.md)
 # [[1766973264-EXXS|Chapter 2 - The Real Numbers]]
+## [Section 2.2 - Absolute Value and the Real Number Line](1770069010-RAEG.md)
 # [Chapter 3 - Sequences and Series](1766975024-OCSX.md)
 # [Chapter 4 - Limits](1766975032-ONRK.md)
 # [Chapter 5 - Continous Functions](1766975040-MGBZ.md)
