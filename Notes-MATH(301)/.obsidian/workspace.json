@@ -11,10 +11,14 @@
             "id": "7f4f3b7abe1b8118",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "1770069010-RAEG.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1770069010-RAEG"
             }
           }
         ]
@@ -181,9 +185,10 @@
   },
   "active": "7f4f3b7abe1b8118",
   "lastOpenFiles": [
+    "1770069010-RAEG.md~",
+    "indent.log",
     "1766973264-EXXS.md",
     "Main.md",
-    "1770069010-RAEG.md~",
     "1770069010-RAEG.md",
     "1766973264-EXXS.md~",
     "1766962952-MAQA.md",

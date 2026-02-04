@@ -39,3 +39,24 @@
     margin-top: -1em; /* Pulls it up slightly */
     color: rgba(var(--callout-color), 1);
 }
+
+/* --- CASE (Orange) --- */
+/* Used for specific scenarios, use cases, or 'Case 1' in proofs */
+.callout[data-callout="case"] {
+    --callout-color: 255, 149, 0; /* Orange */
+    --callout-icon: "lucide-briefcase";
+}
+
+/* --- QUESTION (Yellow/Gold) --- */
+/* Used for inquiries, open problems, or FAQs */
+.callout[data-callout="?"] {
+    --callout-color: 255, 204, 0; /* Golden Yellow */
+    --callout-icon: "lucide-help-circle";
+}
+
+/* --- IMPORTANT (Red) --- */
+/* Used for critical warnings, key takeaways, or risks */
+.callout[data-callout="imp"] {
+    --callout-color: 255, 59, 48; /* Red */
+    --callout-icon: "lucide-alert-circle";
+}
