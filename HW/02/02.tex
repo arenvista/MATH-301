@@ -1,4 +1,6 @@
 \documentclass[11pt]{article}
+\usepackage{multicol} % Required package
+\usepackage{lipsum}   % Package for dummy text
 \usepackage{amsmath,amsthm,amscd,amssymb,mathrsfs,tikz}
 % \usepackage{verbatim}
 \usepackage{latexsym,epsf,epsfig}
@@ -47,10 +49,10 @@
 \maketitle
 \pagebreak
 \begin{center}
-	\section*{Question 1}
+	\section*{Question 1: Section 2.1-1}
 	If $a,b \in \mathbb{R},$ prove the following:  \\
 \end{center}
-\textbf{Part (a):} \textit{If $a+b=0$, then $b=-a$}
+\subsection*{\textbf{Part (a):} \textit{If $a+b=0$, then $b=-a$}}
 \begin{blockquote}
 	\textbf{Recall Properties of $\mathbb{R}$ Addition:} \\
 	\textit{(Commutativity:)} $a+b = b+a$ \\
@@ -72,7 +74,7 @@ Let $a+b=0$. Observe the following:
 \begin{center}
 	Clearly we have shown given $a+b=0$, then $b=-a$ holds.
 \end{center}
-\noindent\textbf{Part (c):} \textit{$(-1)a=-a$}
+\subsection*{\textbf{Part (c):} \textit{$(-1)a=-a$}}
 \begin{blockquote}
 	\textbf{Recall Properties of $\mathbb{R}$ Multiplication} \\
 	\textit{(Commutativity:)} $a \cdot b = b \cdot a$ \\
@@ -95,7 +97,7 @@ Consider the following:
 	Recall by \textit{Part (a)} "If $a+b=0$, then $b=-a$". \\
 	Therefore $(-1)a=-a$ must hold. \\
 \end{center}
-\noindent\textbf{Part (d):} \textit{$-(-a) = a$} \\
+\subsection*{\textbf{Part (d):} \textit{$-(-a) = a$}}
 Consider the following:
 \[
 	\begin{array}{cc}
@@ -112,7 +114,7 @@ Consider the following:
 \begin{center}
 	Thus we have shown that $-(-a)=a$.
 \end{center}
-\noindent\textbf{Part (e):} \textit{$(-1)(-1)=1$} \\
+\subsection*{\textbf{Part (e):} \textit{$(-1)(-1)=1$}}
 Consider $-(-a) = a$, we stated $a \in \mathbb{R}$ as an arbitrary element.
 \[
 	\begin{array}{cc}
@@ -127,21 +129,145 @@ Consider $-(-a) = a$, we stated $a \in \mathbb{R}$ as an arbitrary element.
 	Thus we have shown $(-1)(-1) = 1$
 \end{center}
 \begin{center}
-	\section*{Question 2}
+	\section*{Question 2: Section 2.1-2}
 	If $a,b \in \mathbb{R},$ prove the following:  \\
 \end{center}
-\noindent\textbf{Part (a):} $-(a+b) = (-a) + (-b)$
-\noindent\textbf{Part (a):} $(-a) \cdot (-b) = a \cdot b$
-\noindent\textbf{Part (a):} $\frac{1}{(-a)}= -(\frac{1}{a})$
-\noindent\textbf{Part (a):} 
+\subsection*{\textbf{Part (a):} $-(a+b) = (-a) + (-b)$}
+Consider the following:
+\[
+	\begin{array}{cc}
+		-(a+b) = (-1)(a+b)    & \text{By q1.c}                  \\
+		-(a+b) = (-1)a+ (-1)b & \text{By Distributive Property} \\
+		-(a+b) = -a+ -b       & \text{By q1.c}                  \\
+	\end{array}
+\]
+\subsection*{\textbf{Part (b):} $(-a) \cdot (-b) = a \cdot b$}
+Consider the following:
+\[
+	\begin{array}{cc}
+		(-a) \cdot (-b) = (-a) \cdot (-b)                 & \text{Proposition x=x}                        \\
+		(-a) \cdot (-b) = (-1) \cdot a \cdot (-1)\cdot b  & \text{By q1.c}                                \\
+		(-a) \cdot (-b) = (-1) \cdot (-1) \cdot a \cdot b & \text{By Associativity}                       \\
+		(-a) \cdot (-b) = (1) \cdot a \cdot b             & \text{By q1.e}                                \\
+		(-a) \cdot (-b) =  a \cdot b                      & \text{By Identity Property of Multiplication} \\
+	\end{array}
+\]
+\subsection*{\textbf{Part (c):} $\frac{1}{(-a)}= -(\frac{1}{a})$}
+Consider the following:
+\[
+	\begin{array}{cc}
+		(\frac{1}{-a})= -(\frac{1}{a})      & \text{By Proposition}                      \\\\
+		(\frac{1}{-a})= (-1)(\frac{1}{a})   & \text{By q1.c}                             \\\\
+		(\frac{1}{-a})a= (-1)(\frac{1}{a})a & \text{Multiply both sides by $b$}          \\\\
+		(\frac{1}{-a})a= (-1)1              & \text{Property of Multiplicative Inverse}  \\\\
+		(\frac{1}{-a})a= (-1)               & \text{Property of Multiplicative identity} \\\\
+		(\frac{1}{-a})(-1)a= (-1)(-1)       & \text{Multiply both sides by (-1)}         \\\\
+		(\frac{1}{-a})(-a)= (-1)(-1)        & \text{By q1.c}                             \\\\
+		1 = (-1)(-1)                        & \text{Property of Multiplicative Inverse}  \\\\
+		1 = 1                               & \text{By q1.e}                             \\\\
+	\end{array}
+\]
 \begin{center}
-	\section*{Question 3}
-	-
+	\section*{Question 3: Section 2.1-10}
 \end{center}
+\subsection*{\textbf{Part (a):} If $a<b$ and $c \leq d$, prove that $(a+c)<(b+d)$}
+Suppose $a<b$ and $c \leq d$. Consider the following:
+\begin{blockquote}
+	\textbf{Recall: } \textit{(Theorem) Rules of Inequality} \\
+	$\text{Let } a,b,c \in \mathbb{R}$. The following statments must hold:
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item $(a>b) \land (b>c) \implies a>c$
+			\item $(a>b) \implies (a+c) > (a+b)$
+			\item $(a>b) \land (c>0) \implies ca > cb$
+			\item $(a>b) \land (c<0) \implies ca < cb$
+		\end{itemize}
+	\end{multicols}
+\end{blockquote} \noindent
+Applying the theorem above, consider the following:
+\[
+	\begin{aligned}
+		 & a<b                 \\
+		 & a+c < b+c           \\
+		 & b+c \leq  b+d       \\
+		 & a+c < b+c \leq  b+d \\
+		 & a+c <  b+d          \\
+	\end{aligned}
+\]
+
+\subsection*{\textbf{Part (b):} If $0<a<b$ and $0 \leq c \leq d$, prove that $0 \leq ac \leq bd$}
+Suppose $0<a<b$ and $0 \leq c \leq d$
+\begin{blockquote}
+	\textbf{Recall: } \textit{(Theorem) Rules of Inequality} \\
+	$\text{Let } a,b,c \in \mathbb{R}$. The following statments must hold:
+	\begin{multicols}{2}
+		\begin{itemize}
+			\item $(a>b) \land (b>c) \implies a>c$
+			\item $(a>b) \implies (a+c) > (a+b)$
+			\item $(a>b) \land (c>0) \implies ca > cb$
+			\item $(a>b) \land (c<0) \implies ca < cb$
+		\end{itemize}
+	\end{multicols}
+	Ordering
+	If $a-b \in P$, we write $a>b$ (or $b<a$). \\
+	If $a-b \in P \cup \{ 0 \}$, we write $a \geq b$ (or $b \leq a$). \\
+
+	For any two real numbers $a,b$ exactly one of the following holds:
+	$$a>b, a<b, a=b$$
+\end{blockquote} \noindent
+\begin{blockquote}
+	\textbf{Recall: } \textit{ Properties of Positive Sets} \\
+	Let $P \neq \emptyset, P \subseteq \mathbb{R}$ be called the set of positive real numbers. \\
+	1.  If $a,b \in P$ then $a+b \in P$.\\
+	2.  If $a,b \in P$ then $a \cdot b \in P$.\\
+	3.  \textit{Trichotomy Property:} If $a \in \mathbb{R}$, then exactly one of the following must be true:
+	$$a \in P, ~~a = 0, ~-a \in P$$
+\end{blockquote} \noindent
+Applying the theorems above, observe the following:
+\[
+	(0 < a) \land (0 \leq c) \implies (0 \leq ac)
+\]
+Thus the following statements hold:
+\[
+	\begin{aligned}
+		 & 0 \leq c \leq d            \\
+		 & 0 \leq bc \leq bd          \\
+		 & 0 < a < b                  \\
+		 & 0 \leq ac \leq  bc \leq db \\
+		 & 0 \leq ac \leq db          \\
+	\end{aligned}
+\]
 \begin{center}
-	\section*{Question 4}
-	-
+	\section*{Question 4: Section 2.1-11}
 \end{center}
+\subsection*{Part (a): If $(a>0)$, then $(1/a>0)$ and $\frac{1}{1/a} = a$}
+Suppose $a>0$ and $\frac{1}{a} \not > 0$. Consider the following:
+\[
+	\begin{aligned}
+		\frac{1}{a}           & \not > 0         \\
+		(\frac{1}{a}) \cdot a & \not > 0 \cdot a \\
+		(\frac{1}{a}) \cdot a & \not > 0         \\
+		1                     & \not > 0         \\
+	\end{aligned}
+\]
+\begin{center}
+	Clearly $1>0$ thus this is a contradiction. \\
+	Thus we must accept the original proposition: $a>0 \implies \frac{1}{a}>0$.
+\end{center}
+Prove the following statements $\frac{1}{1/a}=a$:
+\[
+	\begin{aligned}
+		\frac{1}{1/a}                & =a              \\
+		(\frac{1}{1/a})(\frac{1}{a}) & =a(\frac{1}{a}) \\
+		1                            & = 1
+	\end{aligned}
+\]
+\begin{center}
+	Clearly $1=1$ thus proven directly.
+\end{center}
+Now we have proven if $(a>0)$, then $(1/a>0)$ and $\frac{1}{1/a} = a$.
+\subsection*{Part (b): If $(a<b)$, then $a<\frac{1}{2}(a+b)<b$}
+LOREMIPUMSUM
 \begin{center}
 	\section*{Question 5}
 	-

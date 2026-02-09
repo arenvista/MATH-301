@@ -831,44 +831,35 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 [2]
 
-[3]
+! LaTeX Error: \begin{center} on input line 114 ended by \end{proof}.
 
-[4]
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116         \end{proof}
+                         
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.116         \end{proof}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-[5]
-
-[6]
-
-[7]
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 409--411
-
- []
-
-
-
-[9] (./01.aux)
- ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
- ***********
-Package rerunfilecheck Info: File `01.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
- ) 
+ 
 Here is how much of TeX's memory you used:
- 23795 strings out of 475171
- 449014 string characters out of 5767096
- 825309 words of memory out of 5000000
- 46358 multiletter control sequences out of 15000+600000
+ 23764 strings out of 475171
+ 448789 string characters out of 5767096
+ 824309 words of memory out of 5000000
+ 46352 multiletter control sequences out of 15000+600000
  568291 words of font info for 75 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 102i,10n,107p,539b,624s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+ 102i,10n,107p,539b,698s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 /share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
