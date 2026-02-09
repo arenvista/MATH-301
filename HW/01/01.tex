@@ -44,53 +44,54 @@
 
 \section*{Question 1: From Blackboard}
 \textbf{Proposition:} Let $S$ and $T$ be two sets. If both $S$ and $T$ are countable, then $S \cup T$ is countable.
-\textbf{Note:} If $S$ and $T$ are said to be infinite and countable; then they are said to be \textit{denumerable}
 \begin{proof} Suppose $S$ and $T$ are countable, and there exists $A,B \subseteq \mathbb{N}$, by definition there exists a bijective function:
-\[
-	f: A \rightarrow S \text{ and } g: B \rightarrow T-S
-\]
-Observe we can construct $S \cup T$ as a disjoint set. Let $S, T$ be defined as follows:
-\[
-	S = \{ s | s \in S \}, T = \{ t | t \in T \}
-\]
-Natrually then.
-\[
-	S \cup T = \{ x | x \in S \lor x \in T \}
-\]
-Observe:
-\[
-	S \cup T-S = \{ y | y \in S \lor (y \in T \land  y \not\in S) \}
-\]
-Consider the following statments:
-\[
-	\begin{aligned}
-		 & S \lor (y \in T \land  y \not\in S) \\
-		 & S \lor (y \in T \land  y \in S^c)   \\
-		 & y \in S \cup ( T \cap S^c)          \\
-		 & y \in (S \cup T) \cap (S \cup S^c)  \\
-		 & (S \cup T) \cap U                   \\
-		 & S \cup T
-	\end{aligned}
-\]
-\begin{center}
-	Thus we can state that $S \cup T \equiv S \cup T-S$. \\
-\end{center}
-To show $S \cup T$ is countable, we must construct a bijection $h: C \rightarrow S \cup (T-S), C \subseteq \mathbb{N}$ \\
-\textbf{Define}  $h: C \rightarrow S \cup (T-S)$:
-\[
-	h(n) =
-	\begin{cases}
-		f\left(\frac{n}{2}\right)   & \text{if } n \text{ is even} \\
-		g\left(\frac{n+1}{2}\right) & \text{if } n \text{ is odd}
-	\end{cases}
-\]
-Note $S,T$ must be disjoint; else $\exists ~n_1, n_2 \in C, n_1 \neq n_2 \ni h(n_1) = f(n_1) = h(n_2) = g(n_2)$ \\
-Thus, for the sake of the proof, presume $S,T$ to be disjoint sets s.t. $S \cap T = \emptyset$
-\begin{center}
-	To prove the proposition we must show that $h$ is \textit{surjective} and \textit{injective}.
-\end{center}
-\subsection*{Surjectivity}
-\textbf{Goal:} We want to show that $\forall ~y \in S \cup T, \exists ~n \in C \ni h(n) = y$
+	\[
+		f: A \rightarrow S \text{ and } g: B \rightarrow (T-S)
+	\]
+	Observe we can construct $S \cup T$ as a disjoint set. Let $S, T$ be defined as follows:
+	\[
+		S = \{ s | s \in S \}, T = \{ t | t \in T \}
+	\]
+	Natrually then.
+	\[
+		S \cup T = \{ x | x \in S \lor x \in T \}
+	\]
+	Observe:
+	\[
+		S \cup T-S = \{ y | y \in S \lor (y \in T \land  y \not\in S) \}
+	\]
+	Consider the following statments (note reversible):
+	\[
+		\begin{aligned}
+			 \iff & S \lor (y \in T \land  y \not\in S) \\
+			 \iff & S \lor (y \in T \land  y \in S^c)   \\
+			 \iff & y \in S \cup ( T \cap S^c)          \\
+			 \iff & y \in (S \cup T) \cap (S \cup S^c)  \\
+			 \iff & y \in (S \cup T) \cap U             \\
+			 \iff & y \in S \cup T
+		\end{aligned}
+	\]
+	\begin{center}
+		Thus we can state that $S \cup T = S \cup T-S$. \\
+	\end{center}
+	To show $S \cup T$ is countable, we must construct a bijection $h: C \rightarrow S \cup (T-S), C \subseteq \mathbb{N}$ \\
+	\textbf{Define}  $h: C \rightarrow S \cup (T-S)$:
+	\[
+		h(n) =
+		\begin{cases}
+			f\left(\frac{n}{2}\right)   & \text{if } n \text{ is even} \\
+			g\left(\frac{n+1}{2}\right) & \text{if } n \text{ is odd}
+		\end{cases}
+	\]
+    \begin{blockquote}
+        \textbf{Aside: } $S,(T-S)T$ must be disjoint. \\
+        \quad $\exists ~n_1, n_2 \in C, n_1 \neq n_2 \ni h(n_1) = f(n_1) = h(n_2) = g(n_2)$ 
+    \end{blockquote}
+	\begin{center}
+		To prove the proposition we must show that $h$ is \textit{surjective} and \textit{injective}.
+	\end{center}
+	\subsection*{Surjectivity}
+	\textbf{Goal:} We want to show that $\forall ~y \in S \cup T, \exists ~n \in C \ni h(n) = y$
 	\subsubsection*{Case 1 ($y \in S$):}
 	Let $y \in S$. Since $f$ is surjective, $\exists ~ k \in C$ s.t. $f(k) = y$. \\
 	Let $n=2k$. By definition $n$ is even. Observe:
@@ -109,14 +110,16 @@ Thus, for the sake of the proof, presume $S,T$ to be disjoint sets s.t. $S \cap 
 		\begin{center}
 			$S$ is countable. $\iff \exists $ surjection of $\mathbb{N}$ onto $S$. $\iff \exists $ an injection of $S$ into $\mathbb{N}$.
 		\end{center}
-    \end{blockquote} \vspace{1em} \noindent 
-    As every element $y \in S \cup T ~\exists ~n \in C \ni h(n) = y \implies h: C \rightarrow S \cup (T-S)$ is surjective. \\
-    Note since $h(n): C \rightarrow S \cup (T-S)$ is surjective and $C \subseteq \mathbb{N}$. \\
-    Thus we can validate a condition in "Countable Set Implications" ($\exists $ surjection $\mathbb{N}$ onto $S$). \\
-    It means there must be an injection of $S \cup (T-S) \rightarrow \mathbb{N}$. \\
-	\begin{center}
-        This means that $S \cup (T-S)$ must be countable.
+	\end{blockquote} \vspace{1em} \noindent
+    \begin{center}
+        As every element $y \in S \cup T ~\exists ~n \in C \ni h(n) = y \implies h: C \rightarrow S \cup (T-S)$ is surjective.
     \end{center}
+	Note since $h(n): C \rightarrow S \cup (T-S)$ is surjective and $C \subseteq \mathbb{N}$. \\
+	$\implies$ Thus we can validate a condition in "Countable Set Implications" ($\exists $ surjection $\mathbb{N}$ onto $S$). \\
+	$\implies$ It means there must be an injection of $S \cup (T-S) \rightarrow \mathbb{N}$.
+	\begin{center}
+		This means that $S \cup (T-S)$ must be countable.
+	\end{center}
 \end{proof}
 % END
 \section*{Question 2: Sec 1.3 (q1)}
@@ -140,12 +143,16 @@ Thus, for the sake of the proof, presume $S,T$ to be disjoint sets s.t. $S \cap 
 	\[
 		\forall ~b \in T_2, \exists ~a \in T_1 \ni f(a)= b
 	\]
-	Thus $f$ is surjective. \\
+    \begin{center}
+        \textit{Thus $f$ is surjective.}
+    \end{center}
 	Clearly:
 	\[
 		f(x) = f(y) \implies x = y
 	\]
-	Thus $f$ is injective \\
+    \begin{center}
+        \textit{Thus $f$ is injective.}
+    \end{center}
 	\textbf{Conclusion:} As $f$ is both injective and surjective, given $T_1$ is finite then clearly there exists a bijection from $T_1$ onto $T_2$.
 \end{proof}
 \subsubsection*{Case 2 $\leftarrow$ :}
@@ -169,8 +176,11 @@ Thus, for the sake of the proof, presume $S,T$ to be disjoint sets s.t. $S \cap 
 	\[
 		f(x) = f(y) \implies x \neq y
 	\]
-	This is a contradiction, thus we can say: if $\exists$ a $f: T_1 \rightarrow  T_2$, where $T_2$ is finite and $f$ is bijective. Then $T_1$ is finite.
+	\textbf{Conclusion:} This is a contradiction, thus we can say: if $\exists$ a $f: T_1 \rightarrow  T_2$, where $T_2$ is finite and $f$ is bijective. Then $T_1$ is finite.
 \end{proof}
+\begin{center}
+    As we have proved both Case 1 and Case 2 we have shown that a nonempty set $T_1$ is finite iff $\exists$ a bijection from $T_1$ onto a finite set $T_2$.
+\end{center}
 % END
 \section*{Question 3: Sec 1.3 (q4)}
 \begin{proof} \textbf{Question:} Exhibit a bijection between $\mathbb{N}$ and the set of all odd integers greater than 13.
@@ -313,7 +323,7 @@ Let's construct the function as follows, let $n \in \mathbb{N}, v \in E$:
 	\end{center}
 \end{proof}
 \subsection*{Conclusion}
-As $f$ is both injective and surjective we have shown there exists a bijection between $\mathbb{N}$ and the set of all odd integers greater than 13.
+As $f$ is both injective and surjective we have shown there exists a bijection between $\mathbb{N}$ and the set of all even natural numbers.
 % END
 \section*{Question 5: Sec 1.3 (q7)}
 \textbf{Question:} Prove that a set $T_1$ is denumerable iff there is a bijection from $T_1$ onto a denumerable set $T_2$

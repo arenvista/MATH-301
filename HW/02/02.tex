@@ -1,0 +1,153 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amsthm,amscd,amssymb,mathrsfs,tikz}
+% \usepackage{verbatim}
+\usepackage{latexsym,epsf,epsfig}
+\usepackage{sectsty}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs, multirow} % for borders and merged ranges
+\usepackage{soul}% for underlines
+\usepackage{xcolor,colortbl} % for cell colors
+\usepackage{changepage,threeparttable} % for wide tables
+\usepackage[left=1.2in, right=1.2in, top=1in, bottom=1in]{geometry} %The above set the parameters adjust the margins. There are many ways to do this, and frankly, what is above is not the best. However, it will work the time being.
+
+% \usepackage{csquotes}
+\usepackage{tcolorbox}
+% Define a custom box called "blockquote"
+\newtcolorbox{blockquote}{
+    colback=white,    % Background color
+    colframe=gray,    % Line color
+    boxrule=0pt,      % Width of borders
+    leftrule=3pt,     % Width of the left line
+    arc=0pt,          % Square corners
+    outer arc=0pt,
+    left=10pt,        % Space between line and text
+    top=0pt,
+    bottom=0pt,
+    right=0pt
+}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\sU}{\mathscr U}
+% Theorem
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\title{ MATH 301: Homework 2}
+\author{ Aren Vista }
+\date{\today}
+
+\begin{document}
+\maketitle
+\pagebreak
+\begin{center}
+	\section*{Question 1}
+	If $a,b \in \mathbb{R},$ prove the following:  \\
+\end{center}
+\textbf{Part (a):} \textit{If $a+b=0$, then $b=-a$}
+\begin{blockquote}
+	\textbf{Recall Properties of $\mathbb{R}$ Addition:} \\
+	\textit{(Commutativity:)} $a+b = b+a$ \\
+	\textit{(Associativity:)} $(a+b)+c = a+(b+c)$ \\
+	\textit{(Zero Property:)} There exists a $0 \in \mathbb{R}$ such that $a+0=a$ \\
+	\textit{(Existence of inverse:)} $\forall ~a \in \mathbb{R}, \exists ~-a \in \mathbb{R}$ such that $a+(-a)=0$
+\end{blockquote}
+Let $a+b=0$. Observe the following:
+\[
+	\begin{array}{cc}
+		\exists ~a,b \in \mathbb{R}, b \neq -a \ni & \text{By proposition}                    \\
+		a+b=0                                      & \text{By proposition}                    \\
+		a+b+(-a) = 0+(-a)                          & \text{By existance of inverses}          \\
+		b+(a+(-a)) = 0+(-a)                        & \text{By associativity}                  \\
+		b+(0) = 0+(-a)                             & \text{By inverse property}               \\
+		b = -a                                     & \text{By definition of identity element} \\
+	\end{array}
+\]
+\begin{center}
+	Clearly we have shown given $a+b=0$, then $b=-a$ holds.
+\end{center}
+\noindent\textbf{Part (c):} \textit{$(-1)a=-a$}
+\begin{blockquote}
+	\textbf{Recall Properties of $\mathbb{R}$ Multiplication} \\
+	\textit{(Commutativity:)} $a \cdot b = b \cdot a$ \\
+	\textit{(Associativity:)} $(a \cdot b) \cdot c = a \cdot (b \cdot c)$ \\
+	\textit{(Identity:)} $\exists ~ 1 \in \mathbb{R}$ such that $a \cdot 1 = a$ \\
+	\textit{(Existence of inverse:)} $\forall ~a \neq 0, \exists ~\frac{1}{a} \in \mathbb{R}$ such that $a \cdot \frac{1}{a} = 1$ \\
+\end{blockquote}
+Consider the following:
+\[
+	\begin{array}{cc}
+		a + (-1)a =  a + (-1)a        & \text{ Proposition x=x}              \\
+		a + (-1)a = 1 \cdot a + (-1)a & \text{ Multiplicative Identity}      \\
+		a + (-1)a = a(1+(-1))         & \text{ Distributive Property}        \\
+		a + (-1)a = a(0)              & \text{ Inverse Property of Addition} \\
+		a + (-1)a = 0                 & \text{ Zero Multiplicative Property} \\
+	\end{array}
+\]
+\begin{center}
+	Thus we can say $a + (-1)a = 0$. \\
+	Recall by \textit{Part (a)} "If $a+b=0$, then $b=-a$". \\
+	Therefore $(-1)a=-a$ must hold. \\
+\end{center}
+\noindent\textbf{Part (d):} \textit{$-(-a) = a$} \\
+Consider the following:
+\[
+	\begin{array}{cc}
+		(-a)+a=0           & \text{ Definition of Additive Inverse}     \\
+		(-1)((-a)+a)=(-1)0 & \text{ Multiply both sides by $(-1)$}      \\
+		-(-a)+(-a)=(-1)0   & \text{ Distributive Property and Part (b)} \\
+		-(-a)+(-a)=0       & \text{ Multiplicative Property of Zero}    \\
+		-(-a)+(-a)+a=0+a   & \text{ Add $a$ to both sides}              \\
+		-(-a)+((-a)+a)=a   & \text{ Communitive Property}               \\
+		-(-a)+(0)=a        & \text{ Inverse Property of Addition}       \\
+		-(-a)=a            & \text{ Conclusion}                         \\
+	\end{array}
+\]
+\begin{center}
+	Thus we have shown that $-(-a)=a$.
+\end{center}
+\noindent\textbf{Part (e):} \textit{$(-1)(-1)=1$} \\
+Consider $-(-a) = a$, we stated $a \in \mathbb{R}$ as an arbitrary element.
+\[
+	\begin{array}{cc}
+		-(-a)=a            & \text{ Part (d)}                                              \\
+		-(-1(a)) = 1(a)    & \text{Identity Property of Multiplication}                    \\
+		(-1)(-1(a)) = 1(a) & \text{Part (c)}                                               \\
+		(-1)(-1(1)) = 1(1) & \text{Let $a=1$, $a$ is an arbitrary element of $\mathbb{R}$} \\
+		(-1)(-1) = 1       & \text{Identity Property of Multiplication}                    \\
+	\end{array}
+\]
+\begin{center}
+	Thus we have shown $(-1)(-1) = 1$
+\end{center}
+\begin{center}
+	\section*{Question 2}
+	If $a,b \in \mathbb{R},$ prove the following:  \\
+\end{center}
+\noindent\textbf{Part (a):} $-(a+b) = (-a) + (-b)$
+\noindent\textbf{Part (a):} $(-a) \cdot (-b) = a \cdot b$
+\noindent\textbf{Part (a):} $\frac{1}{(-a)}= -(\frac{1}{a})$
+\noindent\textbf{Part (a):} 
+\begin{center}
+	\section*{Question 3}
+	-
+\end{center}
+\begin{center}
+	\section*{Question 4}
+	-
+\end{center}
+\begin{center}
+	\section*{Question 5}
+	-
+\end{center}
+\begin{center}
+	\section*{Question 6}
+	-
+\end{center}
+\end{document}
