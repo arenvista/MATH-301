@@ -13,26 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1766969917-MJUI.md",
+                "file": "L05.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1766969917-MJUI"
-            }
-          },
-          {
-            "id": "55790023fa5ade45",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "title": "L05"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -89,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ac13922b8b75e6e2",
@@ -194,29 +184,35 @@
       "bases:Create new base": false
     }
   },
-  "active": "55790023fa5ade45",
+  "active": "7f4f3b7abe1b8118",
   "lastOpenFiles": [
+    "L05.md~",
+    "L05u.md",
+    "L04x.md",
+    "L04x.md~",
+    "L04.md",
+    "L04.md~",
+    "1770841079-MIOM.md",
     "L02.md~",
+    "L05.md",
+    "1770841079-MIOM.md~",
+    "4913",
+    "L05u.md~",
+    "1766973264-EXXS.md",
+    "1767467862-FFER.md",
+    "L03.md",
     "1766969917-MJUI.md",
     "L02.md",
     "L01.md~",
     "1770069010-RAEG.md",
     "1770069010-RAEG.md~",
     "indent.log",
-    "1766973264-EXXS.md",
     "Main.md",
-    "1766973264-EXXS.md~",
     "1766962952-MAQA.md",
-    "1767467862-FFER.md",
-    "4913",
     "L01.md",
     "1769789104-QRVN.md",
     "1766962878-RPBP.md",
     "1769807871-FKBW.md",
-    "1766969917-MJUI.md~",
-    "1766962952-MAQA.md~",
-    "1766962818-EODE.md~",
-    "1769789104-QRVN.md~",
     "1769809007-OGDZ.md",
     "1769807964-EKVE.md",
     "1769807947-AZTA.md",
@@ -227,10 +223,6 @@
     "assets/imgs/diag.png",
     "1766975367-NRVZ.md",
     "assets/imgs/fig_1-3-1.png",
-    "1769795527-WXDI.md",
-    "1766962818-EODE.md",
-    "1769795497-JXKS.md",
-    "assets/imgs/fig_(1-3-1).png",
-    "1766959914-XULY.md"
+    "assets/imgs/fig_(1-3-1).png"
   ]
 }

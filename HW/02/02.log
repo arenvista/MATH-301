@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2026.1.8)  8 FEB 2026 20:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2026.1.6)  11 FEB 2026 16:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -930,8 +930,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--214
 [4{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 [5]
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
 
-[6] (./02.aux)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--291
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+
+ []
+
+
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 328--330
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--347
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--367
+
+ []
+
+
+
+[7]
+
+[8] (./02.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -940,8 +974,8 @@ Package rerunfilecheck Info: File `02.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24376 strings out of 475171
- 461794 string characters out of 5767096
+ 24382 strings out of 475171
+ 461850 string characters out of 5767096
  931335 words of memory out of 5000000
  46922 multiletter control sequences out of 15000+600000
  569906 words of font info for 82 fonts, out of 8000000 for 9000
@@ -960,10 +994,10 @@ b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/cm-super/sfrm1095.pfb>
-Output written on 02.pdf (6 pages, 172272 bytes).
+Output written on 02.pdf (8 pages, 181011 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
+ 149 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

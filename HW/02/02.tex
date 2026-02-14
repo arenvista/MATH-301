@@ -267,13 +267,145 @@ Prove the following statements $\frac{1}{1/a}=a$:
 \end{center}
 Now we have proven if $(a>0)$, then $(1/a>0)$ and $\frac{1}{1/a} = a$.
 \subsection*{Part (b): If $(a<b)$, then $a<\frac{1}{2}(a+b)<b$}
-LOREMIPUMSUM
+Consider the following:
+\[
+	\begin{aligned}
+		a                           & =  a                           \\
+		\frac{1}{2}a                & =  \frac{1}{2}a                \\
+		\frac{1}{2}a + \frac{1}{2}a & =  \frac{1}{2}a + \frac{1}{2}a \\
+		\frac{1}{2}(a + a)          & =  \frac{1}{2}(a + a)          \\
+		\frac{1}{2}(2a)             & =  \frac{1}{2}(a + a)          \\
+		\frac{1}{2}2(a)             & =  \frac{1}{2}(a + a)          \\
+		a                           & =  \frac{1}{2}(a + a)          \\
+		a <                         & \frac{1}{2}(a + b) < b         \\
+	\end{aligned}
+\]
 \begin{center}
-	\section*{Question 5}
-	-
+	\section*{Question 5: Sec 2.1-13}
 \end{center}
+If $a,b \in \mathbb{R}$, show that $a^2+b^2=0$ iff $a=0$ and $b=0$.  \\
+\subsection*{Case 1: $\rightarrow$}
+\textbf{Prove:} If $a,b \in \mathbb{R}$, show that $a^2+b^2=0$ implies $a=0$ and $b=0$.  \\
+Consider the contrapositive statement, $a \neq 0$ or $b \neq 0$ implies $a^2 + b^2 \neq 0$:\\
+Observe the following: \\
+
+If $a \in \mathbb{P}$
+\[
+	a \in \mathbb{P} \implies a^2 = a \cdot a  \in \mathbb{P} \implies a^2 > 0
+\]
+
+If $-a \in \mathbb{P}$: (Consider $\forall ~n \in \mathbb{R}, (n-n) \cdot (-n) = 0$) \\
+\[
+	\begin{aligned}
+		n \cdot (-n) + (-n)(-n) = 0 \\
+		(-n) + (-n)(-n) = 0         \\
+		\implies (-n)(-n) = n
+	\end{aligned}
+\]
 \begin{center}
-	\section*{Question 6}
-	-
+	Therefore, $-a^2 \in \mathbb{P}$. The same logic can be applied to $b$. Observe If $a,b \in \mathbb{P} \implies a+b \in \mathbb{P}$. \\
+	Therefore we have proven the contrapositive statement if $a \neq 0$ or $b \neq 0$ implies $a^2 + b^2 \neq 0$
 \end{center}
+\subsection*{Case 2: $\leftarrow$}
+\textbf{Prove:} If $a,b \in \mathbb{R}$, show that $a=0$ and $b=0$ implies $a^2+b^2=0$. \\
+Consider the following:
+\[
+	0 \cdot 0 = 0 \implies \text{If } x=0, \text{ then } x^2 = x \cdot x = 0 \cdot 0 = 0
+\]
+As $a=b=0$ then naturally if $a=0$ and $b=0$ implies $a^2+b^2=0$
+\begin{center}
+	\section*{Question 6: Section 2.1-14}
+\end{center}
+If $0 \leq a<b$, show that $a^2 \leq ab < b^2$. Show by example that it does \textbf{not} follow that $a^2 <ab < b^2$. \\
+Let $a=0, b=1$. Thus $0 \leq 0 < 1$ satisfy $a^2 \leq ab < b^2$. Observe $a^2 <ab < b^2$ does not hold as $0 < 0 < 1$ is false as $ 0 \not < 0$
+
+% \begin{center}
+\section*{Question 7: Section 2.1-20}
+% \end{center}
+\begin{center}
+	\textbf{Part a: } If $0<c<1$, show that $0<c^2<c<1$. \\
+\end{center}
+We can define $1<c$ as $1<1-\epsilon$ where $c=1-\epsilon = 1 - \frac{1}{n}, n \in \mathbb{N}$. \\
+Observe the following: \\
+\[
+	\begin{aligned}
+		1 < (1-\epsilon)                                       \\
+		1^2 < (1-\epsilon)^2                                   \\
+		1^2 < (1-\frac{1}{n})^2                                \\
+		(1-\frac{1}{n})^2  = 1 - \frac{2}{n} + \frac{1}{n^2}   \\
+		\text{Observe } \frac{1}{n} > \frac{1}{n^2} \implies   \\
+		1 > (1-\frac{1}{n}) > (1- \frac{2}{n} + \frac{1}{n^2}) \\
+		\text{Thus we can conclude: } 1 > 1-\epsilon > (1-\epsilon)^2
+	\end{aligned}
+\]
+
+\begin{center}
+	\textbf{Part b: } If $1<c$, show that $1<c<c^2$.
+\end{center}
+We can define $1<c$ as $1<1+\epsilon$ where $c=1+ \epsilon = 1 + \frac{1}{n}, n \in \mathbb{N}$. \\
+Observe the following: \\
+\[
+	\begin{aligned}
+		1 < (1+\epsilon)                      \\
+		1^2 < (1+\epsilon)^2                  \\
+		(1+\epsilon)^2 = 1 + 2 \epsilon + 1   \\
+		1 < 1 + \epsilon < 1 + 2 \epsilon + 1 \\
+		1 < c < c^2
+	\end{aligned}
+\]
+As we defined $\epsilon > 0$.
+\[
+	\text{The statement } 1 < c < c^2 \text{ holds}
+\]
+% \begin{center}
+\section*{Question 8: Section 2.1-23}
+% \end{center}
+If $a>0$, $b>0$, and $n \in \mathbb{N}$, show that $a<b$ iff $a^n < b^n$ (induct.) \\ \\
+$\forall ~a,b \in \mathbb{R}, a>0, b>0$ and $n \in \mathbb{N}$. \\
+Consider $P(n): a^n < b^n \iff a < b$ \\
+Observe $P(1)$:
+\[
+	\begin{aligned}
+		a^1 < b^1 \implies a < b \\
+		a < b \implies  a^1 < b^1
+	\end{aligned}
+\]
+Suppose $P(k), k \in \mathbb{N}$:
+\[
+	a^k < b^k \implies  a < b
+\]
+Observe the following:
+\[
+	\begin{aligned}
+		a^k < b^k \implies  a < b      \\
+		a^k < b^k                 \\
+		a^k \cdot ab < b^k \cdot ab \\
+        a^{k+1}b < b^{k+1}a \\
+	\end{aligned}
+\]
+% \begin{center}
+	\section*{Question 9: Section 2.1-25}
+% \end{center}
+%
+% \begin{center}
+% 	\section*{Question 9: Section 2.2-1}
+% \end{center}
+%
+% \begin{center}
+% 	\section*{Question 9: Section 2.2-2}
+% \end{center}
+%
+% \begin{center}
+% 	\section*{Question 9: Section 2.2-10}
+% \end{center}
+%
+% \begin{center}
+% 	\section*{Question 9: Section 2.2-12}
+% \end{center}
+%
+% \begin{center}
+% 	\section*{Question 9: Section 2.2-17}
+% \end{center}
+%
+
 \end{document}
