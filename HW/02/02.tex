@@ -12,6 +12,11 @@
 \usepackage{xcolor,colortbl} % for cell colors
 \usepackage{changepage,threeparttable} % for wide tables
 \usepackage[left=1.2in, right=1.2in, top=1in, bottom=1in]{geometry} %The above set the parameters adjust the margins. There are many ways to do this, and frankly, what is above is not the best. However, it will work the time being.
+\usepackage{sectsty}
+
+\sectionfont{\centering}
+\subsectionfont{\centering}
+
 
 % \usepackage{csquotes}
 \usepackage{tcolorbox}
@@ -44,132 +49,8 @@
 \title{ MATH 301: Homework 2}
 \author{ Aren Vista }
 \date{\today}
-
-\begin{document}
-\maketitle
-\pagebreak
-\begin{center}
-	\section*{Question 1: Section 2.1-1}
-	If $a,b \in \mathbb{R},$ prove the following:  \\
-\end{center}
-\subsection*{\textbf{Part (a):} \textit{If $a+b=0$, then $b=-a$}}
-\begin{blockquote}
-	\textbf{Recall Properties of $\mathbb{R}$ Addition:} \\
-	\textit{(Commutativity:)} $a+b = b+a$ \\
-	\textit{(Associativity:)} $(a+b)+c = a+(b+c)$ \\
-	\textit{(Zero Property:)} There exists a $0 \in \mathbb{R}$ such that $a+0=a$ \\
-	\textit{(Existence of inverse:)} $\forall ~a \in \mathbb{R}, \exists ~-a \in \mathbb{R}$ such that $a+(-a)=0$
-\end{blockquote}
-Let $a+b=0$. Observe the following:
-\[
-	\begin{array}{cc}
-		\exists ~a,b \in \mathbb{R}, b \neq -a \ni & \text{By proposition}                    \\
-		a+b=0                                      & \text{By proposition}                    \\
-		a+b+(-a) = 0+(-a)                          & \text{By existance of inverses}          \\
-		b+(a+(-a)) = 0+(-a)                        & \text{By associativity}                  \\
-		b+(0) = 0+(-a)                             & \text{By inverse property}               \\
-		b = -a                                     & \text{By definition of identity element} \\
-	\end{array}
-\]
-\begin{center}
-	Clearly we have shown given $a+b=0$, then $b=-a$ holds.
-\end{center}
-\subsection*{\textbf{Part (c):} \textit{$(-1)a=-a$}}
-\begin{blockquote}
-	\textbf{Recall Properties of $\mathbb{R}$ Multiplication} \\
-	\textit{(Commutativity:)} $a \cdot b = b \cdot a$ \\
-	\textit{(Associativity:)} $(a \cdot b) \cdot c = a \cdot (b \cdot c)$ \\
-	\textit{(Identity:)} $\exists ~ 1 \in \mathbb{R}$ such that $a \cdot 1 = a$ \\
-	\textit{(Existence of inverse:)} $\forall ~a \neq 0, \exists ~\frac{1}{a} \in \mathbb{R}$ such that $a \cdot \frac{1}{a} = 1$ \\
-\end{blockquote}
-Consider the following:
-\[
-	\begin{array}{cc}
-		a + (-1)a =  a + (-1)a        & \text{ Proposition x=x}              \\
-		a + (-1)a = 1 \cdot a + (-1)a & \text{ Multiplicative Identity}      \\
-		a + (-1)a = a(1+(-1))         & \text{ Distributive Property}        \\
-		a + (-1)a = a(0)              & \text{ Inverse Property of Addition} \\
-		a + (-1)a = 0                 & \text{ Zero Multiplicative Property} \\
-	\end{array}
-\]
-\begin{center}
-	Thus we can say $a + (-1)a = 0$. \\
-	Recall by \textit{Part (a)} "If $a+b=0$, then $b=-a$". \\
-	Therefore $(-1)a=-a$ must hold. \\
-\end{center}
-\subsection*{\textbf{Part (d):} \textit{$-(-a) = a$}}
-Consider the following:
-\[
-	\begin{array}{cc}
-		(-a)+a=0           & \text{ Definition of Additive Inverse}     \\
-		(-1)((-a)+a)=(-1)0 & \text{ Multiply both sides by $(-1)$}      \\
-		-(-a)+(-a)=(-1)0   & \text{ Distributive Property and Part (b)} \\
-		-(-a)+(-a)=0       & \text{ Multiplicative Property of Zero}    \\
-		-(-a)+(-a)+a=0+a   & \text{ Add $a$ to both sides}              \\
-		-(-a)+((-a)+a)=a   & \text{ Communitive Property}               \\
-		-(-a)+(0)=a        & \text{ Inverse Property of Addition}       \\
-		-(-a)=a            & \text{ Conclusion}                         \\
-	\end{array}
-\]
-\begin{center}
-	Thus we have shown that $-(-a)=a$.
-\end{center}
-\subsection*{\textbf{Part (e):} \textit{$(-1)(-1)=1$}}
-Consider $-(-a) = a$, we stated $a \in \mathbb{R}$ as an arbitrary element.
-\[
-	\begin{array}{cc}
-		-(-a)=a            & \text{ Part (d)}                                              \\
-		-(-1(a)) = 1(a)    & \text{Identity Property of Multiplication}                    \\
-		(-1)(-1(a)) = 1(a) & \text{Part (c)}                                               \\
-		(-1)(-1(1)) = 1(1) & \text{Let $a=1$, $a$ is an arbitrary element of $\mathbb{R}$} \\
-		(-1)(-1) = 1       & \text{Identity Property of Multiplication}                    \\
-	\end{array}
-\]
-\begin{center}
-	Thus we have shown $(-1)(-1) = 1$
-\end{center}
-\begin{center}
-	\section*{Question 2: Section 2.1-2}
-	If $a,b \in \mathbb{R},$ prove the following:  \\
-\end{center}
-\subsection*{\textbf{Part (a):} $-(a+b) = (-a) + (-b)$}
-Consider the following:
-\[
-	\begin{array}{cc}
-		-(a+b) = (-1)(a+b)    & \text{By q1.c}                  \\
-		-(a+b) = (-1)a+ (-1)b & \text{By Distributive Property} \\
-		-(a+b) = -a+ -b       & \text{By q1.c}                  \\
-	\end{array}
-\]
-\subsection*{\textbf{Part (b):} $(-a) \cdot (-b) = a \cdot b$}
-Consider the following:
-\[
-	\begin{array}{cc}
-		(-a) \cdot (-b) = (-a) \cdot (-b)                 & \text{Proposition x=x}                        \\
-		(-a) \cdot (-b) = (-1) \cdot a \cdot (-1)\cdot b  & \text{By q1.c}                                \\
-		(-a) \cdot (-b) = (-1) \cdot (-1) \cdot a \cdot b & \text{By Associativity}                       \\
-		(-a) \cdot (-b) = (1) \cdot a \cdot b             & \text{By q1.e}                                \\
-		(-a) \cdot (-b) =  a \cdot b                      & \text{By Identity Property of Multiplication} \\
-	\end{array}
-\]
-\subsection*{\textbf{Part (c):} $\frac{1}{(-a)}= -(\frac{1}{a})$}
-Consider the following:
-\[
-	\begin{array}{cc}
-		(\frac{1}{-a})= -(\frac{1}{a})      & \text{By Proposition}                      \\\\
-		(\frac{1}{-a})= (-1)(\frac{1}{a})   & \text{By q1.c}                             \\\\
-		(\frac{1}{-a})a= (-1)(\frac{1}{a})a & \text{Multiply both sides by $b$}          \\\\
-		(\frac{1}{-a})a= (-1)1              & \text{Property of Multiplicative Inverse}  \\\\
-		(\frac{1}{-a})a= (-1)               & \text{Property of Multiplicative identity} \\\\
-		(\frac{1}{-a})(-1)a= (-1)(-1)       & \text{Multiply both sides by (-1)}         \\\\
-		(\frac{1}{-a})(-a)= (-1)(-1)        & \text{By q1.c}                             \\\\
-		1 = (-1)(-1)                        & \text{Property of Multiplicative Inverse}  \\\\
-		1 = 1                               & \text{By q1.e}                             \\\\
-	\end{array}
-\]
-\begin{center}
-	\section*{Question 3: Section 2.1-10}
-\end{center}
+\begin{document} \maketitle \pagebreak
+\section*{Question 1: Section 2.1-10}
 \subsection*{\textbf{Part (a):} If $a<b$ and $c \leq d$, prove that $(a+c)<(b+d)$}
 Suppose $a<b$ and $c \leq d$. Consider the following:
 \begin{blockquote}
@@ -194,7 +75,6 @@ Applying the theorem above, consider the following:
 		 & a+c <  b+d          \\
 	\end{aligned}
 \]
-
 \subsection*{\textbf{Part (b):} If $0<a<b$ and $0 \leq c \leq d$, prove that $0 \leq ac \leq bd$}
 Suppose $0<a<b$ and $0 \leq c \leq d$
 \begin{blockquote}
@@ -211,7 +91,6 @@ Suppose $0<a<b$ and $0 \leq c \leq d$
 	Ordering
 	If $a-b \in P$, we write $a>b$ (or $b<a$). \\
 	If $a-b \in P \cup \{ 0 \}$, we write $a \geq b$ (or $b \leq a$). \\
-
 	For any two real numbers $a,b$ exactly one of the following holds:
 	$$a>b, a<b, a=b$$
 \end{blockquote} \noindent
@@ -237,9 +116,7 @@ Thus the following statements hold:
 		 & 0 \leq ac \leq db          \\
 	\end{aligned}
 \]
-\begin{center}
-	\section*{Question 4: Section 2.1-11}
-\end{center}
+\section*{Question 2: Section 2.1-11}
 \subsection*{Part (a): If $(a>0)$, then $(1/a>0)$ and $\frac{1}{1/a} = a$}
 Suppose $a>0$ and $\frac{1}{a} \not > 0$. Consider the following:
 \[
@@ -254,40 +131,44 @@ Suppose $a>0$ and $\frac{1}{a} \not > 0$. Consider the following:
 	Clearly $1>0$ thus this is a contradiction. \\
 	Thus we must accept the original proposition: $a>0 \implies \frac{1}{a}>0$.
 \end{center}
-Prove the following statements $\frac{1}{1/a}=a$:
+Prove $\frac{1}{1/a}=a$:
 \[
 	\begin{aligned}
-		\frac{1}{1/a}                & =a              \\
-		(\frac{1}{1/a})(\frac{1}{a}) & =a(\frac{1}{a}) \\
-		1                            & = 1
+		\frac{1}{a} \cdot a                             & = 1         & \text{ Multiplicative Inverse }  \\ \\
+		\frac{1}{a} \cdot \frac{1}{\frac{1}{a}}         & = 1         & \text{ Multiplicative Inverse }  \\ \\
+		a \cdot \frac{1}{a} \cdot \frac{1}{\frac{1}{a}} & = 1 \cdot a & \text{ Multipy a on both sides } \\ \\
+		1 \cdot \frac{1}{\frac{1}{a}}                   & = 1 \cdot a & \text{ Multiplicative Inverse  } \\ \\
+		\frac{1}{\frac{1}{a}}                           & = a         & \text{ Multiplicative Identity } \\
 	\end{aligned}
 \]
 \begin{center}
-	Clearly $1=1$ thus proven directly.
+	Thus we can say $\frac{1}{1/a}=a$
 \end{center}
 Now we have proven if $(a>0)$, then $(1/a>0)$ and $\frac{1}{1/a} = a$.
 \subsection*{Part (b): If $(a<b)$, then $a<\frac{1}{2}(a+b)<b$}
 Consider the following:
 \[
 	\begin{aligned}
-		a                           & =  a                           \\
-		\frac{1}{2}a                & =  \frac{1}{2}a                \\
-		\frac{1}{2}a + \frac{1}{2}a & =  \frac{1}{2}a + \frac{1}{2}a \\
-		\frac{1}{2}(a + a)          & =  \frac{1}{2}(a + a)          \\
-		\frac{1}{2}(2a)             & =  \frac{1}{2}(a + a)          \\
-		\frac{1}{2}2(a)             & =  \frac{1}{2}(a + a)          \\
-		a                           & =  \frac{1}{2}(a + a)          \\
-		a <                         & \frac{1}{2}(a + b) < b         \\
+		a                           & =  a                           \\ \\
+		\frac{1}{2}a                & =  \frac{1}{2}a                \\ \\
+		\frac{1}{2}a + \frac{1}{2}a & =  \frac{1}{2}a + \frac{1}{2}a \\ \\
+		\frac{1}{2}(a + a)          & =  \frac{1}{2}(a + a)          \\ \\
+		\frac{1}{2}(2a)             & =  \frac{1}{2}(a + a)          \\ \\
+		\frac{1}{2}2(a)             & =  \frac{1}{2}(a + a)          \\ \\
+		a                           & =  \frac{1}{2}(a + a)          \\ \\
+		a < b                       & \implies a+a < a+b             \\ \\
+		a < b                       & \implies a+b < b+b             \\ \\
+		a <                         & \frac{1}{2}(a + b) < b         \\ \\
 	\end{aligned}
 \]
-\begin{center}
-	\section*{Question 5: Sec 2.1-13}
-\end{center}
-If $a,b \in \mathbb{R}$, show that $a^2+b^2=0$ iff $a=0$ and $b=0$.  \\
+\section*{Question 3: Sec 2.1-13}
+\begin{center} If $a,b \in \mathbb{R}$, show that $a^2+b^2=0$ iff $a=0$ and $b=0$.  \end{center}
 \subsection*{Case 1: $\rightarrow$}
-\textbf{Prove:} If $a,b \in \mathbb{R}$, show that $a^2+b^2=0$ implies $a=0$ and $b=0$.  \\
-Consider the contrapositive statement, $a \neq 0$ or $b \neq 0$ implies $a^2 + b^2 \neq 0$:\\
-Observe the following: \\
+\begin{center}
+	\textbf{Prove:} If $a,b \in \mathbb{R}$, show that $a^2+b^2=0$ implies $a=0$ and $b=0$.  \\
+	Consider the contrapositive statement, $a \neq 0$ or $b \neq 0$ implies $a^2 + b^2 \neq 0$:\\
+	Observe the following:
+\end{center}
 
 If $a \in \mathbb{P}$
 \[
@@ -299,11 +180,12 @@ If $-a \in \mathbb{P}$: (Consider $\forall ~n \in \mathbb{R}, (n-n) \cdot (-n) =
 	\begin{aligned}
 		n \cdot (-n) + (-n)(-n) = 0 \\
 		(-n) + (-n)(-n) = 0         \\
-		\implies (-n)(-n) = n
+		\implies (-n)(-n) = n^2 \in \mathbb{P}
 	\end{aligned}
 \]
 \begin{center}
-	Therefore, $-a^2 \in \mathbb{P}$. The same logic can be applied to $b$. Observe If $a,b \in \mathbb{P} \implies a+b \in \mathbb{P}$. \\
+	Therefore, $-a^2 \in \mathbb{P}$. The same logic can be applied to $b$. \\ \vspace{2em}
+	Observe If $a^2,b^2 \in \mathbb{P} \implies a^2+b^2 \in \mathbb{P}$. \\ \vspace{2em}
 	Therefore we have proven the contrapositive statement if $a \neq 0$ or $b \neq 0$ implies $a^2 + b^2 \neq 0$
 \end{center}
 \subsection*{Case 2: $\leftarrow$}
@@ -313,53 +195,43 @@ Consider the following:
 	0 \cdot 0 = 0 \implies \text{If } x=0, \text{ then } x^2 = x \cdot x = 0 \cdot 0 = 0
 \]
 As $a=b=0$ then naturally if $a=0$ and $b=0$ implies $a^2+b^2=0$
-\begin{center}
-	\section*{Question 6: Section 2.1-14}
-\end{center}
+\section*{Question 4: Section 2.1-14}
 If $0 \leq a<b$, show that $a^2 \leq ab < b^2$. Show by example that it does \textbf{not} follow that $a^2 <ab < b^2$. \\
 Let $a=0, b=1$. Thus $0 \leq 0 < 1$ satisfy $a^2 \leq ab < b^2$. Observe $a^2 <ab < b^2$ does not hold as $0 < 0 < 1$ is false as $ 0 \not < 0$
 
-% \begin{center}
-\section*{Question 7: Section 2.1-20}
-% \end{center}
-\begin{center}
-	\textbf{Part a: } If $0<c<1$, show that $0<c^2<c<1$. \\
-\end{center}
-We can define $1<c$ as $1<1-\epsilon$ where $c=1-\epsilon = 1 - \frac{1}{n}, n \in \mathbb{N}$. \\
-Observe the following: \\
-\[
-	\begin{aligned}
-		1 < (1-\epsilon)                                       \\
-		1^2 < (1-\epsilon)^2                                   \\
-		1^2 < (1-\frac{1}{n})^2                                \\
-		(1-\frac{1}{n})^2  = 1 - \frac{2}{n} + \frac{1}{n^2}   \\
-		\text{Observe } \frac{1}{n} > \frac{1}{n^2} \implies   \\
-		1 > (1-\frac{1}{n}) > (1- \frac{2}{n} + \frac{1}{n^2}) \\
-		\text{Thus we can conclude: } 1 > 1-\epsilon > (1-\epsilon)^2
-	\end{aligned}
-\]
+\section*{Question 5: Section 2.1-20}
 
-\begin{center}
-	\textbf{Part b: } If $1<c$, show that $1<c<c^2$.
-\end{center}
-We can define $1<c$ as $1<1+\epsilon$ where $c=1+ \epsilon = 1 + \frac{1}{n}, n \in \mathbb{N}$. \\
-Observe the following: \\
-\[
-	\begin{aligned}
-		1 < (1+\epsilon)                      \\
-		1^2 < (1+\epsilon)^2                  \\
-		(1+\epsilon)^2 = 1 + 2 \epsilon + 1   \\
-		1 < 1 + \epsilon < 1 + 2 \epsilon + 1 \\
-		1 < c < c^2
-	\end{aligned}
-\]
-As we defined $\epsilon > 0$.
-\[
-	\text{The statement } 1 < c < c^2 \text{ holds}
-\]
-% \begin{center}
-\section*{Question 8: Section 2.1-23}
-% \end{center}
+\subsection*{Part a: If $0<c<1$, show that $0<c^2<c<1$.}
+We can define $c < 1$ as $c = 1-\epsilon$, where $\epsilon = \frac{1}{n}$ for some $n \in \mathbb{N}$ such that $0 < \epsilon < 1$.
+
+Observe the following:
+\begin{align*}
+	1         & > 1-\epsilon                                                     \\
+	c         & = 1 - \frac{1}{n}                                                \\
+	c^2       & = \left(1-\frac{1}{n}\right)^2 = 1 - \frac{2}{n} + \frac{1}{n^2}
+	\intertext{We want to compare $c$ and $c^2$. Since $n \ge 1$ and $\epsilon > 0$, multiplying the inequality $c < 1$ by $c$ (where $c>0$) preserves the sign:}
+	c \cdot c & < 1 \cdot c                                                      \\
+	c^2       & < c
+	\intertext{Thus, combining with our initial range:}
+	0         & < c^2 < c < 1
+\end{align*}
+
+\subsection*{Part b: If $1<c$, show that $1<c<c^2$.}
+
+We can define $c > 1$ as $c = 1+\epsilon$, where $\epsilon = \frac{1}{n}$ for some $n \in \mathbb{N}$.
+
+Observe the following:
+\begin{align*}
+	1                & < 1+\epsilon                 \\
+	c                & = 1 + \epsilon               \\
+	c^2              & = (1+\epsilon)^2             \\
+	                 & = 1 + 2\epsilon + \epsilon^2
+	\intertext{Since $\epsilon > 0$, it must be that $\epsilon < 2\epsilon + \epsilon^2$. Therefore:}
+	1 < 1 + \epsilon & < 1 + 2\epsilon + \epsilon^2 \\
+	1 < c            & < c^2
+\end{align*}
+Since we defined $\epsilon > 0$, the statement $1 < c < c^2$ holds.
+\section*{Question 6: Section 2.1-23}
 If $a>0$, $b>0$, and $n \in \mathbb{N}$, show that $a<b$ iff $a^n < b^n$ (induct.) \\ \\
 $\forall ~a,b \in \mathbb{R}, a>0, b>0$ and $n \in \mathbb{N}$. \\
 Consider $P(n): a^n < b^n \iff a < b$ \\
@@ -377,19 +249,38 @@ Suppose $P(k), k \in \mathbb{N}$:
 Observe the following:
 \[
 	\begin{aligned}
-		a^k < b^k \implies  a < b      \\
-		a^k < b^k                 \\
-		a^k \cdot ab < b^k \cdot ab \\
-        a^{k+1}b < b^{k+1}a \\
+		a^k         & < b^k                        \\
+		a \cdot a^k & < b \cdot a^k & \text{ Eq 1} \\
+		b \cdot a^k & < b \cdot b^k & \text{ Eq 2} \\
 	\end{aligned}
 \]
-% \begin{center}
-	\section*{Question 9: Section 2.1-25}
-% \end{center}
-%
-% \begin{center}
-% 	\section*{Question 9: Section 2.2-1}
-% \end{center}
+From Eq (1,2), we can derive the following
+\[
+	\begin{array}{cc}
+		  & a^{k+1}  < b \cdot a^k               \\
+		+ & b \cdot a^k  < b^{k+1}               \\
+		\hline
+		  & a^{k+1} + (ba^k)  < (ba^k) + b^{k+1}
+	\end{array}
+\]
+Thus we can apply algera to derive the final statement.
+\[
+	\begin{aligned}
+		a^{k+1} + (ba^k) + (-ba^k) & < (ba^k) + (-ba^k) + b^{k+1} \\
+		a^{k+1}                    & <  b^{k+1}                   \\
+	\end{aligned}
+\]
+\begin{center}
+    Thus we conclude $a^k < b^k \implies a^{k+1} <  b^{k+1}$. Therefore $a<b$ iff $a^n<b^n$.
+\end{center}
+\section*{Question 7: Section 2.1-25}
+\begin{center}
+    Assuming the existence of roots, show that $c>1 \implies  c^{1/m}< c^{1/n}$ iff $m>n$
+\end{center}
+\subsection*{Case 1: $(c>1 \implies  c^{1/m}< c^{1/n}) \implies m>n$ }
+Suppose $c>1 \implies  c^{1/m}< c^{1/n}$ and $m \not > n$.
+
+% \section*{Question 9: Section 2.2-1}
 %
 % \begin{center}
 % 	\section*{Question 9: Section 2.2-2}
