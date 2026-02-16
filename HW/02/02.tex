@@ -16,10 +16,13 @@
 
 \sectionfont{\centering}
 \subsectionfont{\centering}
+% \subsubsectionfont{\centering}
 
-
+% Removes page numbers from all pages
+\pagestyle{empty}
 % \usepackage{csquotes}
 \usepackage{tcolorbox}
+\tcbuselibrary{breakable}
 % Define a custom box called "blockquote"
 \newtcolorbox{blockquote}{
     colback=white,    % Background color
@@ -31,7 +34,8 @@
     left=10pt,        % Space between line and text
     top=0pt,
     bottom=0pt,
-    right=0pt
+    right=0pt,
+    breakable         % <--- This allows page breaks
 }
 \newcommand{\ds}{\displaystyle}
 \newcommand{\sU}{\mathscr U}
@@ -271,32 +275,113 @@ Thus we can apply algera to derive the final statement.
 	\end{aligned}
 \]
 \begin{center}
-    Thus we conclude $a^k < b^k \implies a^{k+1} <  b^{k+1}$. Therefore $a<b$ iff $a^n<b^n$.
+	Thus we conclude $a^k < b^k \implies a^{k+1} <  b^{k+1}$. Therefore $a<b$ iff $a^n<b^n$.
 \end{center}
 \section*{Question 7: Section 2.1-25}
 \begin{center}
-    Assuming the existence of roots, show that $c>1 \implies  c^{1/m}< c^{1/n}$ iff $m>n$
+	Assuming the existence of roots, show that $c>1 \implies c^{1/m} < c^{1/n}$ iff $m>n$
 \end{center}
-\subsection*{Case 1: $(c>1 \implies  c^{1/m}< c^{1/n}) \implies m>n$ }
-Suppose $c>1 \implies  c^{1/m}< c^{1/n}$ and $m \not > n$.
+\subsection*{Lemma 1: Integer Powers of $c > 1$}
+First, we establish that for base $c > 1$, larger integer exponents yield larger values.
+We show $c^b > c^a \iff b > a$ for $a,b \in \mathbb{N}$. \\ \\
+\textbf{Forward ($b > a \implies c^b > c^a$):}
+Let $b > a$. Then $b - a = k \in \mathbb{N}$ where $k \geq 1$.
+Using Bernoulli's Inequality for $c = 1+x$ where $x > 0$:
+\[ c^k = (1+x)^k \geq 1 + kx > 1 \]
+Multiplying both sides by $c^a$ (which is positive):
+\[ c^k \cdot c^a > 1 \cdot c^a \implies c^{a+k} > c^a \implies c^b > c^a \] \\
+\textbf{Reverse ($c^b > c^a \implies b > a$):}
+We proceed by contradiction. Assume $c^b > c^a$ but $b \leq a$.
+\[
+	\begin{aligned}
+		\text{If } b = a & \implies c^b = c^a \quad (\text{Contradiction})        \\
+		\text{If } b < a & \implies a - b = k \in \mathbb{N}, k \geq 1            \\
+		                 & \implies c^a > c^b \quad (\text{By Forward proof})     \\
+		                 & (\text{Contradiction}) \therefore c^b > c^a \iff b > a
+	\end{aligned}
+\]
 
-% \section*{Question 9: Section 2.2-1}
-%
-% \begin{center}
-% 	\section*{Question 9: Section 2.2-2}
-% \end{center}
-%
-% \begin{center}
-% 	\section*{Question 9: Section 2.2-10}
-% \end{center}
-%
-% \begin{center}
-% 	\section*{Question 9: Section 2.2-12}
-% \end{center}
-%
-% \begin{center}
-% 	\section*{Question 9: Section 2.2-17}
-% \end{center}
-%
+\subsection*{Lemma 2: Roots of $c > 1$ exceed 1}
+Let $c > 1$. Let $y = c^{1/k}$ for some $k \in \mathbb{N}$. We claim $y > 1$.
+\begin{proof}
+	Assume for contradiction that $y \leq 1$.
+	Since $y > 0$, raising both sides to the power of $k$:
+	\[ y \leq 1 \implies y^k \leq 1^k \implies c \leq 1 \]
+	This contradicts the premise $c > 1$. Therefore, $c^{1/k} > 1$.
+\end{proof}
 
+\subsection*{Main Proof}
+Let $N = mn$. Let $b = c^{1/N} = c^{1/mn}$.
+From \textbf{Lemma 2}, we know $b > 1$.
+We can rewrite the terms $c^{1/m}$ and $c^{1/n}$ using base $b$:
+\[
+	\begin{aligned}
+		c^{1/m} & = (c^{\frac{1}{mn}})^n = b^n \\
+		c^{1/n} & = (c^{\frac{1}{mn}})^m = b^m
+	\end{aligned}
+\]
+We wish to show $c^{1/m} < c^{1/n} \iff m > n$.
+Substituting the expressions in terms of $b$:
+\[
+	b^n < b^m \iff m > n
+\]
+Since $b > 1$, we apply \textbf{Lemma 1}:
+\[
+	b^m > b^n \iff m > n
+\]
+This is exactly the statement we needed to show.
+% Suppose for the sake of contradiction:  b \leq 1 \\
+\section*{Question 9: Section 2.2-1}
+\subsection*{Part (a): $a,b \in \mathbb{R} \implies |a| = \sqrt{a^2}$}
+\[
+	\begin{aligned}
+		\text{Recall: } |a|^2 = |a| \cdot |a| & = |aa| = |a^2| = a^2 \implies \\
+		                                      & |a|^2 = a^2                   \\
+		                                      & \sqrt{|a|^2} = \sqrt{a^2}     \\
+		                                      & |a| = \sqrt{a^2}              \\
+	\end{aligned}
+\]
+\subsection*{Part (b): $a,b \in \mathbb{R} \implies |a/b| = |a|/|b|$}
+\[
+	\text{WLOG: Let } a=1
+\]
+\[
+	\begin{aligned}
+		 & \begin{cases}
+			   |1/b|=1/b=1/|b| \implies 1/b>0           & b>0 \\
+			   |1/b|=-(1/b)=1/(-b)=1/|b| \implies 1/b<0 & b<0
+		   \end{cases} \\
+	\end{aligned}
+\]
+\[
+	\therefore |a/b| = |a|/|b|
+\]
+\section*{Question 9: Section 2.2-10}
+\[ \text{Prove: } a,b \in \mathbb{R} \implies  |a+b| = |a|+|b| \iff ab \geq 0 \]
+\subsubsection*{Forward: $|a+b| = |a|+|b| \implies  ab \geq 0$}
+% Let $\exists ~x,y \ni x \in \{ a,b \}, y \in (\{ a,b \}-\{ x \})$. \\
+For the sake of contradiction assume: $|a+b| = |a|+|b| \implies ab < 0$
+\[
+	\begin{aligned}
+		\text{Let }            & a=1, b=-1                                     \\
+		|1+(-1)|               & = |0| = 0                                     \\
+		|1| + |(-1)|           & = 1+1 = 2                                     \\
+		0                      & \neq 2                                        \\
+		\text{(Contradiction)} & \implies  (|a+b| = |a|+|b| \implies  ab \geq 0)
+	\end{aligned}
+\]
+% \subsubsection*{Subcase: $x>0$}
+% \[
+% 	|x+y|
+% \]
+% \subsubsection*{Subcase: $x<0$}
+% \subsubsection*{Subcase: $x=0$}
+
+\subsubsection*{Reverse: $ab \geq 0 \implies |a+b| = |a|+|b|$ }
+\section*{Question 9: Section 2.2-12}
+\begin{center}
+\end{center}
+\section*{Question 9: Section 2.2-17}
+\begin{center}
+\end{center}
 \end{document}
