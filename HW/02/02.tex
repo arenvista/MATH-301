@@ -13,6 +13,7 @@
 \usepackage{changepage,threeparttable} % for wide tables
 \usepackage[left=1.2in, right=1.2in, top=1in, bottom=1in]{geometry} %The above set the parameters adjust the margins. There are many ways to do this, and frankly, what is above is not the best. However, it will work the time being.
 \usepackage{sectsty}
+\usepackage{ wasysym }
 
 \sectionfont{\centering}
 \subsectionfont{\centering}
@@ -286,8 +287,19 @@ Thus we can apply algera to derive the final statement.
 		a^{k+1}                    & <  b^{k+1}                   \\
 	\end{aligned}
 \]
+Thus we conclude $a^k < b^k \implies a^{k+1} <  b^{k+1}$. Therefore by PMI $a^n < b^n$. \\
+Observe application of Trichotomy Property (Note we concluded: $a^n < b^n$).
+\[
+	\begin{cases}
+		\text{Cases 1: } (a=b) & \implies a^n = b^n \text{ \lightning}    \\
+		\text{Cases 2: } (a>b) & \implies a^n > b^n \text{ \lightning}    \\
+		\text{Cases 3: } (a<b) & \text{ Must hold by Trichotomy Property} \\
+	\end{cases}
+\]
 \begin{center}
-	Thus we conclude $a^k < b^k \implies a^{k+1} <  b^{k+1}$. Therefore $a<b$ iff $a^n<b^n$.
+    Therefore, strict inequality implies strict inequality in reverse.\\
+    Therefore, we have proven both direction. \\
+    We can state, $a<b$ iff $a^n < b^n$
 \end{center}
 \section*{Question 7: Section 2.1-25}
 \begin{center}
@@ -344,6 +356,9 @@ Since $b > 1$, we apply \textbf{Lemma 1}:
 This is exactly the statement we needed to show.
 % Suppose for the sake of contradiction:  b \leq 1 \\
 \section*{Question 9: Section 2.2-1}
+\begin{center}
+    If $a,b \in \mathbb{R}$ and $b \neq 0$ show the following:
+\end{center}
 \subsection*{Part (a): $a,b \in \mathbb{R} \implies |a| = \sqrt{a^2}$}
 \[
 	\begin{aligned}
@@ -355,46 +370,32 @@ This is exactly the statement we needed to show.
 \]
 \subsection*{Part (b): $a,b \in \mathbb{R} \implies |a/b| = |a|/|b|$}
 \[
-	\text{WLOG: Let } a=1
-\]
-\[
-	\begin{aligned}
-		 & \begin{cases}
-			   |1/b|=1/b=1/|b| \implies 1/b>0           & b>0 \\
-			   |1/b|=-(1/b)=1/(-b)=1/|b| \implies 1/b<0 & b<0
-		   \end{cases} \\
-	\end{aligned}
+    \begin{cases}
+        \text{Case 1: } b>0 & |a/b|= |a| \cdot |1/b| \implies 1/b >0           \\
+        \text{Case 2: } b<0 & |a/b|= a \cdot -(1/b) = a \cdot 1/(-b) \implies 1/b<0 
+    \end{cases} \\
 \]
 \[
 	\therefore |a/b| = |a|/|b|
 \]
 \section*{Question 10: Section 2.2-2}
 \[ \text{Prove: } a,b \in \mathbb{R} \implies  |a+b| = |a|+|b| \iff ab \geq 0 \]
-\subsubsection*{Forward: $|a+b| = |a|+|b| \implies  ab \geq 0$}
-% Let $\exists ~x,y \ni x \in \{ a,b \}, y \in (\{ a,b \}-\{ x \})$. \\
-For the sake of contradiction assume: $|a+b| = |a|+|b| \implies ab < 0$
+\begin{center}
+	Note all statements are reversible.
+\end{center}
 \[
 	\begin{aligned}
-		\text{Let }            & a=1, b=-1                                       \\
-		|1+(-1)|               & = |0| = 0                                       \\
-		|1| + |(-1)|           & = 1+1 = 2                                       \\
-		0                      & \neq 2                                          \\
-		\text{(Contradiction)} & \implies  (|a+b| = |a|+|b| \implies  ab \geq 0)
+		\iff |a+b|                   & = |a|+|b|                             \\
+		\iff |a+b|^2                 & = (|a|+|b|)^2                         \\
+		\iff (a+b)^2                 & = |a|^2 + 2|ab| + |b|^2               \\
+		\iff a^2+2ab+b^2             & = |a|^2 + 2|ab| + |b|^2               \\
+		\iff a^2-(a^2)+2ab+b^2-(b^2) & = |a|^2 -(a^2) + 2|ab| + |b|^2 -(b^2) \\
+		\iff 2ab                     & = 2|ab|                               \\
+		\iff ab                      & = |ab|                                \\
 	\end{aligned}
 \]
-\subsubsection*{Reverse: $ab \geq 0 \implies |a+b| = |a|+|b|$ }
-\[
-	\begin{aligned}
-		|a+b|                   & = |a|+|b|                             \\
-		|a+b|^2                 & = (|a|+|b|)^2                         \\
-		(a+b)^2                 & = |a|^2 + 2|ab| + |b|^2               \\
-		a^2+2ab+b^2             & = |a|^2 + 2|ab| + |b|^2               \\
-		a^2-(a^2)+2ab+b^2-(b^2) & = |a|^2 -(a^2) + 2|ab| + |b|^2 -(b^2) \\
-		2ab                     & = 2|ab|                               \\
-		ab                      & = |ab|                                \\
-	\end{aligned}
-\]
-Note definition of absolute value invokes $\forall ~x \in \mathbb{R}, x = |x| \iff x \geq 0$. Therefore $ab \geq 0$
+Note definition of absolute value invokes $\forall ~x \in \mathbb{R}, x = |x| \iff x \geq 0$. Therefore $ab \geq 0$ \\
+We can conclude that the statement $a,b \in \mathbb{R} \implies  |a+b| = |a|+|b| \iff ab \geq 0$ holds.
 \section*{Question 11: Section 2.2-12}
 \begin{center}
 	Find all $x \in \mathbb{R}$ that satisfy the inequality $4<|x+2|+|x-1|<5$
@@ -447,14 +448,14 @@ Consider the following:
 		|x-1|    & = -(x-1) = -x+1        \\
 		\implies & 4 <(-x-2) + (-x+1) < 5 \\
 		\implies & 4 < -2x-1 < 5          \\
-		\implies & 5 < -2x < 6      b     \\
+		\implies & 5 < -2x < 6            \\
 		\implies & -\frac{5}{2} > x > -3  \\
 	\end{aligned}
 \]
 Observe there is no way to satisfy the inequality in (\textbf{Case 2} ). Therefore we can conclude possible solutions may only exist in \textbf{Case 1,3}.
 Thus are bounded region with solutions to the inequality are as follows:
 \[
-	(-\frac{5}{2} < x < -3) \land (\frac{3}{2} < x < 2)
+	(-\frac{5}{2} > x > -3) \land (\frac{3}{2} < x < 2)
 \]
 \section*{Question 12: Section 2.2-17}
 \begin{center}
