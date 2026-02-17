@@ -201,8 +201,20 @@ Consider the following:
 As $a=b=0$ then naturally if $a=0$ and $b=0$ implies $a^2+b^2=0$
 \section*{Question 4: Section 2.1-14}
 If $0 \leq a<b$, show that $a^2 \leq ab < b^2$. Show by example that it does \textbf{not} follow that $a^2 <ab < b^2$. \\
-Let $a=0, b=1$. Thus $0 \leq 0 < 1$ satisfy $a^2 \leq ab < b^2$. Observe $a^2 <ab < b^2$ does not hold as $0 < 0 < 1$ is false as $ 0 \not < 0$
+Consider the following cases:
+\[
+	\begin{cases}
+		\text{Case 1: } (a = 0) & a < b \implies a^2 = ab < b^2                                      \\
+		\text{Case 2: } (a > 0) & a < b \implies (a^2 < ab) \land (ab < b^2) \implies a^2 < ab < b^2
+	\end{cases}
+\]
 
+Note the following:
+\[
+	(a^2 < ab < b^2) \land (a^2 = ab < b^2) \equiv a^2 \leq ab < b^2 \text{ which is what we wanted to show}
+\]
+
+Likewise since if $a=0 \implies  a^2 = ab < b^2$ we can not satify the inequality $a^2 <ab < b^2$
 \section*{Question 5: Section 2.1-20}
 
 \subsection*{Part a: If $0<c<1$, show that $0<c^2<c<1$.}
@@ -356,32 +368,117 @@ This is exactly the statement we needed to show.
 \[
 	\therefore |a/b| = |a|/|b|
 \]
-\section*{Question 9: Section 2.2-10}
+\section*{Question 10: Section 2.2-2}
 \[ \text{Prove: } a,b \in \mathbb{R} \implies  |a+b| = |a|+|b| \iff ab \geq 0 \]
 \subsubsection*{Forward: $|a+b| = |a|+|b| \implies  ab \geq 0$}
 % Let $\exists ~x,y \ni x \in \{ a,b \}, y \in (\{ a,b \}-\{ x \})$. \\
 For the sake of contradiction assume: $|a+b| = |a|+|b| \implies ab < 0$
 \[
 	\begin{aligned}
-		\text{Let }            & a=1, b=-1                                     \\
-		|1+(-1)|               & = |0| = 0                                     \\
-		|1| + |(-1)|           & = 1+1 = 2                                     \\
-		0                      & \neq 2                                        \\
+		\text{Let }            & a=1, b=-1                                       \\
+		|1+(-1)|               & = |0| = 0                                       \\
+		|1| + |(-1)|           & = 1+1 = 2                                       \\
+		0                      & \neq 2                                          \\
 		\text{(Contradiction)} & \implies  (|a+b| = |a|+|b| \implies  ab \geq 0)
 	\end{aligned}
 \]
-% \subsubsection*{Subcase: $x>0$}
-% \[
-% 	|x+y|
-% \]
-% \subsubsection*{Subcase: $x<0$}
-% \subsubsection*{Subcase: $x=0$}
-
 \subsubsection*{Reverse: $ab \geq 0 \implies |a+b| = |a|+|b|$ }
-\section*{Question 9: Section 2.2-12}
+\[
+	\begin{aligned}
+		|a+b|                   & = |a|+|b|                             \\
+		|a+b|^2                 & = (|a|+|b|)^2                         \\
+		(a+b)^2                 & = |a|^2 + 2|ab| + |b|^2               \\
+		a^2+2ab+b^2             & = |a|^2 + 2|ab| + |b|^2               \\
+		a^2-(a^2)+2ab+b^2-(b^2) & = |a|^2 -(a^2) + 2|ab| + |b|^2 -(b^2) \\
+		2ab                     & = 2|ab|                               \\
+		ab                      & = |ab|                                \\
+	\end{aligned}
+\]
+Note definition of absolute value invokes $\forall ~x \in \mathbb{R}, x = |x| \iff x \geq 0$. Therefore $ab \geq 0$
+\section*{Question 11: Section 2.2-12}
 \begin{center}
+	Find all $x \in \mathbb{R}$ that satisfy the inequality $4<|x+2|+|x-1|<5$
 \end{center}
-\section*{Question 9: Section 2.2-17}
+Consider the following:
+\[
+	\begin{aligned}
+		f(x) & := |x+2|+|x-1|      \\
+		f(0) & = 3                 \\
+		f(1) & = 3 \quad f(-1) = 3 \\
+		f(2) & = 5 \quad f(-2) = 3 \\
+		f(3) & = 7 \quad f(-3) = 5 \\
+	\end{aligned}
+\]
+\begin{blockquote}
+	By inspection I suspect there are three cases. We can construct these cases to encompass all of $\mathbb{R}$.
+	\[
+		\begin{cases}
+			(x \geq  1)  \\
+			(-2 < x < 1) \\
+			(x \leq -2)  \\
+		\end{cases}
+	\]
+\end{blockquote} \noindent
+\textbf{Case 1: $(x \geq  1)$}  \\
+\[
+	\begin{aligned}
+		|x+2|    & = (x+2) = x+2       \\
+		|x-1|    & = (x-1) = x+1       \\
+		\implies & 4 < (x+2)+(x-1) < 5 \\
+		\implies & 4 < 2x+1 < 5        \\
+		\implies & 3 < 2x < 4          \\
+		\implies & \frac{3}{2} < x < 2 \\
+	\end{aligned}
+\]
+\textbf{Case 2: $(-2 < x < 1)$} \\
+\[
+	\begin{aligned}
+		|x+2|    & = (x+2) = x+2        \\
+		|x-1|    & = -(x-1) = -x+1      \\
+		\implies & 4 < (x+2)+(-x+1) < 5 \\
+		\implies & 4 < 3 < 5            \\
+		         & \text{(Impossible)}
+	\end{aligned}
+\]
+\textbf{Case 3: $(x \leq -2)$}  \\
+\[
+	\begin{aligned}
+		|x+2|    & = -(x+2) = -x-2        \\
+		|x-1|    & = -(x-1) = -x+1        \\
+		\implies & 4 <(-x-2) + (-x+1) < 5 \\
+		\implies & 4 < -2x-1 < 5          \\
+		\implies & 5 < -2x < 6      b     \\
+		\implies & -\frac{5}{2} > x > -3  \\
+	\end{aligned}
+\]
+Observe there is no way to satisfy the inequality in (\textbf{Case 2} ). Therefore we can conclude possible solutions may only exist in \textbf{Case 1,3}.
+Thus are bounded region with solutions to the inequality are as follows:
+\[
+	(-\frac{5}{2} < x < -3) \land (\frac{3}{2} < x < 2)
+\]
+\section*{Question 12: Section 2.2-17}
 \begin{center}
+	Show that if $a,b \in \mathbb{R}$ and $a \neq b$ then $\exists ~\epsilon \text{-neighborhoods } U \text{ of a and } V \text{ of b} \ni U \cap V = \emptyset$
 \end{center}
+\[
+	\begin{aligned}
+		U_{\epsilon}(a):
+		 & = \{u \in \mathbb{R} : |u-a| < \epsilon \}            \\
+		 & = \{u \in \mathbb{R} : -\epsilon < u-a < \epsilon \}  \\
+		 & = \{u \in \mathbb{R} : a-\epsilon < u < \epsilon+a \} \\
+		 & = (a-\epsilon, a+\epsilon)                            \\
+		V_{\epsilon}(b):
+		 & = \{v \in \mathbb{R} : |v-b| < \epsilon \}            \\
+		 & = \{v \in \mathbb{R} : -\epsilon < v-b < \epsilon \}  \\
+		 & = \{v \in \mathbb{R} : b-\epsilon < v < \epsilon+b \} \\
+		 & = (b-\epsilon, b+\epsilon)
+	\end{aligned}
+\]
+Observe $U \cap V$:
+\[
+	\begin{aligned}
+		U \cap V := \{ x \in \mathbb{R} : (|x-a| < \epsilon) \land (|x-b| < \epsilon) \} \\
+		\implies \forall ~\epsilon < \frac{1}{2}|a-b|, U \cap V = \emptyset
+	\end{aligned}
+\]
 \end{document}
