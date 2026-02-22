@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L03.md",
-                "mode": "source",
+                "file": "L05.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "L03"
+              "title": "L05"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "supre",
+                "query": "x^2=",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,12 +74,12 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ac13922b8b75e6e2",
@@ -186,17 +186,18 @@
   },
   "active": "7f4f3b7abe1b8118",
   "lastOpenFiles": [
+    "L03.md",
+    "1767468425-ZENJ.md",
+    "1766973264-EXXS.md",
+    "L06.md",
     "1768247161-HOSZ.md",
     "L04.md",
-    "L03.md",
-    "L06.md",
     "L06.md~",
     "L07.md~",
     "notes.md~",
     "4913",
     "L07.md",
     "L01.md",
-    "1766973264-EXXS.md",
     "L05.md",
     "L05.md~",
     "L05u.md",
@@ -221,7 +222,6 @@
     "1769807947-AZTA.md",
     "1769807924-LDGZ.md",
     "1769807822-DOEP.md",
-    "Diagonalization Proof.md",
     "assets/imgs/diag.png",
     "assets/imgs/fig_1-3-1.png",
     "assets/imgs/fig_(1-3-1).png"

@@ -67,6 +67,7 @@
 \begin{center}
 	\textit{If $S := \{ \frac{1}{n}-\frac{1}{m} | n,m \in \mathbb{N} \}$ find $\inf S$ and $\sup S$}.
 \end{center}
+Consider for the following:
 \[
 	\begin{aligned}
 		n \in \mathbb{N} & \implies 0 < \frac{1}{n} \leq 1   \\
@@ -116,6 +117,7 @@ Consider: $\lim_{n \to \infty} (\frac{1}{n}-1)$
 	Let $A,B$ be bounded nonempty subsests of $\mathbb{R}$, and let $A+B := \{ a+b | a \in A, b \in B \}$. \\
 	Prove $\sup(A+B) = \sup A + \sup B$ and $\inf(A+B) = \inf A + \inf B$.
 \end{center}
+Consider for the following:
 \[
 	\begin{aligned}
 		\sup A = a_s \implies \forall ~a \in A, a < a_s \\
@@ -156,14 +158,114 @@ Observe:
 \end{center}
 \section*{Section 2.4: q9}
 \begin{center}
-\textit{
-	Let $X = Y := \{x \in \mathbb{R} : 0 < x < 1\}$. Define $h : X \times Y \to \mathbb{R}$ by $h(x,y) := 2x + y$.
-	\begin{enumerate}
-		\item[(a)] For each $x \in X$, find $f(x) := \sup\{h(x,y) : y \in Y\}$; then find $\inf\{f(x) : x \in X\}$.
-		\item[(b)] For each $y \in Y$, find $g(y) := \inf\{h(x,y) : x \in X\}$; then find $\sup\{g(y) : y \in Y\}$. \\ Compare with the result found in part (a).
-	\end{enumerate} }
-\subsection*{Case (a)}
-Suppose $\sup2(1) + y$ 
+	\textit{
+		Let $X = Y := \{x \in \mathbb{R} : 0 < x < 1\}$. Define $h : X \times Y \to \mathbb{R}$ by $h(x,y) := 2x + y$.
+		\begin{enumerate}
+			\item[(a)] For each $x \in X$, find $f(x) := \sup\{h(x,y) : y \in Y\}$; then find $\inf\{f(x) : x \in X\}$.
+			\item[(b)] For each $y \in Y$, find $g(y) := \inf\{h(x,y) : x \in X\}$; then find $\sup\{g(y) : y \in Y\}$. \\ Compare with the result found in part (a).
+		\end{enumerate} }
+\end{center}
+\subsection*{Item (a)}
+\[ \forall ~x \in X, f(x) := \sup \{ h(x,y) : y \in (0,1) \} \implies f(x) = 2x+1 \\ \]
+\[ f(x) = 2x+1 \land  x \in (0,1) \implies \inf\{h(x,y) : x \in X\} = 2(0) + 1 = 1 \]
+\subsection*{Item (b)}
+\[ \forall ~y \in Y, g(i) := \inf\{h(x,y) : x \in (0,1)\} \implies g(y) = 2(0) + y = y \]
+\[ g(y) = y \land y \in (0,1) \implies \sup\{g(y) : y \in Y\} = 1 \]
 \section*{Section 2.4: q14}
+\begin{center}
+	\textit{If $y>0$ show $\exists ~n \in \mathbb{N} \ni \frac{1}{2^n} < y$}
+\end{center}
+Recall:
+\[
+	a > b \implies \frac{1}{a} < \frac{1}{b}
+\]
+Observe:
+\[
+	\begin{aligned}
+		 & P(n): n < 2^n                                            \\
+		 & P(1): 1 < 2^1                                            \\
+		 & P(k): k < 2^k                                            \\
+		 & 2k < 2^{k+1}                                             \\
+		 & 2k+1 < 2k < 2^{k+1}                                      \\
+		 & \therefore P(n) \text{ holds } \forall ~n \in \mathbb{N}
+	\end{aligned}
+\]
+Thus we can say $\frac{1}{2^n} < \frac{1}{n}$. By Archimedian Property as $y>0 \implies \frac{1}{n} \leq y$
+
+\[
+    \frac{1}{2^n} < \frac{1}{n} \leq y 
+\] 
+
 \section*{Section 2.4: q15}
+\begin{center}
+	Modify the argument in Theorem 2.4.7 to show that $\exists ~y > 0 \in \mathbb{R}$ s.t. $y^2=3$
+\end{center}
+\begin{blockquote} \textbf{Theorem 2.4.7} \textit{$\exists ~x > 0 \in \mathbb{R} \ni x^2 = 2$}  \end{blockquote}
+\[
+	S = \{ s \in \mathbb{R} \mid s \geq 0 \text{ and } s^2 < 3 \}
+\]
+\subsection*{Existence of Supremum}
+\[ 0^2 = 0 < 3 \implies 0 \in S \implies S \neq \emptyset \]
+\[ \text{Let } \forall ~s \in S, s < 3 \text{ Suppose } \exists ~s \in S \ni s \geq 3 \implies  s^2 \geq  9 > 3 \text{ \lightning} \implies \text{S is bounded above.} \]
+\[ S \neq \emptyset \land  S \text{ is bounded above } \implies \exists ~x \in \mathbb{R} \ni x=\sup S \text{ (By Completeness Property.)} \]
+
+\subsection*{Trichotomy}
+\[ \text{By Trichotomy, one and only one, of the following must be true:} \]
+\[
+	\begin{aligned}
+		(x^2<3)  \quad\quad (x^2>3) \quad\quad (x^2=3)
+	\end{aligned}
+\]
+\subsubsection*{(Case: $(x^2>3)$)}
+\[
+	\text{Suppose for the sake of contracdiction $x$ is the least upper bound of $S$}
+\]
+\[
+	\text{Show: } \forall ~n \in \mathbb{N}, (x-\frac{1}{n})^2 > 3 \implies \forall ~s \in S, (x-\frac{1}{n})^2 > s^2  \implies  (x-\frac{1}{n}) > s
+\]
+Observe the following:
+\[
+	(x-\frac{1}{n})^2 = x^2 - \frac{2x}{n} + \frac{1}{n^2}
+\]
+\[
+	x^2 - \frac{2x}{n} + \frac{1}{n^2} \xrightarrow{Dropping ~\frac{1}{n^2}} (x-\frac{1}{n})^2 > x^2- \frac{2x}{n}
+\]
+To hold supposition, the inequality must be stricly greater than three.
+\[
+	\begin{aligned}
+		x^2 - \frac{2x}{n} & > 3            \\
+		x^2 - 3            & > \frac{2x}{n} \\
+		\frac{1}{x^2-3}    & < \frac{n}{2x} \\
+		\frac{2x}{x^2-3}   & < n
+	\end{aligned}
+\]
+Since $x^2 > 3 \implies  (x^2-3) > 0 \implies \exists ~n \ni x>\frac{1}{n} > 0$.
+
+\[ (x-\frac{1}{2})^2 > 3 \implies \forall ~ s \in S, s^2 < 3 < (x-\frac{1}{n})^2         \]
+\[ \implies x-\frac{1}{n} \text{ is an upper bound of } S \]
+\[ x-\frac{1}{n} < x \implies x \text{ is not the least upper bound of $S$ \lightning} \]
+\[ \therefore ~(x^2 \not > 3) \]
+\subsubsection*{(Case: $(x^2<3)$)}
+Observe the following:
+\[
+	(x+\frac{1}{n})^2 = x^2 + \frac{2x}{n} + \frac{1}{n^2}
+\]
+Note $\forall ~n \in \mathbb{N}, \frac{1}{n^2} \leq  \frac{1}{n}$
+\[
+	x^2 + \frac{2x}{n} + \frac{1}{n^2} \leq  x^2 + \frac{2x+1}{n}
+\]
+\[
+	\begin{aligned}
+		 & \implies x^2 + \frac{2x+1}{n} < 3         \\
+		 & \implies \frac{2x+1}{n} < 3 - x^2         \\
+		 & \implies \frac{n}{2x+1} > \frac{1}{3-x^2} \\
+		 & \implies n > \frac{2x+1}{3-x^2}
+	\end{aligned}
+\]
+\begin{center}
+	As $x^2 < 3 \implies 3-x^2 > 0$. Therefore by Archimedian Property $\implies  (x+\frac{1}{n}) \in S$\\
+	$\implies x$ is not an upperbound \lightning.
+	\[ \therefore ~(x^2 \not < 3) \]
+	\textbf{\textit{ As $x^2 \not < 3$ and $x^2 \not > 3$. By Trichotomy $x^2=3$ }}
+\end{center}
 \end{document}
