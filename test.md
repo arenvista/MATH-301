@@ -1,2 +1,0 @@
-hi john
-bye john
