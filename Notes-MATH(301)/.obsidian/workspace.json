@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "L07.md",
-                "mode": "preview",
+                "file": "L03.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "L07"
+              "title": "L03"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "neighbor",
+                "query": "supre",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -174,7 +175,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -186,15 +186,17 @@
   },
   "active": "7f4f3b7abe1b8118",
   "lastOpenFiles": [
-    "L06.md",
-    "L06.md~",
-    "L07.md",
-    "L07.md~",
-    "L01.md",
-    "4913",
-    "1766973264-EXXS.md",
+    "1768247161-HOSZ.md",
     "L04.md",
     "L03.md",
+    "L06.md",
+    "L06.md~",
+    "L07.md~",
+    "notes.md~",
+    "4913",
+    "L07.md",
+    "L01.md",
+    "1766973264-EXXS.md",
     "L05.md",
     "L05.md~",
     "L05u.md",
@@ -208,7 +210,6 @@
     "1767467862-FFER.md",
     "1766969917-MJUI.md",
     "L02.md",
-    "L01.md~",
     "1770069010-RAEG.md",
     "Main.md",
     "1766962952-MAQA.md",

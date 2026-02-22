@@ -1,0 +1,169 @@
+\documentclass[11pt]{article}
+\usepackage{multicol} % Required package
+\usepackage{lipsum}   % Package for dummy text
+\usepackage{amsmath,amsthm,amscd,amssymb,mathrsfs,tikz}
+% \usepackage{verbatim}
+\usepackage{latexsym,epsf,epsfig}
+\usepackage{sectsty}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{booktabs, multirow} % for borders and merged ranges
+\usepackage{soul}% for underlines
+\usepackage{xcolor,colortbl} % for cell colors
+\usepackage{changepage,threeparttable} % for wide tables
+\usepackage[left=1.2in, right=1.2in, top=1in, bottom=1in]{geometry} %The above set the parameters adjust the margins. There are many ways to do this, and frankly, what is above is not the best. However, it will work the time being.
+\usepackage{sectsty}
+\usepackage{ wasysym }
+
+\sectionfont{\centering}
+% \subsubsectionfont{\centering}
+
+% Removes page numbers from all pages
+\pagestyle{empty}
+% \usepackage{csquotes}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable}
+% Define a custom box called "blockquote"
+\newtcolorbox{blockquote}{
+    colback=white,    % Background color
+    colframe=gray,    % Line color
+    boxrule=0pt,      % Width of borders
+    leftrule=3pt,     % Width of the left line
+    arc=0pt,          % Square corners
+    outer arc=0pt,
+    left=10pt,        % Space between line and text
+    top=0pt,
+    bottom=0pt,
+    right=0pt,
+    breakable         % <--- This allows page breaks
+}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\sU}{\mathscr U}
+% Theorem
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\title{ MATH 301: Homework 2}
+\author{ Aren Vista }
+\date{\today}
+\begin{document} \maketitle \pagebreak
+\section*{Question 1: Section 2.1-10}
+% Section 2.3: 4, 5, 6, 8, 10;
+\section*{Section 2.3: q4}
+\section*{Section 2.3: q5}
+\section*{Section 2.3: q6}
+\section*{Section 2.3: q8}
+\section*{Section 2.3: q10}
+% Section 2.4: 2, 7, 9, 14, 15, 
+\section*{Section 2.4: q2}
+\begin{center}
+	\textit{If $S := \{ \frac{1}{n}-\frac{1}{m} | n,m \in \mathbb{N} \}$ find $\inf S$ and $\sup S$}.
+\end{center}
+\[
+	\begin{aligned}
+		n \in \mathbb{N} & \implies 0 < \frac{1}{n} \leq 1   \\
+		m \in \mathbb{N} & \implies -1 < -\frac{1}{m} \leq 1
+	\end{aligned}
+\]
+\subsection*{Finding Supremum}
+Find the maximum value of $\frac{1}{n}$ and minimum $\frac{1}{m}$.
+\[
+	\text{Considering the bounds:  }
+	\left \{
+	\begin{aligned}
+		 & \implies \frac{1}{n} = 1  \\
+		 & \implies -\frac{1}{m} = 0
+	\end{aligned}
+	\right .
+\]
+Note $\sup S = 1$ this statement holds if $1$ the smallest upperbound of $S$. \\
+
+Consider: $\lim_{m \to \infty} (1-\frac{1}{m})$
+\[ |(1-\frac{1}{m})-1| < \epsilon \iff |-\frac{1}{m} + (1-1) | < \epsilon \iff |-\frac{1}{m}| < \epsilon \iff |\frac{1}{m}| < \epsilon \iff \frac{|1|}{m} < \epsilon \\ \]
+\[ \leftarrow m > \frac{1}{\epsilon}       \leftarrow \text{Archimedian Property}  \leftarrow \frac{1}{\epsilon} \in \mathbb{R} \]
+\[ \therefore \lim_{m \to \infty} (1-\frac{1}{m})=-1 \]
+Consider: $\lim_{n \to \infty} (\frac{1}{n}-1)$
+\[ |(\frac{1}{n}-1)+1| < \epsilon \iff |\frac{1}{n}+(1-1)| < \epsilon \iff |\frac{1}{n}| < \epsilon \iff \frac{|1|}{n} < \epsilon \iff n > \frac{1}{\epsilon} \\ \]
+\[ \leftarrow \text{Archimedian Property} \leftarrow \frac{1}{\epsilon} \in \mathbb{R} \]
+\[ \therefore \lim_{n \to \infty} (\frac{1}{n}-1) = 1 \]
+
+\begin{center} Thus, we can say that the $\sup S = 1$. \end{center}
+\subsection*{Finding Infinimum}
+Find the minimum value of $\frac{1}{n}$ and maximum $\frac{1}{m}$.
+\[
+	\text{Considering the bounds:  }
+	\left \{
+	\begin{aligned}
+		 & \implies \frac{1}{n} = 0   \\
+		 & \implies -\frac{1}{m} = -1
+	\end{aligned}
+	\right .
+\]
+
+Consider: $\lim_{n \to \infty} (\frac{1}{n}-1)$
+\[
+\]
+\section*{Section 2.4: q7}
+\begin{center}
+	Let $A,B$ be bounded nonempty subsests of $\mathbb{R}$, and let $A+B := \{ a+b | a \in A, b \in B \}$. \\
+	Prove $\sup(A+B) = \sup A + \sup B$ and $\inf(A+B) = \inf A + \inf B$.
+\end{center}
+\[
+	\begin{aligned}
+		\sup A = a_s \implies \forall ~a \in A, a < a_s \\
+		\sup B = b_s \implies \forall ~b \in B, b < b_s
+	\end{aligned}
+\]
+Observe:
+\[
+	\begin{aligned}
+		~~(a  & < a_s)      \\
+		+ ~(b & < b_s)      \\
+		\hline
+		a + b & < a_s + b_s
+	\end{aligned}
+\]
+\begin{center}
+	Observe, $a+b$ represent arbitrary elements of $A+B$ \\
+	Therefore, $\sup A+B = a_s + b_s$
+\end{center}
+\[
+	\begin{aligned}
+		\inf A = a_i \implies \forall ~a \in A, a > a_i \\
+		\inf B = b_i \implies \forall ~b \in B, b > b_i
+	\end{aligned}
+\]
+Observe:
+\[
+	\begin{aligned}
+		~~(a  & > a_i)      \\
+		+ ~(b & > b_i)      \\
+		\hline
+		a + b & > a_i + b_i
+	\end{aligned}
+\]
+\begin{center}
+	Observe, $a+b$ represent arbitrary elements of $A+B$ \\
+	Therefore, $\inf A+B = a_i + b_i$
+\end{center}
+\section*{Section 2.4: q9}
+\begin{center}
+\textit{
+	Let $X = Y := \{x \in \mathbb{R} : 0 < x < 1\}$. Define $h : X \times Y \to \mathbb{R}$ by $h(x,y) := 2x + y$.
+	\begin{enumerate}
+		\item[(a)] For each $x \in X$, find $f(x) := \sup\{h(x,y) : y \in Y\}$; then find $\inf\{f(x) : x \in X\}$.
+		\item[(b)] For each $y \in Y$, find $g(y) := \inf\{h(x,y) : x \in X\}$; then find $\sup\{g(y) : y \in Y\}$. \\ Compare with the result found in part (a).
+	\end{enumerate} }
+\subsection*{Case (a)}
+Suppose $\sup2(1) + y$ 
+\section*{Section 2.4: q14}
+\section*{Section 2.4: q15}
+\end{document}
