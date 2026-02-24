@@ -16,8 +16,37 @@
 \usepackage{sectsty}
 \usepackage{ wasysym }
 
+\usepackage{xcolor}
+\usepackage{mdframed} % Required for the bordered box
+
+% Define the custom command
+\newcommand{\question}[1]{
+    \begin{mdframed}[
+        linecolor=gray,       % Color of the border
+        linewidth=0.5pt,      % Thickness of the border
+        innertopmargin=10pt,  % Internal padding (top)
+        innerbottommargin=10pt % Internal padding (bottom)
+    ]
+    \centering \itshape \color{gray} #1
+    \end{mdframed}
+}
+
+\usepackage{amsthm}     % Standard math theorem package
+\usepackage{enumitem}   % For custom lists (Cases)
+\usepackage[svgnames]{xcolor} % For color options
+
+% 1. Corollary Setup (Numbered)
+\newtheorem{cor}{Corollary}
+
+% 2. Case Setup (Custom List)
+\newlist{caseslist}{enumerate}{2} % Supports nested cases up to 2 levels
+\setlist[caseslist]{
+    label=\textbf{Case \arabic*:}, 
+    leftmargin=*, 
+    itemsep=0.5em, 
+    topsep=0.5em
+}
 \sectionfont{\centering}
-% \subsubsectionfont{\centering}
 
 % Removes page numbers from all pages
 \pagestyle{empty}
@@ -55,18 +84,129 @@
 \author{ Aren Vista }
 \date{\today}
 \begin{document} \maketitle \pagebreak
-\section*{Question 1: Section 2.1-10}
 % Section 2.3: 4, 5, 6, 8, 10;
 \section*{Section 2.3: q4}
+\question{Let $S_4 := \left\{ 1- \frac{(-1)^n}{n} : n \in \mathbb{N} \right\}$. Find $\inf S_4$ and $\sup S_4$.}
+
+Let $f(n) := 1- \frac{(-1)^n}{n}$.
+
+Consider the first few terms in the sequence:
+$$
+	\begin{aligned}
+		f(1) & = 1- \frac{(-1)^1}{1} = 1+1 = 2                     \\
+		f(2) & = 1- \frac{(-1)^2}{2} = 1-\frac{1}{2} = \frac{1}{2} \\
+		f(3) & = 1- \frac{(-1)^3}{3} = 1+\frac{1}{3} = \frac{4}{3} \\
+		f(4) & = 1- \frac{(-1)^4}{4} = 1-\frac{1}{4} = \frac{3}{4} \\
+		     & \dots
+	\end{aligned}
+$$
+
+We can reconstruct this sequence into two subsequences based on whether the index is odd or even.
+Let $K$ be the set of odd natural numbers and $J$ be the set of even natural numbers:
+$$ K := \{ k \in \mathbb{N} : 2 \nmid k \} \quad J := \{ j \in \mathbb{N} : 2 \mid j \} $$
+
+For odd $k \in K$, $(-1)^k = -1$, giving the function $g(k)$:
+$$ g(k) = 1 + \frac{1}{k} $$
+
+For even $j \in J$, $(-1)^j = 1$, giving the function $h(j)$:
+$$ h(j) = 1 - \frac{1}{j} $$
+
+Consider the first terms of $g(k)$ where $k \in \{1, 3, 5, \dots\}$:
+$$ g(1) = 2, \quad g(3) = \frac{4}{3}, \quad g(5) = \frac{6}{5}, \quad \dots $$
+
+Observe that $g(k)$ is strictly decreasing. For $x \in K$:
+$$
+	\begin{aligned}
+		x                      & < x+2             \\
+		\implies \frac{1}{x}   & > \frac{1}{x+2}   \\
+		\implies 1+\frac{1}{x} & > 1+\frac{1}{x+2} \\
+		\implies g(x)          & > g(x+2)
+	\end{aligned}
+$$
+
+Consider the first terms of $h(j)$ where $j \in \{2, 4, 6, \dots\}$:
+$$ h(2) = \frac{1}{2}, \quad h(4) = \frac{3}{4}, \quad h(6) = \frac{5}{6}, \quad \dots $$
+
+Observe that $h(j)$ is strictly increasing. For $z \in J$:
+$$
+	\begin{aligned}
+		z                      & < z+2             \\
+		\implies \frac{1}{z}   & > \frac{1}{z+2}   \\
+		\implies -\frac{1}{z}  & < -\frac{1}{z+2}  \\
+		\implies 1-\frac{1}{z} & < 1-\frac{1}{z+2} \\
+		\implies h(z)          & < h(z+2)
+	\end{aligned}
+$$
+
+Because $g(k)$ is strictly decreasing, its supremum is its first term ($2$). Because $h(j)$ is strictly increasing, its infimum is its first term ($\frac{1}{2}$). Therefore, for the entire set $S_4$:
+$$ \therefore \sup S_4 = 2, \quad \inf S_4 = \frac{1}{2} $$
 \section*{Section 2.3: q5}
+\question{Find the infimum and supremum, if they exist, of each of the following sets.
+	\[
+		\begin{aligned}
+			\text{(a)} \quad A & := \{x \in \mathbb{R} : 2x + 5 > 0\}, & \text{(b)} \quad B & := \{x \in \mathbb{R} : x + 2 \geq x^2\},   \\
+			\text{(c)} \quad C & := \{x \in \mathbb{R} : x < 1/x\},    & \text{(d)} \quad D & := \{x \in \mathbb{R} : x^2 - 2x - 5 < 0\}.
+		\end{aligned}
+	\]
+}
+\textit{\textbf{Part (a):} $A := \{x \in \mathbb{R} : 2x + 5 > 0\} \implies \inf A = \frac{-5}{2}, ~\not \exists ~\sup A$} \\
+\textit{\textbf{Part (b):} $B := \{x \in \mathbb{R} : x + 2 \geq x^2\} \implies \inf B =-1, ~\sup B=2$} \\
+\textit{\textbf{Part (c):} $C := \{x \in \mathbb{R} : x < 1/x\} \implies \not \exists ~\inf B, ~\sup C=1$} \\
+\textit{\textbf{Part (d):} $D := \{x \in \mathbb{R} : x^2 - 2x - 5 < 0\} \implies \inf D= 1- \sqrt{6}, ~\sup D=1+\sqrt{6}$} \\
+
 \section*{Section 2.3: q6}
+\question{Let $S \subseteq \mathbb{R}, S \neq \emptyset$ and bounded below. Prove that $\inf S = -\sup \{ -s : s \in S \}$}
+\[ S \text{ is bounded below } \implies \exists ~u \text{ s.t. } u := \inf S \]
+\[ u:= \inf S \implies \forall ~s \in S, ~(u \leq s) \land (u \text{ is the largest lowerbound}) \]
+\[ u \text{ is the largest lowerbound} \implies \text{If } w \text{ is a lowerbound. Then } w \leq u  \]
+\[ \text{Let } |S| = n \in \mathbb{N} ~\text{Consider ordering of } S := \{ s_1 \leq s_2 \leq ... \leq s_n  \} \]
+\[ \text{Define } T := \{ -s : s \in S \} ~\text{Observe } u:= \inf S \implies u \leq s_1 \]
+\[ \text{Consider ordering of } T := \{ -s_1 \geq -s_2 \geq ... \geq -s_n  \} \]
+\[ \text{$S$ is bounded below} \implies -S \text{ is bounded above} \implies  \exists ~\sup -S \]
+\[ \text{Observe } u:= \inf S \implies -u \geq -s_1 \]
+\[ \text{Thus } -u \geq -s_1 \geq -s_2 \geq ... \geq -s_n \implies \forall ~x \in -S, -u \geq x \implies -u \text{ is an upperbound of } S\]
+\[ \text{Assume } \exists ~(z<u) \text{ s.t. }  \forall ~x \in -S, z \geq x \quad \quad z := (-u + \frac{1}{n}), ~n \in \mathbb{N}  \]
+\[
+	\implies
+	-u + \frac{1}{n} > -s_1
+	\implies
+	u - \frac{1}{n} < s_1
+\]
 \section*{Section 2.3: q8}
+\question{Let $S \subseteq \mathbb{R}, S \neq \emptyset$. Show $u \in \mathbb{R}$ is an upper bound of $S$ $\iff$ $(t \in \mathbb{R}) \land (t>u) \implies (t \not \in S$)}
+\textit{\textbf{Prove: } $u \in \mathbb{R}$ is an upper bound of $S$ $\implies$ ($(t \in \mathbb{R}) \land (t>u) \implies (t \not \in S$))}
+\[ \text{Suppose for the sake of contracdiction: }  (t \in S) \land (t \in \mathbb{R}) \land (t>u) \]
+\[ \text{$u \in \mathbb{R}$ is an upper bound of $S$} \implies \forall ~s \in S, u \geq s \]
+\[ \text{$ (t\in S) \land  (t>u) \implies u$ is not an upperbound of $S$ \lightning } \]
+\[ \therefore \text{ ($u \in \mathbb{R}$ is an upper bound of $S$) $\implies$ ($(t \in \mathbb{R}) \land (t>u) \implies (t \not \in S$)) } \]
+\textit{\textbf{Prove: } $\text{ ($(t \in \mathbb{R}) \land (t>u) \implies (t \not \in S$)) $\implies $ ($u \in \mathbb{R}$ is an upper bound of $S$)}$}
+\begin{center}
+	Consider the contrapositive:\\
+	($u \in \mathbb{R}$ is NOT an upper bound of $S$) $\implies \exists ~t$ s.t. ($(t \in \mathbb{R}) \land (t>u) \land (t \in S$))
+\end{center}
+\[ \text{If $u \in \mathbb{R}$ is NOT an upper bound of $S$} \implies \exists ~t \in (S \cup \mathbb{R}) \ni t > u \implies \text{($(t \in \mathbb{R}) \land (t>u) \land (t \in S$))} \]
+
 \section*{Section 2.3: q10}
+\question{Show that if $A$ and $B$ are bounded subsets or $\mathbb{R}$. Then $A \cup B$ is a bounded set. \\ Show that $\sup (A \cup B) = \sup \{ \sup A, \sup B \}$ "}
+\[
+	\text{Let} \quad u:=\sup S, \quad v:=\sup B, \quad w:=\sup \{ u,v \}
+\]
+\[
+	(x \in A \implies x \leq u \leq w) \land (x \in B \implies x \leq v \leq w)
+	\implies w \text{ is an upper bound of } A \cup B
+\]
+\[
+	z := \text{ any upper bound of } A \cup B \implies  z \text{ is an upper bound of } A \text{ and } B
+\]
+\[
+	\implies  u \leq z \land  v \leq z \implies w \leq z
+\]
+\[
+	\therefore w = \sup(A \cup B)
+\]
 % Section 2.4: 2, 7, 9, 14, 15, 
 \section*{Section 2.4: q2}
-\begin{center}
-	\textit{If $S := \{ \frac{1}{n}-\frac{1}{m} | n,m \in \mathbb{N} \}$ find $\inf S$ and $\sup S$}.
-\end{center}
+\question{If $S := \{ \frac{1}{n}-\frac{1}{m} | n,m \in \mathbb{N} \}$ find $\inf S$ and $\sup S$}
 Consider for the following:
 \[
 	\begin{aligned}
@@ -113,10 +253,7 @@ Consider: $\lim_{n \to \infty} (\frac{1}{n}-1)$
 \[
 \]
 \section*{Section 2.4: q7}
-\begin{center}
-	Let $A,B$ be bounded nonempty subsests of $\mathbb{R}$, and let $A+B := \{ a+b | a \in A, b \in B \}$. \\
-	Prove $\sup(A+B) = \sup A + \sup B$ and $\inf(A+B) = \inf A + \inf B$.
-\end{center}
+\question{ Let $A,B$ be bounded nonempty subsests of $\mathbb{R}$, and let $A+B := \{ a+b | a \in A, b \in B \}$. \\ Prove $\sup(A+B) = \sup A + \sup B$ and $\inf(A+B) = \inf A + \inf B$. }
 Consider for the following:
 \[
 	\begin{aligned}
@@ -157,14 +294,12 @@ Observe:
 	Therefore, $\inf A+B = a_i + b_i$
 \end{center}
 \section*{Section 2.4: q9}
-\begin{center}
-	\textit{
-		Let $X = Y := \{x \in \mathbb{R} : 0 < x < 1\}$. Define $h : X \times Y \to \mathbb{R}$ by $h(x,y) := 2x + y$.
-		\begin{enumerate}
-			\item[(a)] For each $x \in X$, find $f(x) := \sup\{h(x,y) : y \in Y\}$; then find $\inf\{f(x) : x \in X\}$.
-			\item[(b)] For each $y \in Y$, find $g(y) := \inf\{h(x,y) : x \in X\}$; then find $\sup\{g(y) : y \in Y\}$. \\ Compare with the result found in part (a).
-		\end{enumerate} }
-\end{center}
+\question{
+	Let $X = Y := \{x \in \mathbb{R} : 0 < x < 1\}$. Define $h : X \times Y \to \mathbb{R}$ by $h(x,y) := 2x + y$.
+	\begin{enumerate}
+		\item[(a)] For each $x \in X$, find $f(x) := \sup\{h(x,y) : y \in Y\}$; then find $\inf\{f(x) : x \in X\}$.
+		\item[(b)] For each $y \in Y$, find $g(y) := \inf\{h(x,y) : x \in X\}$; then find $\sup\{g(y) : y \in Y\}$. \\ Compare with the result found in part (a).
+	\end{enumerate} }
 \subsection*{Item (a)}
 \[ \forall ~x \in X, f(x) := \sup \{ h(x,y) : y \in (0,1) \} \implies f(x) = 2x+1 \\ \]
 \[ f(x) = 2x+1 \land  x \in (0,1) \implies \inf\{h(x,y) : x \in X\} = 2(0) + 1 = 1 \]
@@ -172,9 +307,7 @@ Observe:
 \[ \forall ~y \in Y, g(i) := \inf\{h(x,y) : x \in (0,1)\} \implies g(y) = 2(0) + y = y \]
 \[ g(y) = y \land y \in (0,1) \implies \sup\{g(y) : y \in Y\} = 1 \]
 \section*{Section 2.4: q14}
-\begin{center}
-	\textit{If $y>0$ show $\exists ~n \in \mathbb{N} \ni \frac{1}{2^n} < y$}
-\end{center}
+\question{If $y>0$ show $\exists ~n \in \mathbb{N} \ni \frac{1}{2^n} < y$}
 Recall:
 \[
 	a > b \implies \frac{1}{a} < \frac{1}{b}
@@ -193,13 +326,11 @@ Observe:
 Thus we can say $\frac{1}{2^n} < \frac{1}{n}$. By Archimedian Property as $y>0 \implies \frac{1}{n} \leq y$
 
 \[
-    \frac{1}{2^n} < \frac{1}{n} \leq y 
-\] 
+	\frac{1}{2^n} < \frac{1}{n} \leq y
+\]
 
 \section*{Section 2.4: q15}
-\begin{center}
-	Modify the argument in Theorem 2.4.7 to show that $\exists ~y > 0 \in \mathbb{R}$ s.t. $y^2=3$
-\end{center}
+\question{Modify the argument in Theorem 2.4.7 to show that $\exists ~y > 0 \in \mathbb{R}$ s.t. $y^2=3$}
 \begin{blockquote} \textbf{Theorem 2.4.7} \textit{$\exists ~x > 0 \in \mathbb{R} \ni x^2 = 2$}  \end{blockquote}
 \[
 	S = \{ s \in \mathbb{R} \mid s \geq 0 \text{ and } s^2 < 3 \}
