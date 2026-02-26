@@ -89,7 +89,7 @@
 \textheight=9.0in
 \headsep=0.25in
 
-\title{ MATH 301: Homework 2}
+\title{ MATH 301: Homework 3}
 \author{ Aren Vista }
 \date{\today}
 \begin{document} \maketitle \pagebreak
@@ -172,7 +172,7 @@ $$ \therefore \sup S_4 = 2, \quad \inf S_4 = \frac{1}{2} $$
 \[ \text{Define } T := \{ -s : s \in S \} ~\text{Observe } u:= \inf S \implies u \leq s_1 \]
 \[ \text{Consider ordering of } T := \{ -s_1 \geq -s_2 \geq ... \geq -s_n \geq ...  \} \]
 \[ \text{$S$ is bounded below} \implies -S \text{ is bounded above} \implies  \exists ~\sup -S \]
-\[ \text{Observe } u:= \inf S \implies -u \geq -s_1 \]
+\[ \text{Observe } u:= \text{ a lower bound } S \implies -u \geq -s_1 \]
 \[ \text{Thus } -u \geq -s_1 \geq -s_2 \geq ... \geq -s_n \geq ... \implies \forall ~x \in -S, -u \geq x \implies -u \text{ is an upperbound of } S\]
 \[ \text{Assume } \exists ~(z<u) \text{ s.t. }  \forall ~x \in -S, z \geq x \quad \quad z := (-u + \frac{1}{n}), ~n \in \mathbb{N}  \]
 \[
@@ -181,6 +181,9 @@ $$ \therefore \sup S_4 = 2, \quad \inf S_4 = \frac{1}{2} $$
 	\implies
 	u - \frac{1}{n} < s_1
 \]
+\[
+    \implies \sup S = u
+\] 
 \section*{Section 2.3: q8}
 \question{Let $S \subseteq \mathbb{R}, S \neq \emptyset$. Show $u \in \mathbb{R}$ is an upper bound of $S$ $\iff$ $(t \in \mathbb{R}) \land (t>u) \implies (t \not \in S$)}
 \textit{\textbf{Prove: } $u \in \mathbb{R}$ is an upper bound of $S$ $\implies$ ($(t \in \mathbb{R}) \land (t>u) \implies (t \not \in S$))}
@@ -196,17 +199,17 @@ $$ \therefore \sup S_4 = 2, \quad \inf S_4 = \frac{1}{2} $$
 \[ \text{If $u \in \mathbb{R}$ is NOT an upper bound of $S$} \implies \exists ~t \in (S \cup \mathbb{R}) \ni t > u \implies \text{($(t \in \mathbb{R}) \land (t>u) \land (t \in S$))} \]
 
 \section*{Section 2.3: q10}
-\question{Show that if $A$ and $B$ are bounded subsets or $\mathbb{R}$. Then $A \cup B$ is a bounded set. \\ Show that $\sup (A \cup B) = \sup \{ \sup A, \sup B \}$ "}
-\[
+\question{Show that if $A$ and $B$ are bounded subsets or $\mathbb{R}$. Then $A \cup B$ is a bounded set. \\ Show that $\sup (A \cup B) = \sup \{ \sup A, \sup B \}$}
+$$
 	\begin{aligned}
-		\text{Let} \quad u:=\sup S, \quad v:=\sup B, \quad w:=\sup \{ u,v \}                                 \\
-		(x \in A \implies x \leq u \leq w) \land (x \in B \implies x \leq v \leq w)                          \\
-		\implies w \text{ is an upper bound of } A \cup B                                                    \\
-		z := \text{ any upper bound of } A \cup B \implies  z \text{ is an upper bound of } A \text{ and } B \\
-		\implies  u \leq z \land  v \leq z \implies w \leq z                                                 \\
-		\therefore w = \sup(A \cup B)                                                                        \\
+		& \text{Let} \quad u:=\sup S, \quad v:=\sup B, \quad w:=\sup \{ u,v \}                                 \\
+		& (x \in A \implies x \leq u \leq w) \land (x \in B \implies x \leq v \leq w)                          \\
+		& \implies w \text{ is an upper bound of } A \cup B                                                    \\
+		& z := \text{ any upper bound of } A \cup B \implies  z \text{ is an upper bound of } A \text{ and } B \\
+		& \implies  u \leq z \land  v \leq z \implies w \leq z                                                 \\
+		& \therefore w = \sup(A \cup B)                                                                        \\
 	\end{aligned}
-\]
+$$
 % Section 2.4: 2, 7, 9, 14, 15, 
 \section*{Section 2.4: q2}
 \question{If $S := \{ \frac{1}{n}-\frac{1}{m} | n,m \in \mathbb{N} \}$ find $\inf S$ and $\sup S$}
@@ -311,6 +314,24 @@ Observe:
 \]
 
 Thus we can say $a_s + b_s$ is an upperbound.
+To prove it is the least upper bound, let $\epsilon > 0$.
+By the properties of suprema, no number strictly smaller than the supremum can be an upper bound. Therefore, there must exist some $a \in A$ and some $b \in B$ such that:
+
+
+$$a > a_s - \frac{\epsilon}{2}$$
+
+$$b > b_s - \frac{\epsilon}{2}$$
+
+
+Adding these two inequalities together yields:
+
+
+$$a + b > a_s + b_s - \epsilon$$
+
+
+Since we found an element $a+b \in A+B$ that is strictly greater than $a_s + b_s - \epsilon$ for any arbitrary $\epsilon > 0$, no number smaller than $a_s + b_s$ can be an upper bound.
+
+Therefore, $\sup(A+B) = a_s + b_s = \sup A + \sup B$.
 
 \begin{center}
 	Observe, $a+b$ represent arbitrary elements of $A+B$ \\
@@ -337,6 +358,27 @@ Thus we can say $a_i + b_i$ is a lowerbound.
 	Observe, $a+b$ represent arbitrary elements of $A+B$ \\
 	Therefore, $\inf A+B = a_i + b_i$
 \end{center}
+
+
+To prove it is the greatest lower bound, let $\epsilon > 0$.
+By the properties of infima, no number strictly larger than the infimum can be a lower bound. Therefore, there must exist some $a \in A$ and some $b \in B$ such that:
+
+
+$$a < a_i + \frac{\epsilon}{2}$$
+
+$$b < b_i + \frac{\epsilon}{2}$$
+
+
+Adding these two inequalities together yields:
+
+
+$$a + b < a_i + b_i + \epsilon$$
+
+
+Since we found an element $a+b \in A+B$ that is strictly less than $a_i + b_i + \epsilon$ for any arbitrary $\epsilon > 0$, no number larger than $a_i + b_i$ can be a lower bound.
+
+Therefore, $\inf(A+B) = a_i + b_i = \inf A + \inf B$.
+
 \section*{Section 2.4: q9}
 \question{
 	Let $X = Y := \{x \in \mathbb{R} : 0 < x < 1\}$. Define $h : X \times Y \to \mathbb{R}$ by $h(x,y) := 2x + y$.
