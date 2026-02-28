@@ -127,11 +127,14 @@
 		Use the definition of the limit of a sequence to establish the following limits:
 		\[ \lim_{n \to \infty} f(n)=0, ~f(n):=(\frac{n}{n^2+1}) \]
 	}
-    \vspace{1em}
-	\[ \lim_{n \to \infty} f(n)=0 \iff \forall ~\epsilon>0, \exists ~N(\epsilon) \in \mathbb{N} \ni \forall ~n \geq  N(\epsilon), |x_n - L| < \epsilon \]
+	\vspace{1em}
+	\subp{
+		Def (a.1): Limit Definition of Convergence
+		\[ \lim_{n \to \infty} f(n)=0 \iff \forall ~\epsilon>0, \exists ~N(\epsilon) \in \mathbb{N} \ni \forall ~n \geq  N(\epsilon), |x_n - L| < \epsilon \]
+	} \vspace{1em}
 
-    \begin{center} \textbf{Backwards Search} \end{center} 
-    \vspace{1em}
+	\begin{center} \textbf{Backwards Search} \end{center}
+	\vspace{1em}
 	\[
 		\begin{array}{rll}
 			\text{Step}                        &                      & \text{Reasoning / Simplification}                                      \\ \\
@@ -156,11 +159,11 @@
 		Use the definition of the limit of a sequence to establish the following limits:
 		\[ \lim_{n \to \infty} f(n) = \frac{1}{2}, ~f(n):=(\frac{n^2-1}{2n^2+3}) \]
 	}
-    \vspace{1em}
+	\vspace{1em}
 	\[ \lim_{n \to \infty} f(n)=1/2 \iff \forall ~\epsilon>0, \exists ~N(\epsilon) \in \mathbb{N} \ni \forall ~n \geq  N(\epsilon), |x_n - L| < \epsilon \]
 
-    \begin{center} \textbf{Backwards Search} \end{center} 
-    \vspace{1em}
+	\begin{center} \textbf{Backwards Search} \end{center}
+	\vspace{1em}
 	\[
 		\begin{array}{rll}
 			\text{Step}                                                     &  & \text{Reasoning / Simplification}                                              \\
@@ -184,11 +187,118 @@
 	This satisfies the epsilon definition of a limit for the convergence of a sequence. $\therefore \lim_{n \to \infty} \frac{n^2-1}{2n^2+3} = \frac{1}{2}$
 \end{minipage}
 \section*{ Sec 3.1 q8}
-\question{
-Prove that $lim(x_n) = 0 \iff lim(x_n)=0$. Give an example to show that the convergence of $(|x_n|)$ need not imply the convergence of $(x_n)$.
+\question{ Prove that $lim(x_n) = 0 \iff lim(|x_n|)=0$. Give an example to show that the convergence of $(|x_n|)$ need not imply the convergence of $(x_n)$. }
+\vspace{10pt}
+\subp{
+	Lemma (a.1) : \small{Absolute Value Properties}
+	\[
+		\forall ~a \in \mathbb{R}, ~|a| \implies
+		\left \{
+		\begin{array}{cc}
+			a \in \mathbb{P}  \\
+			-a \in \mathbb{P} \\
+			a = 0
+		\end{array}
+		\right .
+	\]
+	$$\therefore ~|x_n| = (x_n \in \mathbb{P}) \oplus (-x_n \in \mathbb{P}) \oplus (x_n \in \{ 0 \})$$
+} \vspace{1em}
+
+\subp{
+	Lemma (a.2) : \small{Absolute Value Properties}
+	\[
+		\text{Consider } ||x_n| - 0| =
+		\left \{
+		\begin{array}{ccc}
+			(x_n \in \mathbb{P})  & \implies & ||x_n|-0| = |x_n - 0|               \\
+			(-x_n \in \mathbb{P}) & \implies & ||x_n|-0| = |-(-x_n) - 0| = |x_n-0| \\
+			(x_n \in \{ 0 \})     & \implies & ||x_n|-0| =  |x_n - 0|
+		\end{array}
+		\right .
+	\]
+	\[ \therefore ~||x_n|-0| = |x_n -0| \]
+} \vspace{1em}
+\subsection*{Case ($\rightarrow$): $lim(x_n) = 0 \rightarrow lim(|x_n|)=0$}
+
+Observe $||x_n|-0| < \epsilon$ matches \textit{Def (a.1)}. Naturally, should the inequality $||x_n|-0| = |x_n-0|$ then this would imply their limits are the same as defined prior. This equality is given via \textit{Lemma (a.2)}.
+\[ \therefore~ lim(x_n) = 0 \rightarrow lim(|x_n|)=0 \]
+\subsection*{Case ($\leftarrow$): $lim(x_n) = 0 \leftarrow lim(|x_n|)=0$}
+Applying the same \textit{Def (a.1), Lemma (a.2)} we arrive to the same conclusion following the same logic.
+\[ \therefore~ lim(x_n) = 0 \leftarrow lim(|x_n|)=0 \]
+\subsection*{Ex. \small{$\lim(|x_n|)$ converges $\nrightarrow  \lim(x_n)$}} \vspace{1em}
+\subp{
+	Lemma (a.3) : $|(-1)^n| = 1$
+	\[
+		\begin{gathered}
+			P(n): |(-1)^n| = 1 \\
+			P(1): |-1| = 1 \\
+			\text{Suppose } P(k): |(-1)^k| = 1 \text{ holds.}\\
+			|(-1)^k| |(-1)| = 1 |(-1)| \\
+			P(k+1): |(-1)^{k+1}| = 1 \\
+			\text{As } P(k) \implies P(k+1) \therefore \text{ by PMI } P(n) \text{ holds }, ~\forall ~n \in \mathbb{N}
+		\end{gathered}
+	\]
 }
+\[
+	\begin{gathered}
+		\text{For the sake of contradiction, suppose $x_n := (-1)^n$ and \text{$\lim(|x_n|)$ converges $\rightarrow  \lim(x_n)$}} \\
+		X := \{ |(-1)^n| : n \in \mathbb{N} \} = \{ 1_1,1_2,...,1_n \} \text{ By \textit{Lemma (a.3)} } \\
+		\text{The sequence never changes thus, is convergent on $1$} \\
+		\text{Note: $x_n = (-1)^n$ hower is monotonic thus does not converge \lightning}
+	\end{gathered}
+\]
 \section*{ Sec 3.1 q9}
+\question{ Show that $\forall ~n \in \mathbb{N}, (x_n \geq 0) \land (\lim_{n \to \infty}x_n = 0) \implies \lim_{n \to \infty} \sqrt{x_n} = 0$ }
+\[
+	\begin{gathered}
+		\text{Suppose } \forall ~n \in \mathbb{N}, (x_n \geq 0) \land (\lim_{n \to \infty}x_n = 0) \\
+		\lim_{n \to \infty}x_n = 0 \implies \exists ~n_\epsilon \text{ s.t. } \forall ~n \geq n_\epsilon, ~|x_n - 0| < \epsilon^2, ~(0 < \epsilon)  \\
+		0 < x_n < \epsilon^2 \iff 0 < \sqrt{x_n} < \epsilon \\
+		\therefore~ \forall ~n \in \mathbb{N}, (x_n \geq 0) \land (\lim_{n \to \infty}x_n = 0) \implies \lim_{n \to \infty} \sqrt{x_n} = 0
+	\end{gathered}
+\]
 \section*{ Sec 3.1 q14}
+\question{ Prove: $b \in \mathbb{R}, ~0<b<1 \implies \lim_{n \to \infty} nb^n = 0$ } \vspace{1em}
+
+\subp{
+    Theorem (a.1): Binomial Theorem
+    \[ (a+b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^{k} \]
+
+    \[ \binom{n}{k} = \frac{n!}{k!(n-k)!} \]
+
+    Expanded form:
+
+    \[
+        (a+b)^n =
+        \binom{n}{0}a^n
+        + \binom{n}{1}a^{n-1}b
+        + \binom{n}{2}a^{n-2}b^2
+        + \cdots
+        + \binom{n}{n}b^n
+    \]
+
+    Example for n = 3:
+
+    \[
+        (a+b)^3 =
+        \binom{3}{0}a^3
+        + \binom{3}{1}a^2b
+        + \binom{3}{2}ab^2
+        + \binom{3}{3}b^3
+    \]
+
+    \[ = a^3 + 3a^2b + 3ab^2 + b^3 \]
+}
+
+\[
+    \begin{gathered}
+        b \in \mathbb{R}, ~0<b<1 \implies \exists ~0<c \in \mathbb{R}  \ni b = \frac{1}{1+c} \\
+        \implies b^n = \frac{1}{1+c^n} \\
+       \frac{1}{1+c^n} < \frac{n}{1+c^n}  \\
+       \lim_{n \to \infty} \frac{n}{1+c^n} = 0 \implies \lim_{n \to \infty} \frac{1}{1+c^n} = 0 \\
+       (1+c)^n = \sum_{n=1}^{\infty} (\frac{n}{k}) c^k \quad  \tiny{\text{ By \textit{Theorem (a.1)} }}
+    \end{gathered}
+\] 
 % Section 3.2: 2, 4, b,c) of 6, 9
 \section*{ Sec 3.2 q2}
 \section*{ Sec 3.2 q4}

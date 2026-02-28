@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2026.1.8)  28 FEB 2026 17:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2026.1.8)  27 FEB 2026 20:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**04.tex
-(./04.tex
+**/home/sybil/Documents/School/2026-Spring/CMSC-475/HW/01.tex
+(/home/sybil/Documents/School/2026-Spring/CMSC-475/HW/01.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -909,266 +909,40 @@ File: svgnam.def 2024/09/29 v3.02 Predefined colors according to SVG 1.1 (UK)
 \c@caseslisti=\count354
 \c@caseslistii=\count355
 \enitdp@caseslist=\count356
+ (./01.aux)
+\openout1 = `01.aux'.
 
-(/usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
-
-(/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks52
-\verbatim@line=\toks53
-\verbatim@in@stream=\read4
-)
-(/usr/share/texmf-dist/tex/latex/environ/environ.sty
-Package: environ 2014/05/04 v0.3 A new way to define environments
-
-(/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
-Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-))
-\tcb@titlebox=\box121
-\tcb@upperbox=\box122
-\tcb@lowerbox=\box123
-\tcb@phantombox=\box124
-\c@tcbbreakpart=\count357
-\c@tcblayer=\count358
-\c@tcolorbox@number=\count359
-\l__tcobox_tmpa_box=\box125
-\l__tcobox_tmpa_dim=\dimen319
-\tcb@temp=\box126
-\tcb@temp=\box127
-\tcb@temp=\box128
-\tcb@temp=\box129
-)
-(/usr/share/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
-Library (tcolorbox): 'tcbbreakable.code.tex' version '6.4.1'
-(/usr/share/texmf-dist/tex/latex/pdfcol/pdfcol.sty
-Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
-)
-Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
-\tcb@testbox=\box130
-\tcb@totalupperbox=\box131
-\tcb@totallowerbox=\box132
-)
-\c@theorem=\count360
- (./04.aux)
-\openout1 = `04.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 95.
-LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count361
-\scratchdimen=\dimen320
-\scratchbox=\box133
-\nofMPsegments=\count362
-\nofMParguments=\count363
-\everyMPshowfont=\toks54
-\MPscratchCnt=\count364
-\MPscratchDim=\dimen321
-\MPnumerator=\count365
-\makeMPintoPDFobject=\count366
-\everyMPtoPDFconversion=\toks55
+\scratchcounter=\count357
+\scratchdimen=\dimen319
+\scratchbox=\box121
+\nofMPsegments=\count358
+\nofMParguments=\count359
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count360
+\MPscratchDim=\dimen320
+\MPnumerator=\count361
+\makeMPintoPDFobject=\count362
+\everyMPtoPDFconversion=\toks53
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-Package hyperref Info: Link coloring OFF on input line 95.
- (./04.out)
-(./04.out)
-\@outlinefile=\write4
-\openout4 = `04.out'.
-
-
-Couldn't patch \deferred@thm@head!
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(86.72377pt, 440.84746pt, 86.72377pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=469.75499pt
-* \textheight=650.43pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-32.52127pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=11.0pt
-* \footskip=30.0pt
-* \marginparwidth=59.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 95.
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 95.
-
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 95
-.
-
-(/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 95
-.
-
-(/usr/share/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 95
-.
-
-(/usr/share/texmf-dist/tex/latex/wasysym/uwasy.fd
-File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-)
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 98.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 121.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 129.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 129.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 134.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 134.
-
-
-[2]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 161.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 161.
-
-
-[3]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 190.
-
-
-[4]
-Package mdframed Info: Not enough space on this page on input line 190.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 205.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 220.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 241.
-
-
-[5]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 251.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 261.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 291.
-
-
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 299.
-
-
-
-[6]
-
-[7] (./04.aux)
- ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
- ***********
-Package rerunfilecheck Info: File `04.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
- ) 
-Here is how much of TeX's memory you used:
- 26327 strings out of 475171
- 499542 string characters out of 5767096
- 999253 words of memory out of 5000000
- 48817 multiletter control sequences out of 15000+600000
- 574390 words of font info for 102 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 102i,12n,107p,592b,559s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
-pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share
-/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/
-type1/public/wasy-type1/wasy10.pfb>
-Output written on 04.pdf (7 pages, 225202 bytes).
-PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+Package: epst
