@@ -10,6 +10,12 @@
     --callout-icon: "lucide-puzzle";
 }
 
+/* --- LEMMA (Teal/Cyan) --- */
+.callout[data-callout="hum"] {
+    --callout-color: 48, 176, 199; /* Cyan */
+    --callout-icon: "lucide-brain";
+}
+
 /* --- COROLLARY (Purple) --- */
 .callout[data-callout="cor"] {
     --callout-color: 175, 82, 222; /* Purple */

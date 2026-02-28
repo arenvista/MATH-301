@@ -1,0 +1,198 @@
+\documentclass[11pt]{article}
+\usepackage{multicol} % Required package
+\usepackage{lipsum}   % Package for dummy text
+\usepackage{amsmath,amsthm,amscd,amssymb,mathrsfs,tikz}
+% \usepackage{verbatim}
+\usepackage{latexsym,epsf,epsfig}
+\usepackage{sectsty}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{booktabs, multirow} % for borders and merged ranges
+\usepackage{soul}% for underlines
+\usepackage{xcolor,colortbl} % for cell colors
+\usepackage{changepage,threeparttable} % for wide tables
+\usepackage[left=1.2in, right=1.2in, top=1in, bottom=1in]{geometry} %The above set the parameters adjust the margins. There are many ways to do this, and frankly, what is above is not the best. However, it will work the time being.
+\usepackage{sectsty}
+\usepackage{ wasysym }
+
+\usepackage{xcolor}
+\usepackage{mdframed} % Required for the bordered box
+
+% Define the custom command
+\newcommand{\question}[1]{
+    \begin{mdframed}[
+        linecolor=gray,       % Color of the border
+        linewidth=0.5pt,      % Thickness of the border
+        innertopmargin=10pt,  % Internal padding (top)
+        innerbottommargin=10pt % Internal padding (bottom)
+    ]
+    \centering \itshape #1
+    \end{mdframed}
+}
+
+\newcommand{\subp}[1]{
+    \begin{mdframed}[
+        linewidth=0.5pt,      % Thickness of the border
+        innertopmargin=10pt,  % Internal padding (top)
+        innerbottommargin=10pt % Internal padding (bottom)
+    ]
+    \centering \itshape #1
+    \end{mdframed}
+}
+\usepackage{amsthm}     % Standard math theorem package
+\usepackage{enumitem}   % For custom lists (Cases)
+\usepackage[svgnames]{xcolor} % For color options
+
+% 1. Corollary Setup (Numbered)
+\newtheorem{cor}{Corollary}
+
+% 2. Case Setup (Custom List)
+\newlist{caseslist}{enumerate}{2} % Supports nested cases up to 2 levels
+\setlist[caseslist]{
+    label=\textbf{Case \arabic*:}, 
+    leftmargin=*, 
+    itemsep=0.5em, 
+    topsep=0.5em
+}
+\sectionfont{\centering}
+
+% Removes page numbers from all pages
+\pagestyle{empty}
+% \usepackage{csquotes}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable}
+% Define a custom box called "blockquote"
+\newtcolorbox{blockquote}{
+    colback=white,    % Background color
+    colframe=gray,    % Line color
+    boxrule=0pt,      % Width of borders
+    leftrule=3pt,     % Width of the left line
+    arc=0pt,          % Square corners
+    outer arc=0pt,
+    left=10pt,        % Space between line and text
+    top=0pt,
+    bottom=0pt,
+    right=0pt,
+    breakable         % <--- This allows page breaks
+}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\sU}{\mathscr U}
+% Theorem
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\title{ MATH 301: Homework 3}
+\author{ Aren Vista }
+\date{\today}
+\begin{document} \maketitle \pagebreak
+% Section 2.5: 2, 9 
+\section*{Sec 2.5 q2}
+\question{ If $S \subseteq \mathbb{R}, S \neq \emptyset$, show that $S$ is bounded IFF $\exists ~I$, a closed bounded interval s.t. $S \subseteq I$ }
+
+\begin{center} Consider the forward and reverse statements to prove: \end{center}
+\[
+	\left \{ \begin{array}{l}
+		S \text{ is a bounded set } \implies \exists ~I \text{ (a closed bounded interval )} \ni S \subseteq I \\
+		\exists ~I \text{ (a closed bounded interval ) } \ni S \subseteq I \implies S \text{ is a bounded set}
+	\end{array} \right .
+\]
+\[
+	\begin{gathered}
+		\text{Suppose $S$ is a bounded set } \\
+		\begin{aligned}
+			 & \implies \exists ~a=\inf S \quad b=\sup S               \\
+			 & \implies  \forall ~s \in S, (s \leq b) \land (s \geq a)
+		\end{aligned} \\
+		\therefore ~S \subseteq [a,b] \equiv S \subseteq I
+	\end{gathered}
+\]
+
+\section*{Sec 2.5 q9}
+\question{
+	If $z \leq  0$ then $z \not \in K_1$. If $w > 0$ then it follows from the Archimedian Property that there exists $n_w \in \mathbb{N}$ with $w \not \in (n_w, \infty) = K_{n_w}$
+}
+
+% Section 3.1: a),d) of 5, 8, 9, 14 
+\begin{minipage}{\textwidth}
+	\section*{ Sec 3.1 q5.a}
+	\question{
+		Use the definition of the limit of a sequence to establish the following limits:
+		\[ \lim_{n \to \infty} f(n)=0, ~f(n):=(\frac{n}{n^2+1}) \]
+	}
+    \vspace{1em}
+	\[ \lim_{n \to \infty} f(n)=0 \iff \forall ~\epsilon>0, \exists ~N(\epsilon) \in \mathbb{N} \ni \forall ~n \geq  N(\epsilon), |x_n - L| < \epsilon \]
+
+    \begin{center} \textbf{Backwards Search} \end{center} 
+    \vspace{1em}
+	\[
+		\begin{array}{rll}
+			\text{Step}                        &                      & \text{Reasoning / Simplification}                                      \\ \\
+			\hline                                                                                                                             \\
+			\left| \frac{n}{n^2+1} - 0 \right| & < \epsilon           & \text{Limit definition statement}                                      \\ \\
+			\left| \frac{n}{n^2+1} \right|     & < \epsilon           & \text{Subtracting zero}                                                \\ \\
+			\frac{|n|}{n^2+1}                  & < \epsilon           & \text{Property of absolute values}                                     \\ \\
+			\frac{n}{n^2+1}                    & < \epsilon           & \text{Since } n \in \mathbb{N}, n \text{ is always positive}           \\ \\
+			\frac{n}{n^2+1} < \frac{n}{n^2}    & = \frac{1}{n}        & \text{Bounding: } n^2+1 > n^2 \implies \frac{1}{n^2+1} < \frac{1}{n^2} \\ \\
+			\frac{1}{n}                        & < \epsilon           & \text{Sufficient condition for the inequality}                         \\ \\
+			n                                  & > \frac{1}{\epsilon} & \frac{1}{\epsilon} \in \mathbb{R}                                      \\ \\
+			\hline                                                                                                                             \\
+			\uparrow                           &                      & \text{By Archimedian Property}
+		\end{array}
+	\]
+	Forward Logic: As $\frac{1}{\epsilon} \in \mathbb{R}$, this guarentees $\exists ~N(\epsilon) \in \mathbb{N} \ni N(\epsilon) > \frac{1}{\epsilon}$. This is the requirement to say $\forall ~n \geq  N(\epsilon), n > \frac{1}{\epsilon}$. Therefore $\frac{1}{n} < \epsilon$. As $\frac{n}{n^2+1}$ we can generalize the apply the inequality for $f(n)$. Thus we can say $|f(n) - 0| < \epsilon$. This satisies the epsilon defintion of a limit convergence of a sequence $\therefore \lim_{n \to \infty} f(n) = 0$
+\end{minipage}
+
+\begin{minipage}{\textwidth}
+	\section*{ Sec 3.1 q5.d}
+	\question{
+		Use the definition of the limit of a sequence to establish the following limits:
+		\[ \lim_{n \to \infty} f(n) = \frac{1}{2}, ~f(n):=(\frac{n^2-1}{2n^2+3}) \]
+	}
+    \vspace{1em}
+	\[ \lim_{n \to \infty} f(n)=1/2 \iff \forall ~\epsilon>0, \exists ~N(\epsilon) \in \mathbb{N} \ni \forall ~n \geq  N(\epsilon), |x_n - L| < \epsilon \]
+
+    \begin{center} \textbf{Backwards Search} \end{center} 
+    \vspace{1em}
+	\[
+		\begin{array}{rll}
+			\text{Step}                                                     &  & \text{Reasoning / Simplification}                                              \\
+			\hline                                                                                                                                              \\
+			\left| \frac{n^2-1}{2n^2+3} - \frac{1}{2} \right| < \epsilon    &  & \text{Formal definition of a limit: } |f(n) - L| < \epsilon                    \\ \\
+			\left| \frac{2(n^2-1) - (2n^2+3)}{2(2n^2+3)} \right| < \epsilon &  & \text{Find a common denominator: } 2(2n^2+3)                                   \\ \\
+			\left| \frac{2n^2-2 - 2n^2-3}{4n^2+6} \right| < \epsilon        &  & \text{Distribute and simplify the numerator}                                   \\ \\
+			\left| \frac{-5}{4n^2+6} \right| < \epsilon                     &  & \text{Combine like terms}                                                      \\ \\
+			\frac{5}{4n^2+6} < \epsilon                                     &  & \text{Apply absolute value: } |-5| = 5 \text{ and } 4n^2+6 > 0                 \\ \\
+			\frac{5}{4n^2+6} < \frac{5}{4n^2} < \epsilon                    &  & \text{Bounding: } 4n^2+6 > 4n^2 \implies \text{fraction is smaller}            \\ \\
+			\frac{5}{4n^2} \leq \frac{5}{4n} < \epsilon                     &  & \text{Since } n \geq 1, n^2 \geq n, \text{ so } \frac{1}{n^2} \leq \frac{1}{n} \\ \\
+			\frac{5}{4n} < \epsilon                                         &  & \text{Sufficient condition to satisfy original inequality}                     \\ \\
+			\frac{1}{n} < \frac{4\epsilon}{5}                               &  & \text{Multiply by } \frac{4}{5} \text{ on both sides}                          \\ \\
+			n > \frac{5}{4\epsilon}                                         &  & \text{Take the reciprocal (flips the inequality sign)}                         \\ \\
+			\hline                                                                                                                                              \\
+			\uparrow                                                        &  & \text{Choose } N > \frac{5}{4\epsilon} \text{ by the Archimedean Property}
+		\end{array}
+	\]
+	Forward Logic: Let $\epsilon > 0$ be given. As $\frac{5}{4\epsilon} \in \mathbb{R}$, the Archimedean Property guarantees there exists a natural number $N(\epsilon) \in \mathbb{N}$ such that: $N(\epsilon) > \frac{5}{4\epsilon}$
+	This is the requirement to say that for all $n \geq N(\epsilon)$, the inequality $n > \frac{5}{4\epsilon}$ holds. By taking the reciprocal and multiplying, we obtain: $\frac{5}{4n} < \epsilon$ Since $n \geq 1$, we know $n^2 \geq n$, which implies $\frac{1}{n^2} \leq \frac{1}{n}$. Thus, we can apply the following chain of inequalities to $f(n)$: $\left| \frac{n^2-1}{2n^2+3} - \frac{1}{2} \right| = \frac{5}{4n^2+6} < \frac{5}{4n^2} \leq \frac{5}{4n}$ Because we established $\frac{5}{4n} < \epsilon$, it follows by transitivity that: $\left| f(n) - \frac{1}{2} \right| < \epsilon$
+	This satisfies the epsilon definition of a limit for the convergence of a sequence. $\therefore \lim_{n \to \infty} \frac{n^2-1}{2n^2+3} = \frac{1}{2}$
+\end{minipage}
+\section*{ Sec 3.1 q8}
+\question{
+Prove that $lim(x_n) = 0 \iff lim(x_n)=0$. Give an example to show that the convergence of $(|x_n|)$ need not imply the convergence of $(x_n)$.
+}
+\section*{ Sec 3.1 q9}
+\section*{ Sec 3.1 q14}
+% Section 3.2: 2, 4, b,c) of 6, 9
+\section*{ Sec 3.2 q2}
+\section*{ Sec 3.2 q4}
+\section*{ Sec 3.2 q6.b}
+\section*{ Sec 3.2 q6.c}
+\section*{ Sec 3.2 q9}
+\end{document}

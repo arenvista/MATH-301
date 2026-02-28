@@ -1,0 +1,18 @@
+- [x] Section 2.3: q4
+- [-] Section 2.3: q5
+    - Your bounds are correct. You do have a minor typo in Part (c) where you wrote ∃ infB instead of infC
+- [r] Section 2.3: q6
+    - The Issue: You started your proof by writing "Let $|S| = n \in \mathbb{N}$" and ordering the elements as $\{s_1 \leq s_2 \leq ... \leq s_n\}$. By doing this, you assumed $S$ is a finite set. In real analysis, $S$ can be infinite, so you lose generality here. Furthermore, your contradiction setup with $z := -u + \frac{1}{n}$ is unnecessarily complicated and flawed.
+    - The Fix: You don't need to assume the set is finite. Start by letting $u = \inf S$. By definition, $u \leq s$ for all $s \in S$. Multiplying by $-1$ flips the inequality, giving $-u \geq -s$ for all $s \in S$. This instantly proves $-u$ is an upper bound for $-S$. To prove it is the least upper bound, assume there is another upper bound $v$ for $-S$ such that $v < -u$. Then $-v > u$, which means $-v$ is a lower bound for $S$ strictly greater than $u$, contradicting that $u$ is the greatest lower bound.
+- [x] Section 2.3: q8
+- [x] Section 2.3: q10
+- [r] Section 2.4: q2
+    - The Issue: Your section for "Finding Infinimum" is completely blank at the end of the document.+1
+    - The Fix: You can mirror the exact same limit logic you used for the supremum. Establish the lower bounds (when $\frac{1}{n} \to 0$ and $-\frac{1}{m} \to -1$) and prove the limit goes to $-1$.
+- [ ] Section 2.4: q7
+    - The Issue: You correctly proved that $a_s + b_s$ is an upper bound for $A+B$ by showing $a + b < a_s + b_s$. However, this only proves it is an upper bound, not the least upper bound.
+    - The Fix: To finish the proof, you must use the $\epsilon$ condition of suprema. You need to show that for any $\epsilon > 0$, there exists some element $(a+b) \in A+B$ such that $(a+b) > (a_s + b_s) - \epsilon$. Because $a_s = \sup A$, you know there exists an $a \in A$ where $a > a_s - \frac{\epsilon}{2}$. Do the same for $B$, add them together, and you will close the logical gap. You will need to apply this same fix to the infimum portion as well.
+- [x] Section 2.4: q9
+- [x] Section 2.4: q14
+- [-] Section 2.4: q15
+    - You followed the structure of the textbook's $\sqrt{2}$ proof very well. Just note a small typo in your first case: you wrote $(x-\frac{1}{2})^2 > 3$ instead of $(x-\frac{1}{n})^2 > 3$, but the subsequent logic holds.
