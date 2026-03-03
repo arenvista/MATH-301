@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "363f5c552b00776a",
+        "id": "2db7bcc7ac87b3be",
         "type": "tabs",
         "children": [
           {
-            "id": "3b2fc0594e5f0fcc",
+            "id": "823e147280f9e752",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1770069010-RAEG.md",
+                "file": "Dump/L07 - Algebra of Limits (Limit Laws).md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1770069010-RAEG"
+              "title": "L07 - Algebra of Limits (Limit Laws)"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d1576371ef04b96d",
@@ -184,11 +183,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "3b2fc0594e5f0fcc",
+  "active": "823e147280f9e752",
   "lastOpenFiles": [
-    "L06.md",
-    "L07.md",
-    "L05.md",
-    "L05.md~"
+    "lec/L09.md~",
+    "02_s/L07.md",
+    "02_s/L06.md",
+    "Dump/L06 - Tails of Sequences.md",
+    "02_s/L05.md",
+    "02_s/L04.md",
+    "02_s/L03.md",
+    "02_s/L02.md",
+    "Dump/L01 - Section 1.3 Finite and Infinite Sets.md",
+    "02_s/L01.md",
+    "Dump/L08 - Monotone Sequences (3.3).md",
+    "02_s/L08.md",
+    "lec/L09.md",
+    "lec/L06.md",
+    "lec/L07.md",
+    "lec/L08.md",
+    "lec/L09u.md",
+    "Dump/L07 - Algebra of Limits (Limit Laws).md",
+    "lec/u/L09u.md",
+    "lec/u/L08u.md",
+    "lec/u/L06u.md",
+    "lec/u/L05uu.md",
+    "lec/u/L05u.md",
+    "lec/u/L04u.md",
+    "lec/u/L03u.md",
+    "lec/u/L02u.md",
+    "lec/u",
+    "lec",
+    "02_s/L03.md~",
+    "02_s/u",
+    "02_s",
+    "01_s",
+    "d/L09.md~",
+    "d/L01.md~",
+    "indent.log",
+    "01.pdf"
   ]
 }

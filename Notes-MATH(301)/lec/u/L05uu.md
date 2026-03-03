@@ -1,0 +1,247 @@
+---
+id: L05uu
+aliases: []
+tags: []
+---
+## 1. The Existence of $\sqrt{2}$
+
+
+> [!thm] Theorem: Existence of $\sqrt{2}$
+> $\exists x! \in \mathbb{P} \ni x^2 = \sqrt{2}$.
+> Consider: $x^2 = 2$.
+
+> [!hum] Recall: Trichotomy Property
+> Let $a,b \in \mathbb{R}$.
+> 
+> $$a>b \quad a=b \quad a<b$$
+> 
+> 
+
+> [!pf] Proof: Existence of $\sqrt{2}$ via Supremum
+> Let $S = \{ s \in \mathbb{R} \mid s \geq 0 \text{ and } s^2 < 2 \}$.
+> **Goal:** Show that $x = \sup S$ exists and that $x^2 = 2$.
+> **Part 1: Existence of Supremum**
+> We must satisfy the premises of the Completeness Property of R.
+> 1. **$S$ is non-empty:** Since $0^2 = 0 < 2$, $0 \in S$. Thus $S \neq \emptyset$.
+> 2. **$S$ is bounded above:** Consider $2$. We claim $\forall s \in S, s < 2$.
+> * *Proof:* Suppose not. Then $\exists s \in S$ such that $s \geq 2$.
+> 
+> $$s \geq 2 \implies s^2 \geq 4 > 2$$
+> 
+> 
+> * This contradicts the definition of $S$ (where $s^2 < 2$).
+> * Thus, $2$ is an upper bound of $S$.
+> 
+> 
+> 
+> 
+> Since $S$ is non-empty and bounded above, $x = \sup S$ exists by the Completeness Property.
+> **Part 2: Trichotomy**
+> By the Trichotomy Property, one of the following must be true for $x$:
+> 
+> $$x^2 < 2 \quad \lor \quad x^2 > 2 \quad \lor \quad x^2 = 2$$
+> 
+> 
+> 
+> We will prove $x^2 = 2$ by eliminating the other two possibilities using the Archimedean Property.
+> > [!case] Case 1: Assume $x^2 < 2$
+> > We want to show that $x$ is *not* an upper bound (i.e., there exists an element in $S$ larger than $x$). We look for an $n \in \mathbb{N}$ such that $(x + \frac{1}{n}) \in S$.
+> > We need to show $(x + \frac{1}{n})^2 < 2$. Expand the term:
+> > 
+> > $$(x+\frac{1}{n})^2 = x^2 + \frac{2x}{n} + \frac{1}{n^2}$$
+> > 
+> > 
+> > 
+> > Since $n \geq 1$, we know $\frac{1}{n^2} \leq \frac{1}{n}$. Therefore:
+> > 
+> > $$x^2 + \frac{2x}{n} + \frac{1}{n^2} \leq x^2 + \frac{2x}{n} + \frac{1}{n} = x^2 + \frac{2x+1}{n}$$
+> > 
+> > 
+> > 
+> > We want strictly less than 2:
+> > 
+> > $$\begin{align} x^2 + \frac{2x+1}{n} &< 2 \\ \frac{2x+1}{n} &< 2 - x^2 \\ n &> \frac{2x+1}{2-x^2} \end{align}$$
+> > 
+> > 
+> > 
+> > Since $x^2 < 2$, the term $(2-x^2)$ is positive, so the quotient is a valid real number. By the Archimedean Property, such an $n$ exists.
+> > **Conclusion:** For this $n$, $x + \frac{1}{n} \in S$ and $x + \frac{1}{n} > x$. This contradicts the fact that $x$ is an upper bound of $S$. Thus, $x^2 \not< 2$.
+> 
+> 
+> > [!case] Case 2: Assume $x^2 > 2$
+> > We want to show that $x$ is *not* the **least** upper bound (supremum) by finding a smaller upper bound ($x - \frac{1}{n}$).
+> > We want to show $(x - \frac{1}{n})^2 > 2$. If this holds, then $(x-\frac{1}{n})^2 > s^2$ for all $s \in S$, implying $x-\frac{1}{n} > s$.
+> > Expand the term:
+> > 
+> > $$(x-\frac{1}{n})^2 = x^2 - \frac{2x}{n} + \frac{1}{n^2}$$
+> > 
+> > 
+> > 
+> > Ignoring the positive term $\frac{1}{n^2}$, we have the inequality:
+> > 
+> > $$(x-\frac{1}{n})^2 > x^2 - \frac{2x}{n}$$
+> > 
+> > 
+> > 
+> > We want strictly greater than 2:
+> > 
+> > $$\begin{align} x^2 - \frac{2x}{n} &> 2 \\ x^2 - 2 &> \frac{2x}{n} \\ n &> \frac{2x}{x^2 - 2} \end{align}$$
+> > 
+> > 
+> > 
+> > Since $x^2 > 2$, the term $(x^2-2)$ is positive. By the Archimedean Property, such an $n$ exists. We also assume $n$ is large enough such that $x > 1/n$ so the term is positive.
+> > **Conclusion:**
+> > 1. $(x - \frac{1}{n})^2 > 2$.
+> > 2. For any $s \in S$, $s^2 < 2$.
+> > 3. Therefore, $(x - \frac{1}{n})^2 > s^2 \implies x - \frac{1}{n} > s$.
+> > 
+> > 
+> > This means $x - \frac{1}{n}$ is an upper bound of $S$. However, $x - \frac{1}{n} < x$. This contradicts the fact that $x$ is the *least* upper bound ($\sup S$). Thus, $x^2 \not> 2$.
+> 
+> 
+> **Final Conclusion**
+> Since $x^2 < 2$ and $x^2 > 2$ lead to contradictions, by Trichotomy, it must be that $x^2 = 2$.
+
+> [!pf] Proof: Uniqueness
+> 
+> $$\begin{align} x^2 = 2 \\ y^2 = 2 \\ x^2 = y^2 \\ x^2 - y^2 = 0 \\ x + y > 0 \implies x+y! \end{align}$$
+> 
+> 
+> 
+> Note: $x = \sqrt{2}$ where $x^2=b$.
+
+---
+
+## 2. Density Theorem
+
+### Density of Rational Numbers
+
+> [!thm] Theorem: Density of Rational Numbers
+> If $x,y$ are two real numbers with $x<y$ then $r \in \mathbb{Q}$ s.t. $x < r < y$.
+> **Backwards Search:**
+> 
+> $$\begin{align} \text{Let } n \in \mathbb{N}, m \in \mathbb{Z}, r \in \mathbb{Q}, r=\frac{m}{n} \\ x < r < y \\ x < \frac{m}{n} < y \\ nx < m < ny \end{align}$$
+> 
+> 
+> > [!hum] Recall
+> > If $ny-nx > 1$ there must exist an integer between them.
+> 
+> 
+> $$\begin{align} ny-nx > 1 \\ n(y-x) > 1 \\ n > \frac{1}{y-x} \\ \end{align}$$
+> 
+> 
+> Since $y-x > 0$ by the Archimedean Property $\exists n \in \mathbb{N}$ s.t. $\frac{1}{y-x}<n$.
+> So $ny-nx >1$ that is $nx+1 < ny$.
+> Thus we can say ($y=nx$):
+> 
+> $$\begin{align} \text{If } y \geq 0, \exists n_y \in \mathbb{N} \\ n_y-1 \leq y < n_y \end{align}$$
+> 
+> 
+> > [!case] Case Construction
+> > We can constrict this into three cases:
+> > 1. $0 < x < y$
+> > 2. $x<0 \quad y>0$
+> > * Done as $0$ is between $x,y$.
+> > 
+> > 
+> > 3. $x<y$
+> > * Done as we can construct $y < -x$ to say $-y < y < -x$.
+> > * This goes to: $-x < -r < y$.
+> > * Thus we can apply the same logic for case 1.
+> > 
+> > 
+> > 
+> > 
+> > We consider the case $0 < x < y$.
+> 
+> 
+> > [!pf] Proof (Applying Archimedean Corollary)
+> > By corollary 3 of the Archimedean Property. We say:
+> > 
+> > $$\begin{align} \exists m \in \mathbb{N} \text{ s.t. } \\ m-1 \leq nx < m \\ \text{So: } nx < m < m+1 < ny \\ \text{So: } x < \frac{m}{n} < y \end{align}$$
+> > 
+> > 
+> 
+> 
+
+### Density of Irrational Numbers
+
+> [!thm] Theorem: Density of Irrational Numbers ($\mathbb{Q}'$)
+> 
+> $$\text{If } x,y \in \mathbb{R}, x<y \implies \exists z \in \mathbb{Q}' \text{ s. t. } x < z < y$$
+> 
+> 
+> > [!pf] Proof: Density of Irrational Numbers
+> > Consider $\sqrt{2} > 0$.
+> > Naturally: $\frac{x}{\sqrt{2}} < \frac{y}{\sqrt{2}}$.
+> > By the Density of Rational Numbers:
+> > 
+> > $$\begin{align} \exists r \in \mathbb{Q} \ni \\ \frac{x}{\sqrt{2}} < r < \frac{y}{\sqrt{2}} \\ \text{So } x < r\sqrt{2} < y \\ \text{Note } r \sqrt{2} \text{ is irrational.} \end{align}$$
+> > 
+> > 
+> 
+> 
+
+---
+
+## 3. Intervals (Section 2.5)
+
+> [!def] Definition: Intervals
+> Intervals can be denoted as:
+> 
+> $$(a,b), \quad [a,b], \quad [a,b), \quad (a,b]$$
+> 
+> 
+
+> [!thm] Theorem: Interval Characterization
+> If $S \subseteq \mathbb{R} \land |S| \geq  2$ the following holds:
+> 
+> $$\text{If } x,y \in S \land  x<y \implies [x,y] \subseteq S \implies S \text{ is an interval}$$
+> 
+> 
+
+> [!case] Cases for Boundedness
+> * Case 1: $S$ is bounded BOTH
+> * Case 2: $S$ is bounded ABOVE
+> * Case 3: $S$ is bounded BELOW
+> * Case 4: $S$ is bounded NEITHER
+> 
+> 
+
+> [!pf] Proof: $S$ is bounded BOTH
+> Let $a = \inf S$ and $b = \sup S$.
+> We must show that $(a,b) \subseteq S \subseteq [a,b]$.
+> Note that $S \subseteq [a,b]$ since $\forall s \in S, s \leq b \land  s \geq a$.
+> We must show that $(a,b) \subseteq S$:
+> Let $y \in (a,b)$, that is:
+> 
+> $$y < b \land  y > a$$
+> 
+> 
+> Since $y<b$ then $y$ can not be an *upper bound* of $S$.
+> 
+> $$\implies \exists s \in S \ni y < s$$
+> 
+> 
+> Since $y>a$ then $y$ can not be a *lower bound* of $S$.
+> 
+> $$\implies \exists s' \in S \ni y > s'$$
+> 
+> 
+> So we can conclude:
+> 
+> $$s' < y < s$$
+> 
+> 
+> Observe this satisfies the above property, therefore:
+> 
+> $$s'<y<s \implies [s',s] \subseteq S$$
+> 
+> 
+> Since $y \in [s',s] \implies y \in S$.
+> Therefore $(a,b) \subseteq S \subseteq [a,b]$.
+> 
+> $$\text{Thus } S \text{ is an interval}$$
+> 
+> 
+
