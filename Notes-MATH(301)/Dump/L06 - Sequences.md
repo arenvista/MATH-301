@@ -1,3 +1,8 @@
+---
+id: L06 - Sequences
+aliases: []
+tags: []
+---
 # Sequences
 
 *Original Note: [L06](../02_s/L06.md)*

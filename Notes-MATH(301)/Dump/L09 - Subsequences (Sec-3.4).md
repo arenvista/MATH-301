@@ -1,3 +1,8 @@
+---
+id: L09 - Subsequences (Sec-3.4)
+aliases: []
+tags: []
+---
 # Subsequences (Sec-3.4)
 
 *Original Note: [L09](../02_s/L09.md)*

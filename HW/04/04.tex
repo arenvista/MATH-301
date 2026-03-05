@@ -116,9 +116,14 @@
 \]
 
 \section*{Sec 2.5 q9}
-\question{
-	If $z \leq  0$ then $z \not \in K_1$. If $w > 0$ then it follows from the Archimedian Property that there exists $n_w \in \mathbb{N}$ with $w \not \in (n_w, \infty) = K_{n_w}$
-}
+\question{ Let $K_n := (n, \infty)$ for $n \in \mathbb{N}$. Prove that $\cap^{\infty}_{n=1}K_n = \emptyset$}
+$$
+	\begin{gathered}
+		\text{Prove: }  \quad \quad k_n = [n,\infty) \quad \quad \cap^{\infty}_{n=1} k_n = \emptyset \\
+	\text{Suppose } x \in  \cap^{\infty}_{n=1} k_n \iff  \forall~ n \in  \mathbb{N}, x \in  k_n \iff x \geq  n  \\
+        \text{\lightning}  \text{ by Archimedian Property.}
+	\end{gathered}
+$$
 
 % Section 3.1: a),d) of 5, 8, 9, 14 
 \begin{minipage}{\textwidth}
@@ -261,48 +266,141 @@ Applying the same \textit{Def (a.1), Lemma (a.2)} we arrive to the same conclusi
 \question{ Prove: $b \in \mathbb{R}, ~0<b<1 \implies \lim_{n \to \infty} nb^n = 0$ } \vspace{1em}
 
 \subp{
-    Theorem (a.1): Binomial Theorem
-    \[ (a+b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^{k} \]
+Theorem (a.1): Binomial Theorem
+\[ (a+b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^{k} \]
 
-    \[ \binom{n}{k} = \frac{n!}{k!(n-k)!} \]
+\[ \binom{n}{k} = \frac{n!}{k!(n-k)!} \]
 
-    Expanded form:
+Expanded form:
 
-    \[
-        (a+b)^n =
-        \binom{n}{0}a^n
-        + \binom{n}{1}a^{n-1}b
-        + \binom{n}{2}a^{n-2}b^2
-        + \cdots
-        + \binom{n}{n}b^n
-    \]
+\[
+	(a+b)^n =
+	\binom{n}{0}a^n
+	+ \binom{n}{1}a^{n-1}b
+	+ \binom{n}{2}a^{n-2}b^2
+	+ \cdots
+	+ \binom{n}{n}b^n
+\]
 
-    Example for n = 3:
+Example for n = 3:
 
-    \[
-        (a+b)^3 =
-        \binom{3}{0}a^3
-        + \binom{3}{1}a^2b
-        + \binom{3}{2}ab^2
-        + \binom{3}{3}b^3
-    \]
+\[
+	(a+b)^3 =
+	\binom{3}{0}a^3
+	+ \binom{3}{1}a^2b
+	+ \binom{3}{2}ab^2
+	+ \binom{3}{3}b^3
+\]
 
-    \[ = a^3 + 3a^2b + 3ab^2 + b^3 \]
+\[ = a^3 + 3a^2b + 3ab^2 + b^3 \]
+}
+
+\[
+	\begin{gathered}
+		b \in \mathbb{R}, ~0<b<1 \implies \exists ~0<c \in \mathbb{R}  \ni b = \frac{1}{1+c} \\
+		\implies b^n = \frac{1}{1+c^n} \\
+		\frac{1}{1+c^n} < \frac{n}{1+c^n}  \\
+		\lim_{n \to \infty} \frac{n}{1+c^n} = 0 \implies \lim_{n \to \infty} \frac{1}{1+c^n} = 0 \\
+		(1+c)^n = \sum_{n=1}^{\infty} (\frac{n}{k}) c^k \quad  \tiny{\text{ By \textit{Theorem (a.1)} }}
+	\end{gathered}
+\]
+% Section 3.2: 2, 4, b,c) of 6, 9
+\section*{ Sec 3.2 q2}
+\question{
+	Give an example of two divergent sequences $X,Y$ such that:
+	\begin{itemize}
+		\item Their sum $X+Y$ converges
+		\item Their product $XY$ converges
+	\end{itemize}
 }
 
 \[
     \begin{gathered}
-        b \in \mathbb{R}, ~0<b<1 \implies \exists ~0<c \in \mathbb{R}  \ni b = \frac{1}{1+c} \\
-        \implies b^n = \frac{1}{1+c^n} \\
-       \frac{1}{1+c^n} < \frac{n}{1+c^n}  \\
-       \lim_{n \to \infty} \frac{n}{1+c^n} = 0 \implies \lim_{n \to \infty} \frac{1}{1+c^n} = 0 \\
-       (1+c)^n = \sum_{n=1}^{\infty} (\frac{n}{k}) c^k \quad  \tiny{\text{ By \textit{Theorem (a.1)} }}
+    X := n \quad y := -n \\
+    \lim_{n \to \infty} X = \infty \text{ and }\lim_{n \to \infty} Y =  \infty  \\
+        \lim_{n \to \infty} X+Y = \lim_{n \to \infty} x_n+y_n = \lim_{n \to \infty} n+(-n) = \lim_{n \to \infty} 0 = 0
     \end{gathered}
 \] 
-% Section 3.2: 2, 4, b,c) of 6, 9
-\section*{ Sec 3.2 q2}
+\[ X := (-1)^n \quad Y=(-1)^{n+1} \]
+\[
+	\text{WLOG } ~b \in  \mathbb{N}, A = (-1)^b \implies
+	\left\{
+	\begin{array}{cc}
+		k \in \mathbb{N} \cup \{ 0 \}, b = 2k   & A' := (1)^{2k}                             \\
+		k \in \mathbb{N} \cup \{ 0 \}, b = 2k+1 & A'' := (-1)^{2k+1} = (-1)^{2k} \cdot  (-1)
+	\end{array}
+	\right .
+\]
+\[
+	\begin{gathered}
+		\lim_{n \to \infty} A' = 1 \\
+		\lim_{n \to \infty} A'' = \lim_{n \to \infty} A' \cdot  (-1) = -1 \\
+		\lim_{n \to \infty}  A'' \neq \lim_{n \to \infty} A' \\
+		\implies  A \text{ does not converge} \\
+        \therefore X \text{ and } Y \text{ do not converge}
+	\end{gathered}
+\]
+\[
+    \begin{gathered}
+    XY := x_ny_n = (-1)^n \cdot  (-1)^{n+1} = (-1)^{2n+1} \\
+        \text{ From above } \lim_{n \to \infty}  (-1)^{2n+1} = -1
+    \end{gathered}
+\] 
+
 \section*{ Sec 3.2 q4}
+\question{ Show that if $X,Y$ s.t. $X$ converges to $x \neq 0$ and $XY$ converges, then $Y$ converges. }
+\[
+	\begin{gathered}
+		\text{Given: } \lim_{n \to \infty} X = L_x \neq 0 \implies \forall~ \epsilon>0, \exists~ n_\epsilon \ni \forall~ n \geq n_\epsilon,  |x_n - L_x| < \epsilon \\
+		\text{Given: } \lim_{n \to \infty} XY = L_a \neq 0 \implies \forall~ \epsilon>0, \exists~ n_\epsilon \ni \forall~ n \geq n_\epsilon,  |x_ny_n - L_a| < \epsilon \\
+		\lim_{n \to \infty} Y = \frac{\lim_{n \to \infty} XY}{\lim_{n \to \infty} X} = \frac{L_a}{L_x}
+	\end{gathered}
+\]
+
 \section*{ Sec 3.2 q6.b}
+\question{ Find the limit of: $lim \left( \frac{(-1)^n}{n+2} \right)$}
+\[
+	\frac{(-1)^n}{n+2} \implies
+	\left\{
+	\begin{array}{cc}
+		lim(\frac{-1}{n+2}) = a \\ \\
+		lim(\frac{1}{n+2}) = b
+	\end{array}
+	\right .
+\]
+\[ a = b \implies lim \left( \frac{(-1)^n}{n+2} = a = b \right) \]
+\[ \frac{|1|}{n+2} = \frac{1}{n+2} < \frac{1}{n} < \epsilon \]
+\[ \therefore \lim \left( \frac{(-1)^n}{n+2} \right) = 0 \]
+
 \section*{ Sec 3.2 q6.c}
-\section*{ Sec 3.2 q9}
+\question{ Find the limit of: $lim \left( \frac{\sqrt{n}-1}{\sqrt{n}+1} \right)$ }
+\[
+	\begin{array}{ccc}
+		\frac{\sqrt{n}-1}{\sqrt{n}+1}                                                                     &  & \\ \\
+		\frac{\sqrt{n}-1}{\sqrt{n}+1} \cdot \frac{\frac{1}{\sqrt{n}}}{\frac{1}{\sqrt{n}}}                 &  & \\ \\
+		\frac{\frac{\sqrt{n}}{\sqrt{n}}-\frac{1}{\sqrt{n}}}{\frac{\sqrt{n}}{\sqrt{n}}+\frac{1}{\sqrt{n}}} &  & \\ \\
+		\frac{1-\frac{1}{\sqrt{n}}}{1+\frac{1}{\sqrt{n}}}                                                 &  & \\ \\
+		\lim_{n \to \infty} \frac{1-0}{1+0} = 1                                                           &  & \\ \\
+	\end{array}
+\]
+
+\section*{Sec 3.2 Q9}
+\question{Let $y_n := \sqrt{n+1}-\sqrt{n}$ for $n \in \mathbb{N}$. Show that $\sqrt{n}y_n$ converges. Find the limit.}
+
+\[
+	\begin{array}{r c l l}
+		y_n                             & = & \sqrt{n+1}-\sqrt{n}                                                                      & \text{Given}                                                            \\ [2ex]
+		                                & = & (\sqrt{n+1}-\sqrt{n}) \cdot \frac{\sqrt{n+1}+\sqrt{n}}{\sqrt{n+1}+\sqrt{n}}              & \text{Multiply by conjugate}                                            \\ [2ex]
+		                                & = & \frac{(n+1)-n}{\sqrt{n+1}+\sqrt{n}}                                                      & \text{Difference of squares}                                            \\ [2ex]
+		                                & = & \frac{1}{\sqrt{n+1}+\sqrt{n}}                                                            & \text{Simplify}                                                         \\ [2ex]
+		\sqrt{n}y_n                     & = & \frac{\sqrt{n}}{\sqrt{n+1}+\sqrt{n}}                                                     & \text{Multiply } y_n \text{ by } \sqrt{n}                               \\ [2ex]
+		                                & = & \frac{\sqrt{n}}{\sqrt{n+1}+\sqrt{n}} \cdot \frac{\frac{1}{\sqrt{n}}}{\frac{1}{\sqrt{n}}} & \text{Multiply by } 1 \text{ to simplify}                               \\ [3ex]
+		                                & = & \frac{1}{ \frac{\sqrt{n+1}}{\sqrt{n}} + 1}                                               & \text{Distribute } \frac{1}{\sqrt{n}}                                   \\ [3ex]
+		                                & = & \frac{1}{ \sqrt{\frac{n+1}{n}} + 1}                                                      & \text{Combine square roots}                                             \\ [3ex]
+		                                & = & \frac{1}{ \sqrt{1 + \frac{1}{n}} + 1}                                                    & \text{Simplify fraction}                                                \\ [3ex]
+		\lim_{n \to \infty} \sqrt{n}y_n & = & \frac{1}{ \sqrt{1 + 0} + 1}                                                              & \text{Apply limit (since } \lim_{n \to \infty} \frac{1}{n} = 0 \text{)} \\ [2ex]
+		                                & = & \frac{1}{2}                                                                              & \text{Final Answer}                                                     \\
+	\end{array}
+\]
+
 \end{document}

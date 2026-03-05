@@ -1,3 +1,8 @@
+---
+id: L06 - Limits of Sequences
+aliases: []
+tags: []
+---
 # Limits of Sequences
 
 *Original Note: [L06](../02_s/L06.md)*
