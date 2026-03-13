@@ -1,0 +1,113 @@
+# Subsequences (Sec-3.4)
+
+*Original Note: [[L09]]*
+
+## [[Definitions and Notation]]
+
+> [!def] Sequence and Subsequence
+> - A real sequence is a function $X:\mathbb{N}\to\mathbb{R}$, written $X=(x_n)_{n\in\mathbb{N}}$ with $x_n=X(n)$.
+> - A subsequence of $X$ is any sequence of the form $(x_{n_k})_{k\in\mathbb{N}}$ where $(n_k)_{k\in\mathbb{N}}$ is a strictly increasing sequence in $\mathbb{N}$ (i.e., $n_1<n_2<\cdots$).
+> - Functionally, if $A=\{n_k:k\in\mathbb{N}\}\subset\mathbb{N}$, then $X|_A:A\to\mathbb{R}$ is the restriction of $X$ to $A$. Reindexing by $k\mapsto n_k$ yields the subsequence $(x_{n_k})$.
+
+### Example
+Let $x_n=\frac{1}{n}$. Then the subsequence with even indices is
+$$
+x_{2n}=\frac{1}{2n}=\tfrac12\cdot \frac{1}{n},
+$$
+i.e., $1/2,\,1/4,\,1/6,\,1/8,\dots$. In this specific example, $(x_{2n})$ coincides termwise with the scaled sequence $\big(\tfrac12 x_n\big)$, but in general a scaled sequence need not be a subsequence.
+
+---
+
+## [[Basic Property of Subsequences]]
+
+> [!thm] Subsequence of a Convergent Sequence
+> If $x_n\to L\in\mathbb{R}$, then every subsequence $x_{n_k}$ also converges to $L$.  ^subsequence-convergence
+
+> [!pf] Proof
+> Let $\varepsilon>0$. Since $x_n\to L$, there exists $N\in\mathbb{N}$ such that $|x_n-L|<\varepsilon$ for all $n\ge N$.
+> The index sequence $(n_k)$ is strictly increasing and unbounded in $\mathbb{N}$, so there exists $K$ such that $n_k\ge N$ for all $k\ge K$. Hence, for all $k\ge K$, we have $|x_{n_k}-L|<\varepsilon$. Therefore $x_{n_k}\to L$.
+
+> [!cor] Contrapositive
+> If $x_n\not\to L$, then there exists a subsequence $(x_{n_k})$ that does not converge to $L$ (indeed, it stays at least some fixed distance away from $L$ infinitely often).
+
+> [!imp] Important Clarification
+> The statement “If any subsequence of $X$ converges to $L$, then $x_n\to L$” is false. The correct statement is: “If every subsequence of $X$ converges to $L$, then $x_n\to L$.”
+
+---
+
+## [[Characterizations of Non-Convergence to a Given Limit]]
+
+> [!thm] Equivalent Forms of Non-Convergence to L
+> Let $X=(x_n)$ be a sequence and $L\in\mathbb{R}$. The following are equivalent:
+> 1) $x_n\not\to L$.
+> 2) There exists $\varepsilon_0>0$ such that for every $k\in\mathbb{N}$ there exists $n_k\in\mathbb{N}$ with $n_k\ge k$ and $|x_{n_k}-L|\ge \varepsilon_0$.
+> 3) There exist $\varepsilon_0>0$ and a subsequence $(x_{n_k})$ of $X$ such that $|x_{n_k}-L|\ge \varepsilon_0$ for all $k\in\mathbb{N}$.
+
+> [!pf] Proof
+> - (1 ⇒ 2) Negating the definition of limit: if $x_n\not\to L$, then there exists $\varepsilon_0>0$ such that for every $N$ there exists $n\ge N$ with $|x_n-L|\ge\varepsilon_0$. Setting $N=k$ and choosing such $n=n_k$ yields (2).
+> - (2 ⇒ 3) The sequence $(n_k)$ constructed in (2) is strictly increasing (by enforcing $n_k\ge k$ and choosing successively beyond the previous index), so $(x_{n_k})$ is a subsequence with $|x_{n_k}-L|\ge\varepsilon_0$ for all $k$, as required.
+> - (3 ⇒ 1) If $x_n\to L$, then every subsequence would converge to $L$ (by the subsequence theorem). But (3) gives a subsequence that stays at least $\varepsilon_0$ away from $L$, a contradiction.
+
+---
+
+## [[Boundedness and Unboundedness]]
+
+> [!def] Bounded and Unbounded Sequences
+> - Bounded: $X$ is bounded if there exists $M>0$ such that $|x_n|\le M$ for all $n\in\mathbb{N}$.
+> - Unbounded: $X$ is unbounded if for every $M>0$ there exists $n\in\mathbb{N}$ with $|x_n|>M$. Equivalently, for each $k\in\mathbb{N}$ there exists $n_k\in\mathbb{N}$ with $|x_{n_k}|>k$.
+
+---
+
+## [[From Unboundedness to a Reciprocal-Null Subsequence]]
+
+> [!lem] Constructing a Rapidly Growing Subsequence
+> If $X=(x_n)$ is unbounded, then there exists a strictly increasing sequence $(n_k)$ such that
+> $$
+> |x_{n_k}|>k \quad\text{for all }k\in\mathbb{N}.
+> $$
+
+> [!pf] Proof
+> By unboundedness, for $k=1$ choose $n_1$ with $|x_{n_1}|>1$. Having chosen $n_k$, use unboundedness again to pick $n_{k+1}>n_k$ with $|x_{n_{k+1}}|>k+1$. This yields a strictly increasing $(n_k)$ satisfying $|x_{n_k}|>k$.
+
+> [!cor] Reciprocals Converge to 0
+> With $(n_k)$ as above, the subsequence $\big(1/x_{n_k}\big)$ is well-defined and satisfies
+> $$
+> \lim_{k\to\infty}\frac{1}{x_{n_k}}=0.
+> $$
+
+> [!pf] Proof
+> Since $|x_{n_k}|>k\ge 1$, each $x_{n_k}\neq 0$. Then
+> $$
+> \left|\frac{1}{x_{n_k}}\right|\le \frac{1}{k}\xrightarrow[k\to\infty]{}0.
+> $$
+> Given $\varepsilon>0$, choose $K>\frac{1}{\varepsilon}$. For all $k\ge K$, we have $\big|\frac{1}{x_{n_k}}\big|\le \frac{1}{k}\le \frac{1}{K}<\varepsilon$.
+
+> [!imp] Checklist for the Construction
+> To find such a subsequence explicitly, aim to ensure
+> $$
+> |x_{n_k}|>k\quad\text{for all }k\in\mathbb{N},
+> \qquad\text{which implies}\qquad
+> 0<\frac{1}{|x_{n_k}|}<\frac{1}{k}.
+> $$
+
+---
+
+## [[Sufficient Criteria for Divergence]]
+
+> [!thm] Divergence Criteria (Sufficient Conditions)
+> A sequence $X=(x_n)$ is divergent (i.e., has no finite limit) if at least one of the following holds:
+> - There exist two subsequences $x_{n_k}$ and $x_{m_k}$ with different limits.
+> - $X$ is unbounded.
+
+---
+
+## [[Example Geometric Sequences with 0  b  1]]
+
+> [!thm] Limit of a Decaying Geometric Sequence
+> If $0<b<1$, then
+> $$
+> \lim_{n\to\infty}b^n=0.
+> $$
+
+> [!pf] Proof
+> The sequence $x_n=b^n$ is decreasing and bounded below by $0$, hence convergent (Monotone Convergence Theorem). Let $\lim x_n=x\ge 0$. Then $(b^{2n})$ is a subsequence of $(b^n)$, so it also converges to $x$. But $b^{2n}=(b^n)^2$, so $\lim b^{2n}=x^2$. Hence $x=x^2$, giving $x\in\{0,1\}$. Since $0<b<1$, we have $x_n=b^n\le b<1$ for all $n\ge 1$, so $x\neq 1$. Therefore $x=0$.
