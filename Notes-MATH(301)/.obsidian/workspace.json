@@ -11,10 +11,14 @@
             "id": "823e147280f9e752",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "E1_Review.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "E1_Review"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sqrt{2}",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,13 +74,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d1576371ef04b96d",
@@ -162,6 +164,18 @@
               "icon": "lucide-list",
               "title": "Outline of L05"
             }
+          },
+          {
+            "id": "6cf3322c2a42ef4a",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "E1_Review.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "Footnotes"
+            }
           }
         ]
       }
@@ -178,46 +192,52 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "audio-recorder:Start/stop recording": false,
+      "markdown-importer:Open format converter": false,
+      "publish:Publish changes...": false,
+      "random-note:Open random note": false,
+      "zk-prefixer:Create new unique note": false,
+      "workspaces:Manage workspace layouts": false,
+      "print:Print note": false
     }
   },
   "active": "823e147280f9e752",
   "lastOpenFiles": [
-    "LecFormated/L04.md",
+    "E1_Review.md~",
+    "LecFormated/L11.md",
     "LecFormated/L10.md",
-    "Atomized/H2/L10 - The Bolzano–Weierstrass Theorem - Intuition (ELI5) The “pigeonhole” analogy.md",
-    "Atomized/H2/L10 - Limit Superior and Limit Inferior - Useful equalities (tails).md",
-    "Atomized/H2/L10 - Limit Superior and Limit Inferior - Example.md",
-    "Atomized/H2/L10 - Limit Superior and Limit Inferior - Definitions.md",
-    "Atomized/H2/L10 - Limit Superior and Limit Inferior - Convergence criterion via limsupliminf.md",
-    "Atomized/H2/L09 - Subsequences (Sec-3.4) - Sufficient Criteria for Divergence.md",
-    "Atomized/H2/L09 - Subsequences (Sec-3.4) - From Unboundedness to a Reciprocal-Null Subsequence.md",
-    "Atomized/H2/L09 - Subsequences (Sec-3.4) - Example Geometric Sequences with 0  b  1.md",
-    "Atomized/H2/L09 - Subsequences (Sec-3.4) - Definitions and Notation.md",
-    "Atomized/H2/L09 - Subsequences (Sec-3.4) - Characterizations of Non-Convergence to a Given Limit.md",
-    "Atomized/H2/L09 - Subsequences (Sec-3.4) - Boundedness and Unboundedness.md",
-    "Atomized/H2/L09 - Subsequences (Sec-3.4) - Basic Property of Subsequences.md",
-    "Atomized/H2/L08 - L08 — Sequences Boundedness, Algebraic Facts, Limit Laws, and Monotone Convergence - Quiz.md",
-    "Atomized/H2/L08 - L08 — Sequences Boundedness, Algebraic Facts, Limit Laws, and Monotone Convergence - Monotone Sequences (3.3).md",
-    "Atomized/H2/L07 - Bounded Sequences - Convergent Sequences Are Bounded.md",
-    "Atomized/H2/L08 - L08 — Sequences Boundedness, Algebraic Facts, Limit Laws, and Monotone Convergence - Bounded Sequences.md",
-    "Atomized/H2/L07 - Algebra of Limits - Proof of the Addition Law.md",
-    "Atomized/H2/L06 - Intervals and Sequences - Sequences.md",
-    "Atomized/H2/L06 - Intervals and Sequences - Intervals.md",
-    "Atomized/H2/L05 - Intervals (Section 2.5) - Classification by Boundedness.md",
-    "Atomized/H2/L05 - Intervals (Section 2.5) - Basic Notation.md",
-    "Atomized/H2/L05 - Density Theorem - Density of Rational Numbers.md",
-    "Atomized/H2/L05 - Density Theorem - Density of Irrational Numbers.md",
-    "Atomized/H2/L03 - Ordering Properties of ℝ - Squares and Positivity.md",
+    "LecFormated/L09.md",
+    "LecFormated/L08.md",
+    "LecFormated/L07.md",
+    "LecFormated/L06.md",
+    "LecFormated/L05.md",
+    "LecFormated/L04.md",
+    "LecFormated/L03.md",
+    "LecFormated/L02.md",
+    "LecFormated/L01.md",
+    "LecFormated",
+    "L11.md",
+    "LecFormated/L11.md~",
+    "E1_Review.md",
+    "4913",
+    "indent.log",
+    "Atomized/H1/L10 - Limit Superior and Limit Inferior.md",
+    "LecFormated/main.md",
+    "Atomized/H1/L01 - Section 1.3 Finite and Infinite Sets.md",
+    "Atomized/H2/L01 - Section 1.3 Finite and Infinite Sets - 1. Basic Definitions.md",
+    "Atomized/H1/L08 - L08 — Sequences Boundedness, Algebraic Facts, Limit Laws, and Monotone Convergence.md",
+    "Atomized/H1/L06 - Intervals and Sequences.md",
+    "Atomized/H1/L04 - Order Relation Between Two Sets.md",
+    "Atomized/H1/L04 - Completeness Property of ℝ.md",
+    "Atomized/H1/L04 - Completeness Property.md",
+    "Atomized/H1/L04 - Archimedean Property and Consequences.md",
+    "Atomized/H1/L03 - Ordering Properties of ℝ.md",
+    "Atomized/H1/L03 - Absolute Values.md",
     "Atomized/H2",
     "Atomized/H1",
     "L10.md~",
-    "4913",
-    "indent.log",
     "lec/L09.md~",
-    "lec/u",
-    "lec",
-    "02_s/L03.md~",
-    "02_s/u"
+    "lec/u"
   ]
 }

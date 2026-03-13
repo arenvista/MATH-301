@@ -6,8 +6,7 @@ from openai import OpenAI
 
 MODEL = "gpt-5"
 
-SYSTEM_PROMPT = """You are an expert technical editor and formatter.
-
+SYSTEM_PROMPT = """
 Read the provided contents and run: clean, split into sections by header, title unnamed theorems, sections etc. 
 
 Formatting Rules:
