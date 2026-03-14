@@ -1,13 +1,11 @@
 ---
-id: Main
 aliases: []
 tags: []
+id: Welcome to Real Analysis
 ---
 # Introduction
 
 A compilation of notes for Real Analysis. To help those poor souls taking this course. It is fun, trying, and challenging. This website is an amalgamation of my hopes and dreams. 
-
-_"And you remember that 'existence of God' thing that I had so much trouble understanding? Well, guess what, I think I'm starting to grasp it now. Here's my theory. Maybe, just maybe, it's a concept that's similar to a zero in mathematics. In other words, it's a symbol that denies the absence of meaning, the meaning that's necessitated by the delineation of one system from another. In analog, that's God. In digital, it's zero."_
 
 ---
 # Table of Contents
