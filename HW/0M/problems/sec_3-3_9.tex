@@ -1,0 +1,51 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\question{Section 3.3 : 9}{ Let $A$ be an infinite subset of $\mathbb{R}$ that is bounded above and let $u := \sup A$. Show there exists an increasing sequence $(x_n)$ with $x_n \in A$ for all $n \in \mathbb{N}$ such that $u = \lim(x_n)$. }
+
+\[
+	\begin{gathered}
+		\text{If } A \subseteq \mathbb{R} \text{ and } \sup A = u \implies A := \{ a_1, ~a_2, ~\dots ,~ a_n, ~a_{n+1}, ~\dots  ~|~ a \in  \mathbb{R} \} \text{ and } \forall~  a \in  A, a \leq  u. \\
+        \sup A = u \implies  \forall~ n \in  \mathbb{N}, \exists~ a_n' \in  A \text{ s.t. } u - \frac{1}{n} < a'_n < u \\
+        \text{Let } x_1 := u-1 < a'_1 < u \quad \text{Let } x_2 := max(x_1, a'_2) \\
+        \text{Generally, } x_n := max(x_{n-1}, a'_n) \\
+	\end{gathered}
+\]
+
+
+\corr{Visualization}{
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+    \draw[->, thick] (0, 2) -- (6, 2) node[right] {$\mathbb{N}$};
+    \draw[->, thick] (0, 2) -- (0, 4) node[above] {$\mathbb{R}$};
+    
+    \def\u{4} % Let's set the supremum at y = 4
+    \draw[dashed, blue, thick] (0, \u) -- (5.5, \u) node[right] {$u = \sup A$};
+    
+    \def\eps{1.0}
+    \draw[dashed, red] (0, \u-\eps) -- (5.5, \u-\eps) node[right] {$u - 1$};
+    \def\eps{0.5}
+    \draw[dashed, red] (0, \u-\eps) -- (5.5, \u-\eps) node[right] {$u - \frac{1}{2}$};
+    \def\eps{0.25}
+    
+    \filldraw[catred] (3, 3.1) circle (1.5pt); \node[right] at (3, 3.1) {$x_1$};
+    \filldraw[catred] (5, 3.8) circle (1.5pt); \node[right] at (5, 3.8) {$x_2$};
+    \foreach \n in {1, 2, 3, 4, 5} {
+        \node[below] at (\n, 2) {$\n$};
+    }
+\end{tikzpicture}
+\end{center}
+We are defining a line $u-\frac{1}{n}$ and returning the smallest value of $a$ that is larger than $u- \frac{1}{n}$ and assigning it to the corresponding $n$. This $a$ is what we have called $a'_n$ (The minimum value of $a$ which depends on $n$ that shows that $u-\epsilon$ is not an upper bound)
+}
+
+Consider we have constructed in a sequence defined to be : $x_{n-1} \leq  x_n$. Thus the sequence is increasing. 
+
+Notice as $x_n := max(x_{n-1}, a'_n)$. This implies $a'_n \leq  x_n$ . Thus $u-\frac{1}{n} < a'_n \implies  u-\frac{1}{n}< x_n$
+
+Therefore for all terms $u-\frac{1}{n}< x_n \leq u$
+\[
+    \begin{gathered}
+    \lim_{n \to \infty} \left( u-\frac{1}{n}< x_n \leq u \right)  \\
+    u \leq  x_n \leq  u \implies  \lim_{n \to \infty} x_n = u
+    \end{gathered}
+\] 
+\end{document}
