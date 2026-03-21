@@ -1,3 +1,8 @@
+---
+id: Monotone Sequences
+aliases: []
+tags: []
+---
 # Monotone Sequences
 
 *Original Note: [[Sequences Boundedness, Algebraic Facts, Limit Laws, and Monotone Convergence]]*
