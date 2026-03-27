@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Atomized/H2/Monotone Sequences.md",
+                "file": "LecFormated/L09.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Monotone Sequences"
+              "title": "L09"
             }
           }
         ]
@@ -201,6 +201,13 @@
   },
   "active": "823e147280f9e752",
   "lastOpenFiles": [
+    "L013.md~",
+    "4913",
+    "indent.log",
+    "LecFormated/L12.md",
+    "L013.md",
+    "Atomized/H1/Sequences Boundedness, Algebraic Facts, Limit Laws, and Monotone Convergence.md",
+    "LecFormated/L12.md~",
     "Atomized/H2/Monotone Sequences.md~",
     "Welcome to Real Analysis.md",
     "Math-301_Main.md",
@@ -222,10 +229,6 @@
     "quartz/public/LecFormated/L10.html",
     "quartz/public/LecFormated/L09.html",
     "quartz/public/LecFormated/L08.html",
-    "quartz/public/LecFormated/L07.html",
-    "quartz/public/LecFormated/L06.html",
-    "quartz/public/LecFormated/L05.html",
-    "quartz/public/LecFormated/L04.html",
     "quartz/quartz-themes/themes/anuppuccin/README.md",
     "quartz/quartz/styles/themes/README.md",
     "quartz/quartz-themes/themes/tokyo-night/README.md",
@@ -243,9 +246,6 @@
     "LecFormated/L07.md",
     "LecFormated/L08.md",
     "LecFormated/L09.md",
-    "LecFormated/L10.md",
-    "Atomized/H1/Archimedean Property and Consequences.md",
-    "Atomized/H2/Definitions and Notation.md",
-    "Atomized/H1/Subsequences (Sec-3.4).md"
+    "LecFormated/L10.md"
   ]
 }

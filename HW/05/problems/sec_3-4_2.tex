@@ -46,6 +46,23 @@ Again, the only solutions to $z^2 = z$ are $z = 0$ and $z = 1$. Since we establi
     \lim(c^{1/n}) = 1
 \end{equation*}}
 
+\question{Section 3.4 : }
+{Use method of \textit{Example 3.4.3(b)} to show $0<c<1 \implies  \lim c^{\frac{1}{n}}=1$ }
+
 \[
+\begin{gathered}
+0<c<1 \implies \exists~ a < b, \in \mathbb{R} \text{ s.t. } c:= \frac{a}{b} \\
+\text{Observe: } 0 < c < 1 \implies \lim_{n \to \infty} c^n = 0 \implies \forall~ n \in \mathbb{N}, c_n \in (0,1]  ~\land~ c^n < c^{n+1}\\
+\begin{aligned}
+c^n \cdot c^{\frac{1}{n^2}} & < c^{n+1} \cdot c^{\frac{1}{n^2}}  \\
+c^{\frac{1}{n}}  & <  c^{\frac{1}{n} + \frac{1}{n^2}} \\
+\end{aligned} \\
+\therefore c^{\frac{1}{n}} < c^{\frac{1}{n+1}} \\
+\therefore ~c^{n+1} < c^n < c^\frac{1}{n} < c^{\frac{1}{n+1}} \implies \text{ $c^n$ is monotonic and increasing.}\\
+\text{Let } c_{2n} \text{ be a subsequence of $c_n$ containing even naturals} \\
+z_{2n} := \left(\frac{a}{b}\right)^{\frac{1}{2n}} \quad z_n := \left(\frac{a}{b}\right) ^{\frac{1}{n}} \\
+\end{gathered}
 \] 
+
+
 \end{document}
