@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LecFormated/L09.md",
-                "mode": "source",
+                "file": "L014.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "L09"
+              "title": "L014"
             }
           }
         ]
@@ -156,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "L014.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of L014"
             }
           },
           {
@@ -201,11 +202,16 @@
   },
   "active": "823e147280f9e752",
   "lastOpenFiles": [
+    "L014.md~",
+    "LecFormated/L10.md~",
+    "Atomized/H2/Convergence criterion via limsupliminf.md",
+    "L013.md",
     "L013.md~",
+    "L014.md",
+    "LecFormated/L10.md",
     "4913",
     "indent.log",
     "LecFormated/L12.md",
-    "L013.md",
     "Atomized/H1/Sequences Boundedness, Algebraic Facts, Limit Laws, and Monotone Convergence.md",
     "LecFormated/L12.md~",
     "Atomized/H2/Monotone Sequences.md~",
@@ -227,8 +233,6 @@
     "quartz/public/index.html",
     "quartz/public/LecFormated/L11.html",
     "quartz/public/LecFormated/L10.html",
-    "quartz/public/LecFormated/L09.html",
-    "quartz/public/LecFormated/L08.html",
     "quartz/quartz-themes/themes/anuppuccin/README.md",
     "quartz/quartz/styles/themes/README.md",
     "quartz/quartz-themes/themes/tokyo-night/README.md",
@@ -243,9 +247,6 @@
     "Atomized/H2/Intervals.md",
     "1767467862-FFER.md",
     "LecFormated/L02.md",
-    "LecFormated/L07.md",
-    "LecFormated/L08.md",
-    "LecFormated/L09.md",
-    "LecFormated/L10.md"
+    "LecFormated/L07.md"
   ]
 }

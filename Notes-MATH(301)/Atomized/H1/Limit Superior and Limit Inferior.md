@@ -1,3 +1,8 @@
+---
+id: Limit Superior and Limit Inferior
+aliases: []
+tags: []
+---
 # Limit Superior and Limit Inferior
 
 *Original Note: [[L10]]*

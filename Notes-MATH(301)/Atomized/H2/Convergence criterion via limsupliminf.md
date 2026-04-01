@@ -1,3 +1,8 @@
+---
+id: Convergence criterion via limsupliminf
+aliases: []
+tags: []
+---
 # Convergence criterion via limsup/liminf
 
 *Original Note: [[Limit Superior and Limit Inferior]]*
