@@ -1,0 +1,68 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\question{Section 3.4 : }
+{Use method of \textit{Example 3.4.3(b)} to show $0<c<1 \implies  \lim c^{\frac{1}{n}}=1$ }
+\corr{Example (b): Proving $\lim(c^{1/n}) = 1$ for $c > 1$}
+{\\\\ \textbf{The Goal:} Prove that the $n$-th root of a number greater than 1 gets closer and closer to 1 as $n$ gets larger. Let our sequence be $z_n = c^{1/n}$. \\
+
+\textbf{Step 1: Show the sequence is decreasing}\\
+The text asks "(Why?)" here. Here is the reason: Since $c > 1$, taking a smaller and smaller fractional power of $c$ yields a smaller and smaller result. Because $\frac{1}{n+1} < \frac{1}{n}$, it follows that:
+\begin{align*}
+    c^{1/(n+1)} &< c^{1/n} \\
+    z_{n+1} &< z_n
+\end{align*}
+So, the sequence is decreasing.
+
+\textbf{Step 2: Show the sequence is bounded}\\
+Because $c > 1$, any positive root of $c$ will still be greater than 1.
+\begin{equation*}
+    z_n > 1
+\end{equation*}
+The sequence is bounded below by 1.
+
+\textbf{Step 3: Conclude it converges}\\
+Just like in example (a), we have a decreasing sequence that is bounded below. By the Monotone Convergence Theorem, it converges. Let's call the limit $z$:
+\begin{equation*}
+    z = \lim(z_n)
+\end{equation*}
+
+\textbf{Step 4: Find the limit using the same trick}\\
+Let's look at the subsequence of even terms, $z_{2n}$. Because the main sequence converges to $z$, this subsequence also converges to $z$. Let's look at the algebra:
+\begin{equation*}
+    z_{2n} = c^{1/(2n)} = (c^{1/n})^{1/2} = \sqrt{z_n}
+\end{equation*}
+If we square both sides to get rid of the fraction, we get:
+\begin{equation*}
+    (z_{2n})^2 = z_n
+\end{equation*}
+Now, take the limit of both sides as $n \to \infty$:
+\begin{equation*}
+    z^2 = z
+\end{equation*}
+
+\textbf{Step 5: Solve for $z$}\\
+Again, the only solutions to $z^2 = z$ are $z = 0$ and $z = 1$. Since we established in Step 2 that every term in our sequence is strictly greater than 1 ($z_n > 1$), the limit cannot possibly be 0. Therefore, the limit must be 1.
+\begin{equation*}
+    \lim(c^{1/n}) = 1
+\end{equation*}}
+
+\question{Section 3.4 : }
+{Use method of \textit{Example 3.4.3(b)} to show $0<c<1 \implies  \lim c^{\frac{1}{n}}=1$ }
+
+\[
+\begin{gathered}
+0<c<1 \implies \exists~ a < b, \in \mathbb{R} \text{ s.t. } c:= \frac{a}{b} \\
+\text{Observe: } 0 < c < 1 \implies \lim_{n \to \infty} c^n = 0 \implies \forall~ n \in \mathbb{N}, c_n \in (0,1]  ~\land~ c^n < c^{n+1}\\
+\begin{aligned}
+c^n \cdot c^{\frac{1}{n^2}} & < c^{n+1} \cdot c^{\frac{1}{n^2}}  \\
+c^{\frac{1}{n}}  & <  c^{\frac{1}{n} + \frac{1}{n^2}} \\
+\end{aligned} \\
+\therefore c^{\frac{1}{n}} < c^{\frac{1}{n+1}} \\
+\therefore ~c^{n+1} < c^n < c^\frac{1}{n} < c^{\frac{1}{n+1}} \implies \text{ $c^n$ is monotonic and increasing.}\\
+\text{Let } c_{2n} \text{ be a subsequence of $c_n$ containing even naturals} \\
+z_{2n} := \left(\frac{a}{b}\right)^{\frac{1}{2n}} \quad z_n := \left(\frac{a}{b}\right) ^{\frac{1}{n}} \\
+\end{gathered}
+\] 
+
+
+\end{document}

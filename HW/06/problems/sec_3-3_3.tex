@@ -1,0 +1,55 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\question{Section 3.3 : 3}{ Let $x_1 \geq 2$ and $x_{n+1} := 1 + \sqrt{x_n - 1}$ for $n \in \mathbb{N}$. Show that $(x_n)$ is decreasing and bounded below by 2. Find the limit. }
+\[
+	\begin{gathered}
+		\text{Observe } 2 \leq  x_1 \text{ Suppose }2 \leq x_k  \\
+		{\left\{
+		\begin{array}{ccc}
+			2=x_{k} & \implies & x_{k+1} = 1+\sqrt{2-1} = 2  = x''              \\
+			2<x_{k} & \implies & x_{k+1} = 1+\sqrt{x_k-1} = 1 + \sqrt{x_1} = x'
+		\end{array}
+		\right .} \implies 
+		\left\{
+		\begin{array}{ccc}
+			2=x_k   & \implies & 2= x_{k+1} \\
+			2 < x_k & \implies & 2 < x_{k+1}
+		\end{array}
+		\right . \\
+        \therefore  \forall~ n \in  \mathbb{N}, ~2 \leq x_n 
+	\end{gathered}
+\]
+
+Therefore we have shown there is a lower bound to the sequence. 
+
+\[
+    \begin{gathered}
+        \text{Observe: }  2 \leq x_1  \implies 1 \leq x_1 - 1  \implies 1 \leq  \sqrt{x_1 - 1} \implies 2 \leq  1+\sqrt{x_1-1}
+
+        \\
+        \text{Suppose }x_{k+1} \leq  x_k \\
+        \text{Let }
+        \left\{ 
+        \begin{array}{ccc}
+            x_{k+2} & := & 1+\sqrt{x_{k+1}-1} \\
+            x_{k+1} & := & 1+\sqrt{x_{k}-1} \\
+        \end{array}
+        \right . \\
+        x_{k+1} < x_k \implies  \sqrt{x_{k+1}-1} < \sqrt{x_k -1} \implies  x_{k+2} \leq  x_{k+1} \\
+        \therefore ~\forall~ n \in  \mathbb{N}, x_n \leq  x_{n-1}
+    \end{gathered}
+\] 
+
+Therefore we have shown the sequence is decreasing. 
+
+Consider:
+\[
+    \begin{gathered}
+    \lim x_n = x \implies  1+\sqrt{x-1} = 0 \\
+    \lim x_n = 1 \lor \lim x_n = 2
+    \end{gathered}
+\] 
+
+As $x_1$ is defined to be $2 \leq x_1$ the limit must be the bound of the sequence $2$.
+
+\end{document}
