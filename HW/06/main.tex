@@ -5,108 +5,217 @@
 \begin{document} \maketitle
 
 \cbox{catgreen}{ Cauchy Definition }{
-A sequence $X = (x_n)$ is called a \emph{Cauchy sequence} if the terms of the sequence get arbitrarily close to each other as the sequence progresses. More formally,
-\[
-  \begin{aligned}
-    &\text{For every } \epsilon > 0, \text{ there exists an integer } N_\epsilon > 0, \text{ such that} \\
-    &\qquad \forall\ m, n \geq N_\epsilon, \quad |x_n - x_m| < \epsilon.
-  \end{aligned}
-\]
+	A sequence $X = (x_n)$ is called a \emph{Cauchy sequence} if the terms of the sequence get arbitrarily close to each other as the sequence progresses. More formally,
+	\[
+		\begin{aligned}
+			 & \text{For every } \epsilon > 0, \text{ there exists an integer } N_\epsilon > 0, \text{ such that} \\
+			 & \qquad \forall\ m, n \geq N_\epsilon, \quad |x_n - x_m| < \epsilon.
+		\end{aligned}
+	\]
 
-This means that after some index $N_\epsilon$, the distance between any two terms $x_n$ and $x_m$ (with $n, m$ large enough) is less than any chosen positive number $\epsilon$. Intuitively, the sequence becomes "clustered" together and the terms never drift far apart, no matter how far out in the sequence you go. \vspace{1em}
+	This means that after some index $N_\epsilon$, the distance between any two terms $x_n$ and $x_m$ (with $n, m$ large enough) is less than any chosen positive number $\epsilon$. Intuitively, the sequence becomes "clustered" together and the terms never drift far apart, no matter how far out in the sequence you go. \vspace{1em}
 
-\begin{center} \textbf{\textit{ Example of a Cauchy Sequence }} \end{center}
-\begin{center}
-\begin{tikzpicture}[xscale=2, yscale=2]
-  % Draw axis
-  \draw[->] (0,0) -- (4.2,0) node[right] {$n$};
-  \draw[->] (0,0.0) -- (0,2) node[above] {$x_n$};
-  
-  % Draw epsilon band
-  \draw[dashed,red] (0,1.2) -- (4,1.2);
-  \draw[dashed,red] (0,0.8) -- (4,0.8);
-  \node[right,red] at (4,1.2) {$x^* + \epsilon$};
-  \node[right,red] at (4,0.8) {$x^* - \epsilon$};
-  
-  % Limit line
-  \draw[dotted] (0,1) -- (4,1);
-  % \node[right] at (4,1) {$x^*$};
-  
-  % Place points (example Cauchy sequence) with indices
-  \foreach \n/\y/\lbl in {0/0.4/0, 0.5/1.7/1, 1/0.6/2, 1.5/1.3/3, 2/0.9/{N_\epsilon}, 2.5/1.1/{\epsilon+1}, 3/1.05/{\epsilon+2}, 3.5/0.95/{\epsilon+3}, 4/1.0/{\epsilon+4}} {
-    \filldraw[blue] (\n,\y) circle (1.5pt);
-    \node[below right, scale=0.85] at (\n,\y) {$x_{\lbl}$};
-  }
-  
-  % After N_epsilon
-  \draw[very thin,->,green!70!black] (2.0,1.6) -- (3.8,1.0);
-  \draw[very thin,->,green!70!black] (2.0,0.6) -- (3.8,1.0);
-  % \node[align=left, anchor=north west] at (2.05,0.8) {After $N_\epsilon$};
-  \node[below] at (2,0) {$N_\epsilon$};
-  \draw[dashed] (2,0) -- (2,2);
-\end{tikzpicture}
-\end{center} }
+	\begin{center} \textbf{\textit{ Example of a Cauchy Sequence }} \end{center}
+	\begin{center}
+		\begin{tikzpicture}[xscale=2, yscale=2]
+			% Draw axis
+			\draw[->] (0,0) -- (4.2,0) node[right] {$n$};
+			\draw[->] (0,0.0) -- (0,2) node[above] {$x_n$};
+
+			% Draw epsilon band
+			\draw[dashed,red] (0,1.2) -- (4,1.2);
+			\draw[dashed,red] (0,0.8) -- (4,0.8);
+			\node[right,red] at (4,1.2) {$x^* + \epsilon$};
+			\node[right,red] at (4,0.8) {$x^* - \epsilon$};
+
+			% Limit line
+			\draw[dotted] (0,1) -- (4,1);
+			% \node[right] at (4,1) {$x^*$};
+
+			% Place points (example Cauchy sequence) with indices
+			\foreach \n/\y/\lbl in {0/0.4/0, 0.5/1.7/1, 1/0.6/2, 1.5/1.3/3, 2/0.9/{N_\epsilon}, 2.5/1.1/{\epsilon+1}, 3/1.05/{\epsilon+2}, 3.5/0.95/{\epsilon+3}, 4/1.0/{\epsilon+4}} {
+			\filldraw[blue] (\n,\y) circle (1.5pt);
+			\node[below right, scale=0.85] at (\n,\y) {$x_{\lbl}$};
+			}
+
+			% After N_epsilon
+			\draw[very thin,->,green!70!black] (2.0,1.6) -- (3.8,1.0);
+			\draw[very thin,->,green!70!black] (2.0,0.6) -- (3.8,1.0);
+			% \node[align=left, anchor=north west] at (2.05,0.8) {After $N_\epsilon$};
+			\node[below] at (2,0) {$N_\epsilon$};
+			\draw[dashed] (2,0) -- (2,2);
+		\end{tikzpicture}
+	\end{center} }
 
 % Caption for accessibility:
 % The above diagram shows a sequence of points $x_n$ converging into a horizontal epsilon band around $x^*$ after an index $N_\epsilon$.
 
 \cbox{catblue}{Section 3.5: 2b)}{
-Show directly from the definition that the following is a cauchy sequence:
-\[ x_n := \left( 1 + \frac{1}{2!} + \dots + \frac{1}{n!}\right) \] }
+	Show directly from the definition that the following is a cauchy sequence:
+	\[ x_n := \left( 1 + \frac{1}{2!} + \dots + \frac{1}{n!}\right) \] }
 
-"English": $x_n$ is Cauchy if there's some index $N_\epsilon$ s.t. given any two indicies $m,k$ where $N_\epsilon \leq m,k$. 
+"English": $x_n$ is Cauchy if there's some index $N_\epsilon$ s.t. given any two indicies $m,k$ where $N_\epsilon \leq m,k$.
 The differences of the two indicies is "sufficently small": $|x_m - x_k| < \epsilon$
 
 Define terms:
 \[
-x_m := \sum_{i=m ~|~ N_\epsilon < m}^{\infty} \frac{1}{m!} 
-\quad \quad
-x_k := \sum_{i=k ~|~ N_\epsilon < k}^{\infty} \frac{1}{n!}
-\] 
+	x_m := \sum_{i=m ~|~ N_\epsilon < m}^{\infty} \frac{1}{m!}
+	\quad \quad
+	x_k := \sum_{i=k ~|~ N_\epsilon < k}^{\infty} \frac{1}{n!}
+\]
 
 Goal (Show the Following):
 \[
-\forall~ \epsilon > 0,~
-\left|
-\sum_{i=m ~|~ N_\epsilon < m}^{\infty} \frac{1}{m!} -
-\sum_{i=k ~|~ N_\epsilon < k}^{\infty} \frac{1}{n!}
-\right| < \epsilon
-\] 
+	\forall~ \epsilon > 0,~
+	\left|
+	\sum_{i=m ~|~ N_\epsilon < m}^{\infty} \frac{1}{m!} -
+	\sum_{i=k ~|~ N_\epsilon < k}^{\infty} \frac{1}{n!}
+	\right| < \epsilon
+\]
 
 \[
-\equiv 
-\left| 
- 1 + \frac{1}{2!} + \frac{1}{m!}
--1 - \frac{1}{2!} - \frac{1}{n!}
-\right| < \epsilon
-\] 
+	\equiv
+	\left|
+	1 + \frac{1}{2!} + \frac{1}{m!}
+	-1 - \frac{1}{2!} - \frac{1}{n!}
+	\right| < \epsilon
+\]
 
 Suppose $n<m$:
 \[
-\equiv 
-\left| \frac{1}{(n+1)!} + \dots  + \frac{1}{m!} \right| \leq 
-\left| \frac{1}{2^{n+1}} + \frac{1}{2^{n+2}} + ~\dots ~ + \frac{1}{2^{m}} \right|
-\equiv \sum_{k=n+1}^{\infty} \left( \frac{1}{2} \right)^k
-\] 
+	\equiv
+	\left| \frac{1}{(n+1)!} + \dots  + \frac{1}{m!} \right| \leq
+	\left| \frac{1}{2^{n+1}} + \frac{1}{2^{n+2}} + ~\dots ~ + \frac{1}{2^{m}} \right|
+	\equiv \sum_{k=n+1}^{\infty} \left( \frac{1}{2} \right)^k
+\]
 
 \[
-\sum_{k=n+1}^{\infty} \left( \frac{1}{2} \right)^k = 
-\frac{1}{2^{m-n}}
-\] 
+	\sum_{k=n+1}^{\infty} \left( \frac{1}{2} \right)^k = \frac{\frac{1}{2^n}}{1-\frac{1}{2}} = \frac{1}{2^{n-1}}
+\]
 
 \[
-\frac{1}{2^{m-n}}
-\] 
+	-\frac{1}{n} \leq \frac{1}{2^{n-1}}  \leq \frac{1}{n} \implies \lim \frac{1}{2^{n-1}} = 0
+\]
+
+\[
+	-\frac{1}{2^{n-1}} \leq |x_m - x_n| \leq \frac{1}{2^{n-1}}  \implies  \lim |x_m - x_n| = 0
+\]
+
+\[
+	\lim |x_m - x_n| = 0 \implies \forall~ \epsilon > 0, \exists~  N_\epsilon > 0, ~|~  \forall\ m, n \geq N_\epsilon, |x_n - x_m| < \epsilon.
+\]
 
 \cbox{catblue}{Section 3.5: 3c)}{
-Show directly from the definition that the following is NOT a cauchy sequence:
-\[ ln(n) \] }
+	Show directly from the definition that the following is NOT a cauchy sequence:
+	\[ ln(n) \] }
+
+\cbox{catgreen}{Negation of Cauchy}{
+	\[
+		\exists~  \epsilon > 0 ~s.t.~ \forall~  n > 0, \exists~  m, k \geq n ~s.t.~  |x_n - x_m| \geq  \epsilon.
+	\]
+}
+
+\cbox{catpurple}{Graph of $ln(x)$}{
+	\pgfplotsset{compat=1.18} % Recommended to ensure consistent rendering
+	\begin{center}
+		\begin{tikzpicture}[xscale=1, yscale=1]
+			\begin{axis}[
+					axis lines = center, % Places axes in the middle like a standard graph
+					xlabel = {$x$},
+					ylabel = {$y$},
+					domain = -3:3000,       % The range of x values to calculate
+					samples = 100,       % Number of points to calculate (higher = smoother)
+				]
+
+				% Plot the function y = x^2
+				\addplot [
+					thick,
+					blue,
+				]
+				{ln(x)};
+			\end{axis}
+		\end{tikzpicture}
+	\end{center}
+}
+
+\[
+	x_m := ln(2n) \quad \quad x_n := ln(n)
+\]
+
+Consider:
+\[
+	ln(2n) - ln(n) = ln(\frac{2n}{n}) = ln(2) \approx 0.6931
+\]
+
+\[
+	\epsilon \in (0,1] \implies \exists~ \epsilon ~s.t.~ 0.6931 > \epsilon
+\]
+
+\[
+	\therefore x_n \text{ is not Cauchy}
+\]
 
 \cbox{catblue}{Section 3.5: 4}{
-Show directly from the definition that if $(x_n)$ and $(y_n)$ are Cauchy sequences, then $(x_n+y_n)$ and $(x_n y_n)$ are Cauchy sequences }
+	Show directly from the definition that if $(x_n)$ and $(y_n)$ are Cauchy sequences, then $(x_n+y_n)$ and $(x_n y_n)$ are Cauchy sequences }
+\[
+	x_n + y_n := \{ x_n+y_n ~\forall~ n \}
+	\quad \quad
+	x_n \cdot  y_n := \{ x_n \cdot  y_n ~\forall~ n \}
+\]
+
+\[
+	\begin{gathered}
+		|x_m - x_n| < \epsilon \implies \forall~ \epsilon>0, \exists~ n_\epsilon ~s.t.~ \forall~ m,n > n_\epsilon, |x_m - x_n| < \epsilon \\
+		|y_m - y_n| < \epsilon \implies \forall~ \epsilon>0, \exists~ n_\epsilon ~s.t.~ \forall~ m,n > n_\epsilon, |y_m - y_n| < \epsilon
+	\end{gathered}
+\]
+
+\[
+	|x_m+y_m - x_n - y_n| = | (x_m-x_n) + (y_m-y_n) | \leq |x_m - x_n| + |y_m - y_n| < 2\epsilon
+\]
+
+\[
+	\begin{gathered}
+		|x_m - x_n | \leq  |x_m| + |-x_n| \implies |y_m|~|x_m - x_n| \leq  (|x_m| + |-x_n|)~|y_m| \\
+		|y_m - y_n | \leq  |y_m| + |-y_n| \implies |x_n|~|y_m - y_n | \leq  (|y_m| + |-y_n|) ~|x_n| \\
+	\end{gathered}
+\]
+
+\[
+	\begin{gathered}
+		| x_m y_m - x_n y_n | = |x_m y_m - {\color{red}{\mathbf{x_m y_n}}} + {\color{red}{\mathbf{x_m y_n}}} - x_n y_n | \\
+		= |x_m ~ (y_m-y_n) + y_n ~(x_m-x_n)| \leq |x_m|\cdot |y_m-y_n| + |y_n| |x_m-x_n| \\
+		|x_m|\cdot |y_m-y_n| + |y_n| |x_m-x_n|
+	\end{gathered}
+\]
+
+\[
+	\begin{gathered}
+		|x_m - x_n| < \epsilon \implies \exists~ M_x ~s.t.~ \forall~ n, x_m < M_x \\
+		|y_m - y_n| < \epsilon \implies \exists~ M_y ~s.t.~ \forall~ n, y_m < M_y 
+	\end{gathered}
+\]
+
+\[
+    \begin{gathered}
+    M_x \cdot |x_m-x_n| < \epsilon \cdot  M_x \\
+    M_y \cdot |y_m-y_n| < \epsilon \cdot  M_y \\
+    \end{gathered}
+\] 
+
+\[
+    \begin{gathered}
+    \implies | x_m y_m - x_n y_n | < M_x \cdot |y_m-y_n| + M_y |x_m-x_n| < 2  M_y M_y \epsilon \\
+    \frac{|y_m-y_n|}{M_y} + \frac{|x_m-x_n|}{M_x} < 2\epsilon \\
+    \frac{|y_m-y_n|}{2M_y} + \frac{|x_m-x_n|}{2M_x} < \epsilon \\
+    \end{gathered}
+\] 
+
+
+
 
 \cbox{catblue}{Section 3.5: 7}{
-Let $(x_n)$ be a Cauchy sequence such that $x_n$ is an integer for every $n \in \mathbb{N}$. Show that $(x_n)$ is ultimately constant. }
+	Let $(x_n)$ be a Cauchy sequence such that $x_n$ is an integer for every $n \in \mathbb{N}$. Show that $(x_n)$ is ultimately constant. }
 
 % \cbox{catblue}{Section 3.6: 3}{}
 % \cbox{catblue}{Section 3.6: 7}{}
