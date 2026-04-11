@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LecFormated/L12.md",
+                "file": "LecFormated/L013.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "L12"
+              "title": "L013"
             }
           }
         ]
@@ -202,6 +202,16 @@
   },
   "active": "823e147280f9e752",
   "lastOpenFiles": [
+    "LecNew/L015.md~",
+    "LecFormated/L014.md",
+    "LecFormated/L014.md~",
+    "LecNew/L015.md",
+    "LecNew/L016.md",
+    "LecNew/L016.md~",
+    "LecNew/L016x.md",
+    "LecNew/L016x.md~",
+    "LecNew/L013.md",
+    "LecNew/L014.md",
     "L013.md",
     "L014.md",
     "L015.md~",
@@ -216,12 +226,10 @@
     "LecFormated/L12.md",
     "Atomized/H1/Sequences Boundedness, Algebraic Facts, Limit Laws, and Monotone Convergence.md",
     "LecFormated/L12.md~",
-    "Atomized/H2/Monotone Sequences.md~",
     "Welcome to Real Analysis.md",
     "Math-301_Main.md",
     "index.md",
     "Main.md",
-    "index.md~",
     "quartz/public/index-og-image.webp",
     "quartz/public/LecFormated/L11-og-image.webp",
     "quartz/public/LecFormated/L10-og-image.webp",
@@ -232,7 +240,6 @@
     "quartz/public/LecFormated/L05-og-image.webp",
     "quartz/public/LecFormated/L04-og-image.webp",
     "quartz/public/LecFormated/L03-og-image.webp",
-    "quartz/public/index.html",
     "quartz/quartz-themes/themes/anuppuccin/README.md",
     "quartz/quartz/styles/themes/README.md",
     "quartz/quartz-themes/themes/tokyo-night/README.md",
@@ -240,12 +247,6 @@
     "Atomized/H1/Completeness of ℝ.md",
     "Atomized/H1/Completeness Property of ℝ.md",
     "E1_Review.md",
-    "LecFormated/L11.md",
-    "LecFormated/L06.md",
-    "LecFormated/L04.md",
-    "Atomized/H1/Intervals and Sequences.md",
-    "Atomized/H2/Intervals.md",
-    "1767467862-FFER.md",
-    "LecFormated/L02.md"
+    "LecFormated/L11.md"
   ]
 }

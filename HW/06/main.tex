@@ -59,9 +59,9 @@ The differences of the two indicies is "sufficently small": $|x_m - x_k| < \epsi
 
 Define terms:
 \[
-	x_m := \sum_{i=m ~|~ N_\epsilon < m}^{\infty} \frac{1}{m!}
+	x_m := \sum_{i=m ~|~ N_\epsilon < m}^{\infty} \frac{1}{i!}
 	\quad \quad
-	x_k := \sum_{i=k ~|~ N_\epsilon < k}^{\infty} \frac{1}{n!}
+	x_k := \sum_{i=k ~|~ N_\epsilon < k}^{\infty} \frac{1}{i!}
 \]
 
 Goal (Show the Following):
@@ -69,7 +69,7 @@ Goal (Show the Following):
 	\forall~ \epsilon > 0,~
 	\left|
 	\sum_{i=m ~|~ N_\epsilon < m}^{\infty} \frac{1}{m!} -
-	\sum_{i=k ~|~ N_\epsilon < k}^{\infty} \frac{1}{n!}
+	\sum_{i=k ~|~ N_\epsilon < k}^{\infty} \frac{1}{k!}
 	\right| < \epsilon
 \]
 
@@ -77,7 +77,7 @@ Goal (Show the Following):
 	\equiv
 	\left|
 	1 + \frac{1}{2!} + \frac{1}{m!}
-	-1 - \frac{1}{2!} - \frac{1}{n!}
+	-1 - \frac{1}{2!} - \frac{1}{k!}
 	\right| < \epsilon
 \]
 
@@ -103,6 +103,17 @@ Suppose $n<m$:
 
 \[
 	\lim |x_m - x_n| = 0 \implies \forall~ \epsilon > 0, \exists~  N_\epsilon > 0, ~|~  \forall\ m, n \geq N_\epsilon, |x_n - x_m| < \epsilon.
+	\sum_{k=n+1}^{\infty} \left( \frac{1}{2} \right)^k =
+	\frac{1}{2^{m-n}}
+\]
+
+\[
+	0 < k := m-n \quad \quad
+	\frac{1}{2^{k}}
+\]
+
+\[
+	-\frac{1}{k} < \frac{1}{2^{k}} < \frac{1}{k} \implies \lim \frac{1}{2^k} = 0
 \]
 
 \cbox{catblue}{Section 3.5: 3c)}{
@@ -213,17 +224,383 @@ Consider:
 
 
 
+=======
+	\[ x_n := ln(n) \] }
+
+If $x_n$ is a Cauchy sequence. Then $x_n \rightarrow L$ as $n \rightarrow \infty$.
+
+
+\cbox{catblue}{Section 3.5: 4}{
+	Show directly from the definition that if $(x_n)$ and $(y_n)$ are Cauchy sequences, then $(x_n+y_n)$ and $(x_n y_n)$ are Cauchy sequences }
+>>>>>>> 4bd2785 (curr)
 
 \cbox{catblue}{Section 3.5: 7}{
 	Let $(x_n)$ be a Cauchy sequence such that $x_n$ is an integer for every $n \in \mathbb{N}$. Show that $(x_n)$ is ultimately constant. }
 
-% \cbox{catblue}{Section 3.6: 3}{}
+% ---
+
+\cbox{catblue}{Section 3.6: 3}{
+	Show directly from the definition that the following are not Cauchy sequences.
+	\[
+		(a)~ \left( (-1)^n \right)
+		\quad \quad
+		(b)~ \left( n + \frac{(-1)^n}{n} \right)
+		\quad \quad
+		(c)~ \left( ln(n) \right)
+	\]
+}
+
+\cbox{catgray}{Case (a)}{
+	Observe:
+	\[
+		\forall~ n \in \mathbb{N}, ~|(-1)^{n} - (-1)^{n+1}| = 2 \geq \epsilon,
+	\]
+}
+
+\cbox{catgray}{Case (b)}{
+	For some fixed $n$ let $m := 2n$ s.t.
+	\[
+		x_m := \left( 2n + \frac{(-1)^{2n}}{2n} \right)
+		\quad \quad
+		x_n := \left( n + \frac{(-1)^n}{n} \right)
+	\]
+	Therefore:
+	\[
+		|x_m - x_n| \equiv
+		\left| \left( 2n + \frac{(-1)^{2n}}{2n} \right) - \left( n + \frac{(-1)^n}{n} \right)  \right|
+		\equiv
+		\left| \left( 2n + \frac{1}{2n} \right) - \left( n + \frac{(-1)}{n} \right)  \right|
+	\]
+	\[
+		\equiv
+		\left| \left( 2n + \frac{1}{2n} \right) - \left( n + \frac{(-1)}{n} \right)  \right|
+		\equiv
+		\left|  n + \frac{1}{2n}  +  \frac{1}{n}   \right|
+	\]
+	\[
+		n + \frac{1}{2n}  +  \frac{1}{n} < n \text{ and } \forall~ n \in  \mathbb{N}, ~\epsilon \leq |n - L| \implies \epsilon \leq 1 \leq  \left|  n + \frac{1}{2n}  +  \frac{1}{n}   \right|
+	\]
+	\[
+		\therefore \epsilon \leq |x_m - x_n| \implies  x_n \text{ is not Cauchy }
+	\]
+}
 % \cbox{catblue}{Section 3.6: 7}{}
-% \cbox{catblue}{Section 4.1: 1(a)}{}
-% \cbox{catblue}{Section 4.1: 2(a)}{}
-% \cbox{catblue}{Section 4.1: 4}{}
-% \cbox{catblue}{Section 4.1: 6}{}
-% \cbox{catblue}{Section 4.1: 9(a,c)}{}
+
+% ---
+
+\cbox{catblue}{Section 4.1: 1(a)}{ Determine a condition on $|x-1|$ that ensures: \[ \left| x^2-1 \right| < \frac{1}{2} \] }
+\cbox{catpurple}{Visualization}{
+	\begin{center}
+		\begin{tikzpicture}[x=8cm, y=3cm] % Scaled for better visibility
+
+			% Shaded Epsilon Band (y between 0.5 and 1.5)
+			\fill[gray!15] (0.0, 0.5) rectangle (1.4, 1.5);
+
+			% Shaded Delta Band (x between 5/6 and 7/6)
+			\fill[blue!10] (0.833, 0.0) rectangle (1.167, 1.8);
+
+			% Intersection Box (The "Safe Zone")
+			\fill[catgreen!30] (0.833, 0.5) rectangle (1.167, 1.5);
+
+			% Axes
+			\draw[->, thick] (-0.1, 0) -- (1.5, 0) node[right] {$x$};
+			\draw[->, thick] (0, -0.1) -- (0, 2.0) node[above] {$y$};
+
+			% The Function f(x) = x^2
+			\draw[domain=0.3:1.35, smooth, variable=\x, red, thick] plot ({\x}, {\x*\x}) node[right] {$f(x) = x^2$};
+
+			% Center Point and Lines
+			\filldraw[black] (1,1) circle (1.5pt);
+			\draw[dashed, thick] (1, 0) node[below=4pt] {$c=1$} -- (1, 1) -- (0, 1) node[left] {$L=1$};
+
+			% Epsilon Bounds (y = 0.5, y = 1.5)
+			\draw[dashed] (0, 1.5) node[left] {$1 + \epsilon = 1.5$} -- (1.4, 1.5);
+			\draw[dashed] (0, 0.5) node[left] {$1 - \epsilon = 0.5$} -- (1.4, 0.5);
+
+			% Delta Bounds (x = 5/6, x = 7/6)
+			\draw[dashed] (0.833, 0) node[below=4pt] {$1 - \delta$} -- (0.833, 1.8);
+			\draw[dashed] (1.167, 0) node[below=4pt] {$1 + \delta$} -- (1.167, 1.8);
+
+			% Labels for Epsilon and Delta
+			\node[left, text=gray!80!black] at (0.2, 1.25) {$\epsilon$ band};
+			\node[above, text=blue!80!black] at (1.0, 1.8) {$\delta$ band};
+		\end{tikzpicture}
+
+		\small\textit{{ So any values of $f(x)$ where $x \in (1-\delta, 1+\delta)$ should be in the green region.}}
+
+	\end{center}
+}
+
+In other words: $|x-1| \implies c=1$, where $c$ represents the limit/cluster point where $x$ approaches. These $x$'s are defined as: $0 < |x-c| < \delta$ or in otherwords, for every input to the function, $x$, where $x \in (c-\delta, c+\delta)$ and $x$ is not necessarily in the domain of the function.
+
+We are interested in the behavior of $f(x) := x^2-1$ as $x \rightarrow c$.  Spesifically, given $\epsilon = 1/2$. Find a corresponding $\delta$ s.t. $|f(x)-L| < \epsilon$ where $L=1$.
+
+Putting it together, given a cluster point $c=1$ and the function $f(x):= x^2-1$ find a correponding $\delta$ s.t. $\forall~ x \in (c-\delta, c+\delta)$, the values of the function, $f(x) \in (L-\epsilon, L+\epsilon)$ where the limit is defined to be $L := 1$
+
+
+Recall, are constrained to values of $d$ we can pick from $c=1$. First define the values of $x$ we are concered about.
+
+Observe:
+\[
+	|x-1| \leq 1 \equiv  |x-1+2| \leq 1+2 \equiv |x+1| \leq 3
+\]
+
+Therefore any values of $x$ which satisfy the inequality above contain the values which we must justify the inequality $|f(x) - 1| < \frac{1}{2}$.
+
+Observe:
+\[
+	\underset{\text{ difference of squares }}{x^2 - 1 = (x-1)(x+1)}
+\]
+
+Re-establish Inequality
+\[
+	\begin{gathered}
+		|x^2 - 1|  = |x-1| |x+1|  \implies \pop{|x-1|} ~|x+1| \leq 3 ~\pop{|x-1|} \\
+		\tiny{\text{ Multiply both sides of $|x+1| \leq 3$ by $\pop{|x-1|}$}} \\
+
+	\end{gathered}
+\]
+
+As $f(x) := x^2$ is greater than or equal to $f'(x) = x$ showing the larger function $f'(x) \rightarrow 1$ shows the smaller function $f(x) \rightarrow 1$ as $x \rightarrow c$.
+
+\[
+	3|x-1| \leq \frac{1}{2} \implies |x-1| < \frac{1}{6}
+\]
+
+
+Therefore, given $|x-1| <\frac{1}{6}$ is satisifed we can guarantee the less-strict bound is holds (i.e.)
+\[
+	\therefore ~|x-1| < \frac{1}{6} \implies |x^2-1| < \frac{1}{2}
+\]
+
+Thus our $\delta$ should be ....
+
+\cbox{catblue}{Section 4.1: 2(a)}{
+	Determine a condition on $|x-4|$ that ensures:
+	\[ \left| \sqrt{x}-2 \right| < \frac{1}{2} \]
+}
+
+\cbox{catpurple}{Visualization}{
+	\\
+	\begin{center}
+		\begin{tikzpicture}[x=1.5cm, y=2.7cm] % Scaled for better visibility
+
+			% Shaded Epsilon Band (y between 1.5 and 2.5)
+			\fill[gray!15] (0.0, 1.5) rectangle (7.5, 2.5);
+
+			% Shaded Delta Band (x between 2.25 and 5.75)
+			\fill[blue!10] (2.25, 0.0) rectangle (5.75, 3.0);
+
+			% Intersection Box (The "Safe Zone")
+			\fill[catgreen!30] (2.25, 1.5) rectangle (5.75, 2.5);
+
+			% Axes
+			\draw[->, thick] (-0.2, 0) -- (8.0, 0) node[right] {$x$};
+			\draw[->, thick] (0, -0.1) -- (0, 3.2) node[above] {$y$};
+
+			% The Function f(x) = sqrt(x)
+			\draw[domain=0.0:7.5, smooth, samples=100, variable=\x, red, thick] plot ({\x}, {sqrt(\x)}) node[right] {$f(x) = \sqrt{x}$};
+
+			% Center Point and Lines
+			\filldraw[black] (4,2) circle (1.5pt);
+			\draw[dashed, thick] (4, 0) node[below=4pt] {$c=4$} -- (4, 2) -- (0, 2) node[left] {$L=2$};
+
+			% Epsilon Bounds (y = 1.5, y = 2.5)
+			\draw[dashed] (0, 2.5) node[left] {$2 + \epsilon = 2.5$} -- (7.5, 2.5);
+			\draw[dashed] (0, 1.5) node[left] {$2 - \epsilon = 1.5$} -- (7.5, 1.5);
+
+			% Delta Bounds (x = 2.25, x = 5.75)
+			% 4 - 1.75 = 2.25, 4 + 1.75 = 5.75
+			\draw[dashed] (2.25, 0) node[below=4pt] {$4 - \delta$} -- (2.25, 3.0);
+			\draw[dashed] (5.75, 0) node[below=4pt] {$4 + \delta$} -- (5.75, 3.0);
+
+			% Labels for Epsilon and Delta
+			\node[left, text=gray!80!black] at (1.0, 2.2) {$\epsilon$ band};
+			\node[above, text=blue!80!black] at (4.0, 3.0) {$\delta$ band};
+		\end{tikzpicture}
+
+		\small\textit{{ So any values of $f(x)$ where $x \in (4-\delta, 4+\delta)$ should be in the green region.}}
+\end{center}
+}
+
+Find $x_\epsilon$
+\[
+    \begin{gathered}
+        |f(x_\delta) - L| < \epsilon \implies 
+        |\sqrt{x_\delta}-2| < \frac{1}{2} \implies 
+        -\frac{1}{2} < \sqrt{x_\delta}-2 < \frac{1}{2} \implies 
+        \frac{3}{2} < \sqrt{x_\delta} < \frac{5}{2} \implies 
+        \frac{9}{4} < x_\delta < \frac{25}{4} 
+    \end{gathered}
+\] 
+
+Find $\delta_\epsilon$
+\[
+    \begin{gathered}
+    |x_\delta - c| < \delta \implies 
+    |x_\delta - 4| < \delta \implies 
+    -\delta < x_\delta - 4 < \delta 
+    \end{gathered}
+\] 
+
+Therefore: 
+\[
+    \frac{9}{4} < x_\delta < \frac{25}{4} \equiv -\delta + 4 < x_\delta < \delta + 4
+\] 
+
+\[
+    \implies 
+    \underset{\delta_{\min}}{\rule[-1.5ex]{0pt}{0pt} \tfrac{9}{4} - 4} < x_\delta - 4 < 
+    \underset{\delta_{\max}}{\rule[-1.5ex]{0pt}{0pt} \tfrac{25}{4} - 4}
+\]
+
+\[
+    \implies -\frac{7}{4} < x_\delta - 4 < \frac{9}{4}
+\] 
+
+Thus we can constrain the equation $f(x) \rightarrow 1/2$ as $x \rightarrow 4$ for any $x \in (4-\frac{7}{4}, 4+\frac{9}{4})$
+
+\cbox{catblue}{Section 4.1: 4}{
+    If $\lim_{y \to c} f(y) = L$. Then $\forall~ \epsilon > 0, \exists~ \delta > 0 ~s.t.~ 0 < |y-c| < \delta \implies |f(y)-L| < \epsilon$. Let $x := y-c$ s.t. $y = x + c$. Conclude $\lim_{x \to 0} f(x+c) = L$
+}
+
+\[
+\begin{gathered}
+    \lim_{y \to c} f(y) = L \implies \forall~ \epsilon > 0, \exists~ \delta > 0 ~s.t. \\
+    0 < |y-c| < \delta \implies  |f(y) - L| < \epsilon \\
+\end{gathered}
+\] 
+
+Consider:
+\[
+    \begin{gathered}
+    0 < |y-c_y| < \delta \implies \\
+    \exists~ (y_n) ~s.t.~ \forall~ n > n_\epsilon, |y_n - c_y | < \delta \\
+    y_n := x_n + c_y
+    \end{gathered}
+\] 
+
+\[
+    \begin{gathered}
+    |x_n + c - c| < \delta \implies c_x := 0 
+    \end{gathered}
+\] 
+
+\cbox{catblue}{Section 4.1: 6}{
+Let $I$ be an interval in $\mathbb{R}$. 
+Let $f: I \rightarrow \mathbb{R}$
+Let $c \in I$.
+Suppose $\exists~ K,L ~s.t.~ \forall~ x \in I,~ |f(x)-L| \leq K|x-c|$
+Show $\lim_{x \to c} f(x) = L$
+}
+
+Recall:
+\[
+\begin{gathered}
+\lim_{x \to c} f(x) = L \implies  \\
+\forall~ \epsilon>0, \exists~ n_\epsilon > 0 ~s.t. \\
+\forall~ m,n \geq n_\epsilon, ~|x_n-x_m| < \epsilon
+\end{gathered}
+\] 
+
+We must show:
+\[
+\forall~ \epsilon = K|x-c|, ~\exists~ \delta_\epsilon ~s.t.~  \delta_\epsilon := 0 < |x-c| < \delta_\epsilon ~\land ~ c \not \in I
+\] 
+
+Observe 
+\[
+    \epsilon = K|x-c| \equiv \epsilon = K\delta \implies \delta = \frac{K}{\epsilon} \equiv \delta = Kn
+\] 
+
+\[
+    |x-c|< \delta \equiv  -\delta < x-c < \delta \equiv -Kn < x-c < Kn
+\] 
+
+By archimedian property $\exists~ n \in \mathbb{N}$ s.t. the inquality holds.
+
+
+
+\cbox{catpurple}{How to Pick Which to Use?}{
+% The sequential criterion vs epsilon-delta for limits
+\paragraph{Sequential criterion for limits}
+The sequential criterion is useful when it's easier to reason about the behavior of all sequences converging to a point, rather than working directly with $\varepsilon$ and $\delta$. Use the sequential criterion when:
+\begin{itemize}
+    \item The function is complicated, or piecewise-defined, making $\varepsilon$-$\delta$ algebraic manipulations messy.
+    \item You wish to prove a limit does \emph{not} exist (by producing sequences approaching the point with different limit values).
+\end{itemize}
+
+\paragraph{The $\varepsilon$-$\delta$ definition}
+The $\varepsilon$-$\delta$ definition is the standard and most direct way to prove limits exist. Use the $\varepsilon$-$\delta$ approach when:
+\begin{itemize}
+    \item The function is well-behaved and algebra allows you to solve for $\delta$ in terms of $\varepsilon$.
+    \item The problem asks explicitly for an $\varepsilon$-$\delta$ proof, or for instructive calculation of how $\delta$ depends on $\varepsilon$.
+\end{itemize}
+
+}
+
+\cbox{catgreen}{The Sequential Criterion for Limits}{
+\begin{theorem}[Equivalence of Epsilon-Delta and Sequential Limits]
+Let $A \subseteq \mathbb{R}$, let $f: A \to \mathbb{R}$ be a function, and let $c \in \mathbb{R}$ be a cluster point (or limit point) of $A$. Then the following two statements are logically equivalent:
+
+\begin{enumerate}
+  \item \textbf{The Functional Limit:} $\displaystyle\lim_{x \to c} f(x) = L$
+  \item \textbf{The Sequential Limit:} For every sequence $(x_n)$ in $A$ such that $x_n \neq c$ for all $n \in \mathbb{N}$ and $\lim_{n \to \infty} x_n = c$, the sequence of function values $(f(x_n))$ converges to $L$:
+  
+  $\displaystyle \lim_{n \to \infty} f(x_n) = L$
+\end{enumerate}
+\end{theorem}}
+
+\cbox{catblue}{Section 4.1: 9(a,c)}{
+Use either the $\epsilon-\delta$ definition or the Seqential Criterion for limits to establish the following limits:
+\[
+    \lim_{x \to 2 } \frac{1}{1-x} = -1
+    \quad \quad
+    \lim_{x \to 0} \frac{x^2}{|x|} = 0
+\] 
+}
+
+\cbox{catgray}{Case (a)}{
+    Consider the cluster point $c=2$
+    \[
+        \implies |x-2| < \delta
+    \] 
+    Consider $\delta = \frac{1}{2}$ 
+    \[
+        |x-2| < \frac{1}{2} \implies -\frac{1}{2} < x-2 < \frac{1}{2} \implies 
+        \frac{3}{2} < x < \frac{5}{2}
+    \] 
+    Pick $\delta$ to be the stricter to preserve the bidirectionality: 
+    \[
+        \implies \frac{3}{2} < x \implies \frac{1}{2} < x-1 \implies \frac{1}{x-1} < 2 \implies \delta < 2
+    \] 
+    Consider:
+    \[
+        \begin{gathered}
+        \left| \frac{1}{1-x}-(-1) \right| \\
+        \left| \frac{1}{1-x}+1 \right|  \\
+        \left| \frac{1 + 1 - x}{1-x} \right|  \\
+        \left| \frac{2-x}{1-x} \right| 
+        \end{gathered}
+    \] 
+
+    Show: 
+    \[
+        \left| \frac{2-x}{1-x} \right|  < \epsilon
+    \] 
+
+    Recall: 
+    \[
+        |x-2| < \frac{1}{2} \implies  2|x-2| < 1 \implies 2|x-2| < 2\epsilon \\
+    \] 
+
+    Substitute:
+    \[
+        \left| \frac{2-x}{1-x} \right| < |x-2| < \epsilon
+    \] 
+}
+
+
 % \cbox{catblue}{Section 4.1: 12(b,d)}{}
 % \cbox{catblue}{Section 4.1: 14}{}
 \end{document}
