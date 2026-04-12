@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "81d205b4e5d2e8f6",
+    "id": "569e824c1f0d20c4",
     "type": "split",
     "children": [
       {
-        "id": "2db7bcc7ac87b3be",
+        "id": "c6e0729eacba54b1",
         "type": "tabs",
         "children": [
           {
-            "id": "823e147280f9e752",
+            "id": "51c53a5903812382",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LecFormated/L013.md",
-                "mode": "preview",
+                "file": "LecNew/L016x.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "L013"
+              "title": "L016x"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "0dc947c22e243169",
+    "id": "41795c8e7d652daa",
     "type": "split",
     "children": [
       {
-        "id": "81f46ad729975eec",
+        "id": "9ae91fb37930ce75",
         "type": "tabs",
         "children": [
           {
-            "id": "06137368e6442805",
+            "id": "6cd655e4a95ed5a2",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,12 +48,12 @@
             }
           },
           {
-            "id": "3c75d051047d3949",
+            "id": "d147a7607c5b040e",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "archimed",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "bf698fe5be1e4a02",
+            "id": "8ee02f3513ba3feb",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,25 +78,25 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
-    "id": "d1576371ef04b96d",
+    "id": "ae6b965b02d99c55",
     "type": "split",
     "children": [
       {
-        "id": "7c7752287b863bdb",
+        "id": "2378333bf8b1611d",
         "type": "tabs",
         "children": [
           {
-            "id": "beef69d01f26cad6",
+            "id": "51b01d05add7cc2c",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "collapseAll": true,
-                "extraContext": true,
+                "file": "LecNew/L016x.md",
+                "collapseAll": false,
+                "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
@@ -104,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for L016x"
             }
           },
           {
-            "id": "5d9942dc135074ce",
+            "id": "d4781a5f59a403e3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "L05.md",
+                "file": "LecNew/L016x.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from L05"
+              "title": "Outgoing links from L016x"
             }
           },
           {
-            "id": "a77f599436560a68",
+            "id": "e21530df210e9ac5",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,12 +137,12 @@
             }
           },
           {
-            "id": "d53e05c204d254af",
+            "id": "8993c3f0af159b78",
             "type": "leaf",
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -151,32 +151,21 @@
             }
           },
           {
-            "id": "629db17f5725c119",
+            "id": "c3d8fda6907011b7",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "L014.md",
+                "file": "LecNew/L016x.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of L014"
-            }
-          },
-          {
-            "id": "6cf3322c2a42ef4a",
-            "type": "leaf",
-            "state": {
-              "type": "footnotes",
-              "state": {},
-              "icon": "lucide-file-signature",
-              "title": "Footnotes"
+              "title": "Outline of L016x"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -191,62 +180,17 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "audio-recorder:Start/stop recording": false,
       "markdown-importer:Open format converter": false,
-      "publish:Publish changes...": false,
       "zk-prefixer:Create new unique note": false,
+      "audio-recorder:Start/stop recording": false,
       "workspaces:Manage workspace layouts": false,
+      "publish:Publish changes...": false,
+      "bases:Create new base": false,
       "print:Print note": false
     }
   },
-  "active": "823e147280f9e752",
+  "active": "51c53a5903812382",
   "lastOpenFiles": [
-    "LecNew/L015.md~",
-    "LecFormated/L014.md",
-    "LecFormated/L014.md~",
-    "LecNew/L015.md",
-    "LecNew/L016.md",
-    "LecNew/L016.md~",
-    "LecNew/L016x.md",
-    "LecNew/L016x.md~",
-    "LecNew/L013.md",
-    "LecNew/L014.md",
-    "L013.md",
-    "L014.md",
-    "L015.md~",
-    "4913",
-    "L015.md",
-    "L014.md~",
-    "LecFormated/L10.md~",
-    "Atomized/H2/Convergence criterion via limsupliminf.md",
-    "L013.md~",
-    "LecFormated/L10.md",
-    "indent.log",
-    "LecFormated/L12.md",
-    "Atomized/H1/Sequences Boundedness, Algebraic Facts, Limit Laws, and Monotone Convergence.md",
-    "LecFormated/L12.md~",
-    "Welcome to Real Analysis.md",
-    "Math-301_Main.md",
-    "index.md",
-    "Main.md",
-    "quartz/public/index-og-image.webp",
-    "quartz/public/LecFormated/L11-og-image.webp",
-    "quartz/public/LecFormated/L10-og-image.webp",
-    "quartz/public/LecFormated/L09-og-image.webp",
-    "quartz/public/LecFormated/L08-og-image.webp",
-    "quartz/public/LecFormated/L07-og-image.webp",
-    "quartz/public/LecFormated/L06-og-image.webp",
-    "quartz/public/LecFormated/L05-og-image.webp",
-    "quartz/public/LecFormated/L04-og-image.webp",
-    "quartz/public/LecFormated/L03-og-image.webp",
-    "quartz/quartz-themes/themes/anuppuccin/README.md",
-    "quartz/quartz/styles/themes/README.md",
-    "quartz/quartz-themes/themes/tokyo-night/README.md",
-    "LecFormated/L01.md",
-    "Atomized/H1/Completeness of ℝ.md",
-    "Atomized/H1/Completeness Property of ℝ.md",
-    "E1_Review.md",
-    "LecFormated/L11.md"
+    "LecNew/L016x.md~"
   ]
 }

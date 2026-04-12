@@ -1,21 +1,25 @@
 \input{template.tex}
-\title{ MATH 301: Homework 5}
-\author{ Aren Vista }
+
+\title{MATH 301: Homework 5}
+\author{Aren Vista}
 \date{\today}
-\begin{document} \maketitle
 
-\cbox{catgreen}{ Cauchy Definition }{
-	A sequence $X = (x_n)$ is called a \emph{Cauchy sequence} if the terms of the sequence get arbitrarily close to each other as the sequence progresses. More formally,
-	\[
-		\begin{aligned}
-			 & \text{For every } \epsilon > 0, \text{ there exists an integer } N_\epsilon > 0, \text{ such that} \\
-			 & \qquad \forall\ m, n \geq N_\epsilon, \quad |x_n - x_m| < \epsilon.
-		\end{aligned}
-	\]
+\begin{document}
+\maketitle
 
-	This means that after some index $N_\epsilon$, the distance between any two terms $x_n$ and $x_m$ (with $n, m$ large enough) is less than any chosen positive number $\epsilon$. Intuitively, the sequence becomes "clustered" together and the terms never drift far apart, no matter how far out in the sequence you go. \vspace{1em}
+\cbox{catgreen}{Cauchy Definition}{
+	A sequence $X = (x_n)$ is called a \emph{Cauchy sequence} if the terms of the sequence get arbitrarily close to each other as the sequence progresses.
+	More formally,
+	\begin{align*}
+		 & \text{For every } \epsilon > 0, \text{ there exists an integer } N_\epsilon > 0, \text{ such that} \\
+		 & \qquad \forall\ m, n \geq N_\epsilon, \quad |x_n - x_m| < \epsilon.
+	\end{align*}
 
-	\begin{center} \textbf{\textit{ Example of a Cauchy Sequence }} \end{center}
+	This means that after some index $N_\epsilon$, the distance between any two terms $x_n$ and $x_m$ (with $n, m$ large enough) is less than any chosen positive number $\epsilon$.
+	Intuitively, the sequence becomes "clustered" together and the terms never drift far apart, no matter how far out in the sequence you go.
+	\vspace{1em}
+
+	\begin{center} \textbf{\textit{Example of a Cauchy Sequence}} \end{center}
 	\begin{center}
 		\begin{tikzpicture}[xscale=2, yscale=2]
 			% Draw axis
@@ -30,7 +34,6 @@
 
 			% Limit line
 			\draw[dotted] (0,1) -- (4,1);
-			% \node[right] at (4,1) {$x^*$};
 
 			% Place points (example Cauchy sequence) with indices
 			\foreach \n/\y/\lbl in {0/0.4/0, 0.5/1.7/1, 1/0.6/2, 1.5/1.3/3, 2/0.9/{N_\epsilon}, 2.5/1.1/{\epsilon+1}, 3/1.05/{\epsilon+2}, 3.5/0.95/{\epsilon+3}, 4/1.0/{\epsilon+4}} {
@@ -41,201 +44,223 @@
 			% After N_epsilon
 			\draw[very thin,->,green!70!black] (2.0,1.6) -- (3.8,1.0);
 			\draw[very thin,->,green!70!black] (2.0,0.6) -- (3.8,1.0);
-			% \node[align=left, anchor=north west] at (2.05,0.8) {After $N_\epsilon$};
 			\node[below] at (2,0) {$N_\epsilon$};
 			\draw[dashed] (2,0) -- (2,2);
-		\end{tikzpicture}
-	\end{center} }
-
-% Caption for accessibility:
-% The above diagram shows a sequence of points $x_n$ converging into a horizontal epsilon band around $x^*$ after an index $N_\epsilon$.
-
-\cbox{catblue}{Section 3.5: 2b)}{
-	Show directly from the definition that the following is a cauchy sequence:
-	\[ x_n := \left( 1 + \frac{1}{2!} + \dots + \frac{1}{n!}\right) \] }
-
-"English": $x_n$ is Cauchy if there's some index $N_\epsilon$ s.t. given any two indicies $m,k$ where $N_\epsilon \leq m,k$.
-The differences of the two indicies is "sufficently small": $|x_m - x_k| < \epsilon$
-
-Define terms:
-\[
-	x_m := \sum_{i=m ~|~ N_\epsilon < m}^{\infty} \frac{1}{i!}
-	\quad \quad
-	x_k := \sum_{i=k ~|~ N_\epsilon < k}^{\infty} \frac{1}{i!}
-\]
-
-Goal (Show the Following):
-\[
-	\forall~ \epsilon > 0,~
-	\left|
-	\sum_{i=m ~|~ N_\epsilon < m}^{\infty} \frac{1}{m!} -
-	\sum_{i=k ~|~ N_\epsilon < k}^{\infty} \frac{1}{k!}
-	\right| < \epsilon
-\]
-
-\[
-	\equiv
-	\left|
-	1 + \frac{1}{2!} + \frac{1}{m!}
-	-1 - \frac{1}{2!} - \frac{1}{k!}
-	\right| < \epsilon
-\]
-
-Suppose $n<m$:
-\[
-	\equiv
-	\left| \frac{1}{(n+1)!} + \dots  + \frac{1}{m!} \right| \leq
-	\left| \frac{1}{2^{n+1}} + \frac{1}{2^{n+2}} + ~\dots ~ + \frac{1}{2^{m}} \right|
-	\equiv \sum_{k=n+1}^{\infty} \left( \frac{1}{2} \right)^k
-\]
-
-\[
-	\sum_{k=n+1}^{\infty} \left( \frac{1}{2} \right)^k = \frac{\frac{1}{2^n}}{1-\frac{1}{2}} = \frac{1}{2^{n-1}}
-\]
-
-\[
-	-\frac{1}{n} \leq \frac{1}{2^{n-1}}  \leq \frac{1}{n} \implies \lim \frac{1}{2^{n-1}} = 0
-\]
-
-\[
-	-\frac{1}{2^{n-1}} \leq |x_m - x_n| \leq \frac{1}{2^{n-1}}  \implies  \lim |x_m - x_n| = 0
-\]
-
-\[
-	\lim |x_m - x_n| = 0 \implies \forall~ \epsilon > 0, \exists~  N_\epsilon > 0, ~|~  \forall\ m, n \geq N_\epsilon, |x_n - x_m| < \epsilon.
-	\sum_{k=n+1}^{\infty} \left( \frac{1}{2} \right)^k =
-	\frac{1}{2^{m-n}}
-\]
-
-\[
-	0 < k := m-n \quad \quad
-	\frac{1}{2^{k}}
-\]
-
-\[
-	-\frac{1}{k} < \frac{1}{2^{k}} < \frac{1}{k} \implies \lim \frac{1}{2^k} = 0
-\]
-
-\cbox{catblue}{Section 3.5: 3c)}{
-	Show directly from the definition that the following is NOT a cauchy sequence:
-	\[ ln(n) \] }
-
-\cbox{catgreen}{Negation of Cauchy}{
-	\[
-		\exists~  \epsilon > 0 ~s.t.~ \forall~  n > 0, \exists~  m, k \geq n ~s.t.~  |x_n - x_m| \geq  \epsilon.
-	\]
-}
-
-\cbox{catpurple}{Graph of $ln(x)$}{
-	\pgfplotsset{compat=1.18} % Recommended to ensure consistent rendering
-	\begin{center}
-		\begin{tikzpicture}[xscale=1, yscale=1]
-			\begin{axis}[
-					axis lines = center, % Places axes in the middle like a standard graph
-					xlabel = {$x$},
-					ylabel = {$y$},
-					domain = -3:3000,       % The range of x values to calculate
-					samples = 100,       % Number of points to calculate (higher = smoother)
-				]
-
-				% Plot the function y = x^2
-				\addplot [
-					thick,
-					blue,
-				]
-				{ln(x)};
-			\end{axis}
 		\end{tikzpicture}
 	\end{center}
 }
 
-\[
-	x_m := ln(2n) \quad \quad x_n := ln(n)
-\]
 
-Consider:
-\[
-	ln(2n) - ln(n) = ln(\frac{2n}{n}) = ln(2) \approx 0.6931
-\]
+\cbox{catblue}{Section 3.5: 2b}{
+	Show directly from the definition that the following is a Cauchy sequence:
+	\[ x_n := \left( 1 + \frac{1}{2!} + \dots + \frac{1}{n!}\right) \]
+}
 
-\[
-	\epsilon \in (0,1] \implies \exists~ \epsilon ~s.t.~ 0.6931 > \epsilon
-\]
+\textbf{Intuitive English:} $x_n$ is Cauchy if there is some index $N_\epsilon$ such that given any two indices $m, k \geq N_\epsilon$, the difference between the two terms is "sufficiently small": $|x_m - x_k| < \epsilon$.
 
-\[
-	\therefore x_n \text{ is not Cauchy}
-\]
+	Define terms:
+	\[
+		x_m := \sum_{i=m ~|~ N_\epsilon < m}^{\infty} \frac{1}{i!}
+		\quad \quad
+		x_k := \sum_{i=k ~|~ N_\epsilon < k}^{\infty} \frac{1}{i!}
+	\]
 
-\cbox{catblue}{Section 3.5: 4}{
-	Show directly from the definition that if $(x_n)$ and $(y_n)$ are Cauchy sequences, then $(x_n+y_n)$ and $(x_n y_n)$ are Cauchy sequences }
-\[
-	x_n + y_n := \{ x_n+y_n ~\forall~ n \}
-	\quad \quad
-	x_n \cdot  y_n := \{ x_n \cdot  y_n ~\forall~ n \}
-\]
+	Goal (Show the Following):
+	\[
+		\forall~ \epsilon > 0,~
+		\left|
+		\sum_{i=m ~|~ N_\epsilon < m}^{\infty} \frac{1}{m!} -
+		\sum_{i=k ~|~ N_\epsilon < k}^{\infty} \frac{1}{k!}
+		\right| < \epsilon
+	\]
 
-\[
-	\begin{gathered}
-		|x_m - x_n| < \epsilon \implies \forall~ \epsilon>0, \exists~ n_\epsilon ~s.t.~ \forall~ m,n > n_\epsilon, |x_m - x_n| < \epsilon \\
-		|y_m - y_n| < \epsilon \implies \forall~ \epsilon>0, \exists~ n_\epsilon ~s.t.~ \forall~ m,n > n_\epsilon, |y_m - y_n| < \epsilon
-	\end{gathered}
-\]
+	\[
+		\equiv
+		\left|
+		1 + \frac{1}{2!} + \frac{1}{m!}
+		-1 - \frac{1}{2!} - \frac{1}{k!}
+		\right| < \epsilon
+	\]
+	Define terms:
+	\begin{align*}
+		x_m & := \sum_{i=m \mid N_\epsilon < m}^{\infty} \frac{1}{m!} \\
+		x_k & := \sum_{i=k \mid N_\epsilon < k}^{\infty} \frac{1}{n!}
+	\end{align*}
 
-\[
-	|x_m+y_m - x_n - y_n| = | (x_m-x_n) + (y_m-y_n) | \leq |x_m - x_n| + |y_m - y_n| < 2\epsilon
-\]
+	Goal (Show the Following):
+	\begin{align*}
+		\forall~ \epsilon > 0,~
+		\left| \sum_{i=m \mid N_\epsilon < m}^{\infty} \frac{1}{m!} - \sum_{i=k \mid N_\epsilon < k}^{\infty} \frac{1}{n!} \right| & < \epsilon \\
+		\equiv \left| 1 + \frac{1}{2!} + \dots + \frac{1}{m!} - \left( 1 + \frac{1}{2!} + \dots + \frac{1}{n!} \right) \right|     & < \epsilon
+	\end{align*}
 
-\[
-	\begin{gathered}
-		|x_m - x_n | \leq  |x_m| + |-x_n| \implies |y_m|~|x_m - x_n| \leq  (|x_m| + |-x_n|)~|y_m| \\
-		|y_m - y_n | \leq  |y_m| + |-y_n| \implies |x_n|~|y_m - y_n | \leq  (|y_m| + |-y_n|) ~|x_n| \\
-	\end{gathered}
-\]
+	Suppose $n<m$:
+	\begin{align*}
+		\left| \frac{1}{(n+1)!} + \dots + \frac{1}{m!} \right| & \leq \left| \frac{1}{2^{n+1}} + \frac{1}{2^{n+2}} + \dots + \frac{1}{2^{m}} \right| \\
+		                                                       & \equiv \sum_{k=n+1}^{\infty} \left( \frac{1}{2} \right)^k
+	\end{align*}
 
-\[
-	\begin{gathered}
-		| x_m y_m - x_n y_n | = |x_m y_m - {\color{red}{\mathbf{x_m y_n}}} + {\color{red}{\mathbf{x_m y_n}}} - x_n y_n | \\
-		= |x_m ~ (y_m-y_n) + y_n ~(x_m-x_n)| \leq |x_m|\cdot |y_m-y_n| + |y_n| |x_m-x_n| \\
-		|x_m|\cdot |y_m-y_n| + |y_n| |x_m-x_n|
-	\end{gathered}
-\]
+	Evaluating the geometric series:
+	\begin{align*}
+		\sum_{k=n+1}^{\infty} \left( \frac{1}{2} \right)^k & = \frac{\frac{1}{2^{n+1}}}{1-\frac{1}{2}} = \frac{1}{2^n}           \\
+		-\frac{1}{n} \leq \frac{1}{2^{n-1}}                & \leq \frac{1}{n} \implies \lim_{n \to \infty} \frac{1}{2^{n-1}} = 0 \\
+		-\frac{1}{2^{n-1}} \leq |x_m - x_n|                & \leq \frac{1}{2^{n-1}} \implies \lim_{n \to \infty} |x_m - x_n| = 0
+	\end{align*}
 
-\[
-	\begin{gathered}
-		|x_m - x_n| < \epsilon \implies \exists~ M_x ~s.t.~ \forall~ n, x_m < M_x \\
-		|y_m - y_n| < \epsilon \implies \exists~ M_y ~s.t.~ \forall~ n, y_m < M_y 
-	\end{gathered}
-\]
+	\[
+		\sum_{k=n+1}^{\infty} \left( \frac{1}{2} \right)^k = \frac{\frac{1}{2^n}}{1-\frac{1}{2}} = \frac{1}{2^{n-1}}
+	\]
 
-\[
-    \begin{gathered}
-    M_x \cdot |x_m-x_n| < \epsilon \cdot  M_x \\
-    M_y \cdot |y_m-y_n| < \epsilon \cdot  M_y \\
-    \end{gathered}
-\] 
+	\[
+		-\frac{1}{n} \leq \frac{1}{2^{n-1}}  \leq \frac{1}{n} \implies \lim \frac{1}{2^{n-1}} = 0
+	\]
 
-\[
-    \begin{gathered}
-    \implies | x_m y_m - x_n y_n | < M_x \cdot |y_m-y_n| + M_y |x_m-x_n| < 2  M_y M_y \epsilon \\
-    \frac{|y_m-y_n|}{M_y} + \frac{|x_m-x_n|}{M_x} < 2\epsilon \\
-    \frac{|y_m-y_n|}{2M_y} + \frac{|x_m-x_n|}{2M_x} < \epsilon \\
-    \end{gathered}
-\] 
+	\[
+		-\frac{1}{2^{n-1}} \leq |x_m - x_n| \leq \frac{1}{2^{n-1}}  \implies  \lim |x_m - x_n| = 0
+	\]
+
+	\[
+		\lim |x_m - x_n| = 0 \implies \forall~ \epsilon > 0, \exists~  N_\epsilon > 0, ~|~  \forall\ m, n \geq N_\epsilon, |x_n - x_m| < \epsilon.
+		\sum_{k=n+1}^{\infty} \left( \frac{1}{2} \right)^k =
+		\frac{1}{2^{m-n}}
+	\]
+
+	\[
+		0 < k := m-n \quad \quad
+		\frac{1}{2^{k}}
+	\]
+
+	\[
+		-\frac{1}{k} < \frac{1}{2^{k}} < \frac{1}{k} \implies \lim \frac{1}{2^k} = 0
+	\]
+
+    \qq
+
+	\cbox{catblue}{Section 3.5: 3c}{
+		Show directly from the definition that the following is NOT a Cauchy sequence:
+		\[ \ln(n) \]
+	}
+
+	\cbox{catgreen}{Negation of Cauchy}{
+		\[
+			\exists~ \epsilon > 0 \text{ s.t. } \forall~ n > 0, \exists~ m, k \geq n \text{ s.t. } |x_n - x_m| \geq \epsilon.
+		\]
+	}
+
+	\cbox{catpurple}{Graph of $\ln(x)$}{
+		\pgfplotsset{compat=1.18}
+		\begin{center}
+			\begin{tikzpicture}[xscale=1, yscale=1]
+				\begin{axis}[
+						axis lines = center,
+						xlabel = {$x$},
+						ylabel = {$y$},
+						domain = 0.01:3000, % Adjusted domain to avoid evaluating ln(0) or negatives
+						samples = 100,
+					]
+					\addplot [
+						thick,
+						blue,
+					]
+					{ln(x)};
+				\end{axis}
+			\end{tikzpicture}
+		\end{center}
+	}
+
+		Let the subsequences be defined as:
+		\[
+			x_m := \ln(2n) \quad \text{and} \quad x_n := \ln(n)
+		\]
+
+		Consider the difference:
+		\[
+			\ln(2n) - \ln(n) = \ln\left(\frac{2n}{n}\right) = \ln(2) \approx 0.6931
+		\]
+
+		Since $\epsilon$ can be chosen arbitrarily, let $\epsilon \in (0,1]$. This implies:
+		\[
+			\exists~ \epsilon \text{ s.t. } 0.6931 > \epsilon
+		\]
+
+		\[
+			\therefore x_n \text{ is not Cauchy.}
+		\]
 
 
+	\cbox{catblue}{Section 3.5: 4}{
+		Show directly from the definition that if $(x_n)$ and $(y_n)$ are Cauchy sequences, then $(x_n+y_n)$ and $(x_n y_n)$ are Cauchy sequences.
+	}
 
-=======
-	\[ x_n := ln(n) \] }
+		Let the sequence operations be defined as:
+		\[
+			x_n + y_n := \{ x_n+y_n \mid \forall~ n \} \quad \text{and} \quad x_n \cdot y_n := \{ x_n \cdot y_n \mid \forall~ n \}
+		\]
+
+		By the definition of Cauchy sequences:
+		\begin{align*}
+			|x_m - x_n| < \epsilon & \implies \forall~ \epsilon>0, \exists~ n_\epsilon \text{ s.t. } \forall~ m,n > n_\epsilon, |x_m - x_n| < \epsilon \\
+			|y_m - y_n| < \epsilon & \implies \forall~ \epsilon>0, \exists~ n_\epsilon \text{ s.t. } \forall~ m,n > n_\epsilon, |y_m - y_n| < \epsilon
+		\end{align*}
+
+		For addition:
+		\[
+			|x_m+y_m - (x_n + y_n)| = |(x_m-x_n) + (y_m-y_n)| \leq |x_m - x_n| + |y_m - y_n| < 2\epsilon
+		\]
+
+		For multiplication, we establish bounds:
+		\begin{align*}
+			|x_m - x_n| & \leq |x_m| + |-x_n| \implies |y_m||x_m - x_n| \leq (|x_m| + |-x_n|)|y_m| \\
+			|y_m - y_n| & \leq |y_m| + |-y_n| \implies |x_n||y_m - y_n| \leq (|y_m| + |-y_n|)|x_n|
+		\end{align*}
+
+		Now applying the triangle inequality trick for multiplication:
+		\begin{align*}
+			|x_m y_m - x_n y_n| & = |x_m y_m - \textcolor{red}{\mathbf{x_m y_n}} + \textcolor{red}{\mathbf{x_m y_n}} - x_n y_n| \\
+			                    & = |x_m(y_m-y_n) + y_n(x_m-x_n)|                                                               \\
+			                    & \leq |x_m||y_m-y_n| + |y_n||x_m-x_n|
+		\end{align*}
+
+		Because Cauchy sequences are bounded, we know:
+		\begin{align*}
+			|x_m - x_n| < \epsilon & \implies \exists~ M_x > 0 \text{ s.t. } \forall~ m, |x_m| < M_x \\
+			|y_m - y_n| < \epsilon & \implies \exists~ M_y > 0 \text{ s.t. } \forall~ m, |y_m| < M_y
+		\end{align*}
+
+		Multiplying by these bounds:
+		\begin{align*}
+			M_x \cdot |y_m-y_n| & < \epsilon \cdot M_x \\
+			M_y \cdot |x_m-x_n| & < \epsilon \cdot M_y
+		\end{align*}
+
+		Thus:
+		\begin{align*}
+			\implies |x_m y_m - x_n y_n|                                                    & < M_x |y_m-y_n| + M_y |x_m-x_n|                                                          \\
+			\text{Letting } \epsilon'                                                       & = \frac{\epsilon}{2M_x} \text{ and } \epsilon'' = \frac{\epsilon}{2M_y} \text{ yields: } \\
+			M_x \left(\frac{\epsilon}{2M_x}\right) + M_y \left(\frac{\epsilon}{2M_y}\right) & = \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon
+		\end{align*}
+
+	\[ x_n := ln(n) \] 
+
 
 If $x_n$ is a Cauchy sequence. Then $x_n \rightarrow L$ as $n \rightarrow \infty$.
 
 
-\cbox{catblue}{Section 3.5: 4}{
-	Show directly from the definition that if $(x_n)$ and $(y_n)$ are Cauchy sequences, then $(x_n+y_n)$ and $(x_n y_n)$ are Cauchy sequences }
->>>>>>> 4bd2785 (curr)
-
 \cbox{catblue}{Section 3.5: 7}{
-	Let $(x_n)$ be a Cauchy sequence such that $x_n$ is an integer for every $n \in \mathbb{N}$. Show that $(x_n)$ is ultimately constant. }
+	Let $(x_n)$ be a Cauchy sequence such that $x_n$ is an integer for every $n \in \mathbb{N}$. Show that $(x_n)$ is ultimately constant.
+}
+
+Let $(x_n)$ be a Cauchy sequence where $x_n \in \mathbb{Z}$ for all $n \in \mathbb{N}$.
+
+By the definition of a Cauchy sequence, choosing $\epsilon = 1$, there exists an $N \in \mathbb{N}$ such that for all $m, n \ge N$:
+$$|x_m - x_n| < 1$$
+
+Since $x_m, x_n \in \mathbb{Z}$, their absolute difference $|x_m - x_n|$ must be a non-negative integer. 
+
+The only non-negative integer strictly less than $1$ is $0$. Therefore, for all $m, n \ge N$:
+$$|x_m - x_n| = 0 \implies x_m = x_n$$
+
+Thus, for all $n \ge N$, $x_n = x_N$. The sequence is ultimately constant.
 
 % ---
 
@@ -250,14 +275,11 @@ If $x_n$ is a Cauchy sequence. Then $x_n \rightarrow L$ as $n \rightarrow \infty
 	\]
 }
 
-\cbox{catgray}{Case (a)}{
 	Observe:
 	\[
 		\forall~ n \in \mathbb{N}, ~|(-1)^{n} - (-1)^{n+1}| = 2 \geq \epsilon,
 	\]
-}
 
-\cbox{catgray}{Case (b)}{
 	For some fixed $n$ let $m := 2n$ s.t.
 	\[
 		x_m := \left( 2n + \frac{(-1)^{2n}}{2n} \right)
@@ -283,10 +305,35 @@ If $x_n$ is a Cauchy sequence. Then $x_n \rightarrow L$ as $n \rightarrow \infty
 	\[
 		\therefore \epsilon \leq |x_m - x_n| \implies  x_n \text{ is not Cauchy }
 	\]
-}
-% \cbox{catblue}{Section 3.6: 7}{}
+	Let $x_n := N$, where $N \in \mathbb{N}$ for an arbitrary integer.
+	Consider $\forall~ m,n \in \mathbb{N}$:
+	\[
+		|x_m - x_n| \equiv |N - N| \equiv |0| = 0 < \epsilon
+	\]
+	Since $\epsilon$ can be chosen as $1/2$, the difference between any two integer terms must be strictly less than $1/2$, which is only possible if they are exactly equal (i.e., $|0|$). Thus, the sequence is ultimately constant.
 
-% ---
+\cbox{catblue}{Section 3.6: 7}{
+Let $(x_n)$ and $(y_n)$ be sequences of positive numbers such that $\lim(x_n/y_n) = 0$.
+\begin{itemize}
+    \item (a) Show that if $\lim(x_n) = +\infty$, then $\lim(y_n) = +\infty$.
+    \item (b) Show that if $(y_n)$ is bounded, then $\lim(x_n) = 0$.
+\end{itemize}
+}
+
+\textbf{Infinite Limit:}
+Given $\lim\left(\frac{x_n}{y_n}\right) = 0$ and $x_n, y_n > 0$.
+Choose $\epsilon = 1$. $\exists N_1$ such that $n \ge N_1 \implies 0 < \frac{x_n}{y_n} < 1 \implies x_n < y_n$.
+
+$\lim x_n = +\infty \implies \exists N_2 : n \ge N_2 \implies x_n > M$. Let $N = \max(N_1, N_2)$. Then $n \ge N \implies y_n > x_n > M$. So, $\lim y_n = +\infty$.
+
+\textbf{Bounded $y_n$:}
+Suppose $0 < y_n \le M\ \forall n$. For $\epsilon > 0$, $\exists N$ such that $n \ge N \implies 0 < \frac{x_n}{y_n} < \frac{\epsilon}{M}$, so $x_n < \frac{\epsilon}{M}y_n \le \epsilon$. Thus, $n \ge N \implies 0 < x_n < \epsilon \implies \lim x_n = 0$.
+
+
+\begin{enumerate}
+    \item[(a)] There exists $N_1$ such that if $n > N_1$, then $0 < x_n < y_n$. If $\lim(x_n) = \infty$ then $\lim(y_n) = \infty$.
+    \item[(b)] Suppose that $|y_n| \leq M$ for some $M > 0$. Given $\varepsilon > 0$ there exists $N_{\varepsilon}$ such that if $n \geq N_{\varepsilon}$ then $0 < \frac{x_n}{y_n} \leq \frac{\varepsilon}{M}$. Therefore $|x_n| \leq (\varepsilon/M)y_n \leq \varepsilon$ for $n \geq N_{\varepsilon}$.
+\end{enumerate}
 
 \cbox{catblue}{Section 4.1: 1(a)}{ Determine a condition on $|x-1|$ that ensures: \[ \left| x^2-1 \right| < \frac{1}{2} \] }
 \cbox{catpurple}{Visualization}{
@@ -354,11 +401,8 @@ Observe:
 
 Re-establish Inequality
 \[
-	\begin{gathered}
-		|x^2 - 1|  = |x-1| |x+1|  \implies \pop{|x-1|} ~|x+1| \leq 3 ~\pop{|x-1|} \\
-		\tiny{\text{ Multiply both sides of $|x+1| \leq 3$ by $\pop{|x-1|}$}} \\
-
-	\end{gathered}
+	|x^2 - 1| = |x - 1|\,|x + 1| \implies |x - 1|\,|x + 1| \leq 3\,|x - 1| \\
+	\text{Multiply both sides of $|x+1| \leq 3$ by $|x-1|$}
 \]
 
 As $f(x) := x^2$ is greater than or equal to $f'(x) = x$ showing the larger function $f'(x) \rightarrow 1$ shows the smaller function $f(x) \rightarrow 1$ as $x \rightarrow c$.
@@ -420,187 +464,346 @@ Thus our $\delta$ should be ....
 		\end{tikzpicture}
 
 		\small\textit{{ So any values of $f(x)$ where $x \in (4-\delta, 4+\delta)$ should be in the green region.}}
-\end{center}
+	\end{center}
 }
 
 Find $x_\epsilon$
 \[
-    \begin{gathered}
-        |f(x_\delta) - L| < \epsilon \implies 
-        |\sqrt{x_\delta}-2| < \frac{1}{2} \implies 
-        -\frac{1}{2} < \sqrt{x_\delta}-2 < \frac{1}{2} \implies 
-        \frac{3}{2} < \sqrt{x_\delta} < \frac{5}{2} \implies 
-        \frac{9}{4} < x_\delta < \frac{25}{4} 
-    \end{gathered}
-\] 
+	\begin{gathered}
+		|f(x_\delta) - L| < \epsilon \implies
+		|\sqrt{x_\delta}-2| < \frac{1}{2} \implies
+		-\frac{1}{2} < \sqrt{x_\delta}-2 < \frac{1}{2} \implies
+		\frac{3}{2} < \sqrt{x_\delta} < \frac{5}{2} \implies
+		\frac{9}{4} < x_\delta < \frac{25}{4}
+	\end{gathered}
+\]
 
 Find $\delta_\epsilon$
 \[
-    \begin{gathered}
-    |x_\delta - c| < \delta \implies 
-    |x_\delta - 4| < \delta \implies 
-    -\delta < x_\delta - 4 < \delta 
-    \end{gathered}
-\] 
+	\begin{gathered}
+		|x_\delta - c| < \delta \implies
+		|x_\delta - 4| < \delta \implies
+		-\delta < x_\delta - 4 < \delta
+	\end{gathered}
+\]
 
-Therefore: 
+Therefore:
 \[
-    \frac{9}{4} < x_\delta < \frac{25}{4} \equiv -\delta + 4 < x_\delta < \delta + 4
-\] 
-
-\[
-    \implies 
-    \underset{\delta_{\min}}{\rule[-1.5ex]{0pt}{0pt} \tfrac{9}{4} - 4} < x_\delta - 4 < 
-    \underset{\delta_{\max}}{\rule[-1.5ex]{0pt}{0pt} \tfrac{25}{4} - 4}
+	\frac{9}{4} < x_\delta < \frac{25}{4} \equiv -\delta + 4 < x_\delta < \delta + 4
 \]
 
 \[
-    \implies -\frac{7}{4} < x_\delta - 4 < \frac{9}{4}
-\] 
+	\implies
+	\underset{\delta_{\min}}{\rule[-1.5ex]{0pt}{0pt} \tfrac{9}{4} - 4} < x_\delta - 4 <
+	\underset{\delta_{\max}}{\rule[-1.5ex]{0pt}{0pt} \tfrac{25}{4} - 4}
+\]
+
+\[
+	\implies -\frac{7}{4} < x_\delta - 4 < \frac{9}{4}
+\]
 
 Thus we can constrain the equation $f(x) \rightarrow 1/2$ as $x \rightarrow 4$ for any $x \in (4-\frac{7}{4}, 4+\frac{9}{4})$
 
 \cbox{catblue}{Section 4.1: 4}{
-    If $\lim_{y \to c} f(y) = L$. Then $\forall~ \epsilon > 0, \exists~ \delta > 0 ~s.t.~ 0 < |y-c| < \delta \implies |f(y)-L| < \epsilon$. Let $x := y-c$ s.t. $y = x + c$. Conclude $\lim_{x \to 0} f(x+c) = L$
+	If $\lim_{y \to c} f(y) = L$. Then $\forall~ \epsilon > 0, \exists~ \delta > 0 ~s.t.~ 0 < |y-c| < \delta \implies |f(y)-L| < \epsilon$. Let $x := y-c$ s.t. $y = x + c$. Conclude $\lim_{x \to 0} f(x+c) = L$
 }
 
 \[
-\begin{gathered}
-    \lim_{y \to c} f(y) = L \implies \forall~ \epsilon > 0, \exists~ \delta > 0 ~s.t. \\
-    0 < |y-c| < \delta \implies  |f(y) - L| < \epsilon \\
-\end{gathered}
-\] 
+	\begin{gathered}
+		\lim_{y \to c} f(y) = L \implies \forall~ \epsilon > 0, \exists~ \delta > 0 ~s.t. \\
+		0 < |y-c| < \delta \implies  |f(y) - L| < \epsilon \\
+	\end{gathered}
+\]
 
 Consider:
 \[
-    \begin{gathered}
-    0 < |y-c_y| < \delta \implies \\
-    \exists~ (y_n) ~s.t.~ \forall~ n > n_\epsilon, |y_n - c_y | < \delta \\
-    y_n := x_n + c_y
-    \end{gathered}
-\] 
+	\begin{gathered}
+		0 < |y-c_y| < \delta \implies \\
+		\exists~ (y_n) ~s.t.~ \forall~ n > n_\epsilon, |y_n - c_y | < \delta \\
+		y_n := x_n + c_y
+	\end{gathered}
+\]
 
 \[
-    \begin{gathered}
-    |x_n + c - c| < \delta \implies c_x := 0 
-    \end{gathered}
-\] 
+	\begin{gathered}
+		|x_n + c - c| < \delta \implies c_x := 0
+	\end{gathered}
+\]
 
 \cbox{catblue}{Section 4.1: 6}{
-Let $I$ be an interval in $\mathbb{R}$. 
-Let $f: I \rightarrow \mathbb{R}$
-Let $c \in I$.
-Suppose $\exists~ K,L ~s.t.~ \forall~ x \in I,~ |f(x)-L| \leq K|x-c|$
-Show $\lim_{x \to c} f(x) = L$
+	Let $I$ be an interval in $\mathbb{R}$.
+	Let $f: I \rightarrow \mathbb{R}$
+	Let $c \in I$.
+	Suppose $\exists~ K,L ~s.t.~ \forall~ x \in I,~ |f(x)-L| \leq K|x-c|$
+	Show $\lim_{x \to c} f(x) = L$
 }
 
 Recall:
 \[
-\begin{gathered}
-\lim_{x \to c} f(x) = L \implies  \\
-\forall~ \epsilon>0, \exists~ n_\epsilon > 0 ~s.t. \\
-\forall~ m,n \geq n_\epsilon, ~|x_n-x_m| < \epsilon
-\end{gathered}
-\] 
+	\begin{gathered}
+		\lim_{x \to c} f(x) = L \implies  \\
+		\forall~ \epsilon>0, \exists~ n_\epsilon > 0 ~s.t. \\
+		\forall~ m,n \geq n_\epsilon, ~|x_n-x_m| < \epsilon
+	\end{gathered}
+\]
 
 We must show:
 \[
-\forall~ \epsilon = K|x-c|, ~\exists~ \delta_\epsilon ~s.t.~  \delta_\epsilon := 0 < |x-c| < \delta_\epsilon ~\land ~ c \not \in I
-\] 
+	\forall~ \epsilon = K|x-c|, ~\exists~ \delta_\epsilon ~s.t.~  \delta_\epsilon := 0 < |x-c| < \delta_\epsilon ~\land ~ c \not \in I
+\]
 
-Observe 
+Observe
 \[
-    \epsilon = K|x-c| \equiv \epsilon = K\delta \implies \delta = \frac{K}{\epsilon} \equiv \delta = Kn
-\] 
+	\epsilon = K|x-c| \equiv \epsilon = K\delta \implies \delta = \frac{K}{\epsilon} \equiv \delta = Kn
+\]
 
 \[
-    |x-c|< \delta \equiv  -\delta < x-c < \delta \equiv -Kn < x-c < Kn
-\] 
+	|x-c|< \delta \equiv  -\delta < x-c < \delta \equiv -Kn < x-c < Kn
+\]
 
 By archimedian property $\exists~ n \in \mathbb{N}$ s.t. the inquality holds.
 
 
 
 \cbox{catpurple}{How to Pick Which to Use?}{
-% The sequential criterion vs epsilon-delta for limits
-\paragraph{Sequential criterion for limits}
-The sequential criterion is useful when it's easier to reason about the behavior of all sequences converging to a point, rather than working directly with $\varepsilon$ and $\delta$. Use the sequential criterion when:
-\begin{itemize}
-    \item The function is complicated, or piecewise-defined, making $\varepsilon$-$\delta$ algebraic manipulations messy.
-    \item You wish to prove a limit does \emph{not} exist (by producing sequences approaching the point with different limit values).
-\end{itemize}
+	% The sequential criterion vs epsilon-delta for limits
+	\paragraph{Sequential criterion for limits}
+	The sequential criterion is useful when it's easier to reason about the behavior of all sequences converging to a point, rather than working directly with $\varepsilon$ and $\delta$. Use the sequential criterion when:
+	\begin{itemize}
+		\item The function is complicated, or piecewise-defined, making $\varepsilon$-$\delta$ algebraic manipulations messy.
+		\item You wish to prove a limit does \emph{not} exist (by producing sequences approaching the point with different limit values).
+	\end{itemize}
 
-\paragraph{The $\varepsilon$-$\delta$ definition}
-The $\varepsilon$-$\delta$ definition is the standard and most direct way to prove limits exist. Use the $\varepsilon$-$\delta$ approach when:
-\begin{itemize}
-    \item The function is well-behaved and algebra allows you to solve for $\delta$ in terms of $\varepsilon$.
-    \item The problem asks explicitly for an $\varepsilon$-$\delta$ proof, or for instructive calculation of how $\delta$ depends on $\varepsilon$.
-\end{itemize}
+	\paragraph{The $\varepsilon$-$\delta$ definition}
+	The $\varepsilon$-$\delta$ definition is the standard and most direct way to prove limits exist. Use the $\varepsilon$-$\delta$ approach when:
+	\begin{itemize}
+		\item The function is well-behaved and algebra allows you to solve for $\delta$ in terms of $\varepsilon$.
+		\item The problem asks explicitly for an $\varepsilon$-$\delta$ proof, or for instructive calculation of how $\delta$ depends on $\varepsilon$.
+	\end{itemize}
 
 }
 
 \cbox{catgreen}{The Sequential Criterion for Limits}{
-\begin{theorem}[Equivalence of Epsilon-Delta and Sequential Limits]
-Let $A \subseteq \mathbb{R}$, let $f: A \to \mathbb{R}$ be a function, and let $c \in \mathbb{R}$ be a cluster point (or limit point) of $A$. Then the following two statements are logically equivalent:
+	\begin{theorem}[Equivalence of Epsilon-Delta and Sequential Limits]
+		Let $A \subseteq \mathbb{R}$, let $f: A \to \mathbb{R}$ be a function, and let $c \in \mathbb{R}$ be a cluster point (or limit point) of $A$. Then the following two statements are logically equivalent:
 
-\begin{enumerate}
-  \item \textbf{The Functional Limit:} $\displaystyle\lim_{x \to c} f(x) = L$
-  \item \textbf{The Sequential Limit:} For every sequence $(x_n)$ in $A$ such that $x_n \neq c$ for all $n \in \mathbb{N}$ and $\lim_{n \to \infty} x_n = c$, the sequence of function values $(f(x_n))$ converges to $L$:
-  
-  $\displaystyle \lim_{n \to \infty} f(x_n) = L$
-\end{enumerate}
-\end{theorem}}
+		\begin{enumerate}
+			\item \textbf{The Functional Limit:} $\displaystyle\lim_{x \to c} f(x) = L$
+			\item \textbf{The Sequential Limit:} For every sequence $(x_n)$ in $A$ such that $x_n \neq c$ for all $n \in \mathbb{N}$ and $\lim_{n \to \infty} x_n = c$, the sequence of function values $(f(x_n))$ converges to $L$:
+
+			      $\displaystyle \lim_{n \to \infty} f(x_n) = L$
+		\end{enumerate}
+	\end{theorem}}
 
 \cbox{catblue}{Section 4.1: 9(a,c)}{
-Use either the $\epsilon-\delta$ definition or the Seqential Criterion for limits to establish the following limits:
+	Use either the $\epsilon-\delta$ definition or the Seqential Criterion for limits to establish the following limits:
+	\[
+		\lim_{x \to 2 } \frac{1}{1-x} = -1
+		\quad \quad
+		\lim_{x \to 0} \frac{x^2}{|x|} = 0
+	\]
+}
+
+
+Let $\epsilon > 0$ be given. We must find a $\delta > 0$ such that if $0 < |x-2| < \delta$, then $\left| \frac{1}{1-x} - (-1) \right| < \epsilon$. \\
+
+First, we simplify the expression:
 \[
-    \lim_{x \to 2 } \frac{1}{1-x} = -1
-    \quad \quad
-    \lim_{x \to 0} \frac{x^2}{|x|} = 0
+	\left| \frac{1}{1-x} - (-1) \right| = \left| \frac{1}{1-x} + 1 \right| = \left| \frac{1 + 1 - x}{1-x} \right| = \left| \frac{2-x}{1-x} \right| = \frac{|x-2|}{|x-1|}
+\]
+
+Next, we establish an initial bound. Assume $\delta \le \frac{1}{2}$. Then:
+\[
+	|x-2| < \frac{1}{2}
+\]
+\[
+	-\frac{1}{2} < x-2 < \frac{1}{2}
+\]
+\[
+	\frac{3}{2} < x < \frac{5}{2}
+\]
+\[
+	\frac{1}{2} < x-1 < \frac{3}{2}
+\]
+
+Taking the reciprocal, we get:
+\[
+	\frac{1}{|x-1|} < 2
+\]
+
+Substituting this back into our simplified expression, we have:
+\[
+	\frac{|x-2|}{|x-1|} < 2|x-2|
+\]
+
+We want this entire expression to be less than $\epsilon$. Therefore, we require:
+\[
+	2|x-2| < \epsilon \implies |x-2| < \frac{\epsilon}{2}
+\]
+
+Choose $\delta = \min\left(\frac{1}{2}, \frac{\epsilon}{2}\right)$.
+
+Then, for all $x$ satisfying $0 < |x-2| < \delta$, it follows that $|x-2| < \frac{1}{2}$ (which guarantees $\frac{1}{|x-1|} < 2$) and $|x-2| < \frac{\epsilon}{2}$.
+
+Thus:
+\[
+	\left| \frac{1}{1-x} - (-1) \right| = \frac{|x-2|}{|x-1|} < 2|x-2| < 2\left(\frac{\epsilon}{2}\right) = \epsilon
+\]
+
+\qq
+
+
+Let $\epsilon > 0$ be given. We must find a $\delta > 0$ such that if $0 < |x-0| < \delta$, then $\left| \frac{x^2}{|x|} - 0 \right| < \epsilon$. \\
+
+Observe as $0 < |x-0| < \delta$, we know $x \neq 0$. 
+
+\[
+  \left| \frac{x^2}{|x|} - 0 \right| < \epsilon \implies 
+   \frac{x^2}{|x|}    < \epsilon \implies 
+   \frac{|x^2|}{|x|}  < \epsilon \land x \neq 0 \implies 
+  |x| < \epsilon 
+\] 
+
+\qq
+
+\cbox{catblue}{Section 4.1: 12(b,d)}{
+    Show that the following limits do \textit{not} exist 
+\[
+(b)\quad \lim_{x \to 0^+} \frac{1}{\sqrt{x}} \quad\quad\quad\quad
+(d)\quad \lim_{x \to 0} \sin\!\left(\frac{1}{x^2}\right) 
 \] 
 }
 
-\cbox{catgray}{Case (a)}{
-    Consider the cluster point $c=2$
-    \[
-        \implies |x-2| < \delta
-    \] 
-    Consider $\delta = \frac{1}{2}$ 
-    \[
-        |x-2| < \frac{1}{2} \implies -\frac{1}{2} < x-2 < \frac{1}{2} \implies 
-        \frac{3}{2} < x < \frac{5}{2}
-    \] 
-    Pick $\delta$ to be the stricter to preserve the bidirectionality: 
-    \[
-        \implies \frac{3}{2} < x \implies \frac{1}{2} < x-1 \implies \frac{1}{x-1} < 2 \implies \delta < 2
-    \] 
-    Consider:
-    \[
-        \begin{gathered}
-        \left| \frac{1}{1-x}-(-1) \right| \\
-        \left| \frac{1}{1-x}+1 \right|  \\
-        \left| \frac{1 + 1 - x}{1-x} \right|  \\
-        \left| \frac{2-x}{1-x} \right| 
-        \end{gathered}
-    \] 
+Recall: By \textbf{Sequential Criterion} For every sequence $(x_n)$ in $A$ such that $x_n \neq c$ for all $n \in \mathbb{N}$ and $\lim_{n \to \infty} x_n = c$, the sequence of function values $(f(x_n))$ converges to $L$:
 
-    Show: 
-    \[
-        \left| \frac{2-x}{1-x} \right|  < \epsilon
-    \] 
+Let $x_n := \frac{1}{n^2}$. By squeeze $ -\frac{1}{n} < x_n < \frac{1}{n} \implies \lim x_n = 0$.
 
-    Recall: 
-    \[
-        |x-2| < \frac{1}{2} \implies  2|x-2| < 1 \implies 2|x-2| < 2\epsilon \\
-    \] 
+Observe the following:
 
-    Substitute:
-    \[
-        \left| \frac{2-x}{1-x} \right| < |x-2| < \epsilon
-    \] 
+\[
+\lim_{x \to 0^+} \frac{1}{\sqrt{x}} = L = \lim_{n \to \infty} \frac{1}{\sqrt{\frac{1}{n^2}} } = \infty 
+\] 
+
+This is not possible as the right hand limit does not evaluate, thus fails the sequentiala criterion. Therefore is not a convgent limit. \qq
+
+\vspace{1em}
+\hline
+
+\[
+    (d)\quad \lim_{x \to 0} \sin\!\left(\frac{1}{x^2}\right) 
+\] 
+
+\[
+   f(x) := \sin\!\left(\frac{1}{x^2}\right) 
+\] 
+
+Let the following subsequences be defined as:
+\[
+    x_n := \frac{1}{\sqrt{n\pi}}
+    \quad \quad \quad
+    y_n := \frac{1}{\sqrt{\frac{\pi}{2} + 2\pi n}}
+\] 
+
+Note their convergence:
+\[
+    \lim_{n \to \infty} \frac{1}{\sqrt{n\pi}} = 0
+    \quad \quad \quad
+    \lim_{n \to \infty} \frac{1}{\sqrt{\frac{\pi}{2} + 2\pi n}} = 0
+\] 
+
+By sequential criterion $\lim_{n \to \infty}  f(x_n) = \lim_{n \to \infty} f(y_n)$
+
+Observe $f(x_n), f(y_n)$
+
+\[
+        f(x_n) = sin 
+        \left( 
+            \frac{1}{\left( \frac{1}{\sqrt{n\pi}} \right)^2}
+        \right)
+        \quad \quad \quad
+        f(y_n) = sin 
+        \left( 
+            \frac{1}{\left( \frac{1}{\sqrt{\frac{\pi}{2}+2 \pi n}} \right)^2}
+        \right)
+\] 
+
+Observe:
+\[
+\begin{gathered}
+    sin 
+    \left( 
+        \frac{1}{\left( \frac{1}{\sqrt{\frac{\pi}{2}+2 \pi n}} \right)^2}
+    \right) 
+   =
+   sin
+    \left( 
+        \frac{1}{\left( \frac{1}{\frac{\pi}{2}+2 \pi n} \right)}
+    \right) 
+    =
+   sin
+    \left( 
+        \frac{1}{\left( \frac{1}{\frac{\pi}{2}} \right)}
+    \right) 
+    = sin \left( \frac{\pi}{2} \right) 
+    \implies \lim_{n \to \infty} f(y_n) = 1 \\
+    sin
+    \left(  
+        \frac{1}{\left( \frac{1}{\sqrt{n\pi}} \right)^2} 
+    \right) 
+    = sin
+    \left(  
+        \frac{1}{\left( \frac{1}{n\pi} \right)} 
+    \right) 
+    = sin
+    \left(  n\pi  \right)  \implies \lim_{n \to \infty} f(x_n) = 0 \\
+\end{gathered}
+\] 
+
+\[
+    \lim f(y_n) \neq  \lim f(x_n) \implies \lim f(x) ~\text{DNE}
+\] 
+\qq
+
+
+\cbox{catblue}{Section 4.1: 14}{
+Let $c \in \mathbb{R}$ and let $f : \mathbb{R} \to \mathbb{R}$ be such that
+\[
+\lim_{x \to c} (f(x))^2 = L.
+\]
+
+(a) Show that if $L = 0$, then
+\[
+\lim_{x \to c} f(x) = 0.
+\]
+
+(b) Show by example that if $L \ne 0$, then $f$ may not have a limit at $c$.
 }
 
+Let $\epsilon > 0$ be given. Since $\epsilon > 0$, it follows that $\epsilon^2 > 0$. 
 
-% \cbox{catblue}{Section 4.1: 12(b,d)}{}
-% \cbox{catblue}{Section 4.1: 14}{}
+Because we are given that $\lim_{x \to c} (f(x))^2 = 0$, we know by definition that for any positive number (including $\epsilon^2$), there exists a $\delta > 0$ such that if $0 < |x - c| < \delta$, then:
+$$|(f(x))^2 - 0| < \epsilon^2$$
+
+This simplifies to:
+$$|f(x)|^2 < \epsilon^2$$
+
+Because both sides are non-negative, we can take the square root to get:
+$$|f(x)| < \epsilon$$
+
+Since we have shown that for any $\epsilon > 0$, there exists a $\delta > 0$ such that $0 < |x - c| < \delta \implies |f(x) - 0| < \epsilon$, we can conclude that $\lim_{x \to c} f(x) = 0$. \\
+
+Consider the function
+\[
+g(x) = \begin{cases}
+ 1 & \text{if } x > 0 \\
+ 0 & \text{if } x = 0 \\
+ -1 & \text{if } x < 0
+\end{cases}
+\]
+
+Let $f(x) := g(x)$. Notice that $\lim_{x \to 0} (f(x))^2 = 1$, since $f(x)$ approaches either $1$ or $-1$ as $x$ approaches $0$ from the right or left, and $1^2 = (-1)^2 = 1$. However, $\lim_{x \to 0} f(x)$ does not exist, as $x \to 0^+$, $f(x) \to 1$, but as $x \to 0^-$, $f(x) \to -1$.
+
+
+
+\qq
 \end{document}
