@@ -3,7 +3,7 @@ aliases: []
 tags: []
 id: Welcome to Real Analysis
 ---
-# Introduction
+ Introduction
 
 A compilation of notes for Real Analysis. To help those poor souls taking this course. It is fun, trying, and challenging. This website is an amalgamation of my hopes and dreams. 
 
