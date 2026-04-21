@@ -1,28 +1,210 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2026.1.8)  11 APR 2026 00:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.12)  21 APR 2026 12:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
 (./template.tex (/usr/share/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count196
-\c@section=\count197
-\c@subsection=\count198
-\c@subsubsection=\count199
-\c@paragraph=\count266
-\c@subparagraph=\count267
-\c@figure=\count268
-\c@table=\count269
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen141
+\bibindent=\dimen148
+) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2026/02/14 v26.3 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+\babel@savecnt=\count283
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2078.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2080.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2082.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2083.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2084.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2086.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2111.
+\U@D=\dimen149
+\l@unhyphenated=\language3
+ (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count284
+ (/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 4330.
+ (/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
+)) (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+) (/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count285
+\Gm@cntv=\count286
+\c@Gm@tempcnt=\count287
+\Gm@bindingoffset=\dimen150
+\Gm@wd@mp=\dimen151
+\Gm@odd@mp=\dimen152
+\Gm@even@mp=\dimen153
+\Gm@layoutwidth=\dimen154
+\Gm@layoutheight=\dimen155
+\Gm@layouthoffset=\dimen156
+\Gm@layoutvoffset=\dimen157
+\Gm@dimlist=\toks20
+) (/usr/share/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
+ (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count288
+)
+\MT@toks=\toks21
+\MT@tempbox=\box53
+\MT@count=\count289
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
+LaTeX Info: Redefining \leftprotrusion on input line 1085.
+\MT@prot@toks=\toks22
+LaTeX Info: Redefining \rightprotrusion on input line 1104.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen158
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count290
+ (/usr/share/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2026/03/01 v3.2d Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip51
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (/usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+) (/usr/share/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+ (/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+ (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen159
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen160
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count291
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count292
+\leftroot@=\count293
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count294
+\DOTSCASE@=\count295
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen161
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count296
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count297
+\dotsspace@=\muskip17
+\c@parentequation=\count298
+\dspbrk@lvl=\count299
+\tag@help=\toks24
+\row@=\count300
+\column@=\count301
+\maxfields@=\count302
+\andhelp@=\toks25
+\eqnshift@=\dimen162
+\alignsep@=\dimen163
+\tagshift@=\dimen164
+\tagwidth@=\dimen165
+\totwidth@=\dimen166
+\lineht@=\dimen167
+\@envbody=\toks26
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+) (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks28
+\thm@bodyfont=\toks29
+\thm@headfont=\toks30
+\thm@notefont=\toks31
+\thm@headpunct=\toks32
+\thm@preskip=\skip55
+\thm@postskip=\skip56
+\thm@headsep=\skip57
+\dth@everypar=\toks33
+) (/usr/share/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
 ) (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
  (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -30,7 +212,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
  (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ) (/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
@@ -41,309 +223,99 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (/usr/share/texmf-dist/tex/latex/xcolor/svgnam.def
-File: svgnam.def 2024/09/29 v3.02 Predefined colors according to SVG 1.1 (UK)
-) (/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
- (/usr/share/texmf-dist/tex/latex/tools/array.sty
-Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
-\col@sep=\dimen142
-\ar@mcellbox=\box52
-\extrarowheight=\dimen143
-\NC@list=\toks17
-\extratabsurround=\skip51
-\backup@length=\skip52
-\ar@cellbox=\box53
-)
-\everycr=\toks18
-\minrowclearance=\skip53
-\rownum=\count270
-) (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
- (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks19
-) (/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2024/12/12 v1.0g TeX engine tests
-))
-\Gm@cnth=\count271
-\Gm@cntv=\count272
-\c@Gm@tempcnt=\count273
-\Gm@bindingoffset=\dimen144
-\Gm@wd@mp=\dimen145
-\Gm@odd@mp=\dimen146
-\Gm@even@mp=\dimen147
-\Gm@layoutwidth=\dimen148
-\Gm@layoutheight=\dimen149
-\Gm@layouthoffset=\dimen150
-\Gm@layoutvoffset=\dimen151
-\Gm@dimlist=\toks20
-) (/usr/share/texmf-dist/tex/latex/subfiles/subfiles.sty
-Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
- (/usr/share/texmf-dist/tex/latex/import/import.sty
-Package: import 2020/04/01  v 6.2
-)) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2024/11/05 v2.17t AMS math features
-\@mathmargin=\skip54
-
-For additional information on amsmath, use the `?' option.
-(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
- (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks21
-\ex@=\dimen152
-)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen153
-) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2022/04/08 v2.04 operator names
-)
-\inf@bad=\count274
-LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count275
-\leftroot@=\count276
-LaTeX Info: Redefining \overline on input line 398.
-LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count277
-\DOTSCASE@=\count278
-LaTeX Info: Redefining \ldots on input line 495.
-LaTeX Info: Redefining \dots on input line 498.
-LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box54
-\strutbox@=\box55
-LaTeX Info: Redefining \big on input line 721.
-LaTeX Info: Redefining \Big on input line 722.
-LaTeX Info: Redefining \bigg on input line 723.
-LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen154
-LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count279
-LaTeX Info: Redefining \bmod on input line 904.
-LaTeX Info: Redefining \pmod on input line 909.
-LaTeX Info: Redefining \smash on input line 939.
-LaTeX Info: Redefining \relbar on input line 969.
-LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count280
-\dotsspace@=\muskip17
-\c@parentequation=\count281
-\dspbrk@lvl=\count282
-\tag@help=\toks22
-\row@=\count283
-\column@=\count284
-\maxfields@=\count285
-\andhelp@=\toks23
-\eqnshift@=\dimen155
-\alignsep@=\dimen156
-\tagshift@=\dimen157
-\tagwidth@=\dimen158
-\totwidth@=\dimen159
-\lineht@=\dimen160
-\@envbody=\toks24
-\multlinegap=\skip55
-\multlinetaggap=\skip56
-\mathdisplay@stack=\toks25
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
-) (/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks26
-\thm@bodyfont=\toks27
-\thm@headfont=\toks28
-\thm@notefont=\toks29
-\thm@headpunct=\toks30
-\thm@preskip=\skip57
-\thm@postskip=\skip58
-\thm@headsep=\skip59
-\dth@everypar=\toks31
-) (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/share/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
-Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
-\symrsfs=\mathgroup6
-) (/usr/share/texmf-dist/tex/latex/wasysym/wasysym.sty
-Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
-\symwasy=\mathgroup7
-LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
-(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
-)
-\c@theorem=\count286
-\c@cor=\count287
- (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2025/02/06 v3.11 Customized lists
-\labelindent=\skip60
-\enit@outerparindent=\dimen161
-\enit@toks=\toks32
-\enit@inbox=\box56
-\enit@count@id=\count288
-\enitdp@description=\count289
-)
-\c@caseslisti=\count290
-\c@caseslistii=\count291
-\enitdp@caseslist=\count292
- (/usr/share/texmf-dist/tex/latex/parskip/parskip.sty
-Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
- (/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)) (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count293
-)) (/usr/share/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
-\c@tracingmulticols=\count294
-\mult@box=\box57
-\multicol@leftmargin=\dimen162
-\c@unbalance=\count295
-\c@collectmore=\count296
-\doublecol@number=\count297
-\multicoltolerance=\count298
-\multicolpretolerance=\count299
-\full@width=\dimen163
-\page@free=\dimen164
-\premulticols=\dimen165
-\postmulticols=\dimen166
-\multicolsep=\skip61
-\multicolbaselineskip=\skip62
-\partial@page=\box58
-\last@line=\box59
-\mc@boxedresult=\box60
-\maxbalancingoverflow=\dimen167
-\mult@rightbox=\box61
-\mult@grightbox=\box62
-\mult@firstbox=\box63
-\mult@gfirstbox=\box64
-\@tempa=\box65
-\@tempa=\box66
-\@tempa=\box67
-\@tempa=\box68
-\@tempa=\box69
-\@tempa=\box70
-\@tempa=\box71
-\@tempa=\box72
-\@tempa=\box73
-\@tempa=\box74
-\@tempa=\box75
-\@tempa=\box76
-\@tempa=\box77
-\@tempa=\box78
-\@tempa=\box79
-\@tempa=\box80
-\@tempa=\box81
-\@tempa=\box82
-\@tempa=\box83
-\@tempa=\box84
-\@tempa=\box85
-\@tempa=\box86
-\@tempa=\box87
-\@tempa=\box88
-\@tempa=\box89
-\@tempa=\box90
-\@tempa=\box91
-\@tempa=\box92
-\@tempa=\box93
-\@tempa=\box94
-\@tempa=\box95
-\@tempa=\box96
-\@tempa=\box97
-\@tempa=\box98
-\@tempa=\box99
-\@tempa=\box100
-\c@minrows=\count300
-\c@columnbadness=\count301
-\c@finalcolumnbadness=\count302
-\last@try=\dimen168
-\multicolovershoot=\dimen169
-\multicolundershoot=\dimen170
-\mult@nat@firstbox=\box101
-\colbreak@box=\box102
-\mc@col@check@num=\count303
-) (/usr/share/texmf-dist/tex/latex/sectsty/sectsty.sty
-Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
-
-
-LaTeX Warning: Command \underbar  has changed.
-               Check if current package is valid.
-
-
-LaTeX Warning: Command \underline  has changed.
-               Check if current package is valid.
-
-) (/usr/share/texmf-dist/tex/generic/soul/soul.sty
-Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
- (/usr/share/texmf-dist/tex/generic/soul/soul-ori.sty
-Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
-\SOUL@word=\toks33
-\SOUL@lasttoken=\toks34
-\SOUL@syllable=\toks35
-\SOUL@cmds=\toks36
-\SOUL@buffer=\toks37
-\SOUL@token=\toks38
-\SOUL@syllgoal=\dimen171
-\SOUL@syllwidth=\dimen172
-\SOUL@charkern=\dimen173
-\SOUL@hyphkern=\dimen174
-\SOUL@dimen=\dimen175
-\SOUL@dimeni=\dimen176
-\SOUL@minus=\count304
-\SOUL@comma=\count305
-\SOUL@apo=\count306
-\SOUL@grave=\count307
-\SOUL@spaceskip=\skip63
-\SOUL@ttwidth=\dimen177
-\SOUL@uldp=\dimen178
-\SOUL@ulht=\dimen179
-) (/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+) (/usr/share/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2026/03/03 v3.8.0 Yet another Pygments shim for LaTeX
+ (/usr/share/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+ (/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 ) (/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)) (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen180
-\lightrulewidth=\dimen181
-\cmidrulewidth=\dimen182
-\belowrulesep=\dimen183
-\belowbottomsep=\dimen184
-\aboverulesep=\dimen185
-\abovetopsep=\dimen186
-\cmidrulesep=\dimen187
-\cmidrulekern=\dimen188
-\defaultaddspace=\dimen189
-\@cmidla=\count308
-\@cmidlb=\count309
-\@aboverulesep=\dimen190
-\@belowrulesep=\dimen191
-\@thisruleclass=\count310
-\@lastruleclass=\count311
-\@thisrulewidth=\dimen192
-) (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip64
-\multirow@cntb=\count312
-\multirow@dima=\skip65
-\bigstrutjot=\dimen193
-) (/usr/share/texmf-dist/tex/latex/changepage/changepage.sty
-Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count313
-\cp@tempcnt=\count314
-) (/usr/share/texmf-dist/tex/latex/threeparttable/threeparttable.sty
-Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box103
+)) (/usr/share/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2026/02/25 v1.14.0 fvextra - extensions and patches for fancyvrb
+ (/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count303
+\FV@InFile=\read3
+\FV@TabBox=\box56
+\c@FancyVerbLine=\count304
+\FV@StepNumber=\count305
+\FV@OutFile=\write3
+) (/usr/share/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+ (/usr/share/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+)) (/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2026/02/16 line numbers on paragraphs v5.7
+\linenopenalty=\count306
+\output=\toks34
+\linenoprevgraf=\count307
+\linenumbersep=\dimen168
+\linenumberwidth=\dimen169
+\c@linenumber=\count308
+\c@pagewiselinenumber=\count309
+\c@LN@truepage=\count310
+\c@internallinenumber=\count311
+\c@internallinenumbers=\count312
+\quotelinenumbersep=\dimen170
+\bframerule=\dimen171
+\bframesep=\dimen172
+\bframebox=\box57
+\@LN@amsmath@ams@eqpen=\count313
+)
+\c@FancyVerbWriteLine=\count314
+\c@FancyVerbBufferLine=\count315
+\c@FV@TrueTabGroupLevel=\count316
+\c@FV@TrueTabCounter=\count317
+\FV@TabBox@Group=\box58
+\FV@bgcolorstructbox=\box59
+\FV@TmpLength=\skip58
+\c@FV@HighlightLinesStart=\count318
+\c@FV@HighlightLinesStop=\count319
+\FV@LoopCount=\count320
+\FV@NCharsBox=\box60
+\FV@BreakIndent=\dimen173
+\FV@BreakIndentNChars=\count321
+\FV@BreakSymbolSepLeft=\dimen174
+\FV@BreakSymbolSepLeftNChars=\count322
+\FV@BreakSymbolSepRight=\dimen175
+\FV@BreakSymbolSepRightNChars=\count323
+\FV@BreakSymbolIndentLeft=\dimen176
+\FV@BreakSymbolIndentLeftNChars=\count324
+\FV@BreakSymbolIndentRight=\dimen177
+\FV@BreakSymbolIndentRightNChars=\count325
+\c@FancyVerbLineBreakLast=\count326
+\FV@LineBox=\box61
+\FV@LineIndentBox=\box62
+\c@FV@BreakBufferDepth=\count327
+\FV@LineWidth=\dimen178
+) (/usr/share/texmf-dist/tex/latex/latex2pydata/latex2pydata.sty
+Package: latex2pydata 2026/02/25 v0.7.0 latex2pydata - write data to file in Python literal format
+) (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks37
+))) (/usr/share/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks38
+\pgfopts@list@add@b@toks=\toks39
+) (/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+) (/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count328
+\float@exts=\toks40
+\float@box=\box63
+\@float@everytoks=\toks41
+\@floatcapt=\box64
+)
+\c@minted@FancyVerbLineTemp=\count329
+\@float@every@listing=\toks42
+\c@listing=\count330
 ) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
  (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
  (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
@@ -353,412 +325,272 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
 )
-\Gin@req@height=\dimen194
-\Gin@req@width=\dimen195
-) (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks39
-\pgfutil@tempdima=\dimen196
-\pgfutil@tempdimb=\dimen197
+\Gin@req@height=\dimen179
+\Gin@req@width=\dimen180
+) (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip59
+\enit@outerparindent=\dimen181
+\enit@toks=\toks43
+\enit@inbox=\box65
+\enit@count@id=\count331
+\enitdp@description=\count332
+) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2025/11/28 version 6.9.0 text color boxes
+ (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks44
+\pgfutil@tempdima=\dimen182
+\pgfutil@tempdimb=\dimen183
 ) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box104
+\pgfutil@abb=\box66
 ) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
-Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
  (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks40
-\pgfkeys@temptoks=\toks41
- (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks42
-))
-\pgf@x=\dimen198
-\pgf@y=\dimen199
-\pgf@xa=\dimen256
-\pgf@ya=\dimen257
-\pgf@xb=\dimen258
-\pgf@yb=\dimen259
-\pgf@xc=\dimen260
-\pgf@yc=\dimen261
-\pgf@xd=\dimen262
-\pgf@yd=\dimen263
-\w@pgf@writea=\write3
-\r@pgf@reada=\read2
-\c@pgf@counta=\count315
-\c@pgf@countb=\count316
-\c@pgf@countc=\count317
-\c@pgf@countd=\count318
-\t@pgf@toka=\toks43
-\t@pgf@tokb=\toks44
-\t@pgf@tokc=\toks45
-\pgf@sys@id@count=\count319
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@x=\dimen184
+\pgf@y=\dimen185
+\pgf@xa=\dimen186
+\pgf@ya=\dimen187
+\pgf@xb=\dimen188
+\pgf@yb=\dimen189
+\pgf@xc=\dimen190
+\pgf@yc=\dimen191
+\pgf@xd=\dimen192
+\pgf@yd=\dimen193
+\w@pgf@writea=\write4
+\r@pgf@reada=\read4
+\c@pgf@counta=\count333
+\c@pgf@countb=\count334
+\c@pgf@countc=\count335
+\c@pgf@countd=\count336
+\t@pgf@toka=\toks45
+\t@pgf@tokb=\toks46
+\t@pgf@tokc=\toks47
+\pgf@sys@id@count=\count337
  (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-pdftex.def
  (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
  (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 ))) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count320
-\pgfsyssoftpath@bigbuffer@items=\count321
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count338
+\pgfsyssoftpath@bigbuffer@items=\count339
 ) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen264
-\pgfmath@count=\count322
-\pgfmath@box=\box105
-\pgfmath@toks=\toks46
-\pgfmath@stack@operand=\toks47
-\pgfmath@stack@operation=\toks48
-) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count323
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen194
+\pgfmath@count=\count340
+\pgfmath@box=\box67
+\pgfmath@toks=\toks48
+\pgfmath@stack@operand=\toks49
+\pgfmath@stack@operation=\toks50
+) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count341
 )) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen265
-\pgf@picmaxx=\dimen266
-\pgf@picminy=\dimen267
-\pgf@picmaxy=\dimen268
-\pgf@pathminx=\dimen269
-\pgf@pathmaxx=\dimen270
-\pgf@pathminy=\dimen271
-\pgf@pathmaxy=\dimen272
-\pgf@xx=\dimen273
-\pgf@xy=\dimen274
-\pgf@yx=\dimen275
-\pgf@yy=\dimen276
-\pgf@zx=\dimen277
-\pgf@zy=\dimen278
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen195
+\pgf@picmaxx=\dimen196
+\pgf@picminy=\dimen197
+\pgf@picmaxy=\dimen198
+\pgf@pathminx=\dimen199
+\pgf@pathmaxx=\dimen256
+\pgf@pathminy=\dimen257
+\pgf@pathmaxy=\dimen258
+\pgf@xx=\dimen259
+\pgf@xy=\dimen260
+\pgf@yx=\dimen261
+\pgf@yy=\dimen262
+\pgf@zx=\dimen263
+\pgf@zy=\dimen264
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen279
-\pgf@path@lasty=\dimen280
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen265
+\pgf@path@lasty=\dimen266
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen281
-\pgf@shorten@start@additional=\dimen282
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen267
+\pgf@shorten@start@additional=\dimen268
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box106
-\pgf@hbox=\box107
-\pgf@layerbox@main=\box108
-\pgf@picture@serial@count=\count324
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box68
+\pgf@hbox=\box69
+\pgf@layerbox@main=\box70
+\pgf@picture@serial@count=\count342
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen283
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen269
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen284
-\pgf@pt@y=\dimen285
-\pgf@pt@temp=\dimen286
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen270
+\pgf@pt@y=\dimen271
+\pgf@pt@temp=\dimen272
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen287
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen273
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen288
-\pgf@sys@shading@range@num=\count325
-\pgf@shadingcount=\count326
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen274
+\pgf@sys@shading@range@num=\count343
+\pgf@shadingcount=\count344
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box109
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box71
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box110
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box72
 ) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen289
-\pgf@nodesepend=\dimen290
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen275
+\pgf@nodesepend=\dimen276
 ) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-)) (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen291
-\pgffor@skip=\dimen292
-\pgffor@stack=\toks49
-\pgffor@toks=\toks50
-)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count327
-\pgfplotmarksize=\dimen293
-)
-\tikz@lastx=\dimen294
-\tikz@lasty=\dimen295
-\tikz@lastxsaved=\dimen296
-\tikz@lastysaved=\dimen297
-\tikz@lastmovetox=\dimen298
-\tikz@lastmovetoy=\dimen299
-\tikzleveldistance=\dimen300
-\tikzsiblingdistance=\dimen301
-\tikz@figbox=\box111
-\tikz@figbox@bg=\box112
-\tikz@tempbox=\box113
-\tikz@tempbox@bg=\box114
-\tikztreelevel=\count328
-\tikznumberofchildren=\count329
-\tikznumberofcurrentchild=\count330
-\tikz@fig@count=\count331
- (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count332
-\pgfmatrixcurrentcolumn=\count333
-\pgf@matrix@numberofcolumns=\count334
-)
-\tikz@expandcount=\count335
- (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/share/texmf-dist/tex/latex/tkz-graph/tkz-graph.sty
-2021/01/20 v 2.00 tkz-graph.sty
-Package: tkz-graph 2021/01/20 2.00 base for graphs
-(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-) (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
- (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks51
-\XKV@tempa@toks=\toks52
-)
-\XKV@depth=\count336
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen302
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+)) (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen277
+\pgffor@skip=\dimen278
+\pgffor@stack=\toks51
+\pgffor@toks=\toks52
 ))
-\c@tkz@gr@a=\count337
-\c@tkz@gr@b=\count338
-\c@tkz@gr@c=\count339
-\c@tkz@gr@e=\count340
-\c@tkz@gr@d=\count341
-\c@tkz@gr@p=\count342
-\c@tkz@gr@i=\count343
-\c@tkz@gr@n=\count344
-\c@tkz@gr@ta=\count345
-\c@tkz@gr@tb=\count346
-) (/usr/share/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
-Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
- (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks53
-\t@pgfplots@tokb=\toks54
-\t@pgfplots@tokc=\toks55
-\pgfplots@tmpa=\dimen303
-\c@pgfplots@coordindex=\count347
-\c@pgfplots@scanlineindex=\count348
- (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
-Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks56
-\t@pgf@tokb=\toks57
-\t@pgf@tokc=\toks58
-(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count349
-) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count350
-\t@pgfplotstable@a=\toks59
-) (/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count351
- (/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen304
-\pgfdecoratedremainingdistance=\dimen305
-\pgfdecoratedinputsegmentcompleteddistance=\dimen306
-\pgfdecoratedinputsegmentremainingdistance=\dimen307
-\pgf@decorate@distancetomove=\dimen308
-\pgf@decorate@repeatstate=\count352
-\pgfdecorationsegmentamplitude=\dimen309
-\pgfdecorationsegmentlength=\dimen310
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count345
+\pgfplotmarksize=\dimen279
 )
-\tikz@lib@dec@box=\box115
-) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count353
-\pgfplots@xmin@reg=\dimen311
-\pgfplots@xmax@reg=\dimen312
-\pgfplots@ymin@reg=\dimen313
-\pgfplots@ymax@reg=\dimen314
-\pgfplots@zmin@reg=\dimen315
-\pgfplots@zmax@reg=\dimen316
-) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
-File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
-File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
- (/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
+\tikz@lastx=\dimen280
+\tikz@lasty=\dimen281
+\tikz@lastxsaved=\dimen282
+\tikz@lastysaved=\dimen283
+\tikz@lastmovetox=\dimen284
+\tikz@lastmovetoy=\dimen285
+\tikzleveldistance=\dimen286
+\tikzsiblingdistance=\dimen287
+\tikz@figbox=\box73
+\tikz@figbox@bg=\box74
+\tikz@tempbox=\box75
+\tikz@tempbox@bg=\box76
+\tikztreelevel=\count346
+\tikznumberofchildren=\count347
+\tikznumberofcurrentchild=\count348
+\tikz@fig@count=\count349
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count350
+\pgfmatrixcurrentcolumn=\count351
+\pgf@matrix@numberofcolumns=\count352
+)
+\tikz@expandcount=\count353
+ (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks60
-\verbatim@line=\toks61
-\verbatim@in@stream=\read3
+\every@verbatim=\toks53
+\verbatim@line=\toks54
+\verbatim@in@stream=\read5
 ) (/usr/share/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
  (/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box116
-\tcb@upperbox=\box117
-\tcb@lowerbox=\box118
-\tcb@phantombox=\box119
+\tcb@titlebox=\box77
+\tcb@upperbox=\box78
+\tcb@lowerbox=\box79
+\tcb@phantombox=\box80
 \c@tcbbreakpart=\count354
 \c@tcblayer=\count355
 \c@tcolorbox@number=\count356
-\l__tcobox_tmpa_box=\box120
-\l__tcobox_tmpa_dim=\dimen317
-\tcb@temp=\box121
-\tcb@temp=\box122
-\tcb@temp=\box123
-\tcb@temp=\box124
+\l__tcobox_tmpa_box=\box81
+\l__tcobox_tmpa_dim=\dimen288
+\tcb@temp=\box82
+\tcb@temp=\box83
+\tcb@temp=\box84
+\tcb@temp=\box85
 ) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
-Library (tcolorbox): 'tcbbreakable.code.tex' version '6.4.1'
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.9.0'
 (/usr/share/texmf-dist/tex/latex/pdfcol/pdfcol.sty
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 )
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
-\tcb@testbox=\box125
-\tcb@totalupperbox=\box126
-\tcb@totallowerbox=\box127
+\tcb@testbox=\box86
+\tcb@totalupperbox=\box87
+\tcb@totallowerbox=\box88
 ) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
-Library (tcolorbox): 'tcbskins.code.tex' version '6.4.1'
+Library (tcolorbox): 'tcbskins.code.tex' version '6.9.0'
 (/usr/share/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
 Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
  (/usr/share/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
 Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
 ) (/usr/share/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
 File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
-\l__tikzfill_img_box=\box128
+\l__tikzfill_img_box=\box89
 )) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
-Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.4.1'
-)) (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
- (/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/usr/share/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)) (/usr/share/texmf-dist/tex/latex/hycolor/hycolor.sty
-Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
- (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-)
-\c@section@level=\count357
-) (/usr/share/texmf-dist/tex/generic/stringenc/stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
-)
-\@linkdim=\dimen318
-\Hy@linkcounter=\count358
-\Hy@pagecounter=\count359
- (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
-) (/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
-Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-)
-\Hy@SavedSpaceFactor=\count360
- (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
-)
-Package hyperref Info: Hyper figures OFF on input line 4157.
-Package hyperref Info: Link nesting OFF on input line 4162.
-Package hyperref Info: Hyper index ON on input line 4165.
-Package hyperref Info: Plain pages OFF on input line 4172.
-Package hyperref Info: Backreferencing OFF on input line 4177.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count361
- (/usr/share/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip18
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen319
- (/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
-Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
-))
-\Fld@menulength=\count362
-\Field@Width=\dimen320
-\Fld@charsize=\dimen321
-Package hyperref Info: Hyper figures OFF on input line 6042.
-Package hyperref Info: Link nesting OFF on input line 6047.
-Package hyperref Info: Hyper index ON on input line 6050.
-Package hyperref Info: backreferencing OFF on input line 6057.
-Package hyperref Info: Link coloring OFF on input line 6062.
-Package hyperref Info: Link coloring with OCG OFF on input line 6067.
-Package hyperref Info: PDF/A mode OFF on input line 6072.
- (/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
-package with kernel methods
-)
-\Hy@abspage=\count363
-\c@Item=\count364
-\c@Hfootnote=\count365
-)
-Package hyperref Info: Driver (autodetected): hpdftex.
- (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
- (/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
-with kernel methods
-)
-\Fld@listcount=\count366
-\c@bookmark@seq@number=\count367
- (/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
- (/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
-)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
-)
-\Hy@SectionHShift=\skip66
-)
-Package hyperref Info: Option `colorlinks' set `true' on input line 117.
-) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count368
-\l__pdf_internal_box=\box129
-)
-
-LaTeX Warning: Unused global option(s):
-    [8pt].
-
-(./main.aux)
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.9.0'
+)) (/usr/share/texmf-dist/tex/latex/titling/titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip60
+\thanksmargin=\skip61
+\droptitle=\skip62
+) (/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box90
+\beforetitleunit=\skip63
+\aftertitleunit=\skip64
+\ttl@plus=\dimen289
+\ttl@minus=\dimen290
+\ttl@toksa=\toks55
+\titlewidth=\dimen291
+\titlewidthlast=\dimen292
+\titlewidthfirst=\dimen293
+) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip65
+\f@nch@offset@elh=\skip66
+\f@nch@offset@erh=\skip67
+\f@nch@offset@olh=\skip68
+\f@nch@offset@orh=\skip69
+\f@nch@offset@elf=\skip70
+\f@nch@offset@erf=\skip71
+\f@nch@offset@olf=\skip72
+\f@nch@offset@orf=\skip73
+\f@nch@height=\skip74
+\f@nch@footalignment=\skip75
+\f@nch@widthL=\skip76
+\f@nch@widthC=\skip77
+\f@nch@widthR=\skip78
+\@temptokenb=\toks56
+)) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count357
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -775,29 +607,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
- (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count369
-\scratchdimen=\dimen322
-\scratchbox=\box130
-\nofMPsegments=\count370
-\nofMParguments=\count371
-\everyMPshowfont=\toks62
-\MPscratchCnt=\count372
-\MPscratchDim=\dimen323
-\MPnumerator=\count373
-\makeMPintoPDFobject=\count374
-\everyMPtoPDFconversion=\toks63
-) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -817,12 +627,12 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=11.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -832,103 +642,5001 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
-
-Package hyperref Info: Link coloring ON on input line 7.
-(./main.out) (./main.out)
-\@outlinefile=\write4
-\openout4 = `main.out'.
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
+LaTeX Info: Redefining \microtypecontext on input line 7.
+Package microtype Info: Applying patch `item' on input line 7.
+Package microtype Info: Applying patch `toc' on input line 7.
+Package microtype Info: Applying patch `eqnum' on input line 7.
+Package microtype Info: Applying patch `footnote' on input line 7.
+Package microtype Info: Applying patch `verbatim' on input line 7.
+LaTeX Info: Redefining \microtypesetup on input line 7.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+(/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+) (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count358
+\scratchdimen=\dimen294
+\scratchbox=\box91
+\nofMPsegments=\count359
+\nofMParguments=\count360
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count361
+\MPscratchDim=\dimen295
+\MPnumerator=\count362
+\makeMPintoPDFobject=\count363
+\everyMPtoPDFconversion=\toks58
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 9.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 8.
  (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 9.
- (/usr/share/texmf-dist/tex/latex/wasysym/uwasy.fd
-File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-)
+Overfull \hbox (15.76994pt too wide) detected at line 126
+[] \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 x[]\OMS/cmsy/m/n/10.95 j \OT1/cmr/m/n/10.95 = 0  =[]\OMS/cmsy/m/n/10.95 )  8 \OML/cmm/m/it/10.95 ^^O > \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 9 \OML/cmm/m/it/10.95 N[] > \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 ;  \OMS/cmsy/m/n/10.95 j 8 \OML/cmm/m/it/10.95 m; n \OMS/cmsy/m/n/10.95 ^^U \OML/cmm/m/it/10.95 N[]; \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 x[]\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 < ^^O: [] [][] \OT1/cmr/m/n/10.95 = []
+ []
 
-[1
+./main.tex:137: Undefined control sequence.
+l.137     \qq
+             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+./main.tex:151: Undefined control sequence.
+l.151 		\pgfplotsset
+                    {compat=1.18}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-[2]
 
-[3]
+./main.tex:154: LaTeX Error: Environment axis undefined.
 
-[4]
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.154 				\begin{axis}
+                      [
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-[5{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ] in font nullfont!
+./main.tex:161: Undefined control sequence.
+l.161 					\addplot
+                    [
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 468--468
+Missing character: There is no [ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+./main.tex:166: LaTeX Error: \begin{tikzpicture} on input line 153 ended by \end{axis}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.166 				\end{axis}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (9.29474pt too wide) detected at line 204
+[]
+ []
+
+
+Overfull \hbox (39.03157pt too wide) detected at line 209
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 y[] \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 y[]\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 j \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 j\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 x[]\OT1/cmr/m/n/10.95 ) + (\OML/cmm/m/it/10.95 y[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 y[]\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 j ^^T j\OML/cmm/m/it/10.95 x[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 x[]\OMS/cmsy/m/n/10.95 j \OT1/cmr/m/n/10.95 + \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 y[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 y[]\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 < \OT1/cmr/m/n/10.95 2\OML/cmm/m/it/10.95 ^^O
+ []
+
+
+Overfull \hbox (34.99678pt too wide) detected at line 215
+[]
+ []
+
+
+Overfull \hbox (3.57033pt too wide) detected at line 275
+\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 a\OT1/cmr/m/n/10.95 )  []   (\OML/cmm/m/it/10.95 b\OT1/cmr/m/n/10.95 )  []   (\OML/cmm/m/it/10.95 c\OT1/cmr/m/n/10.95 )  []
+ []
+
+
+Overfull \hbox (137.22011pt too wide) detected at line 295
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 x[]\OMS/cmsy/m/n/10.95 j ^^Q [] ^^Q []
+ []
+
+
+Overfull \hbox (83.18045pt too wide) detected at line 304
+\OML/cmm/m/it/10.95 n \OT1/cmr/m/n/10.95 + [] + [] \OML/cmm/m/it/10.95 < n[]\OMS/cmsy/m/n/10.95 8 \OML/cmm/m/it/10.95 n \OMS/cmsy/m/n/10.95 2 \U/msb/m/n/10.95 N\OML/cmm/m/it/10.95 ;  ^^O \OMS/cmsy/m/n/10.95 ^^T j\OML/cmm/m/it/10.95 n \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 L\OMS/cmsy/m/n/10.95 j  \OT1/cmr/m/n/10.95 =[]\OMS/cmsy/m/n/10.95 )  \OML/cmm/m/it/10.95 ^^O \OMS/cmsy/m/n/10.95 ^^T \OT1/cmr/m/n/10.95 1 \OMS/cmsy/m/n/10.95 ^^T []
+ []
+
+
+Overfull \hbox (275.43121pt too wide) in paragraph at lines 374--375
+ [] 
+ []
+
+
+Overfull \hbox (50.63245pt too wide) detected at line 393
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1\OMS/cmsy/m/n/10.95 j ^^T \OT1/cmr/m/n/10.95 1 \OMS/cmsy/m/n/10.95 ^^Q j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1 + 2\OMS/cmsy/m/n/10.95 j ^^T \OT1/cmr/m/n/10.95 1 + 2 \OMS/cmsy/m/n/10.95 ^^Q j\OML/cmm/m/it/10.95 x \OT1/cmr/m/n/10.95 + 1\OMS/cmsy/m/n/10.95 j ^^T \OT1/cmr/m/n/10.95 3
+ []
+
+
+Overfull \hbox (297.16814pt too wide) detected at line 406
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x[] \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1\OMS/cmsy/m/n/10.95 j \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1\OMS/cmsy/m/n/10.95 j j\OML/cmm/m/it/10.95 x \OT1/cmr/m/n/10.95 + 1\OMS/cmsy/m/n/10.95 j  \OT1/cmr/m/n/10.95 =[]\OMS/cmsy/m/n/10.95 )  j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1\OMS/cmsy/m/n/10.95 j j\OML/cmm/m/it/10.95 x \OT1/cmr/m/n/10.95 + 1\OMS/cmsy/m/n/10.95 j ^^T \OT1/cmr/m/n/10.95 3 \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1\OMS/cmsy/m/n/10.95 j[] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 427--429
 
  []
 
 
+Overfull \hbox (351.47649pt too wide) in paragraph at lines 464--465
+ [] 
+ []
 
-[7]
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 608--609
+Overfull \hbox (389.97035pt too wide) detected at line 479
+[][]
+ []
+
+
+Overfull \hbox (161.2504pt too wide) detected at line 488
+[][]
+ []
+
+
+Overfull \hbox (76.05562pt too wide) detected at line 493
+[] \OML/cmm/m/it/10.95 < x[] < [] \OMS/cmsy/m/n/10.95 ^^Q ^^@\OML/cmm/m/it/10.95 ^^N \OT1/cmr/m/n/10.95 + 4 \OML/cmm/m/it/10.95 < x[] < ^^N \OT1/cmr/m/n/10.95 + 4
+ []
+
+
+Overfull \hbox (49.17427pt too wide) detected at line 499
+ \OT1/cmr/m/n/10.95 =[]\OMS/cmsy/m/n/10.95 )  [] \OML/cmm/m/it/10.95 < x[] \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 4 \OML/cmm/m/it/10.95 < []
+ []
+
+
+Overfull \hbox (18.17424pt too wide) detected at line 503
+ \OT1/cmr/m/n/10.95 =[]\OMS/cmsy/m/n/10.95 )  ^^@[] \OML/cmm/m/it/10.95 < x[] \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 4 \OML/cmm/m/it/10.95 < []
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 505--506
+\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (+20) (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 (+20) ) \OMS/cmsy/m/n/10.95 ! \OT1/cmr/m/n/10.95 (+20) 1\OML/cmm/m/it/10.95 =\OT1/cmr/m/n/10.95 (+20) 2$ \T1/cmr/m/n/10.95 (+20) as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--510
+[][]\T1/cmr/bx/n/10.95 (+20) Section
+ []
+
+
+Overfull \hbox (8.82161pt too wide) in paragraph at lines 507--510
+[][] \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 y\OT1/cmr/m/n/10.95 (-20) ) =
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 507--510
+\OML/cmm/m/it/10.95 L$\T1/cmr/m/n/10.95 (+20) . Then
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--510
+\OMS/cmsy/m/n/10.95 8 \OML/cmm/m/it/10.95 ^^O >
+ []
+
+
+Underfull \hbox (badness 7415) in paragraph at lines 507--510
+\OT1/cmr/m/n/10.95 (+20) 0\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 9 \OML/cmm/m/it/10.95 ^^N >
+ []
+
+
+Underfull \hbox (badness 2443) in paragraph at lines 507--510
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 y \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 c\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 <
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--510
+\OML/cmm/m/it/10.95 ^^N  \OT1/cmr/m/n/10.95 (+20) =[]\OMS/cmsy/m/n/10.95 )
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--510
+\OML/cmm/m/it/10.95 ^^O$\T1/cmr/m/n/10.95 (+20) . Let
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--510
+\T1/cmr/m/n/10.95 (+20) Con-clude
+ []
+
+
+Overfull \hbox (0.84412pt too wide) in paragraph at lines 507--510
+[][] \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x \OT1/cmr/m/n/10.95 (-20) +
+ []
+
+
+Overfull \hbox (126.72661pt too wide) detected at line 516
+[][]
+ []
+
+
+Overfull \hbox (100.6333pt too wide) detected at line 525
+[][]
+ []
+
+
+Overfull \hbox (79.6549pt too wide) detected at line 531
+[][]
+ []
+
+
+Overfull \hbox (11.01381pt too wide) in paragraph at lines 533--540
+[][]\T1/cmr/bx/n/10.95 (-20) Section
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--540
+\T1/cmr/bx/n/10.95 (+20) 4.1:
+ []
+
+
+Underfull \hbox (badness 6380) in paragraph at lines 533--540
+\OML/cmm/m/it/10.95 I$ \T1/cmr/m/n/10.95 (+20) be
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--540
+\T1/cmr/m/n/10.95 (+20) ter-val
+ []
+
+
+Underfull \hbox (badness 4001) in paragraph at lines 533--540
+\T1/cmr/m/n/10.95 (+20) in $\U/msb/m/n/10.95 R$\T1/cmr/m/n/10.95 (+20) .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--540
+\T1/cmr/m/n/10.95 (+20) Let
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--540
+\OML/cmm/m/it/10.95 f \OT1/cmr/m/n/10.95 (+20) :
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 533--540
+\OML/cmm/m/it/10.95 I \OMS/cmsy/m/n/10.95 !
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--540
+\T1/cmr/m/n/10.95 (+20) Sup-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--540
+\T1/cmr/m/n/10.95 (+20) pose
+ []
+
+
+Overfull \hbox (47.45227pt too wide) in paragraph at lines 533--540
+\OMS/cmsy/m/n/10.95 9 \OML/cmm/m/it/10.95 K; L s:t: \OMS/cmsy/m/n/10.95 8 \OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 2
+ []
+
+
+Overfull \hbox (17.69897pt too wide) in paragraph at lines 533--540
+\OML/cmm/m/it/10.95 I;  \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 (-20) ) \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--540
+\OML/cmm/m/it/10.95 c\OMS/cmsy/m/n/10.95 j$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--540
+\T1/cmr/m/n/10.95 (+20) Show
+ []
+
+
+Overfull \hbox (39.06738pt too wide) in paragraph at lines 533--540
+[][] \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 (-20) ) =
+ []
+
+
+Overfull \hbox (2.09038pt too wide) in paragraph at lines 541--542
+[]\T1/cmr/m/n/10.95 (-20) Recall: 
+ []
+
+
+Overfull \hbox (101.1123pt too wide) detected at line 548
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
+[]\T1/cmr/m/n/10.95 (+20) We
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
+\T1/cmr/m/n/10.95 (+20) must
+ []
+
+
+Overfull \hbox (211.33144pt too wide) detected at line 553
+\OMS/cmsy/m/n/10.95 8 \OML/cmm/m/it/10.95 ^^O \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 K\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 c\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 ;  \OMS/cmsy/m/n/10.95 9 \OML/cmm/m/it/10.95 ^^N[] s:t: ^^N[] \OT1/cmr/m/n/10.95 := 0 \OML/cmm/m/it/10.95 < \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 c\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 < ^^N[]  \OMS/cmsy/m/n/10.95 ^  \OML/cmm/m/it/10.95 c \OMS/cmsy/m/n/10.95 62 \OML/cmm/m/it/10.95 I
+ []
+
+
+Overfull \hbox (9.43402pt too wide) in paragraph at lines 555--556
+[]\T1/cmr/m/n/10.95 (-20) Observe 
+ []
+
+
+Overfull \hbox (189.07758pt too wide) detected at line 558
+\OML/cmm/m/it/10.95 ^^O \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 K\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 c\OMS/cmsy/m/n/10.95 j ^^Q \OML/cmm/m/it/10.95 ^^O \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 K^^N  \OT1/cmr/m/n/10.95 =[]\OMS/cmsy/m/n/10.95 )  \OML/cmm/m/it/10.95 ^^N \OT1/cmr/m/n/10.95 = [] \OMS/cmsy/m/n/10.95 ^^Q \OML/cmm/m/it/10.95 ^^N \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 Kn
+ []
+
+
+Overfull \hbox (205.04694pt too wide) detected at line 562
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 c\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 < ^^N \OMS/cmsy/m/n/10.95 ^^Q ^^@\OML/cmm/m/it/10.95 ^^N < x \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 c < ^^N \OMS/cmsy/m/n/10.95 ^^Q ^^@\OML/cmm/m/it/10.95 Kn < x \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 c < Kn
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
+[]\T1/cmr/m/n/10.95 (+20) By
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
+\T1/cmr/m/n/10.95 (+20) archi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
+\T1/cmr/m/n/10.95 (+20) me-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
+\T1/cmr/m/n/10.95 (+20) dian
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
+\T1/cmr/m/n/10.95 (+20) prop-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
+\T1/cmr/m/n/10.95 (+20) erty
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
+\T1/cmr/m/n/10.95 (+20) the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
+\T1/cmr/m/n/10.95 (+20) in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
+\T1/cmr/m/n/10.95 (+20) qual-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
+\T1/cmr/m/n/10.95 (+20) ity
+ []
+
+
+Overfull \hbox (25.25476pt too wide) in paragraph at lines 568--570
+[][]\T1/cmr/bx/n/10.95 (-20) How
+ []
+
+
+Overfull \hbox (12.38585pt too wide) in paragraph at lines 568--570
+\T1/cmr/bx/n/10.95 (-20) to
+ []
+
+
+Overfull \hbox (24.51335pt too wide) in paragraph at lines 568--570
+\T1/cmr/bx/n/10.95 (-20) Pick
+ []
+
+
+Overfull \hbox (35.62492pt too wide) in paragraph at lines 568--570
+\T1/cmr/bx/n/10.95 (-20) Which
+ []
+
+
+Overfull \hbox (12.38585pt too wide) in paragraph at lines 568--570
+\T1/cmr/bx/n/10.95 (-20) to
+ []
+
+
+Overfull \hbox (25.95943pt too wide) in paragraph at lines 568--570
+\T1/cmr/bx/n/10.95 (-20) Use?[]
+ []
+
+
+Overfull \hbox (1.48814pt too wide) in paragraph at lines 568--570
 
  []
 
 
+Overfull \hbox (1.48814pt too wide) in paragraph at lines 571--573
+[]
+ []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 656--657
 
+Overfull \hbox (1.48814pt too wide) in paragraph at lines 571--573
+[]
+ []
+
+
+Overfull \hbox (15.90106pt too wide) in paragraph at lines 571--573
+\T1/cmr/bx/n/10.95 (-20) Se-
+ []
+
+
+Overfull \hbox (29.18195pt too wide) in paragraph at lines 571--573
+\T1/cmr/bx/n/10.95 (-20) quen-
+ []
+
+
+Overfull \hbox (19.02782pt too wide) in paragraph at lines 571--573
+\T1/cmr/bx/n/10.95 (-20) tial
+ []
+
+
+Overfull \hbox (17.36208pt too wide) in paragraph at lines 571--573
+\T1/cmr/bx/n/10.95 (-20) cri-
+ []
+
+
+Overfull \hbox (13.8583pt too wide) in paragraph at lines 571--573
+\T1/cmr/bx/n/10.95 (-20) te-
+ []
+
+
+Overfull \hbox (22.8558pt too wide) in paragraph at lines 571--573
+\T1/cmr/bx/n/10.95 (-20) rion
+ []
+
+
+Overfull \hbox (16.13538pt too wide) in paragraph at lines 571--573
+\T1/cmr/bx/n/10.95 (-20) for
+ []
+
+
+Overfull \hbox (20.5135pt too wide) in paragraph at lines 571--573
+\T1/cmr/bx/n/10.95 (-20) lim-
+ []
+
+
+Overfull \hbox (14.49821pt too wide) in paragraph at lines 571--573
+\T1/cmr/bx/n/10.95 (-20) its[]
+ []
+
+
+Overfull \hbox (19.47084pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) The
+ []
+
+
+Overfull \hbox (12.18004pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) se-
+ []
+
+
+Overfull \hbox (25.45654pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) quen-
+ []
+
+
+Overfull \hbox (16.90468pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) tial
+ []
+
+
+Overfull \hbox (15.08635pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) cri-
+ []
+
+
+Overfull \hbox (12.1208pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) te-
+ []
+
+
+Overfull \hbox (19.86652pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) rion
+ []
+
+
+Overfull \hbox (8.66327pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) is
+ []
+
+
+Overfull \hbox (18.10745pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) use-
+ []
+
+
+Overfull \hbox (13.6429pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) ful
+ []
+
+
+Overfull \hbox (25.39825pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) when
+ []
+
+
+Overfull \hbox (15.77916pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) it's
+ []
+
+
+Overfull \hbox (17.5151pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) eas-
+ []
+
+
+Overfull \hbox (13.13988pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) ier
+ []
+
+
+Overfull \hbox (10.97353pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) to
+ []
+
+
+Overfull \hbox (17.45587pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) rea-
+ []
+
+
+Overfull \hbox (16.96017pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) son
+ []
+
+
+Overfull \hbox (28.17168pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) about
+ []
+
+
+Overfull \hbox (16.30858pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (14.20013pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) be-
+ []
+
+
+Overfull \hbox (19.81924pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) hav-
+ []
+
+
+Overfull \hbox (13.73224pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) ior
+ []
+
+
+Overfull \hbox (10.08498pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) of
+ []
+
+
+Overfull \hbox (12.75436pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) all
+ []
+
+
+Overfull \hbox (12.18004pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) se-
+ []
+
+
+Overfull \hbox (37.41183pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) quences
+ []
+
+
+Overfull \hbox (19.23294pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) con-
+ []
+
+
+Overfull \hbox (22.50177pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) verg-
+ []
+
+
+Overfull \hbox (15.7162pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) ing
+ []
+
+
+Overfull \hbox (10.97353pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) to
+ []
+
+
+Overfull \hbox (6.82321pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) a
+ []
+
+
+Overfull \hbox (27.24608pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) point,
+ []
+
+
+Overfull \hbox (29.73741pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) rather
+ []
+
+
+Overfull \hbox (22.82835pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) than
+ []
+
+
+Overfull \hbox (25.35472pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) work-
+ []
+
+
+Overfull \hbox (15.7162pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) ing
+ []
+
+
+Overfull \hbox (12.12077pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) di-
+ []
+
+
+Overfull \hbox (27.46811pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) rectly
+ []
+
+
+Overfull \hbox (21.84402pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) with
+ []
+
+
+Overfull \hbox (6.59431pt too wide) in paragraph at lines 571--573
+\OML/cmm/m/it/10.95 "$
+ []
+
+
+Overfull \hbox (18.67804pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) and
+ []
+
+
+Overfull \hbox (7.61165pt too wide) in paragraph at lines 571--573
+\OML/cmm/m/it/10.95 ^^N$\T1/cmr/m/n/10.95 (-20) .
+ []
+
+
+Overfull \hbox (18.43822pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) Use
+ []
+
+
+Overfull \hbox (16.30858pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (12.18004pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) se-
+ []
+
+
+Overfull \hbox (25.45654pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) quen-
+ []
+
+
+Overfull \hbox (16.90468pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) tial
+ []
+
+
+Overfull \hbox (15.08635pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) cri-
+ []
+
+
+Overfull \hbox (12.1208pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) te-
+ []
+
+
+Overfull \hbox (19.86652pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) rion
+ []
+
+
+Overfull \hbox (26.85042pt too wide) in paragraph at lines 571--573
+\T1/cmr/m/n/10.95 (-20) when: 
+ []
+
+
+Overfull \hbox (14.72813pt too wide) in paragraph at lines 573--573
+\T1/cmr/m/n/10.95 (-20) Th
+ []
+
+
+Overfull \hbox (28.8632pt too wide) in paragraph at lines 573--574
+[]
+ []
+
+
+Overfull \hbox (46.8459pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) The
+ []
+
+
+Overfull \hbox (50.46211pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) func-
+ []
+
+
+Overfull \hbox (47.24158pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) tion
+ []
+
+
+Overfull \hbox (36.03833pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) is
+ []
+
+
+Overfull \hbox (49.56989pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) com-
+ []
+
+
+Overfull \hbox (42.46141pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) pli-
+ []
+
+
+Overfull \hbox (55.21355pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) cated,
+ []
+
+
+Overfull \hbox (38.14172pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) or
+ []
+
+
+Overfull \hbox (73.3463pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) piecewise-
+ []
+
+
+Overfull \hbox (63.51416pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) defined,
+ []
+
+
+Overfull \hbox (50.45844pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) mak-
+ []
+
+
+Overfull \hbox (43.09126pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) ing
+ []
+
+
+Overfull \hbox (35.70901pt too wide) in paragraph at lines 573--574
+\OML/cmm/m/it/10.95 "$\T1/cmr/m/n/10.95 (-20) -
+ []
+
+
+Overfull \hbox (34.14427pt too wide) in paragraph at lines 573--574
+\OML/cmm/m/it/10.95 ^^N$
+ []
+
+
+Overfull \hbox (38.90349pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) al-
+ []
+
+
+Overfull \hbox (40.68062pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) ge-
+ []
+
+
+Overfull \hbox (51.98425pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) braic
+ []
+
+
+Overfull \hbox (44.82721pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) ma-
+ []
+
+
+Overfull \hbox (45.42325pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) nip-
+ []
+
+
+Overfull \hbox (36.53026pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) u-
+ []
+
+
+Overfull \hbox (38.90349pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) la-
+ []
+
+
+Overfull \hbox (51.45113pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) tions
+ []
+
+
+Overfull \hbox (56.48128pt too wide) in paragraph at lines 573--574
+\T1/cmr/m/n/10.95 (-20) messy. 
+ []
+
+
+Overfull \hbox (13.51149pt too wide) in paragraph at lines 574--574
+\T1/cmr/m/n/10.95 (-20) Yo
+ []
+
+
+Overfull \hbox (28.8632pt too wide) in paragraph at lines 574--575
+[]
+ []
+
+
+Overfull \hbox (46.81396pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) You
+ []
+
+
+Overfull \hbox (49.27832pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) wish
+ []
+
+
+Overfull \hbox (38.34859pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) to
+ []
+
+
+Overfull \hbox (54.04544pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) prove
+ []
+
+
+Overfull \hbox (34.19827pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) a
+ []
+
+
+Overfull \hbox (50.50557pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) limit
+ []
+
+
+Overfull \hbox (49.38017pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) does
+ []
+
+
+Overfull \hbox (43.16173pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/it/10.95 (-20) not
+ []
+
+
+Overfull \hbox (40.97678pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) ex-
+ []
+
+
+Overfull \hbox (39.89467pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) ist
+ []
+
+
+Overfull \hbox (42.59319pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) (by
+ []
+
+
+Overfull \hbox (46.01564pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) pro-
+ []
+
+
+Overfull \hbox (47.20035pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) duc-
+ []
+
+
+Overfull \hbox (43.09126pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) ing
+ []
+
+
+Overfull \hbox (39.5551pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) se-
+ []
+
+
+Overfull \hbox (64.7869pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) quences
+ []
+
+
+Overfull \hbox (41.86533pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) ap-
+ []
+
+
+Overfull \hbox (61.71855pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) proach-
+ []
+
+
+Overfull \hbox (43.09126pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) ing
+ []
+
+
+Overfull \hbox (43.68364pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (52.875pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) point
+ []
+
+
+Overfull \hbox (49.21909pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) with
+ []
+
+
+Overfull \hbox (42.7576pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) dif-
+ []
+
+
+Overfull \hbox (42.75763pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) fer-
+ []
+
+
+Overfull \hbox (43.08742pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) ent
+ []
+
+
+Overfull \hbox (50.50557pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) limit
+ []
+
+
+Overfull \hbox (43.64717pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) val-
+ []
+
+
+Overfull \hbox (48.73563pt too wide) in paragraph at lines 574--575
+\T1/cmr/m/n/10.95 (-20) ues). 
+ []
+
+
+Overfull \hbox (1.48814pt too wide) in paragraph at lines 578--580
+[]
+ []
+
+
+Overfull \hbox (1.48814pt too wide) in paragraph at lines 578--580
+[]
+ []
+
+
+Overfull \hbox (21.99135pt too wide) in paragraph at lines 578--580
+\T1/cmr/bx/n/10.95 (-20) The
+ []
+
+
+Overfull \hbox (15.9624pt too wide) in paragraph at lines 578--580
+\OML/cmm/m/it/10.95 "$\T1/cmr/bx/n/10.95 (-20) -$\OML/cmm/m/it/10.95 ^^N$
+ []
+
+
+Overfull \hbox (19.64763pt too wide) in paragraph at lines 578--580
+\T1/cmr/bx/n/10.95 (-20) def-
+ []
+
+
+Overfull \hbox (6.89215pt too wide) in paragraph at lines 578--580
+\T1/cmr/bx/n/10.95 (-20) i-
+ []
+
+
+Overfull \hbox (13.70284pt too wide) in paragraph at lines 578--580
+\T1/cmr/bx/n/10.95 (-20) ni-
+ []
+
+
+Overfull \hbox (22.60265pt too wide) in paragraph at lines 578--580
+\T1/cmr/bx/n/10.95 (-20) tion[]
+ []
+
+
+Overfull \hbox (19.47084pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) The
+ []
+
+
+Overfull \hbox (8.33395pt too wide) in paragraph at lines 578--580
+\OML/cmm/m/it/10.95 "$\T1/cmr/m/n/10.95 (-20) -
+ []
+
+
+Overfull \hbox (6.76921pt too wide) in paragraph at lines 578--580
+\OML/cmm/m/it/10.95 ^^N$
+ []
+
+
+Overfull \hbox (17.15967pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) def-
+ []
+
+
+Overfull \hbox (6.19336pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) i-
+ []
+
+
+Overfull \hbox (12.12077pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) ni-
+ []
+
+
+Overfull \hbox (19.86652pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) tion
+ []
+
+
+Overfull \hbox (8.66327pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) is
+ []
+
+
+Overfull \hbox (16.30858pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (22.85013pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) stan-
+ []
+
+
+Overfull \hbox (22.82835pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) dard
+ []
+
+
+Overfull \hbox (18.67804pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) and
+ []
+
+
+Overfull \hbox (23.7784pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) most
+ []
+
+
+Overfull \hbox (12.12077pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) di-
+ []
+
+
+Overfull \hbox (18.98018pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) rect
+ []
+
+
+Overfull \hbox (18.75967pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) way
+ []
+
+
+Overfull \hbox (10.97353pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) to
+ []
+
+
+Overfull \hbox (26.67038pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) prove
+ []
+
+
+Overfull \hbox (18.04823pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) lim-
+ []
+
+
+Overfull \hbox (12.81358pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) its
+ []
+
+
+Overfull \hbox (13.60172pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) ex-
+ []
+
+
+Overfull \hbox (13.65602pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) ist.
+ []
+
+
+Overfull \hbox (18.43822pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) Use
+ []
+
+
+Overfull \hbox (16.30858pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (8.33395pt too wide) in paragraph at lines 578--580
+\OML/cmm/m/it/10.95 "$\T1/cmr/m/n/10.95 (-20) -
+ []
+
+
+Overfull \hbox (6.76921pt too wide) in paragraph at lines 578--580
+\OML/cmm/m/it/10.95 ^^N$
+ []
+
+
+Overfull \hbox (14.49026pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) ap-
+ []
+
+
+Overfull \hbox (32.60385pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) proach
+ []
+
+
+Overfull \hbox (26.85042pt too wide) in paragraph at lines 578--580
+\T1/cmr/m/n/10.95 (-20) when: 
+ []
+
+
+Overfull \hbox (14.72813pt too wide) in paragraph at lines 580--580
+\T1/cmr/m/n/10.95 (-20) Th
+ []
+
+
+Overfull \hbox (28.8632pt too wide) in paragraph at lines 580--581
+[]
+ []
+
+
+Overfull \hbox (46.8459pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) The
+ []
+
+
+Overfull \hbox (50.46211pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) func-
+ []
+
+
+Overfull \hbox (47.24158pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) tion
+ []
+
+
+Overfull \hbox (36.03833pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) is
+ []
+
+
+Overfull \hbox (48.28703pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) well-
+ []
+
+
+Overfull \hbox (66.79489pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) behaved
+ []
+
+
+Overfull \hbox (46.0531pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) and
+ []
+
+
+Overfull \hbox (38.90349pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) al-
+ []
+
+
+Overfull \hbox (40.68062pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) ge-
+ []
+
+
+Overfull \hbox (44.276pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) bra
+ []
+
+
+Overfull \hbox (38.90349pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) al-
+ []
+
+
+Overfull \hbox (48.7757pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) lows
+ []
+
+
+Overfull \hbox (45.17159pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) you
+ []
+
+
+Overfull \hbox (38.34859pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) to
+ []
+
+
+Overfull \hbox (51.44508pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) solve
+ []
+
+
+Overfull \hbox (41.40349pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) for
+ []
+
+
+Overfull \hbox (34.14427pt too wide) in paragraph at lines 580--581
+\OML/cmm/m/it/10.95 ^^N$
+ []
+
+
+Overfull \hbox (37.7562pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) in
+ []
+
+
+Overfull \hbox (55.00539pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) terms
+ []
+
+
+Overfull \hbox (37.46004pt too wide) in paragraph at lines 580--581
+\T1/cmr/m/n/10.95 (-20) of
+ []
+
+
+Overfull \hbox (34.81181pt too wide) in paragraph at lines 580--581
+\OML/cmm/m/it/10.95 "$\T1/cmr/m/n/10.95 (-20) . 
+ []
+
+
+Overfull \hbox (14.72813pt too wide) in paragraph at lines 581--581
+\T1/cmr/m/n/10.95 (-20) Th
+ []
+
+
+Overfull \hbox (28.8632pt too wide) in paragraph at lines 581--582
+[]
+ []
+
+
+Overfull \hbox (46.8459pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) The
+ []
+
+
+Overfull \hbox (51.94305pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) prob-
+ []
+
+
+Overfull \hbox (45.46078pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) lem
+ []
+
+
+Overfull \hbox (48.2486pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) asks
+ []
+
+
+Overfull \hbox (40.97678pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) ex-
+ []
+
+
+Overfull \hbox (47.20409pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) plic-
+ []
+
+
+Overfull \hbox (44.17305pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) itly
+ []
+
+
+Overfull \hbox (41.40349pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) for
+ []
+
+
+Overfull \hbox (40.12569pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) an
+ []
+
+
+Overfull \hbox (35.70901pt too wide) in paragraph at lines 581--582
+\OML/cmm/m/it/10.95 "$\T1/cmr/m/n/10.95 (-20) -
+ []
+
+
+Overfull \hbox (34.14427pt too wide) in paragraph at lines 581--582
+\OML/cmm/m/it/10.95 ^^N$
+ []
+
+
+Overfull \hbox (54.62723pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) proof,
+ []
+
+
+Overfull \hbox (38.14172pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) or
+ []
+
+
+Overfull \hbox (41.40349pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) for
+ []
+
+
+Overfull \hbox (39.49583pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) in-
+ []
+
+
+Overfull \hbox (53.78311pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) struc-
+ []
+
+
+Overfull \hbox (46.05078pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) tive
+ []
+
+
+Overfull \hbox (43.64616pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) cal-
+ []
+
+
+Overfull \hbox (41.27293pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) cu-
+ []
+
+
+Overfull \hbox (38.90349pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) la-
+ []
+
+
+Overfull \hbox (47.24158pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) tion
+ []
+
+
+Overfull \hbox (37.46004pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) of
+ []
+
+
+Overfull \hbox (47.13602pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) how
+ []
+
+
+Overfull \hbox (34.14427pt too wide) in paragraph at lines 581--582
+\OML/cmm/m/it/10.95 ^^N$
+ []
+
+
+Overfull \hbox (41.27296pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) de-
+ []
+
+
+Overfull \hbox (55.89993pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) pends
+ []
+
+
+Overfull \hbox (40.12569pt too wide) in paragraph at lines 581--582
+\T1/cmr/m/n/10.95 (-20) on
+ []
+
+
+Overfull \hbox (34.81181pt too wide) in paragraph at lines 581--582
+\OML/cmm/m/it/10.95 "$\T1/cmr/m/n/10.95 (-20) . 
+ []
+
+
+./main.tex:587: LaTeX Error: Environment theorem undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.587 	\begin{theorem}
+                      [Equivalence of Epsilon-Delta and Sequential Limits]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (51.44405pt too wide) in paragraph at lines 586--589
+[][]\T1/cmr/bx/n/10.95 (-20) The
+ []
+
+
+Overfull \hbox (45.35376pt too wide) in paragraph at lines 586--589
+\T1/cmr/bx/n/10.95 (-20) Se-
+ []
+
+
+Overfull \hbox (58.63464pt too wide) in paragraph at lines 586--589
+\T1/cmr/bx/n/10.95 (-20) quen-
+ []
+
+
+Overfull \hbox (48.48051pt too wide) in paragraph at lines 586--589
+\T1/cmr/bx/n/10.95 (-20) tial
+ []
+
+
+Overfull \hbox (50.21935pt too wide) in paragraph at lines 586--589
+\T1/cmr/bx/n/10.95 (-20) Cri-
+ []
+
+
+Overfull \hbox (43.311pt too wide) in paragraph at lines 586--589
+\T1/cmr/bx/n/10.95 (-20) te-
+ []
+
+
+Overfull \hbox (52.3085pt too wide) in paragraph at lines 586--589
+\T1/cmr/bx/n/10.95 (-20) rion
+ []
+
+
+Overfull \hbox (45.58807pt too wide) in paragraph at lines 586--589
+\T1/cmr/bx/n/10.95 (-20) for
+ []
+
+
+Overfull \hbox (53.92447pt too wide) in paragraph at lines 586--589
+\T1/cmr/bx/n/10.95 (-20) Lim-
+ []
+
+
+Overfull \hbox (43.95091pt too wide) in paragraph at lines 586--589
+\T1/cmr/bx/n/10.95 (-20) its[]
+ []
+
+
+Overfull \hbox (63.06032pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) [Equiv-
+ []
+
+
+Overfull \hbox (38.01555pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) a-
+ []
+
+
+Overfull \hbox (54.06192pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) lence
+ []
+
+
+Overfull \hbox (39.53767pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) of
+ []
+
+
+Overfull \hbox (67.2699pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) Epsilon-
+ []
+
+
+Overfull \hbox (56.28188pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) Delta
+ []
+
+
+Overfull \hbox (48.13074pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) and
+ []
+
+
+Overfull \hbox (43.3506pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) Se-
+ []
+
+
+Overfull \hbox (54.90924pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) quen-
+ []
+
+
+Overfull \hbox (46.35738pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) tial
+ []
+
+
+Overfull \hbox (51.20178pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) Lim-
+ []
+
+
+Overfull \hbox (45.23186pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) its]
+ []
+
+
+Overfull \hbox (46.20631pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) Let
+ []
+
+
+Overfull \hbox (50.71165pt too wide) in paragraph at lines 586--589
+\OML/cmm/m/it/10.95 A \OMS/cmsy/m/n/10.95 ^^R
+ []
+
+
+Overfull \hbox (40.30135pt too wide) in paragraph at lines 586--589
+\U/msb/m/n/10.95 R$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (42.50546pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) let
+ []
+
+
+Overfull \hbox (41.98085pt too wide) in paragraph at lines 586--589
+\OML/cmm/m/it/10.95 f \OT1/cmr/m/n/10.95 (-20) :
+ []
+
+
+Overfull \hbox (53.14499pt too wide) in paragraph at lines 586--589
+\OML/cmm/m/it/10.95 A \OMS/cmsy/m/n/10.95 !
+ []
+
+
+Overfull \hbox (38.84918pt too wide) in paragraph at lines 586--589
+\U/msb/m/n/10.95 R$
+ []
+
+
+Overfull \hbox (41.9132pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) be
+ []
+
+
+Overfull \hbox (36.27591pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) a
+ []
+
+
+Overfull \hbox (52.53975pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) func-
+ []
+
+
+Overfull \hbox (50.77138pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) tion,
+ []
+
+
+Overfull \hbox (48.13074pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) and
+ []
+
+
+Overfull \hbox (42.50546pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) let
+ []
+
+
+Overfull \hbox (46.02115pt too wide) in paragraph at lines 586--589
+\OML/cmm/m/it/10.95 c \OMS/cmsy/m/n/10.95 2
+ []
+
+
+Overfull \hbox (38.84918pt too wide) in paragraph at lines 586--589
+\U/msb/m/n/10.95 R$
+ []
+
+
+Overfull \hbox (41.9132pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) be
+ []
+
+
+Overfull \hbox (36.27591pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) a
+ []
+
+
+Overfull \hbox (50.5257pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) clus-
+ []
+
+
+Overfull \hbox (43.77731pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) ter
+ []
+
+
+Overfull \hbox (54.95264pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) point
+ []
+
+
+Overfull \hbox (43.0958pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) (or
+ []
+
+
+Overfull \hbox (52.5832pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) limit
+ []
+
+
+Overfull \hbox (58.12305pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) point)
+ []
+
+
+Overfull \hbox (39.53767pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) of
+ []
+
+
+Overfull \hbox (39.99579pt too wide) in paragraph at lines 586--589
+\OML/cmm/m/it/10.95 A$\T1/cmr/m/n/10.95 (-20) .
+ []
+
+
+Overfull \hbox (54.85095pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) Then
+ []
+
+
+Overfull \hbox (45.76128pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (44.24289pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) fol-
+ []
+
+
+Overfull \hbox (48.38342pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) low-
+ []
+
+
+Overfull \hbox (45.1689pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) ing
+ []
+
+
+Overfull \hbox (47.52628pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) two
+ []
+
+
+Overfull \hbox (55.26843pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) state-
+ []
+
+
+Overfull \hbox (58.55788pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) ments
+ []
+
+
+Overfull \hbox (45.16893pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) are
+ []
+
+
+Overfull \hbox (46.3162pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) log-
+ []
+
+
+Overfull \hbox (35.64606pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) i-
+ []
+
+
+Overfull \hbox (52.17812pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) cally
+ []
+
+
+Overfull \hbox (57.57863pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) equiv-
+ []
+
+
+Overfull \hbox (38.01555pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) a-
+ []
+
+
+Overfull \hbox (49.87677pt too wide) in paragraph at lines 586--589
+\T1/cmr/m/n/10.95 (-20) lent: 
+ []
+
+
+Overfull \hbox (45.8397pt too wide) in paragraph at lines 591--591
+\T1/cmr/bx/n/10.95 (-20) Th
+ []
+
+
+Overfull \hbox (58.3159pt too wide) in paragraph at lines 591--592
+[]
+ []
+
+
+Overfull \hbox (78.8191pt too wide) in paragraph at lines 591--592
+\T1/cmr/bx/n/10.95 (-20) The
+ []
+
+
+Overfull \hbox (86.04663pt too wide) in paragraph at lines 591--592
+\T1/cmr/bx/n/10.95 (-20) Func-
+ []
+
+
+Overfull \hbox (88.79604pt too wide) in paragraph at lines 591--592
+\T1/cmr/bx/n/10.95 (-20) tional
+ []
+
+
+Overfull \hbox (89.14294pt too wide) in paragraph at lines 591--592
+\T1/cmr/bx/n/10.95 (-20) Limit:
+ []
+
+
+Overfull \hbox (109.63948pt too wide) in paragraph at lines 591--592
+[] \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 (-20) ) =
+ []
+
+
+Overfull \hbox (65.76799pt too wide) in paragraph at lines 591--592
+\OML/cmm/m/it/10.95 L$ 
+ []
+
+
+Overfull \hbox (45.8397pt too wide) in paragraph at lines 592--592
+\T1/cmr/bx/n/10.95 (-20) Th
+ []
+
+
+Overfull \hbox (58.3159pt too wide) in paragraph at lines 592--593
+[]
+ []
+
+
+Overfull \hbox (78.8191pt too wide) in paragraph at lines 592--593
+\T1/cmr/bx/n/10.95 (-20) The
+ []
+
+
+Overfull \hbox (72.72882pt too wide) in paragraph at lines 592--593
+\T1/cmr/bx/n/10.95 (-20) Se-
+ []
+
+
+Overfull \hbox (86.0097pt too wide) in paragraph at lines 592--593
+\T1/cmr/bx/n/10.95 (-20) quen-
+ []
+
+
+Overfull \hbox (75.85558pt too wide) in paragraph at lines 592--593
+\T1/cmr/bx/n/10.95 (-20) tial
+ []
+
+
+Overfull \hbox (89.14294pt too wide) in paragraph at lines 592--593
+\T1/cmr/bx/n/10.95 (-20) Limit:
+ []
+
+
+Overfull \hbox (73.65036pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) For
+ []
+
+
+Overfull \hbox (70.42947pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) ev-
+ []
+
+
+Overfull \hbox (72.4373pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) ery
+ []
+
+
+Overfull \hbox (69.0078pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) se-
+ []
+
+
+Overfull \hbox (90.03004pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) quence
+ []
+
+
+Overfull \hbox (76.01566pt too wide) in paragraph at lines 592--593
+\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x[]\OT1/cmr/m/n/10.95 (-20) )$
+ []
+
+
+Overfull \hbox (67.2089pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) in
+ []
+
+
+Overfull \hbox (66.52841pt too wide) in paragraph at lines 592--593
+\OML/cmm/m/it/10.95 A$
+ []
+
+
+Overfull \hbox (78.82071pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) such
+ []
+
+
+Overfull \hbox (77.58504pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) that
+ []
+
+
+Overfull \hbox (81.61957pt too wide) in paragraph at lines 592--593
+\OML/cmm/m/it/10.95 x[] \OMS/cmsy/m/n/10.95 6\OT1/cmr/m/n/10.95 (-20) =
+ []
+
+
+Overfull \hbox (63.05458pt too wide) in paragraph at lines 592--593
+\OML/cmm/m/it/10.95 c$
+ []
+
+
+Overfull \hbox (70.85619pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) for
+ []
+
+
+Overfull \hbox (69.58212pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) all
+ []
+
+
+Overfull \hbox (75.2301pt too wide) in paragraph at lines 592--593
+\OML/cmm/m/it/10.95 n \OMS/cmsy/m/n/10.95 2
+ []
+
+
+Overfull \hbox (66.22424pt too wide) in paragraph at lines 592--593
+\U/msb/m/n/10.95 N$
+ []
+
+
+Overfull \hbox (75.5058pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) and
+ []
+
+
+Overfull \hbox (121.31061pt too wide) in paragraph at lines 592--593
+[][] \OML/cmm/m/it/10.95 x[] \OT1/cmr/m/n/10.95 (-20) =
+ []
+
+
+Overfull \hbox (64.50674pt too wide) in paragraph at lines 592--593
+\OML/cmm/m/it/10.95 c$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (73.13634pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (69.0078pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) se-
+ []
+
+
+Overfull \hbox (90.03004pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) quence
+ []
+
+
+Overfull \hbox (66.91273pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) of
+ []
+
+
+Overfull \hbox (79.91481pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) func-
+ []
+
+
+Overfull \hbox (76.69427pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) tion
+ []
+
+
+Overfull \hbox (73.09987pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) val-
+ []
+
+
+Overfull \hbox (73.19557pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) ues
+ []
+
+
+Overfull \hbox (90.90164pt too wide) in paragraph at lines 592--593
+\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x[]\OT1/cmr/m/n/10.95 (-20) ))$
+ []
+
+
+Overfull \hbox (76.0607pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) con-
+ []
+
+
+Overfull \hbox (86.54214pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) verges
+ []
+
+
+Overfull \hbox (67.80128pt too wide) in paragraph at lines 592--593
+\T1/cmr/m/n/10.95 (-20) to
+ []
+
+
+Overfull \hbox (67.22015pt too wide) in paragraph at lines 592--593
+\OML/cmm/m/it/10.95 L$\T1/cmr/m/n/10.95 (-20) : 
+ []
+
+
+Overfull \hbox (120.48824pt too wide) in paragraph at lines 594--595
+[]$[] \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x[]\OT1/cmr/m/n/10.95 (-20) ) =
+ []
+
+
+Overfull \hbox (65.76799pt too wide) in paragraph at lines 594--595
+\OML/cmm/m/it/10.95 L$ 
+ []
+
+
+./main.tex:596: LaTeX Error: \begin{tcb@savebox} on input line 586 ended by \end{theorem}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.596 	\end{theorem}
+                    }
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (99.3719pt too wide) in paragraph at lines 598--600
+[][]\T1/cmr/bx/n/10.95 (-20) Section
+ []
+
+
+Overfull \hbox (77.28864pt too wide) in paragraph at lines 598--600
+\T1/cmr/bx/n/10.95 (-20) 4.1:
+ []
+
+
+Overfull \hbox (89.41pt too wide) in paragraph at lines 598--600
+\T1/cmr/bx/n/10.95 (-20) 9(a,c)[]
+ []
+
+
+Overfull \hbox (77.34361pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) Use
+ []
+
+
+Overfull \hbox (69.84146pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) ei-
+ []
+
+
+Overfull \hbox (79.15742pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) ther
+ []
+
+
+Overfull \hbox (75.21397pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (73.35487pt too wide) in paragraph at lines 598--600
+\OML/cmm/m/it/10.95 ^^O \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (65.6746pt too wide) in paragraph at lines 598--600
+\OML/cmm/m/it/10.95 ^^N$
+ []
+
+
+Overfull \hbox (76.06506pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) def-
+ []
+
+
+Overfull \hbox (65.09875pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) i-
+ []
+
+
+Overfull \hbox (71.02617pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) ni-
+ []
+
+
+Overfull \hbox (78.77191pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) tion
+ []
+
+
+Overfull \hbox (69.67206pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) or
+ []
+
+
+Overfull \hbox (75.21397pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (72.8033pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) Se-
+ []
+
+
+Overfull \hbox (78.43452pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) qen-
+ []
+
+
+Overfull \hbox (75.81007pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) tial
+ []
+
+
+Overfull \hbox (76.95361pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) Cri-
+ []
+
+
+Overfull \hbox (71.0262pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) te-
+ []
+
+
+Overfull \hbox (78.77191pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) rion
+ []
+
+
+Overfull \hbox (72.93382pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) for
+ []
+
+
+Overfull \hbox (76.95363pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) lim-
+ []
+
+
+Overfull \hbox (71.71898pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) its
+ []
+
+
+Overfull \hbox (69.87892pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) to
+ []
+
+
+Overfull \hbox (71.08543pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) es-
+ []
+
+
+Overfull \hbox (77.54597pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) tab-
+ []
+
+
+Overfull \hbox (76.46165pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) lish
+ []
+
+
+Overfull \hbox (75.21397pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (73.69559pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) fol-
+ []
+
+
+Overfull \hbox (77.83612pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) low-
+ []
+
+
+Overfull \hbox (74.6216pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) ing
+ []
+
+
+Overfull \hbox (76.95363pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) lim-
+ []
+
+
+Overfull \hbox (73.17114pt too wide) in paragraph at lines 598--600
+\T1/cmr/m/n/10.95 (-20) its: 
+ []
+
+
+Overfull \hbox (213.6387pt too wide) detected at line 604
+[] [] \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 ^^@\OT1/cmr/m/n/10.95 1   [] [] = 0
+ []
+
+
+Overfull \hbox (75.65901pt too wide) in paragraph at lines 608--609
+[]\T1/cmr/m/n/10.95 (-20) Let
+ []
+
+
+Overfull \hbox (76.39648pt too wide) in paragraph at lines 608--609
+\OML/cmm/m/it/10.95 ^^O >
+ []
+
+
+Overfull \hbox (65.48529pt too wide) in paragraph at lines 608--609
+\OT1/cmr/m/n/10.95 (-20) 0$
+ []
+
+
+Overfull \hbox (71.36589pt too wide) in paragraph at lines 608--609
+\T1/cmr/m/n/10.95 (-20) be
+ []
+
+
+Overfull \hbox (85.53572pt too wide) in paragraph at lines 608--609
+\T1/cmr/m/n/10.95 (-20) given.
+ []
+
+
+Overfull \hbox (74.63396pt too wide) in paragraph at lines 608--609
+\T1/cmr/m/n/10.95 (-20) We
+ []
+
+
+Overfull \hbox (82.97389pt too wide) in paragraph at lines 608--609
+\T1/cmr/m/n/10.95 (-20) must
+ []
+
+
+Overfull \hbox (78.1795pt too wide) in paragraph at lines 608--609
+\T1/cmr/m/n/10.95 (-20) find
+ []
+
+
+Overfull \hbox (65.7286pt too wide) in paragraph at lines 608--609
+\T1/cmr/m/n/10.95 (-20) a
+ []
+
+
+Overfull \hbox (77.23291pt too wide) in paragraph at lines 608--609
+\OML/cmm/m/it/10.95 ^^N >
+ []
+
+
+Overfull \hbox (65.48529pt too wide) in paragraph at lines 608--609
+\OT1/cmr/m/n/10.95 (-20) 0$
+ []
+
+
+Overfull \hbox (80.89835pt too wide) in paragraph at lines 608--609
+\T1/cmr/m/n/10.95 (-20) such
+ []
+
+
+Overfull \hbox (79.66267pt too wide) in paragraph at lines 608--609
+\T1/cmr/m/n/10.95 (-20) that
+ []
+
+
+Overfull \hbox (66.62088pt too wide) in paragraph at lines 608--609
+\T1/cmr/m/n/10.95 (-20) if
+ []
+
+
+Overfull \hbox (77.31735pt too wide) in paragraph at lines 608--609
+\OT1/cmr/m/n/10.95 (-20) 0 \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (78.21013pt too wide) in paragraph at lines 608--609
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (80.08527pt too wide) in paragraph at lines 608--609
+\OT1/cmr/m/n/10.95 (-20) 2\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (67.12677pt too wide) in paragraph at lines 608--609
+\OML/cmm/m/it/10.95 ^^N$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (81.14139pt too wide) in paragraph at lines 608--609
+\T1/cmr/m/n/10.95 (-20) then
+ []
+
+
+Overfull \hbox (133.18953pt too wide) in paragraph at lines 608--609
+[] \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (67.80376pt too wide) in paragraph at lines 608--609
+\OML/cmm/m/it/10.95 ^^O$\T1/cmr/m/n/10.95 (-20) . 
+ []
+
+
+Overfull \hbox (60.39354pt too wide) in paragraph at lines 608--609
+
+ []
+
+
+Overfull \hbox (84.28409pt too wide) in paragraph at lines 610--611
+[]\T1/cmr/m/n/10.95 (-20) First,
+ []
+
+
+Overfull \hbox (72.14658pt too wide) in paragraph at lines 610--611
+\T1/cmr/m/n/10.95 (-20) we
+ []
+
+
+Overfull \hbox (78.1976pt too wide) in paragraph at lines 610--611
+\T1/cmr/m/n/10.95 (-20) sim-
+ []
+
+
+Overfull \hbox (80.74225pt too wide) in paragraph at lines 610--611
+\T1/cmr/m/n/10.95 (-20) plify
+ []
+
+
+Overfull \hbox (75.21397pt too wide) in paragraph at lines 610--611
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (72.50711pt too wide) in paragraph at lines 610--611
+\T1/cmr/m/n/10.95 (-20) ex-
+ []
+
+
+Overfull \hbox (81.16316pt too wide) in paragraph at lines 610--611
+\T1/cmr/m/n/10.95 (-20) pres-
+ []
+
+
+Overfull \hbox (80.28331pt too wide) in paragraph at lines 610--611
+\T1/cmr/m/n/10.95 (-20) sion: 
+ []
+
+
+Overfull \hbox (365.26718pt too wide) detected at line 613
+[] \OT1/cmr/m/n/10.95 = [] = [] = [] = []
+ []
+
+
+Overfull \hbox (84.36777pt too wide) in paragraph at lines 615--616
+[]\T1/cmr/m/n/10.95 (-20) Next,
+ []
+
+
+Overfull \hbox (72.14658pt too wide) in paragraph at lines 615--616
+\T1/cmr/m/n/10.95 (-20) we
+ []
+
+
+Overfull \hbox (71.08543pt too wide) in paragraph at lines 615--616
+\T1/cmr/m/n/10.95 (-20) es-
+ []
+
+
+Overfull \hbox (77.54597pt too wide) in paragraph at lines 615--616
+\T1/cmr/m/n/10.95 (-20) tab-
+ []
+
+
+Overfull \hbox (76.46165pt too wide) in paragraph at lines 615--616
+\T1/cmr/m/n/10.95 (-20) lish
+ []
+
+
+Overfull \hbox (71.65602pt too wide) in paragraph at lines 615--616
+\T1/cmr/m/n/10.95 (-20) an
+ []
+
+
+Overfull \hbox (73.99174pt too wide) in paragraph at lines 615--616
+\T1/cmr/m/n/10.95 (-20) ini-
+ []
+
+
+Overfull \hbox (75.81007pt too wide) in paragraph at lines 615--616
+\T1/cmr/m/n/10.95 (-20) tial
+ []
+
+
+Overfull \hbox (90.58293pt too wide) in paragraph at lines 615--616
+\T1/cmr/m/n/10.95 (-20) bound.
+ []
+
+
+Overfull \hbox (73.9377pt too wide) in paragraph at lines 615--616
+\T1/cmr/m/n/10.95 (-20) As-
+ []
+
+
+Overfull \hbox (84.1625pt too wide) in paragraph at lines 615--616
+\T1/cmr/m/n/10.95 (-20) sume
+ []
+
+
+Overfull \hbox (77.23291pt too wide) in paragraph at lines 615--616
+\OML/cmm/m/it/10.95 ^^N \OMS/cmsy/m/n/10.95 ^^T
+ []
+
+
+Overfull \hbox (67.88603pt too wide) in paragraph at lines 615--616
+[]$\T1/cmr/m/n/10.95 (-20) .
+ []
+
+
+Overfull \hbox (85.75581pt too wide) in paragraph at lines 615--616
+\T1/cmr/m/n/10.95 (-20) Then: 
+ []
+
+
+Overfull \hbox (109.20172pt too wide) detected at line 618
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 2\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 < []
+ []
+
+
+Overfull \hbox (134.10999pt too wide) detected at line 621
+\OMS/cmsy/m/n/10.95 ^^@[] \OML/cmm/m/it/10.95 < x \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 2 \OML/cmm/m/it/10.95 < []
+ []
+
+
+Overfull \hbox (111.6016pt too wide) detected at line 624
+[] \OML/cmm/m/it/10.95 < x < []
+ []
+
+
+Overfull \hbox (125.59329pt too wide) detected at line 627
+[] \OML/cmm/m/it/10.95 < x \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1 \OML/cmm/m/it/10.95 < []
+ []
+
+
+Overfull \hbox (91.99377pt too wide) in paragraph at lines 629--630
+[]\T1/cmr/m/n/10.95 (-20) Taking
+ []
+
+
+Overfull \hbox (75.21397pt too wide) in paragraph at lines 629--630
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (71.0262pt too wide) in paragraph at lines 629--630
+\T1/cmr/m/n/10.95 (-20) re-
+ []
+
+
+Overfull \hbox (75.76884pt too wide) in paragraph at lines 629--630
+\T1/cmr/m/n/10.95 (-20) cip-
+ []
+
+
+Overfull \hbox (71.61856pt too wide) in paragraph at lines 629--630
+\T1/cmr/m/n/10.95 (-20) ro-
+ []
+
+
+Overfull \hbox (74.88902pt too wide) in paragraph at lines 629--630
+\T1/cmr/m/n/10.95 (-20) cal,
+ []
+
+
+Overfull \hbox (72.14658pt too wide) in paragraph at lines 629--630
+\T1/cmr/m/n/10.95 (-20) we
+ []
+
+
+Overfull \hbox (76.07379pt too wide) in paragraph at lines 629--630
+\T1/cmr/m/n/10.95 (-20) get: 
+ []
+
+
+Overfull \hbox (114.0683pt too wide) detected at line 632
+[] \OML/cmm/m/it/10.95 < \OT1/cmr/m/n/10.95 2
+ []
+
+
+Overfull \hbox (117.95732pt too wide) in paragraph at lines 634--635
+[]\T1/cmr/m/n/10.95 (-20) Substituting
+ []
+
+
+Overfull \hbox (77.6464pt too wide) in paragraph at lines 634--635
+\T1/cmr/m/n/10.95 (-20) this
+ []
+
+
+Overfull \hbox (81.4446pt too wide) in paragraph at lines 634--635
+\T1/cmr/m/n/10.95 (-20) back
+ []
+
+
+Overfull \hbox (78.46967pt too wide) in paragraph at lines 634--635
+\T1/cmr/m/n/10.95 (-20) into
+ []
+
+
+Overfull \hbox (75.59947pt too wide) in paragraph at lines 634--635
+\T1/cmr/m/n/10.95 (-20) our
+ []
+
+
+Overfull \hbox (78.1976pt too wide) in paragraph at lines 634--635
+\T1/cmr/m/n/10.95 (-20) sim-
+ []
+
+
+Overfull \hbox (73.99174pt too wide) in paragraph at lines 634--635
+\T1/cmr/m/n/10.95 (-20) pli-
+ []
+
+
+Overfull \hbox (76.9948pt too wide) in paragraph at lines 634--635
+\T1/cmr/m/n/10.95 (-20) fied
+ []
+
+
+Overfull \hbox (72.50711pt too wide) in paragraph at lines 634--635
+\T1/cmr/m/n/10.95 (-20) ex-
+ []
+
+
+Overfull \hbox (81.16316pt too wide) in paragraph at lines 634--635
+\T1/cmr/m/n/10.95 (-20) pres-
+ []
+
+
+Overfull \hbox (80.28331pt too wide) in paragraph at lines 634--635
+\T1/cmr/m/n/10.95 (-20) sion,
+ []
+
+
+Overfull \hbox (72.14658pt too wide) in paragraph at lines 634--635
+\T1/cmr/m/n/10.95 (-20) we
+ []
+
+
+Overfull \hbox (82.87762pt too wide) in paragraph at lines 634--635
+\T1/cmr/m/n/10.95 (-20) have: 
+ []
+
+
+Overfull \hbox (140.40157pt too wide) detected at line 637
+[] \OML/cmm/m/it/10.95 < \OT1/cmr/m/n/10.95 2\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 2\OMS/cmsy/m/n/10.95 j
+ []
+
+
+Overfull \hbox (74.63396pt too wide) in paragraph at lines 639--640
+[]\T1/cmr/m/n/10.95 (-20) We
+ []
+
+
+Overfull \hbox (82.22044pt too wide) in paragraph at lines 639--640
+\T1/cmr/m/n/10.95 (-20) want
+ []
+
+
+Overfull \hbox (77.6464pt too wide) in paragraph at lines 639--640
+\T1/cmr/m/n/10.95 (-20) this
+ []
+
+
+Overfull \hbox (72.8033pt too wide) in paragraph at lines 639--640
+\T1/cmr/m/n/10.95 (-20) en-
+ []
+
+
+Overfull \hbox (76.40245pt too wide) in paragraph at lines 639--640
+\T1/cmr/m/n/10.95 (-20) tire
+ []
+
+
+Overfull \hbox (72.50711pt too wide) in paragraph at lines 639--640
+\T1/cmr/m/n/10.95 (-20) ex-
+ []
+
+
+Overfull \hbox (81.16316pt too wide) in paragraph at lines 639--640
+\T1/cmr/m/n/10.95 (-20) pres-
+ []
+
+
+Overfull \hbox (78.83115pt too wide) in paragraph at lines 639--640
+\T1/cmr/m/n/10.95 (-20) sion
+ []
+
+
+Overfull \hbox (69.87892pt too wide) in paragraph at lines 639--640
+\T1/cmr/m/n/10.95 (-20) to
+ []
+
+
+Overfull \hbox (71.36589pt too wide) in paragraph at lines 639--640
+\T1/cmr/m/n/10.95 (-20) be
+ []
+
+
+Overfull \hbox (76.52092pt too wide) in paragraph at lines 639--640
+\T1/cmr/m/n/10.95 (-20) less
+ []
+
+
+Overfull \hbox (81.73375pt too wide) in paragraph at lines 639--640
+\T1/cmr/m/n/10.95 (-20) than
+ []
+
+
+Overfull \hbox (65.68062pt too wide) in paragraph at lines 639--640
+\OML/cmm/m/it/10.95 ^^O$\T1/cmr/m/n/10.95 (-20) .
+ []
+
+
+Overfull \hbox (89.0089pt too wide) in paragraph at lines 639--640
+\T1/cmr/m/n/10.95 (-20) There-
+ []
+
+
+Overfull \hbox (79.33556pt too wide) in paragraph at lines 639--640
+\T1/cmr/m/n/10.95 (-20) fore,
+ []
+
+
+Overfull \hbox (72.14658pt too wide) in paragraph at lines 639--640
+\T1/cmr/m/n/10.95 (-20) we
+ []
+
+
+Overfull \hbox (71.0262pt too wide) in paragraph at lines 639--640
+\T1/cmr/m/n/10.95 (-20) re-
+ []
+
+
+Overfull \hbox (85.26294pt too wide) in paragraph at lines 639--640
+\T1/cmr/m/n/10.95 (-20) quire: 
+ []
+
+
+Overfull \hbox (189.86275pt too wide) detected at line 642
+\OT1/cmr/m/n/10.95 2\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 2\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 < ^^O  \OT1/cmr/m/n/10.95 =[]\OMS/cmsy/m/n/10.95 )  j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 2\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 < []
+ []
+
+
+Overfull \hbox (93.95012pt too wide) in paragraph at lines 644--645
+[]\T1/cmr/m/n/10.95 (-20) Choose
+ []
+
+
+Overfull \hbox (77.06258pt too wide) in paragraph at lines 644--645
+\OML/cmm/m/it/10.95 ^^N \OT1/cmr/m/n/10.95 (-20) =
+ []
+
+
+Overfull \hbox (109.51526pt too wide) in paragraph at lines 644--645
+[] []$\T1/cmr/m/n/10.95 (-20) . 
+ []
+
+
+Overfull \hbox (85.75581pt too wide) in paragraph at lines 646--647
+[]\T1/cmr/m/n/10.95 (-20) Then,
+ []
+
+
+Overfull \hbox (72.93382pt too wide) in paragraph at lines 646--647
+\T1/cmr/m/n/10.95 (-20) for
+ []
+
+
+Overfull \hbox (71.65976pt too wide) in paragraph at lines 646--647
+\T1/cmr/m/n/10.95 (-20) all
+ []
+
+
+Overfull \hbox (66.65176pt too wide) in paragraph at lines 646--647
+\OML/cmm/m/it/10.95 x$
+ []
+
+
+Overfull \hbox (75.82811pt too wide) in paragraph at lines 646--647
+\T1/cmr/m/n/10.95 (-20) sat-
+ []
+
+
+Overfull \hbox (69.3083pt too wide) in paragraph at lines 646--647
+\T1/cmr/m/n/10.95 (-20) is-
+ []
+
+
+Overfull \hbox (71.02617pt too wide) in paragraph at lines 646--647
+\T1/cmr/m/n/10.95 (-20) fy-
+ []
+
+
+Overfull \hbox (74.6216pt too wide) in paragraph at lines 646--647
+\T1/cmr/m/n/10.95 (-20) ing
+ []
+
+
+Overfull \hbox (77.31735pt too wide) in paragraph at lines 646--647
+\OT1/cmr/m/n/10.95 (-20) 0 \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (78.21013pt too wide) in paragraph at lines 646--647
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (80.08527pt too wide) in paragraph at lines 646--647
+\OT1/cmr/m/n/10.95 (-20) 2\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (67.12677pt too wide) in paragraph at lines 646--647
+\OML/cmm/m/it/10.95 ^^N$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (67.21545pt too wide) in paragraph at lines 646--647
+\T1/cmr/m/n/10.95 (-20) it
+ []
+
+
+Overfull \hbox (73.69559pt too wide) in paragraph at lines 646--647
+\T1/cmr/m/n/10.95 (-20) fol-
+ []
+
+
+Overfull \hbox (80.30603pt too wide) in paragraph at lines 646--647
+\T1/cmr/m/n/10.95 (-20) lows
+ []
+
+
+Overfull \hbox (79.66267pt too wide) in paragraph at lines 646--647
+\T1/cmr/m/n/10.95 (-20) that
+ []
+
+
+Overfull \hbox (78.21013pt too wide) in paragraph at lines 646--647
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (80.08527pt too wide) in paragraph at lines 646--647
+\OT1/cmr/m/n/10.95 (-20) 2\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (67.0436pt too wide) in paragraph at lines 646--647
+[]$
+ []
+
+
+Overfull \hbox (90.23535pt too wide) in paragraph at lines 646--647
+\T1/cmr/m/n/10.95 (-20) (which
+ []
+
+
+Overfull \hbox (82.88104pt too wide) in paragraph at lines 646--647
+\T1/cmr/m/n/10.95 (-20) guar-
+ []
+
+
+Overfull \hbox (73.39566pt too wide) in paragraph at lines 646--647
+\T1/cmr/m/n/10.95 (-20) an-
+ []
+
+
+Overfull \hbox (78.23882pt too wide) in paragraph at lines 646--647
+\T1/cmr/m/n/10.95 (-20) tees
+ []
+
+
+Overfull \hbox (94.72017pt too wide) in paragraph at lines 646--647
+[] \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (68.36172pt too wide) in paragraph at lines 646--647
+\OT1/cmr/m/n/10.95 (-20) 2$\T1/cmr/m/n/10.95 (-20) )
+ []
+
+
+Overfull \hbox (77.58344pt too wide) in paragraph at lines 646--647
+\T1/cmr/m/n/10.95 (-20) and
+ []
+
+
+Overfull \hbox (78.21013pt too wide) in paragraph at lines 646--647
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (80.08527pt too wide) in paragraph at lines 646--647
+\OT1/cmr/m/n/10.95 (-20) 2\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (67.88603pt too wide) in paragraph at lines 646--647
+[]$\T1/cmr/m/n/10.95 (-20) . 
+ []
+
+
+Overfull \hbox (84.92041pt too wide) in paragraph at lines 648--649
+[]\T1/cmr/m/n/10.95 (-20) Thus: 
+ []
+
+
+Overfull \hbox (287.60826pt too wide) detected at line 651
+[] \OT1/cmr/m/n/10.95 = [] \OML/cmm/m/it/10.95 < \OT1/cmr/m/n/10.95 2\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 2\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 < \OT1/cmr/m/n/10.95 2 [] = \OML/cmm/m/it/10.95 ^^O
+ []
+
+./main.tex:653: Undefined control sequence.
+l.653 \qq
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (75.65901pt too wide) in paragraph at lines 656--657
+[]\T1/cmr/m/n/10.95 (-20) Let
+ []
+
+
+Overfull \hbox (76.39648pt too wide) in paragraph at lines 656--657
+\OML/cmm/m/it/10.95 ^^O >
+ []
+
+
+Overfull \hbox (65.48529pt too wide) in paragraph at lines 656--657
+\OT1/cmr/m/n/10.95 (-20) 0$
+ []
+
+
+Overfull \hbox (71.36589pt too wide) in paragraph at lines 656--657
+\T1/cmr/m/n/10.95 (-20) be
+ []
+
+
+Overfull \hbox (85.53572pt too wide) in paragraph at lines 656--657
+\T1/cmr/m/n/10.95 (-20) given.
+ []
+
+
+Overfull \hbox (74.63396pt too wide) in paragraph at lines 656--657
+\T1/cmr/m/n/10.95 (-20) We
+ []
+
+
+Overfull \hbox (82.97389pt too wide) in paragraph at lines 656--657
+\T1/cmr/m/n/10.95 (-20) must
+ []
+
+
+Overfull \hbox (78.1795pt too wide) in paragraph at lines 656--657
+\T1/cmr/m/n/10.95 (-20) find
+ []
+
+
+Overfull \hbox (65.7286pt too wide) in paragraph at lines 656--657
+\T1/cmr/m/n/10.95 (-20) a
+ []
+
+
+Overfull \hbox (77.23291pt too wide) in paragraph at lines 656--657
+\OML/cmm/m/it/10.95 ^^N >
+ []
+
+
+Overfull \hbox (65.48529pt too wide) in paragraph at lines 656--657
+\OT1/cmr/m/n/10.95 (-20) 0$
+ []
+
+
+Overfull \hbox (80.89835pt too wide) in paragraph at lines 656--657
+\T1/cmr/m/n/10.95 (-20) such
+ []
+
+
+Overfull \hbox (79.66267pt too wide) in paragraph at lines 656--657
+\T1/cmr/m/n/10.95 (-20) that
+ []
+
+
+Overfull \hbox (66.62088pt too wide) in paragraph at lines 656--657
+\T1/cmr/m/n/10.95 (-20) if
+ []
+
+
+Overfull \hbox (77.31735pt too wide) in paragraph at lines 656--657
+\OT1/cmr/m/n/10.95 (-20) 0 \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (78.21013pt too wide) in paragraph at lines 656--657
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (80.35902pt too wide) in paragraph at lines 656--657
+\OT1/cmr/m/n/10.95 (-20) 0\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (67.12677pt too wide) in paragraph at lines 656--657
+\OML/cmm/m/it/10.95 ^^N$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (81.14139pt too wide) in paragraph at lines 656--657
+\T1/cmr/m/n/10.95 (-20) then
+ []
+
+
+Overfull \hbox (110.01717pt too wide) in paragraph at lines 656--657
+[] \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (67.80376pt too wide) in paragraph at lines 656--657
+\OML/cmm/m/it/10.95 ^^O$\T1/cmr/m/n/10.95 (-20) . 
+ []
+
+
+Overfull \hbox (60.39354pt too wide) in paragraph at lines 656--657
+
+ []
+
+
+Overfull \hbox (97.79211pt too wide) in paragraph at lines 658--659
+[]\T1/cmr/m/n/10.95 (-20) Observe
+ []
+
+
+Overfull \hbox (69.93816pt too wide) in paragraph at lines 658--659
+\T1/cmr/m/n/10.95 (-20) as
+ []
+
+
+Overfull \hbox (77.31735pt too wide) in paragraph at lines 658--659
+\OT1/cmr/m/n/10.95 (-20) 0 \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (78.21013pt too wide) in paragraph at lines 658--659
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (80.35902pt too wide) in paragraph at lines 658--659
+\OT1/cmr/m/n/10.95 (-20) 0\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (67.12677pt too wide) in paragraph at lines 658--659
+\OML/cmm/m/it/10.95 ^^N$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (72.14658pt too wide) in paragraph at lines 658--659
+\T1/cmr/m/n/10.95 (-20) we
+ []
+
+
+Overfull \hbox (84.29758pt too wide) in paragraph at lines 658--659
+\T1/cmr/m/n/10.95 (-20) know
+ []
+
+
+Overfull \hbox (78.03973pt too wide) in paragraph at lines 658--659
+\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 6\OT1/cmr/m/n/10.95 (-20) =
+ []
+
+
+Overfull \hbox (66.60149pt too wide) in paragraph at lines 658--659
+\OT1/cmr/m/n/10.95 (-20) 0$\T1/cmr/m/n/10.95 (-20) . 
+ []
+
+
+Overfull \hbox (60.39354pt too wide) in paragraph at lines 660--660
+[] 
+ []
+
+
+Overfull \hbox (347.1041pt too wide) detected at line 665
+[] \OML/cmm/m/it/10.95 < ^^O  \OT1/cmr/m/n/10.95 =[]\OMS/cmsy/m/n/10.95 )  [] \OML/cmm/m/it/10.95 < ^^O  \OT1/cmr/m/n/10.95 =[]\OMS/cmsy/m/n/10.95 )  [] \OML/cmm/m/it/10.95 < ^^O \OMS/cmsy/m/n/10.95 ^ \OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 6\OT1/cmr/m/n/10.95 = 0  =[]\OMS/cmsy/m/n/10.95 )  j\OML/cmm/m/it/10.95 x\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 < ^^O
+ []
+
+./main.tex:667: Undefined control sequence.
+l.667 \qq
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (128.8246pt too wide) in paragraph at lines 669--671
+[][]\T1/cmr/bx/n/10.95 (-20) Section
+ []
+
+
+Overfull \hbox (106.74133pt too wide) in paragraph at lines 669--671
+\T1/cmr/bx/n/10.95 (-20) 4.1:
+ []
+
+
+Overfull \hbox (126.58pt too wide) in paragraph at lines 669--671
+\T1/cmr/bx/n/10.95 (-20) 12(b,d)[]
+ []
+
+
+Overfull \hbox (114.04646pt too wide) in paragraph at lines 669--671
+\T1/cmr/m/n/10.95 (-20) Show
+ []
+
+
+Overfull \hbox (109.11537pt too wide) in paragraph at lines 669--671
+\T1/cmr/m/n/10.95 (-20) that
+ []
+
+
+Overfull \hbox (104.66667pt too wide) in paragraph at lines 669--671
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (103.14828pt too wide) in paragraph at lines 669--671
+\T1/cmr/m/n/10.95 (-20) fol-
+ []
+
+
+Overfull \hbox (107.28882pt too wide) in paragraph at lines 669--671
+\T1/cmr/m/n/10.95 (-20) low-
+ []
+
+
+Overfull \hbox (104.0743pt too wide) in paragraph at lines 669--671
+\T1/cmr/m/n/10.95 (-20) ing
+ []
+
+
+Overfull \hbox (106.40633pt too wide) in paragraph at lines 669--671
+\T1/cmr/m/n/10.95 (-20) lim-
+ []
+
+
+Overfull \hbox (101.17168pt too wide) in paragraph at lines 669--671
+\T1/cmr/m/n/10.95 (-20) its
+ []
+
+
+Overfull \hbox (101.10872pt too wide) in paragraph at lines 669--671
+\T1/cmr/m/n/10.95 (-20) do
+ []
+
+
+Overfull \hbox (104.14476pt too wide) in paragraph at lines 669--671
+\T1/cmr/m/it/10.95 (-20) not
+ []
+
+
+Overfull \hbox (101.95981pt too wide) in paragraph at lines 669--671
+\T1/cmr/m/n/10.95 (-20) ex-
+ []
+
+
+Overfull \hbox (100.8777pt too wide) in paragraph at lines 669--671
+\T1/cmr/m/n/10.95 (-20) ist 
+ []
+
+
+Overfull \hbox (291.843pt too wide) detected at line 674
+\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 b\OT1/cmr/m/n/10.95 )  [] []    (\OML/cmm/m/it/10.95 d\OT1/cmr/m/n/10.95 )  [] []  []
+ []
+
+
+Overfull \hbox (119.90117pt too wide) in paragraph at lines 677--678
+[]\T1/cmr/m/n/10.95 (-20) Recall:
+ []
+
+
+Overfull \hbox (102.6296pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) By
+ []
+
+
+Overfull \hbox (104.25916pt too wide) in paragraph at lines 677--678
+\T1/cmr/bx/n/10.95 (-20) Se-
+ []
+
+
+Overfull \hbox (117.54004pt too wide) in paragraph at lines 677--678
+\T1/cmr/bx/n/10.95 (-20) quen-
+ []
+
+
+Overfull \hbox (107.38591pt too wide) in paragraph at lines 677--678
+\T1/cmr/bx/n/10.95 (-20) tial
+ []
+
+
+Overfull \hbox (109.12474pt too wide) in paragraph at lines 677--678
+\T1/cmr/bx/n/10.95 (-20) Cri-
+ []
+
+
+Overfull \hbox (102.2164pt too wide) in paragraph at lines 677--678
+\T1/cmr/bx/n/10.95 (-20) te-
+ []
+
+
+Overfull \hbox (111.2139pt too wide) in paragraph at lines 677--678
+\T1/cmr/bx/n/10.95 (-20) rion
+ []
+
+
+Overfull \hbox (105.1807pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) For
+ []
+
+
+Overfull \hbox (101.95981pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) ev-
+ []
+
+
+Overfull \hbox (103.96764pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) ery
+ []
+
+
+Overfull \hbox (100.53813pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) se-
+ []
+
+
+Overfull \hbox (121.56038pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) quence
+ []
+
+
+Overfull \hbox (107.54599pt too wide) in paragraph at lines 677--678
+\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x[]\OT1/cmr/m/n/10.95 (-20) )$
+ []
+
+
+Overfull \hbox (98.73923pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) in
+ []
+
+
+Overfull \hbox (98.05875pt too wide) in paragraph at lines 677--678
+\OML/cmm/m/it/10.95 A$
+ []
+
+
+Overfull \hbox (110.35104pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) such
+ []
+
+
+Overfull \hbox (109.11537pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) that
+ []
+
+
+Overfull \hbox (113.1499pt too wide) in paragraph at lines 677--678
+\OML/cmm/m/it/10.95 x[] \OMS/cmsy/m/n/10.95 6\OT1/cmr/m/n/10.95 (-20) =
+ []
+
+
+Overfull \hbox (94.58492pt too wide) in paragraph at lines 677--678
+\OML/cmm/m/it/10.95 c$
+ []
+
+
+Overfull \hbox (102.38652pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) for
+ []
+
+
+Overfull \hbox (101.11246pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) all
+ []
+
+
+Overfull \hbox (106.76044pt too wide) in paragraph at lines 677--678
+\OML/cmm/m/it/10.95 n \OMS/cmsy/m/n/10.95 2
+ []
+
+
+Overfull \hbox (97.75458pt too wide) in paragraph at lines 677--678
+\U/msb/m/n/10.95 N$
+ []
+
+
+Overfull \hbox (107.03613pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) and
+ []
+
+
+Overfull \hbox (152.84094pt too wide) in paragraph at lines 677--678
+[][] \OML/cmm/m/it/10.95 x[] \OT1/cmr/m/n/10.95 (-20) =
+ []
+
+
+Overfull \hbox (96.03708pt too wide) in paragraph at lines 677--678
+\OML/cmm/m/it/10.95 c$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (104.66667pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (100.53813pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) se-
+ []
+
+
+Overfull \hbox (121.56038pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) quence
+ []
+
+
+Overfull \hbox (98.44307pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) of
+ []
+
+
+Overfull \hbox (111.44514pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) func-
+ []
+
+
+Overfull \hbox (108.22461pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) tion
+ []
+
+
+Overfull \hbox (104.6302pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) val-
+ []
+
+
+Overfull \hbox (104.7259pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) ues
+ []
+
+
+Overfull \hbox (122.43198pt too wide) in paragraph at lines 677--678
+\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x[]\OT1/cmr/m/n/10.95 (-20) ))$
+ []
+
+
+Overfull \hbox (107.59103pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) con-
+ []
+
+
+Overfull \hbox (118.07248pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) verges
+ []
+
+
+Overfull \hbox (99.33162pt too wide) in paragraph at lines 677--678
+\T1/cmr/m/n/10.95 (-20) to
+ []
+
+
+Overfull \hbox (98.75049pt too wide) in paragraph at lines 677--678
+\OML/cmm/m/it/10.95 L$\T1/cmr/m/n/10.95 (-20) : 
+ []
+
+
+Overfull \hbox (105.11171pt too wide) in paragraph at lines 679--680
+[]\T1/cmr/m/n/10.95 (-20) Let
+ []
+
+
+Overfull \hbox (116.13074pt too wide) in paragraph at lines 679--680
+\OML/cmm/m/it/10.95 x[] \OT1/cmr/m/n/10.95 (-20) :=
+ []
+
+
+Overfull \hbox (102.41275pt too wide) in paragraph at lines 679--680
+[]$\T1/cmr/m/n/10.95 (-20) .
+ []
+
+
+Overfull \hbox (102.6296pt too wide) in paragraph at lines 679--680
+\T1/cmr/m/n/10.95 (-20) By
+ []
+
+
+Overfull \hbox (124.58522pt too wide) in paragraph at lines 679--680
+\T1/cmr/m/n/10.95 (-20) squeeze
+ []
+
+
+Overfull \hbox (117.4787pt too wide) in paragraph at lines 679--680
+\OMS/cmsy/m/n/10.95 ^^@[] \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (113.32024pt too wide) in paragraph at lines 679--680
+\OML/cmm/m/it/10.95 x[] <
+ []
+
+
+Overfull \hbox (120.95834pt too wide) in paragraph at lines 679--680
+[]  \OT1/cmr/m/n/10.95 (-20) =[]\OMS/cmsy/m/n/10.95 )
+ []
+
+
+Overfull \hbox (130.18323pt too wide) in paragraph at lines 679--680
+[] \OML/cmm/m/it/10.95 x[] \OT1/cmr/m/n/10.95 (-20) =
+ []
+
+
+Overfull \hbox (96.05418pt too wide) in paragraph at lines 679--680
+\OT1/cmr/m/n/10.95 (-20) 0$\T1/cmr/m/n/10.95 (-20) . 
+ []
+
+
+Overfull \hbox (127.24481pt too wide) in paragraph at lines 681--682
+[]\T1/cmr/m/n/10.95 (-20) Observe
+ []
+
+
+Overfull \hbox (104.66667pt too wide) in paragraph at lines 681--682
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (103.14828pt too wide) in paragraph at lines 681--682
+\T1/cmr/m/n/10.95 (-20) fol-
+ []
+
+
+Overfull \hbox (107.28882pt too wide) in paragraph at lines 681--682
+\T1/cmr/m/n/10.95 (-20) low-
+ []
+
+
+Overfull \hbox (105.52646pt too wide) in paragraph at lines 681--682
+\T1/cmr/m/n/10.95 (-20) ing: 
+ []
+
+
+Overfull \hbox (89.84624pt too wide) in paragraph at lines 683--683
+[] 
+ []
+
+
+Overfull \hbox (244.35909pt too wide) detected at line 685
+[] [] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 L \OT1/cmr/m/n/10.95 = [] [] = \OMS/cmsy/m/n/10.95 1
+ []
+
+./main.tex:687: Undefined control sequence.
+l.687 ...n. Therefore is not a convgent limit. \qq
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (110.26135pt too wide) in paragraph at lines 687--688
+[]\T1/cmr/m/n/10.95 (-20) This
+ []
+
+
+Overfull \hbox (97.02136pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) is
+ []
+
+
+Overfull \hbox (104.96506pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) not
+ []
+
+
+Overfull \hbox (107.36014pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) pos-
+ []
+
+
+Overfull \hbox (98.761pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) si-
+ []
+
+
+Overfull \hbox (103.48193pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) ble
+ []
+
+
+Overfull \hbox (99.39085pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) as
+ []
+
+
+Overfull \hbox (104.66667pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (111.7787pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) right
+ []
+
+
+Overfull \hbox (112.96355pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) hand
+ []
+
+
+Overfull \hbox (111.4886pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) limit
+ []
+
+
+Overfull \hbox (110.3632pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) does
+ []
+
+
+Overfull \hbox (104.96506pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) not
+ []
+
+
+Overfull \hbox (109.65599pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) eval-
+ []
+
+
+Overfull \hbox (97.51329pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) u-
+ []
+
+
+Overfull \hbox (105.52649pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) ate,
+ []
+
+
+Overfull \hbox (109.75868pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) thus
+ []
+
+
+Overfull \hbox (108.58377pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) fails
+ []
+
+
+Overfull \hbox (104.66667pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (100.53813pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) se-
+ []
+
+
+Overfull \hbox (113.81464pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) quen-
+ []
+
+
+Overfull \hbox (110.59784pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) tiala
+ []
+
+
+Overfull \hbox (103.44444pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) cri-
+ []
+
+
+Overfull \hbox (100.4789pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) te-
+ []
+
+
+Overfull \hbox (109.06705pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) rion.
+ []
+
+
+Overfull \hbox (118.4616pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) There-
+ []
+
+
+Overfull \hbox (107.33609pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) fore
+ []
+
+
+Overfull \hbox (97.02136pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) is
+ []
+
+
+Overfull \hbox (104.96506pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) not
+ []
+
+
+Overfull \hbox (95.1813pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) a
+ []
+
+
+Overfull \hbox (107.59103pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) con-
+ []
+
+
+Overfull \hbox (114.75366pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) vgent
+ []
+
+
+Overfull \hbox (112.62502pt too wide) in paragraph at lines 687--688
+\T1/cmr/m/n/10.95 (-20) limit. 
  []
 
 ./main.tex:690: Misplaced \noalign.
 \hline ->\noalign 
-                  {\ifnum 0=`}\fi \let \hskip \vskip \let \vrule \hrule \let...
+                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
 l.690 \hline
             
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
 
+Overfull \hbox (89.84624pt too wide) in paragraph at lines 692--692
+[] 
+ []
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 793--794
+
+Overfull \hbox (179.10837pt too wide) detected at line 694
+\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 d\OT1/cmr/m/n/10.95 )  [] []  []
+ []
+
+
+Overfull \hbox (89.84624pt too wide) in paragraph at lines 696--696
+[] 
+ []
+
+
+Overfull \hbox (171.7757pt too wide) detected at line 698
+\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 ) := []  []
+ []
+
+
+Overfull \hbox (105.11171pt too wide) in paragraph at lines 700--701
+[]\T1/cmr/m/n/10.95 (-20) Let
+ []
+
+
+Overfull \hbox (104.66667pt too wide) in paragraph at lines 700--701
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (103.14828pt too wide) in paragraph at lines 700--701
+\T1/cmr/m/n/10.95 (-20) fol-
+ []
+
+
+Overfull \hbox (107.28882pt too wide) in paragraph at lines 700--701
+\T1/cmr/m/n/10.95 (-20) low-
+ []
+
+
+Overfull \hbox (104.0743pt too wide) in paragraph at lines 700--701
+\T1/cmr/m/n/10.95 (-20) ing
+ []
+
+
+Overfull \hbox (107.65025pt too wide) in paragraph at lines 700--701
+\T1/cmr/m/n/10.95 (-20) sub-
+ []
+
+
+Overfull \hbox (100.53813pt too wide) in paragraph at lines 700--701
+\T1/cmr/m/n/10.95 (-20) se-
+ []
+
+
+Overfull \hbox (125.76993pt too wide) in paragraph at lines 700--701
+\T1/cmr/m/n/10.95 (-20) quences
+ []
+
+
+Overfull \hbox (100.81859pt too wide) in paragraph at lines 700--701
+\T1/cmr/m/n/10.95 (-20) be
+ []
+
+
+Overfull \hbox (102.256pt too wide) in paragraph at lines 700--701
+\T1/cmr/m/n/10.95 (-20) de-
+ []
+
+
+Overfull \hbox (112.37491pt too wide) in paragraph at lines 700--701
+\T1/cmr/m/n/10.95 (-20) fined
+ []
+
+
+Overfull \hbox (100.84302pt too wide) in paragraph at lines 700--701
+\T1/cmr/m/n/10.95 (-20) as: 
+ []
+
+
+Overfull \hbox (258.45067pt too wide) detected at line 705
+\OML/cmm/m/it/10.95 x[] \OT1/cmr/m/n/10.95 := []   \OML/cmm/m/it/10.95 y[] \OT1/cmr/m/n/10.95 := []
+ []
+
+
+Overfull \hbox (112.07214pt too wide) in paragraph at lines 707--708
+[]\T1/cmr/m/n/10.95 (-20) Note
+ []
+
+
+Overfull \hbox (111.5757pt too wide) in paragraph at lines 707--708
+\T1/cmr/m/n/10.95 (-20) their
+ []
+
+
+Overfull \hbox (107.59103pt too wide) in paragraph at lines 707--708
+\T1/cmr/m/n/10.95 (-20) con-
+ []
+
+
+Overfull \hbox (105.5248pt too wide) in paragraph at lines 707--708
+\T1/cmr/m/n/10.95 (-20) ver-
+ []
+
+
+Overfull \hbox (116.78897pt too wide) in paragraph at lines 707--708
+\T1/cmr/m/n/10.95 (-20) gence: 
+ []
+
+
+Overfull \hbox (290.16592pt too wide) detected at line 712
+[] [] \OT1/cmr/m/n/10.95 = 0    [] [] = 0
+ []
+
+
+Overfull \hbox (102.6296pt too wide) in paragraph at lines 714--715
+[]\T1/cmr/m/n/10.95 (-20) By
+ []
+
+
+Overfull \hbox (100.53813pt too wide) in paragraph at lines 714--715
+\T1/cmr/m/n/10.95 (-20) se-
+ []
+
+
+Overfull \hbox (113.81464pt too wide) in paragraph at lines 714--715
+\T1/cmr/m/n/10.95 (-20) quen-
+ []
+
+
+Overfull \hbox (105.26277pt too wide) in paragraph at lines 714--715
+\T1/cmr/m/n/10.95 (-20) tial
+ []
+
+
+Overfull \hbox (103.44444pt too wide) in paragraph at lines 714--715
+\T1/cmr/m/n/10.95 (-20) cri-
+ []
+
+
+Overfull \hbox (100.4789pt too wide) in paragraph at lines 714--715
+\T1/cmr/m/n/10.95 (-20) te-
+ []
+
+
+Overfull \hbox (108.22461pt too wide) in paragraph at lines 714--715
+\T1/cmr/m/n/10.95 (-20) rion
+ []
+
+
+Overfull \hbox (167.72693pt too wide) in paragraph at lines 714--715
+[][] \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x[]\OT1/cmr/m/n/10.95 (-20) ) =
+ []
+
+
+Overfull \hbox (154.16815pt too wide) in paragraph at lines 714--715
+[][] \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 y[]\OT1/cmr/m/n/10.95 (-20) )$ 
+ []
+
+
+Overfull \hbox (127.24481pt too wide) in paragraph at lines 716--717
+[]\T1/cmr/m/n/10.95 (-20) Observe
+ []
+
+
+Overfull \hbox (146.14543pt too wide) in paragraph at lines 716--717
+\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x[]\OT1/cmr/m/n/10.95 (-20) )\OML/cmm/m/it/10.95 ; f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 y[]\OT1/cmr/m/n/10.95 (-20) )$ 
+ []
+
+
+Overfull \hbox (89.84624pt too wide) in paragraph at lines 718--718
+[] 
+ []
+
+
+Overfull \hbox (382.51633pt too wide) detected at line 728
+\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x[]\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 sin []    f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 y[]\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 sin []
+ []
+
+
+Overfull \hbox (128.69698pt too wide) in paragraph at lines 730--731
+[]\T1/cmr/m/n/10.95 (-20) Observe: 
+ []
+
+
+Overfull \hbox (516.2616pt too wide) detected at line 760
+[][]
+ []
+
+
+Overfull \hbox (89.84624pt too wide) in paragraph at lines 762--762
+[] 
+ []
+
+
+Overfull \hbox (286.02646pt too wide) detected at line 764
+[] \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 y[]\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 6\OT1/cmr/m/n/10.95 = [] \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x[]\OT1/cmr/m/n/10.95 )  =[]\OMS/cmsy/m/n/10.95 )  [] \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 ) []
+ []
+
+./main.tex:765: Undefined control sequence.
+l.765 \qq
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (158.2773pt too wide) in paragraph at lines 768--770
+[][]\T1/cmr/bx/n/10.95 (-20) Section
+ []
+
+
+Overfull \hbox (136.19403pt too wide) in paragraph at lines 768--770
+\T1/cmr/bx/n/10.95 (-20) 4.1:
+ []
+
+
+Overfull \hbox (130.49516pt too wide) in paragraph at lines 768--770
+\T1/cmr/bx/n/10.95 (-20) 14[]
+ []
+
+
+Overfull \hbox (134.5644pt too wide) in paragraph at lines 768--770
+\T1/cmr/m/n/10.95 (-20) Let
+ []
+
+
+Overfull \hbox (134.37924pt too wide) in paragraph at lines 768--770
+\OML/cmm/m/it/10.95 c \OMS/cmsy/m/n/10.95 2
+ []
+
+
+Overfull \hbox (127.20728pt too wide) in paragraph at lines 768--770
+\U/msb/m/n/10.95 R$
+ []
+
+
+Overfull \hbox (136.48883pt too wide) in paragraph at lines 768--770
+\T1/cmr/m/n/10.95 (-20) and
+ []
+
+
+Overfull \hbox (130.86356pt too wide) in paragraph at lines 768--770
+\T1/cmr/m/n/10.95 (-20) let
+ []
+
+
+Overfull \hbox (130.33894pt too wide) in paragraph at lines 768--770
+\OML/cmm/m/it/10.95 f \OT1/cmr/m/n/10.95 (-20) :
+ []
+
+
+Overfull \hbox (141.19891pt too wide) in paragraph at lines 768--770
+\U/msb/m/n/10.95 R \OMS/cmsy/m/n/10.95 !
+ []
+
+
+Overfull \hbox (127.20728pt too wide) in paragraph at lines 768--770
+\U/msb/m/n/10.95 R$
+ []
+
+
+Overfull \hbox (130.27129pt too wide) in paragraph at lines 768--770
+\T1/cmr/m/n/10.95 (-20) be
+ []
+
+
+Overfull \hbox (139.80374pt too wide) in paragraph at lines 768--770
+\T1/cmr/m/n/10.95 (-20) such
+ []
+
+
+Overfull \hbox (138.56807pt too wide) in paragraph at lines 768--770
+\T1/cmr/m/n/10.95 (-20) that 
+ []
+
+
+Overfull \hbox (195.94032pt too wide) detected at line 772
+[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 ))[] = \OML/cmm/m/it/10.95 L:
+ []
+
+
+Overfull \hbox (130.38687pt too wide) in paragraph at lines 774--775
+[]\T1/cmr/m/n/10.95 (-20) (a)
+ []
+
+
+Overfull \hbox (143.49916pt too wide) in paragraph at lines 774--775
+\T1/cmr/m/n/10.95 (-20) Show
+ []
+
+
+Overfull \hbox (138.56807pt too wide) in paragraph at lines 774--775
+\T1/cmr/m/n/10.95 (-20) that
+ []
+
+
+Overfull \hbox (125.52628pt too wide) in paragraph at lines 774--775
+\T1/cmr/m/n/10.95 (-20) if
+ []
+
+
+Overfull \hbox (138.13899pt too wide) in paragraph at lines 774--775
+\OML/cmm/m/it/10.95 L \OT1/cmr/m/n/10.95 (-20) =
+ []
+
+
+Overfull \hbox (126.11661pt too wide) in paragraph at lines 774--775
+\OT1/cmr/m/n/10.95 (-20) 0$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (140.04678pt too wide) in paragraph at lines 774--775
+\T1/cmr/m/n/10.95 (-20) then 
+ []
+
+
+Overfull \hbox (182.52145pt too wide) detected at line 777
+[] \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 ) = 0\OML/cmm/m/it/10.95 :
+ []
+
+
+Overfull \hbox (130.97922pt too wide) in paragraph at lines 779--781
+[]\T1/cmr/m/n/10.95 (-20) (b)
+ []
+
+
+Overfull \hbox (143.49916pt too wide) in paragraph at lines 779--781
+\T1/cmr/m/n/10.95 (-20) Show
+ []
+
+
+Overfull \hbox (130.15248pt too wide) in paragraph at lines 779--781
+\T1/cmr/m/n/10.95 (-20) by
+ []
+
+
+Overfull \hbox (131.4125pt too wide) in paragraph at lines 779--781
+\T1/cmr/m/n/10.95 (-20) ex-
+ []
+
+
+Overfull \hbox (135.26294pt too wide) in paragraph at lines 779--781
+\T1/cmr/m/n/10.95 (-20) am-
+ []
+
+
+Overfull \hbox (132.93463pt too wide) in paragraph at lines 779--781
+\T1/cmr/m/n/10.95 (-20) ple
+ []
+
+
+Overfull \hbox (138.56807pt too wide) in paragraph at lines 779--781
+\T1/cmr/m/n/10.95 (-20) that
+ []
+
+
+Overfull \hbox (125.52628pt too wide) in paragraph at lines 779--781
+\T1/cmr/m/n/10.95 (-20) if
+ []
+
+
+Overfull \hbox (138.13899pt too wide) in paragraph at lines 779--781
+\OML/cmm/m/it/10.95 L \OMS/cmsy/m/n/10.95 6\OT1/cmr/m/n/10.95 (-20) =
+ []
+
+
+Overfull \hbox (126.11661pt too wide) in paragraph at lines 779--781
+\OT1/cmr/m/n/10.95 (-20) 0$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (140.04678pt too wide) in paragraph at lines 779--781
+\T1/cmr/m/n/10.95 (-20) then
+ []
+
+
+Overfull \hbox (125.83855pt too wide) in paragraph at lines 779--781
+\OML/cmm/m/it/10.95 f$
+ []
+
+
+Overfull \hbox (138.44943pt too wide) in paragraph at lines 779--781
+\T1/cmr/m/n/10.95 (-20) may
+ []
+
+
+Overfull \hbox (134.41776pt too wide) in paragraph at lines 779--781
+\T1/cmr/m/n/10.95 (-20) not
+ []
+
+
+Overfull \hbox (140.33086pt too wide) in paragraph at lines 779--781
+\T1/cmr/m/n/10.95 (-20) have
+ []
+
+
+Overfull \hbox (124.634pt too wide) in paragraph at lines 779--781
+\T1/cmr/m/n/10.95 (-20) a
+ []
+
+
+Overfull \hbox (140.9413pt too wide) in paragraph at lines 779--781
+\T1/cmr/m/n/10.95 (-20) limit
+ []
+
+
+Overfull \hbox (128.49034pt too wide) in paragraph at lines 779--781
+\T1/cmr/m/n/10.95 (-20) at
+ []
+
+
+Overfull \hbox (124.88005pt too wide) in paragraph at lines 779--781
+\OML/cmm/m/it/10.95 c$\T1/cmr/m/n/10.95 (-20) .
+ []
+
+
+Overfull \hbox (119.29893pt too wide) in paragraph at lines 779--781
 
  []
 
 
+Overfull \hbox (134.5644pt too wide) in paragraph at lines 782--783
+[]\T1/cmr/m/n/10.95 (-20) Let
+ []
 
-[11]
 
-[12] (./main.aux)
+Overfull \hbox (135.30188pt too wide) in paragraph at lines 782--783
+\OML/cmm/m/it/10.95 ^^O >
+ []
+
+
+Overfull \hbox (124.39069pt too wide) in paragraph at lines 782--783
+\OT1/cmr/m/n/10.95 (-20) 0$
+ []
+
+
+Overfull \hbox (130.27129pt too wide) in paragraph at lines 782--783
+\T1/cmr/m/n/10.95 (-20) be
+ []
+
+
+Overfull \hbox (144.44112pt too wide) in paragraph at lines 782--783
+\T1/cmr/m/n/10.95 (-20) given.
+ []
+
+
+Overfull \hbox (143.60472pt too wide) in paragraph at lines 782--783
+\T1/cmr/m/n/10.95 (-20) Since
+ []
+
+
+Overfull \hbox (135.30188pt too wide) in paragraph at lines 782--783
+\OML/cmm/m/it/10.95 ^^O >
+ []
+
+
+Overfull \hbox (126.11661pt too wide) in paragraph at lines 782--783
+\OT1/cmr/m/n/10.95 (-20) 0$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (126.12085pt too wide) in paragraph at lines 782--783
+\T1/cmr/m/n/10.95 (-20) it
+ []
+
+
+Overfull \hbox (132.60098pt too wide) in paragraph at lines 782--783
+\T1/cmr/m/n/10.95 (-20) fol-
+ []
+
+
+Overfull \hbox (139.21143pt too wide) in paragraph at lines 782--783
+\T1/cmr/m/n/10.95 (-20) lows
+ []
+
+
+Overfull \hbox (138.56807pt too wide) in paragraph at lines 782--783
+\T1/cmr/m/n/10.95 (-20) that
+ []
+
+
+Overfull \hbox (140.05194pt too wide) in paragraph at lines 782--783
+\OML/cmm/m/it/10.95 ^^O[] >
+ []
+
+
+Overfull \hbox (125.50688pt too wide) in paragraph at lines 782--783
+\OT1/cmr/m/n/10.95 (-20) 0$\T1/cmr/m/n/10.95 (-20) . 
+ []
+
+
+Overfull \hbox (156.55403pt too wide) in paragraph at lines 784--785
+[]\T1/cmr/m/n/10.95 (-20) Because
+ []
+
+
+Overfull \hbox (131.05197pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) we
+ []
+
+
+Overfull \hbox (133.52702pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) are
+ []
+
+
+Overfull \hbox (143.59868pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) given
+ []
+
+
+Overfull \hbox (138.56807pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) that
+ []
+
+
+Overfull \hbox (197.60234pt too wide) in paragraph at lines 784--785
+[][]\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 (-20) ))[] =
+ []
+
+
+Overfull \hbox (126.11661pt too wide) in paragraph at lines 784--785
+\OT1/cmr/m/n/10.95 (-20) 0$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (131.05197pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) we
+ []
+
+
+Overfull \hbox (143.20297pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) know
+ []
+
+
+Overfull \hbox (130.15248pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) by
+ []
+
+
+Overfull \hbox (134.97046pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) def-
+ []
+
+
+Overfull \hbox (124.00415pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) i-
+ []
+
+
+Overfull \hbox (129.93156pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) ni-
+ []
+
+
+Overfull \hbox (137.6773pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) tion
+ []
+
+
+Overfull \hbox (138.56807pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) that
+ []
+
+
+Overfull \hbox (131.83922pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) for
+ []
+
+
+Overfull \hbox (135.48755pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) any
+ []
+
+
+Overfull \hbox (136.81284pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) pos-
+ []
+
+
+Overfull \hbox (124.00415pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) i-
+ []
+
+
+Overfull \hbox (136.48651pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) tive
+ []
+
+
+Overfull \hbox (141.48045pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) num-
+ []
+
+
+Overfull \hbox (134.21474pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) ber
+ []
+
+
+Overfull \hbox (132.808pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) (in-
+ []
+
+
+Overfull \hbox (140.60165pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) clud-
+ []
+
+
+Overfull \hbox (133.527pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) ing
+ []
+
+
+Overfull \hbox (134.09612pt too wide) in paragraph at lines 784--785
+\OML/cmm/m/it/10.95 ^^O[]$\T1/cmr/m/n/10.95 (-20) ),
+ []
+
+
+Overfull \hbox (143.01239pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) there
+ []
+
+
+Overfull \hbox (131.4125pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) ex-
+ []
+
+
+Overfull \hbox (134.83392pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) ists
+ []
+
+
+Overfull \hbox (124.634pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) a
+ []
+
+
+Overfull \hbox (136.1383pt too wide) in paragraph at lines 784--785
+\OML/cmm/m/it/10.95 ^^N >
+ []
+
+
+Overfull \hbox (124.39069pt too wide) in paragraph at lines 784--785
+\OT1/cmr/m/n/10.95 (-20) 0$
+ []
+
+
+Overfull \hbox (139.80374pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) such
+ []
+
+
+Overfull \hbox (138.56807pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) that
+ []
+
+
+Overfull \hbox (125.52628pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) if
+ []
+
+
+Overfull \hbox (136.22275pt too wide) in paragraph at lines 784--785
+\OT1/cmr/m/n/10.95 (-20) 0 \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (137.11552pt too wide) in paragraph at lines 784--785
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (138.63759pt too wide) in paragraph at lines 784--785
+\OML/cmm/m/it/10.95 c\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (126.03217pt too wide) in paragraph at lines 784--785
+\OML/cmm/m/it/10.95 ^^N$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (141.49895pt too wide) in paragraph at lines 784--785
+\T1/cmr/m/n/10.95 (-20) then: 
+ []
+
+
+Overfull \hbox (197.74988pt too wide) detected at line 785
+\OMS/cmsy/m/n/10.95 j\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 ))[] \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 0\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 < ^^O[]
+ []
+
+
+Overfull \hbox (139.71405pt too wide) in paragraph at lines 787--788
+[]\T1/cmr/m/n/10.95 (-20) This
+ []
+
+
+Overfull \hbox (137.103pt too wide) in paragraph at lines 787--788
+\T1/cmr/m/n/10.95 (-20) sim-
+ []
+
+
+Overfull \hbox (132.89714pt too wide) in paragraph at lines 787--788
+\T1/cmr/m/n/10.95 (-20) pli-
+ []
+
+
+Overfull \hbox (134.18233pt too wide) in paragraph at lines 787--788
+\T1/cmr/m/n/10.95 (-20) fies
+ []
+
+
+Overfull \hbox (130.23648pt too wide) in paragraph at lines 787--788
+\T1/cmr/m/n/10.95 (-20) to: 
+ []
+
+
+Overfull \hbox (175.24149pt too wide) detected at line 788
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 j[] \OML/cmm/m/it/10.95 < ^^O[]
+ []
+
+
+Overfull \hbox (156.55403pt too wide) in paragraph at lines 788--790
+\T1/cmr/m/n/10.95 (-20) Because
+ []
+
+
+Overfull \hbox (140.94138pt too wide) in paragraph at lines 788--790
+\T1/cmr/m/n/10.95 (-20) both
+ []
+
+
+Overfull \hbox (141.35373pt too wide) in paragraph at lines 788--790
+\T1/cmr/m/n/10.95 (-20) sides
+ []
+
+
+Overfull \hbox (133.52702pt too wide) in paragraph at lines 788--790
+\T1/cmr/m/n/10.95 (-20) are
+ []
+
+
+Overfull \hbox (138.22847pt too wide) in paragraph at lines 788--790
+\T1/cmr/m/n/10.95 (-20) non-
+ []
+
+
+Overfull \hbox (159.27893pt too wide) in paragraph at lines 788--790
+\T1/cmr/m/n/10.95 (-20) negative,
+ []
+
+
+Overfull \hbox (131.05197pt too wide) in paragraph at lines 788--790
+\T1/cmr/m/n/10.95 (-20) we
+ []
+
+
+Overfull \hbox (135.3041pt too wide) in paragraph at lines 788--790
+\T1/cmr/m/n/10.95 (-20) can
+ []
+
+
+Overfull \hbox (138.856pt too wide) in paragraph at lines 788--790
+\T1/cmr/m/n/10.95 (-20) take
+ []
+
+
+Overfull \hbox (134.11937pt too wide) in paragraph at lines 788--790
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (149.29521pt too wide) in paragraph at lines 788--790
+\T1/cmr/m/n/10.95 (-20) square
+ []
+
+
+Overfull \hbox (138.27795pt too wide) in paragraph at lines 788--790
+\T1/cmr/m/n/10.95 (-20) root
+ []
+
+
+Overfull \hbox (128.78432pt too wide) in paragraph at lines 788--790
+\T1/cmr/m/n/10.95 (-20) to
+ []
+
+
+Overfull \hbox (134.97919pt too wide) in paragraph at lines 788--790
+\T1/cmr/m/n/10.95 (-20) get: 
+ []
+
+
+Overfull \hbox (165.74136pt too wide) detected at line 790
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 < ^^O
+ []
+
+
+Overfull \hbox (143.60472pt too wide) in paragraph at lines 792--793
+[]\T1/cmr/m/n/10.95 (-20) Since
+ []
+
+
+Overfull \hbox (131.05197pt too wide) in paragraph at lines 792--793
+\T1/cmr/m/n/10.95 (-20) we
+ []
+
+
+Overfull \hbox (140.33086pt too wide) in paragraph at lines 792--793
+\T1/cmr/m/n/10.95 (-20) have
+ []
+
+
+Overfull \hbox (148.10068pt too wide) in paragraph at lines 792--793
+\T1/cmr/m/n/10.95 (-20) shown
+ []
+
+
+Overfull \hbox (138.56807pt too wide) in paragraph at lines 792--793
+\T1/cmr/m/n/10.95 (-20) that
+ []
+
+
+Overfull \hbox (131.83922pt too wide) in paragraph at lines 792--793
+\T1/cmr/m/n/10.95 (-20) for
+ []
+
+
+Overfull \hbox (135.48755pt too wide) in paragraph at lines 792--793
+\T1/cmr/m/n/10.95 (-20) any
+ []
+
+
+Overfull \hbox (135.30188pt too wide) in paragraph at lines 792--793
+\OML/cmm/m/it/10.95 ^^O >
+ []
+
+
+Overfull \hbox (126.11661pt too wide) in paragraph at lines 792--793
+\OT1/cmr/m/n/10.95 (-20) 0$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (143.01239pt too wide) in paragraph at lines 792--793
+\T1/cmr/m/n/10.95 (-20) there
+ []
+
+
+Overfull \hbox (131.4125pt too wide) in paragraph at lines 792--793
+\T1/cmr/m/n/10.95 (-20) ex-
+ []
+
+
+Overfull \hbox (134.83392pt too wide) in paragraph at lines 792--793
+\T1/cmr/m/n/10.95 (-20) ists
+ []
+
+
+Overfull \hbox (124.634pt too wide) in paragraph at lines 792--793
+\T1/cmr/m/n/10.95 (-20) a
+ []
+
+
+Overfull \hbox (136.1383pt too wide) in paragraph at lines 792--793
+\OML/cmm/m/it/10.95 ^^N >
+ []
+
+
+Overfull \hbox (124.39069pt too wide) in paragraph at lines 792--793
+\OT1/cmr/m/n/10.95 (-20) 0$
+ []
+
+
+Overfull \hbox (139.80374pt too wide) in paragraph at lines 792--793
+\T1/cmr/m/n/10.95 (-20) such
+ []
+
+
+Overfull \hbox (138.56807pt too wide) in paragraph at lines 792--793
+\T1/cmr/m/n/10.95 (-20) that
+ []
+
+
+Overfull \hbox (136.22275pt too wide) in paragraph at lines 792--793
+\OT1/cmr/m/n/10.95 (-20) 0 \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (137.11552pt too wide) in paragraph at lines 792--793
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (138.63759pt too wide) in paragraph at lines 792--793
+\OML/cmm/m/it/10.95 c\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (148.13464pt too wide) in paragraph at lines 792--793
+\OML/cmm/m/it/10.95 ^^N  \OT1/cmr/m/n/10.95 (-20) =[]\OMS/cmsy/m/n/10.95 )
+ []
+
+
+Overfull \hbox (152.00151pt too wide) in paragraph at lines 792--793
+\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 (-20) ) \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (139.26442pt too wide) in paragraph at lines 792--793
+\OT1/cmr/m/n/10.95 (-20) 0\OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 <
+ []
+
+
+Overfull \hbox (125.19574pt too wide) in paragraph at lines 792--793
+\OML/cmm/m/it/10.95 ^^O$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (131.05197pt too wide) in paragraph at lines 792--793
+\T1/cmr/m/n/10.95 (-20) we
+ []
+
+
+Overfull \hbox (135.3041pt too wide) in paragraph at lines 792--793
+\T1/cmr/m/n/10.95 (-20) can
+ []
+
+
+Overfull \hbox (137.04373pt too wide) in paragraph at lines 792--793
+\T1/cmr/m/n/10.95 (-20) con-
+ []
+
+
+Overfull \hbox (143.60472pt too wide) in paragraph at lines 792--793
+\T1/cmr/m/n/10.95 (-20) clude
+ []
+
+
+Overfull \hbox (138.56807pt too wide) in paragraph at lines 792--793
+\T1/cmr/m/n/10.95 (-20) that
+ []
+
+
+Overfull \hbox (186.33087pt too wide) in paragraph at lines 792--793
+[][] \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 (-20) ) =
+ []
+
+
+Overfull \hbox (127.63002pt too wide) in paragraph at lines 792--793
+\OT1/cmr/m/n/10.95 (-20) 0$\T1/cmr/m/n/10.95 (-20) . 
+ []
+
+
+Overfull \hbox (119.29893pt too wide) in paragraph at lines 792--793
+
+ []
+
+
+Overfull \hbox (160.05466pt too wide) in paragraph at lines 794--795
+[]\T1/cmr/m/n/10.95 (-20) Consider
+ []
+
+
+Overfull \hbox (134.11937pt too wide) in paragraph at lines 794--795
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (140.89784pt too wide) in paragraph at lines 794--795
+\T1/cmr/m/n/10.95 (-20) func-
+ []
+
+
+Overfull \hbox (137.6773pt too wide) in paragraph at lines 794--795
+\T1/cmr/m/n/10.95 (-20) tion 
+ []
+
+
+Overfull \hbox (226.42046pt too wide) detected at line 801
+\OML/cmm/m/it/10.95 g\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 ) = []
+ []
+
+
+Overfull \hbox (134.5644pt too wide) in paragraph at lines 803--804
+[]\T1/cmr/m/n/10.95 (-20) Let
+ []
+
+
+Overfull \hbox (154.81195pt too wide) in paragraph at lines 803--804
+\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 (-20) ) :=
+ []
+
+
+Overfull \hbox (140.36163pt too wide) in paragraph at lines 803--804
+\OML/cmm/m/it/10.95 g\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 (-20) )$\T1/cmr/m/n/10.95 (-20) .
+ []
+
+
+Overfull \hbox (134.37146pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) No-
+ []
+
+
+Overfull \hbox (135.9002pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) tice
+ []
+
+
+Overfull \hbox (138.56807pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) that
+ []
+
+
+Overfull \hbox (198.17087pt too wide) in paragraph at lines 803--804
+[][]\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 (-20) ))[] =
+ []
+
+
+Overfull \hbox (125.5691pt too wide) in paragraph at lines 803--804
+\OT1/cmr/m/n/10.95 (-20) 1$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (141.88686pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) since
+ []
+
+
+Overfull \hbox (139.16199pt too wide) in paragraph at lines 803--804
+\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 (-20) )$
+ []
+
+
+Overfull \hbox (132.30106pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) ap-
+ []
+
+
+Overfull \hbox (159.3669pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) proaches
+ []
+
+
+Overfull \hbox (128.74686pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) ei-
+ []
+
+
+Overfull \hbox (138.06282pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) ther
+ []
+
+
+Overfull \hbox (123.02194pt too wide) in paragraph at lines 803--804
+\OT1/cmr/m/n/10.95 (-20) 1$
+ []
+
+
+Overfull \hbox (128.57745pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) or
+ []
+
+
+Overfull \hbox (132.08614pt too wide) in paragraph at lines 803--804
+\OMS/cmsy/m/n/10.95 ^^@\OT1/cmr/m/n/10.95 (-20) 1$
+ []
+
+
+Overfull \hbox (128.84355pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) as
+ []
+
+
+Overfull \hbox (125.55716pt too wide) in paragraph at lines 803--804
+\OML/cmm/m/it/10.95 x$
+ []
+
+
+Overfull \hbox (132.30106pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) ap-
+ []
+
+
+Overfull \hbox (159.3669pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) proaches
+ []
+
+
+Overfull \hbox (124.39069pt too wide) in paragraph at lines 803--804
+\OT1/cmr/m/n/10.95 (-20) 0$
+ []
+
+
+Overfull \hbox (140.93538pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) from
+ []
+
+
+Overfull \hbox (134.11937pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) the
+ []
+
+
+Overfull \hbox (141.2314pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) right
+ []
+
+
+Overfull \hbox (128.57745pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) or
+ []
+
+
+Overfull \hbox (135.87146pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) left,
+ []
+
+
+Overfull \hbox (136.48883pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) and
+ []
+
+
+Overfull \hbox (140.25497pt too wide) in paragraph at lines 803--804
+\OT1/cmr/m/n/10.95 (-20) 1[] =
+ []
+
+
+Overfull \hbox (156.38438pt too wide) in paragraph at lines 803--804
+\OT1/cmr/m/n/10.95 (-20) (\OMS/cmsy/m/n/10.95 ^^@\OT1/cmr/m/n/10.95 (-20) 1)[] =
+ []
+
+
+Overfull \hbox (124.95938pt too wide) in paragraph at lines 803--804
+\OT1/cmr/m/n/10.95 (-20) 1$\T1/cmr/m/n/10.95 (-20) .
+ []
+
+
+Overfull \hbox (141.77376pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) How-
+ []
+
+
+Overfull \hbox (139.7158pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) ever,
+ []
+
+
+Overfull \hbox (174.23027pt too wide) in paragraph at lines 803--804
+[][] \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 (-20) )$
+ []
+
+
+Overfull \hbox (139.8159pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) does
+ []
+
+
+Overfull \hbox (134.41776pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) not
+ []
+
+
+Overfull \hbox (131.4125pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) ex-
+ []
+
+
+Overfull \hbox (132.07654pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) ist,
+ []
+
+
+Overfull \hbox (128.84355pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) as
+ []
+
+
+Overfull \hbox (139.5488pt too wide) in paragraph at lines 803--804
+\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 !
+ []
+
+
+Overfull \hbox (133.22781pt too wide) in paragraph at lines 803--804
+\OT1/cmr/m/n/10.95 (-20) 0[]$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (154.43478pt too wide) in paragraph at lines 803--804
+\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 (-20) ) \OMS/cmsy/m/n/10.95 !
+ []
+
+
+Overfull \hbox (125.5691pt too wide) in paragraph at lines 803--804
+\OT1/cmr/m/n/10.95 (-20) 1$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (135.0101pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) but
+ []
+
+
+Overfull \hbox (128.84355pt too wide) in paragraph at lines 803--804
+\T1/cmr/m/n/10.95 (-20) as
+ []
+
+
+Overfull \hbox (139.5488pt too wide) in paragraph at lines 803--804
+\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 !
+ []
+
+
+Overfull \hbox (133.22781pt too wide) in paragraph at lines 803--804
+\OT1/cmr/m/n/10.95 (-20) 0[]$\T1/cmr/m/n/10.95 (-20) ,
+ []
+
+
+Overfull \hbox (154.43478pt too wide) in paragraph at lines 803--804
+\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 (-20) (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 (-20) ) \OMS/cmsy/m/n/10.95 !
+ []
+
+
+Overfull \hbox (134.02357pt too wide) in paragraph at lines 803--804
+\OMS/cmsy/m/n/10.95 ^^@\OT1/cmr/m/n/10.95 (-20) 1$\T1/cmr/m/n/10.95 (-20) . 
+ []
+
+./main.tex:805: Undefined control sequence.
+l.805 \qq
+         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./main.tex:806: LaTeX Error: \begin{tcb@savebox} on input line 768 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.806 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+runsystem(latexminted cleantemp  --timestamp 20260421120917 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
+
+(./main.aux)
  ***********
-LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
- ) 
+
+./main.tex:806: You can't use `\end' in internal vertical mode.
+\enddocument ...cument/end}\deadcycles \z@ \@@end 
+                                                  
+l.806 \end{document}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+./main.tex:806: LaTeX Error: \begin{tcb@savebox} on input line 768 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.806 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> main.tex
+            
+*** (job aborted, no legal \end found)
+
+ 
 Here is how much of TeX's memory you used:
- 37977 strings out of 475171
- 886051 string characters out of 5767096
- 1442187 words of memory out of 5000000
- 60336 multiletter control sequences out of 15000+600000
- 572958 words of font info for 93 fonts, out of 8000000 for 9000
+ 26917 strings out of 469515
+ 579928 string characters out of 5470807
+ 1288722 words of memory out of 5000000
+ 55034 multiletter control sequences out of 15000+600000
+ 649602 words of font info for 156 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 89i,11n,90p,807b,2422s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (12 pages, 292901 bytes).
-PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 99i,49n,111p,1193b,8500s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
