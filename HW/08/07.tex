@@ -1,0 +1,175 @@
+\input{template.tex}
+\setupHW{MATH 301: Homework 5}
+\author{Aren Vista}
+\date{\today}
+\begin{document}
+\maketitle
+\section{Section 5.3 - 2}
+Let $I := [a, b]$ and let $f : I \to \mathbb{R}$ and $g : I \to \mathbb{R}$ be continuous functions on $I$. Show that the set $E := \{x \in I : f(x) = g(x)\}$ has the property that if $(x_n) \subseteq E$ and $x_n \to x_0$, then $x_0 \in E$.
+
+\textbf{Statement (1):} Observe $\forall~ n \in \mathbb{N}, x_n \in E \implies f(x_n) = g(x_n)$.
+
+\textbf{Statement (2):} Observe $\forall~ x \in E, x \in I$. Naturally then as $I$ is a closed bounded interval and $E \subseteq I$. $E$ must also be closed and bonded; else there must exists some element of $E$ that escapes the bounds which would invalidade the fact that all elements of $E$ come from $I$.
+
+As $f,g$ are continous in the bounded interval $[a,b]$ the \textit{sequestial criterion of continuity} must hold for values of $E$. Thus, $\lim_{n \to \infty} f(x_n) = f(x_0)$ and $\lim_{n \to \infty} g(x_n) = (x_0)$
+
+As this is true we are left to conclude $f(x_0) = g(x_0)$. Therefore $x_0 \in E$.
+
+\section{Section 5.3 - 5}
+Show that the polynomial $p(x) := x^4 + 7x^3 - 9$ has at least two real roots. Use a calculator to locate these roots to within two decimal places.
+
+\begin{cbox}{catblue}{Visulization $p(x)$}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis lines=middle,
+xlabel={$x$},
+ylabel={$p(x)$},
+domain=-8:2,
+samples=200,
+xmin=-8,
+xmax=2,
+ymin=-300,
+ymax=500,
+grid=both,
+width=10cm,
+height=7cm,
+]
+\addplot[blue, thick] {x^4 + 7*x^3 - 9};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\end{cbox}
+
+Invoke \textbf{IVT}.
+\[
+\begin{align}
+p(1)  & = 1 + 7 -9 = -1         \\
+p(2)  & = 16 + 7(16) -9 > 0     \\
+p(-8) & = -8^4 + 7(-8)^3 -9 > 0 \\
+\end{align}
+\]
+
+As the function is a continuous and there exists $p(-8) < p(1) < p(2)$ where $0 <p(-8), p(2)$ and $p(1) < 0$. There must exist some $c_1, c_2 \in \mathbb{R}$  st $p(c_1) = 0 = p(c_2)$.
+
+\textit{Approximation: }
+
+\section{Section 5.3 - 11}
+Let $I := [a, b]$, let $f : I \to \mathbb{R}$ be continuous on $I$, and assume that $f(a) < 0, f(b) > 0$. Let $W := \{x \in I : f(x) < 0\}$, and let $w := \sup W$. Prove that $f(w) = 0$. (This provides an alternative proof of Theorem 5.3.5.)
+
+Note $f(a) < 0 < f(b)$ and $f(x)$ is continuous on $[a,b]$. By IVT $\exists~ c \in \mathbb{R}$ st $f(c)=0$. 
+
+By $W$'s construction, $\forall~ w \in W, ~f(w) < 0$. As $a<b$ and $0 < f(b)$ then it means that $b$ is an upper bound of $W$. This means $\exists~ \sup W := z$ where $z-\epsilon$ is not an upper bound.
+
+By the definition of the supremum, for any $n \in \mathbb{N}$, $w - \frac{1}{n}$ is not an upper bound of $W$. Thus, there exists some $x_n \in W$ such that $w - \frac{1}{n} < x_n \leq w$. 
+This creates a sequence $(x_n) \subseteq W$ where $\lim_{n \to \infty} x_n = w$. Since $x_n \in W$, $f(x_n) < 0$. By the continuity of $f$, $f(w) = \lim_{n \to \infty} f(x_n) \leq 0$.
+Next, construct a sequence $(y_n)$ defined by $y_n = w + \frac{1}{n}$. For sufficiently large $n$, $y_n \in I$. Since $y_n > w = \sup W$, it follows that $y_n \notin W$, meaning $f(y_n) \geq 0$. 
+By continuity, $f(w) = \lim_{n \to \infty} f(y_n) \geq 0$.
+Since $f(w) \leq 0$ and $f(w) \geq 0$, we conclude $f(w) = 0$.
+
+
+Root 1: $x \approx 1.04$ (since $p(1.04) \approx -0.07$ and $p(1.05) \approx 0.92$)
+
+Root 2: $x \approx -7.02$ (since $p(-7) = -9$ and $p(-8) = 503$)
+
+\section{Section 5.4 - 2}
+Show that the function $f(x) := 1/x^2$ is uniformly continuous on $A := [1, \infty)$, but that it is not uniformly continuous on $B := (0, \infty)$.
+
+Consider $x,y \in A \implies 1 \leq x,y$
+
+Observe:
+\[
+\begin{align}
+\left| 1/x^2 - 1/y^2 \right| & = \left| \frac{(x+y)(x-y)}{x^2y^2} \right| \\
+& = \left| \frac{x+y}{x^2y^2} \right| ~\left| x-y \right| \\
+& = \left[ \frac{1}{xy^2} + \frac{1}{x^2y} \right] \left| x-y \right| \\
+\end{align}
+\] 
+
+Consider ordering:
+\[
+\begin{gathered}
+x \geq 1 \implies 1/x \leq 1 \implies 1/x^2 \leq 1^2 \\
+1/x^2 \leq 1^2  ~\land~ 1/y \leq 1 \implies 1/(x^2y) \leq 1\\
+\end{gathered}
+\] 
+Note this is the same for $1/(xy^2) \leq 1$. Therefore, $1/(xy^2) + 1/(x^2y) \leq 2$.
+
+We can use this to bound the following:
+\[
+\left| 1/x^2 - 1/y^2 \right| = \left[ \frac{1}{xy^2} + \frac{1}{x^2y} \right] \left| x-y \right| \leq 2 |x-y|
+\] 
+Then we can conclude that $f(x)$ is continuous on $A$.
+
+If $x_n := \frac{1}{n}$ and $y_n := \frac{1}{(n+1)}$. Then $\left| x_n - y_n \right| \rightarrow 0$ However $\forall~ n \in \mathbb{N}, ~\left| f(x_n) - f(y_n) \right|=2n+1 \geq 1$ so $f(x)$ is not uniformly continous on $(0, \infty)$
+
+\section{Section 5.4 - 4}
+Show that the function $f(x) := 1/(1 + x^2)$ for $x \in \mathbb{R}$ is uniformly continuous on $\mathbb{R}$.
+
+
+\section{Section 5.4 - 5}
+Show that if $f$ and $g$ are uniformly continuous on a subset $A$ of $\mathbb{R}$, then $f + g$ is uniformly continuous on $A$.
+
+Consider:
+\[
+\begin{align}
+  & \left| \left( f(x) + g(x)  \right) - \left( f(y) + g(y) \right) \right| \\
+= & \left| \left( f(x) + f(y)  \right) - \left( g(x) + g(y) \right) \right| \\
+\leq &  \left| \left( f(x) - f(y)  \right) \right| + \left| \left( g(x) - g(y) \right) \right|
+\end{align}
+\] 
+Which holds as we are given $f(x),g(x)$ is uniformly continuous on $\mathbb{R}$. 
+
+\section{Section 5.4 - 6}
+Show that if $f$ and $g$ are uniformly continuous on $A \subseteq \mathbb{R}$ and both bounded on $A$, then their product $fg$ is uniformly continuous on $A$.
+
+Since $f$ and $g$ are bounded on $A$, there exist constants $M_f, M_g \ge 0$ such that
+\[
+|f(x)| \le M_f \quad \text{and} \quad |g(x)| \le M_g \qquad \text{for all } x \in A.
+\]
+
+To prove that $fg$ is uniformly continuous on $A$, let $\varepsilon > 0$ be given. Since $f$ is uniformly continuous on $A$, there exists $\delta_1 > 0$ such that
+\[
+|x-y|<\delta_1 \implies |f(x)-f(y)| < \frac{\varepsilon}{2(M_g+1)}
+\qquad (x,y\in A).
+\]
+Similarly, since $g$ is uniformly continuous on $A$, there exists $\delta_2 > 0$ such that
+\[
+|x-y|<\delta_2 \implies |g(x)-g(y)| < \frac{\varepsilon}{2(M_f+1)}
+\qquad (x,y\in A).
+\]
+
+Let $\delta = \min\{\delta_1,\delta_2\}$. If $x,y\in A$ and $|x-y|<\delta$, then
+\[
+\begin{aligned}
+|f(x)g(x)-f(y)g(y)|
+&= |f(x)g(x)-f(x)g(y)+f(x)g(y)-f(y)g(y)| \\
+&\le |f(x)|\,|g(x)-g(y)| + |g(y)|\,|f(x)-f(y)| \\
+&\le M_f\,|g(x)-g(y)| + M_g\,|f(x)-f(y)| \\
+&< M_f\cdot \frac{\varepsilon}{2(M_f+1)} + M_g\cdot \frac{\varepsilon}{2(M_g+1)} \\
+&< \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.
+\end{aligned}
+\]
+
+Therefore, $fg$ is uniformly continuous on $A$.
+
+\section{Section 5.4 - 9}
+If $f$ is uniformly continuous on $A \subseteq \mathbb{R}$, and $|f(x)| \geq k > 0$ for all $x \in A$, show that $1/f$ is uniformly continuous on $A$.
+
+\[
+\begin{gathered}
+\text{Let } x,y \in A \\
+|f(x)| \geq k > 0 \implies 0 < \frac{1}{|f(x)|} \leq \frac{1}{k} \\
+|f(y)| \geq k > 0 \implies 0 < \frac{1}{|f(y)|} \leq \frac{1}{k} \\
+\end{gathered}
+\] 
+
+We can construct the following:
+\[
+\left| \frac{1}{f(x)} - \frac{1}{f(y)} \right| \leq \frac{1}{k^2} \left| f(x)-f(y) \right|
+\] 
+
+Let $\epsilon > 0$. Because $f$ is uniformly continuous on $A$, there exists a $\delta > 0$ such that for all $x, y \in A$ with $|x-y| < \delta$, we have $|f(x) - f(y)| < k^2 \epsilon$.
+Therefore, $|x-y| < \delta \implies \left| \frac{1}{f(x)} - \frac{1}{f(y)} \right| \leq \frac{1}{k^2} (k^2 \epsilon) = \epsilon$. Thus, $1/f$ is uniformly continuous on $A$.
+
+\end{document}
